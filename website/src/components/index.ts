@@ -7,3 +7,4 @@ export { default as Card } from "./Card";
 export { default as StatBlock } from "./StatBlock";
 export { default as ExpandableCard } from "./ExpandableCard";
 export { default as FadeIn } from "./FadeIn";
+export { default as CapabilityCard } from "./CapabilityCard";
