@@ -145,15 +145,6 @@ export default function EngagementPage() {
             </FadeIn>
           </div>
 
-          <FadeIn delay={400}>
-            <div className="mt-12 p-6 bg-[#9078AC]/10 border border-[#9078AC]/30 rounded-xl text-center">
-              <p className="text-white/80">
-                In software development, this level of delivery assurance is virtually unheard of.
-                <br />
-                <span className="text-white font-medium">We offer it because it is how our founder has always worked.</span>
-              </p>
-            </div>
-          </FadeIn>
         </Container>
       </Section>
 

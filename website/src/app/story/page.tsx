@@ -77,24 +77,20 @@ export default function StoryPage() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <FadeIn className="md:col-span-1">
               <div className="aspect-video relative overflow-hidden rounded-2xl border border-white/[0.08]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                <img
+                  src="/assets/server-infrastructure.jpg"
+                  alt="Server infrastructure and network cabling"
                   className="absolute inset-0 w-full h-full object-cover"
-                >
-                  <source src="/assets/founder-bg.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="absolute inset-0 bg-black/20" />
               </div>
             </FadeIn>
             <FadeIn delay={100} className="md:col-span-1">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                The Mind Behind SACS-IT
+                Our Story
               </h2>
               <p className="text-[#9078AC] font-medium mb-6">
-                Engineer · Architect · Operator
+                Engineering · Architecture · Operations
               </p>
               <p className="text-lg text-white/60 leading-relaxed">
                 SACS-IT was founded in 2016 by Karim Gilbert Saikali, a systems engineer with
@@ -248,7 +244,7 @@ export default function StoryPage() {
                 Production-Proven Delivery
               </h2>
               <p className="text-lg text-white/60">
-                In the past 12 months, we have delivered multiple production platforms in parallel
+                We have delivered multiple production platforms in parallel
                 across hospitality, marketplace, event management, and AI infrastructure domains.
                 All capabilities described on this site have been demonstrated in production.
               </p>
