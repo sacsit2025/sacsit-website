@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Section, Container, Button, FadeIn } from "@/components";
 
 export default function ContactPage() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -17,18 +19,14 @@ export default function ContactPage() {
     setStatus("loading");
 
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        setFormData({ name: "", company: "", email: "", message: "" });
-      } else {
-        setStatus("error");
-      }
+      await emailjs.sendForm(
+        "service_30mj8rn",
+        "template_ujamidd",
+        formRef.current!,
+        "xBKyWVG997zp35Jyg"
+      );
+      setStatus("success");
+      setFormData({ name: "", company: "", email: "", message: "" });
     } catch {
       setStatus("error");
     }
@@ -85,7 +83,7 @@ export default function ContactPage() {
           ) : (
             <FadeIn>
               <div className="bg-gradient-to-br from-[#9078AC]/[0.08] to-white/[0.02] border border-[#9078AC]/20 rounded-2xl p-6 md:p-8 shadow-[0_0_60px_rgba(144,120,172,0.08)]">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-2">
                       Name
