@@ -11,22 +11,27 @@ const industrialProjects = [
   {
     category: "Oil & Gas",
     description: "SCADA and safety systems for DEWA (Dubai), Banias Refinery (Syria), Dijla Petroleum, Al Furat Petroleum",
+    image: "/assets/industrial-control-room.jpg",
   },
   {
     category: "Water & Infrastructure",
     description: "PLC/SCADA for Degremont–Suez, Subal, OTV–Veolia across Lebanon and Algeria",
+    image: "/assets/industrial-control-panel.jpg",
   },
   {
     category: "FMCG & Manufacturing",
     description: "Aujan Industries (Dubai), Procter & Gamble standards, batch control systems",
+    image: "/assets/industrial-manufacturing.jpg",
   },
   {
     category: "HVAC & Building",
     description: "JBR Dubai (25 towers, 12,000 fan coils, 150 AHUs), commissioned with APAVE",
+    image: "/assets/industrial-hvac.jpg",
   },
   {
     category: "Energy Management",
     description: "Four Seasons, Movenpick hotels — load-sharing and optimization systems",
+    image: "/assets/industrial-energy.jpg",
   },
 ];
 
@@ -69,20 +74,24 @@ export default function StoryPage() {
       {/* Founder Section */}
       <Section background="elevated" className="border-t border-white/[0.06]">
         <Container>
-          <div className="grid md:grid-cols-3 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <FadeIn className="md:col-span-1">
-              <div className="aspect-square bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl flex items-center justify-center">
-                <div className="text-center text-white/30">
-                  <svg className="w-20 h-20 mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                  </svg>
-                  <p className="text-sm">Photo</p>
-                </div>
+              <div className="aspect-video relative overflow-hidden rounded-2xl border border-white/[0.08]">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover"
+                >
+                  <source src="/assets/founder-bg.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-black/20" />
               </div>
             </FadeIn>
-            <FadeIn delay={100} className="md:col-span-2">
+            <FadeIn delay={100} className="md:col-span-1">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                Karim Gilbert Saikali
+                The Mind Behind SACS-IT
               </h2>
               <p className="text-[#9078AC] font-medium mb-6">
                 Engineer · Architect · Operator
@@ -103,7 +112,6 @@ export default function StoryPage() {
         <Container>
           <FadeIn>
             <div className="mb-12">
-              <p className="text-sm text-[#9078AC]/70 font-mono mb-3">2001 – 2017</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Industrial Engineering
               </h2>
@@ -117,13 +125,24 @@ export default function StoryPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {industrialProjects.map((project, index) => (
               <FadeIn key={project.category} delay={index * 50}>
-                <Card variant="bordered" hover={true} className="h-full">
-                  <h3 className="text-base font-semibold text-white mb-2">
-                    {project.category}
-                  </h3>
-                  <p className="text-sm text-white/50">
-                    {project.description}
-                  </p>
+                <Card variant="bordered" hover={true} className="h-full overflow-hidden !p-0">
+                  <div className="relative h-40 w-full">
+                    <Image
+                      src={project.image}
+                      alt={project.category}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-base font-semibold text-white mb-2">
+                      {project.category}
+                    </h3>
+                    <p className="text-sm text-white/50">
+                      {project.description}
+                    </p>
+                  </div>
                 </Card>
               </FadeIn>
             ))}
@@ -136,7 +155,6 @@ export default function StoryPage() {
         <Container>
           <FadeIn>
             <div className="mb-12">
-              <p className="text-sm text-[#9078AC]/70 font-mono mb-3">2017 – 2024</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Platform R&D
               </h2>
@@ -154,8 +172,9 @@ export default function StoryPage() {
                   <Image
                     src="/sop-logo.png"
                     alt="SOP Platform"
-                    width={40}
-                    height={40}
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 md:w-[120px] md:h-[120px] object-contain"
                   />
                   <div>
                     <h3 className="text-lg font-bold text-white">SOP Platform</h3>
@@ -188,8 +207,9 @@ export default function StoryPage() {
                   <Image
                     src="/petal-logo.png"
                     alt="Petal.io"
-                    width={40}
-                    height={40}
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 md:w-[120px] md:h-[120px] object-contain"
                   />
                   <div>
                     <h3 className="text-lg font-bold text-white">Petal.io</h3>
@@ -224,7 +244,6 @@ export default function StoryPage() {
         <Container size="narrow">
           <FadeIn>
             <div className="text-center">
-              <p className="text-sm text-[#9078AC]/70 font-mono mb-3">Today</p>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Production-Proven Delivery
               </h2>

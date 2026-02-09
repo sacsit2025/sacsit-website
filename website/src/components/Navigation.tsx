@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,16 +14,23 @@ const navLinks = [
 ];
 
 export default function Navigation() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+      // Hide logo on home page while the hero section is visible (~80% of viewport height)
+      if (isHome) {
+        setPastHero(window.scrollY > window.innerHeight * 0.8);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
 
   return (
     <nav
@@ -34,14 +42,19 @@ export default function Navigation() {
     >
       <div className="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
+          {/* Logo - hidden on home page while hero section is visible */}
+          <Link
+            href="/"
+            className={`flex items-center transition-opacity duration-300 ${
+              isHome && !pastHero ? "opacity-0 pointer-events-none" : "opacity-100"
+            }`}
+          >
             <Image
               src="/logo-dark.png"
               alt="SACS-IT"
-              width={100}
-              height={33}
-              className="h-6 md:h-7 w-auto"
+              width={200}
+              height={66}
+              className="h-12 md:h-16 w-auto"
               priority
             />
           </Link>

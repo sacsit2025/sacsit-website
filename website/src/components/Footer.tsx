@@ -19,9 +19,9 @@ export default function Footer() {
             <Image
               src="/logo-dark.png"
               alt="SACS-IT"
-              width={100}
-              height={33}
-              className="h-6 w-auto mb-4"
+              width={200}
+              height={66}
+              className="h-12 md:h-16 w-auto mb-4"
             />
             <p className="text-white/40 text-sm">
               Results-Secured Technology Studio
