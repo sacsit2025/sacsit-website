@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   description: "Enterprise-grade technology platforms — from architecture to production. Backed by 25 years of engineering depth and independently verified delivery.",
   keywords: ["technology studio", "platform development", "enterprise software", "industrial automation", "AI infrastructure", "Lebanon", "Beirut"],
   authors: [{ name: "SACS-IT" }],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     title: "SACS-IT | Results-Secured Technology Studio",
     description: "Enterprise-grade technology platforms — from architecture to production. Backed by 25 years of engineering depth and independently verified delivery.",
