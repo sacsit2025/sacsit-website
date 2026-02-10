@@ -24,8 +24,8 @@ const industrialProjects = [
     image: "/assets/industrial-manufacturing.jpg",
   },
   {
-    category: "HVAC & Building",
-    description: "JBR Dubai (25 towers, 12,000 fan coils, 150 AHUs), commissioned with APAVE",
+    category: "HVAC & Building Automation",
+    description: "As subcontractor to IEG, delivered centralized control of 12,000 fan coil units and 150 air handling units across 24 high-rise buildings at JBR Dubai (25 towers, 2M sqm), with real-time BACnet interoperability and intelligent adaptive algorithms for energy optimization. Commissioned with APAVE",
     image: "/assets/industrial-hvac.jpg",
   },
   {
