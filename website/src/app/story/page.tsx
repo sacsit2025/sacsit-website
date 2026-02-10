@@ -20,7 +20,7 @@ const industrialProjects = [
   },
   {
     category: "FMCG & Manufacturing",
-    description: "Aujan Industries (Dubai), Procter & Gamble standards, batch control systems",
+    description: "Production systems across multiple FMCG and manufacturing operations, including centralized SCADA for a leading regional beverage producer in Dubai, PLC algorithms to Procter & Gamble quality standards, and batch control systems with real-time production tracking for manufacturers in Lebanon",
     image: "/assets/industrial-manufacturing.jpg",
   },
   {

@@ -129,20 +129,6 @@ export default function EngagementPage() {
                 </p>
               </Card>
             </FadeIn>
-
-            <FadeIn delay={300}>
-              <Card variant="gradient" className="text-center h-full">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-xl bg-[#9078AC]/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[#9078AC]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">16 Years Proven</h3>
-                <p className="text-sm text-white/50">
-                  Applied consistently across industrial contracts with Veolia, Degremont, and others.
-                </p>
-              </Card>
-            </FadeIn>
           </div>
 
         </Container>
