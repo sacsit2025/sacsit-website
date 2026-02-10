@@ -26,7 +26,6 @@ const idealPartners = [
 ];
 
 const notRightFit = [
-  "Simple websites or landing pages",
   "Projects evaluated primarily on hourly rate",
   "Staff augmentation or developer placement",
   "Engagements without clear ownership on the client side",

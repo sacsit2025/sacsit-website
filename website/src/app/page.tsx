@@ -169,8 +169,6 @@ export default function Home() {
                 full-stack application framework.
               </p>
               <p className="text-lg text-white/70 font-medium">
-                We didn&apos;t just learn how to code.
-                <br />
                 <span className="gradient-text">We built the engines that power the code.</span>
               </p>
             </div>
@@ -192,7 +190,7 @@ export default function Home() {
               <StatBlock value="7" label="Years R&D" />
             </FadeIn>
             <FadeIn delay={300}>
-              <StatBlock value="4+" label="Platforms" />
+              <StatBlock value="2" label="Frameworks" />
             </FadeIn>
           </div>
         </Container>
