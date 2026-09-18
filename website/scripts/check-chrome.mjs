@@ -30,6 +30,21 @@ for (const [name, path, width] of [
 
   await page.goto(base + path, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
+  await page.waitForTimeout(400);
+
+  // 1 - AT THE TOP: the header is tall and transparent over the hero, and the rail must be entirely
+  //     out of the window. A rail that only half hides cuts across the lock-up (seen 2026-09-18).
+  const top = await page.evaluate(() => {
+    const h = document.querySelector("body > header")?.getBoundingClientRect();
+    const r = document.querySelector(".rail")?.getBoundingClientRect();
+    return {
+      scrolled: document.body.dataset.scrolled ?? "0",
+      headerHeight: h ? Math.round(h.height) : null,
+      railBottom: r ? Math.round(r.bottom) : null,
+      railHidden: r ? r.bottom <= 0 : true,
+    };
+  });
+
   await page.evaluate(() => window.scrollTo(0, 4000));
   await page.waitForTimeout(700);
 
@@ -63,10 +78,18 @@ for (const [name, path, width] of [
   // the chrome must be at the top of the window, and must not sit over the first heading below it
   const chromeBottom = (m.header?.top ?? 0) + (m.header?.height ?? 0) + (m.rail?.display === "none" ? 0 : m.rail?.height ?? 0);
   const covers = m.firstHeadingTop !== null && m.firstHeadingTop < chromeBottom;
-  const ok = m.scrolled === "1" && m.header?.top === 0 && !covers && errors.length === 0;
+  const ok =
+    m.scrolled === "1" &&
+    m.header?.top === 0 &&
+    !covers &&
+    errors.length === 0 &&
+    top.scrolled === "0" &&
+    top.railHidden;
   if (!ok) bad++;
   console.log(
-    `${name.padEnd(12)} scrolled=${m.scrolled} header=${m.header?.height}px@${m.header?.top} ` +
+    `${name.padEnd(12)} AT TOP header=${top.headerHeight}px rail-bottom=${top.railBottom}px ` +
+      `${top.railHidden ? "hidden OK" : "SHOWING <-- LOOK"} | SCROLLED ` +
+      `scrolled=${m.scrolled} header=${m.header?.height}px@${m.header?.top} ` +
       `rail=${m.rail?.display === "none" ? "hidden (phone)" : `${m.rail?.height}px@${m.rail?.top}`} ` +
       `chips=${m.chips} current="${m.current}" home=${m.homeChip} toTop=${m.totopOn} ` +
       `progress=${Number(m.progress).toFixed(2)} firstHeading=${m.firstHeadingTop}px ` +

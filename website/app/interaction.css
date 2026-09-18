@@ -304,14 +304,20 @@ body[data-scrolled="1"] .progress {
 /* ── "on this page": the page's own chapters ─────────────────────────────────────────────────────── */
 .rail {
   position: fixed;
-  top: 68px;
+  /* Anchored at the very top and pushed DOWN into place, never anchored at 68 and pulled up: a bar at
+   * top:68px that hides itself with translateY(-100%) only clears 48 of those 68 pixels, so its last
+   * 10 px stayed across the tall header and cut the lock-up in half (seen 2026-09-18 at the top of
+   * Home). Hidden = translateY(-100%), which is entirely above the window; shown = the header's
+   * compact height, which is where it belongs. */
+  top: 0;
   left: 0;
   right: 0;
   z-index: 4;
   background: rgba(15, 25, 38, 0.93);
   border-top: 1px solid #22344a;
   border-bottom: 1px solid #22344a;
-  transform: translateY(-120%);
+  transform: translateY(-100%);
+  pointer-events: none;
   transition: transform 0.24s ease;
 }
 @supports (backdrop-filter: blur(8px)) {
@@ -321,7 +327,8 @@ body[data-scrolled="1"] .progress {
   }
 }
 body[data-scrolled="1"] .rail {
-  transform: translateY(0);
+  transform: translateY(68px);
+  pointer-events: auto;
 }
 .rail .rwrap {
   max-width: var(--container);
