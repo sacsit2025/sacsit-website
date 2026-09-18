@@ -4,6 +4,51 @@
  * not belong here - it belongs in a review round.
  */
 
+/* ══════════════════════════════════════════════════════════════════════════════════════════════════
+ * MOTION TOKENS (A9) - Karim's go 2026-09-18, after the SKILLS-DEMO round.
+ *
+ * Before this block the site named eight durations (0.14 / 0.16 / 0.18 / 0.2 / 0.22 / 0.24 / 0.3 /
+ * 0.6s) and used the browser's default `ease` for all of them. Nothing was wrong with any single
+ * one; together they were eight decisions nobody made, and the default curve is the strongest tell
+ * of machine-written CSS. Three curves and three durations replace them.
+ *
+ * Source of the values: .claude/skills/review-animations/STANDARDS.md (Emil Kowalski, MIT) -
+ * see .claude/skills/VENDOR-emilkowalski.md for the provenance. They are a craft standard we adopted;
+ * where one conflicts with a ruling in knowledge/DECISIONS.md, the ruling wins.
+ *
+ * The decision order these encode:
+ *   entering or exiting  -> ease-out      (starts fast, feels responsive)
+ *   moving on screen     -> ease-in-out
+ *   hover / colour only  -> plain ease    (no strong curve: nothing travels)
+ *   constant motion      -> linear        (the hero's 16 s loop already is)
+ * ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-press: 160ms; /* a press answering a finger            */
+  --dur-pop: 200ms;   /* a menu or a panel arriving            */
+  --dur-panel: 240ms; /* the document gate, the page cross-fade */
+  --dur-hover: 140ms; /* a colour settling under the pointer   */
+}
+
+/* ── figures (A6) ───────────────────────────────────────────────────────────────────────────────── */
+/* Measured, not assumed: IBM Plex Serif and JetBrains Mono already ship equal-width digits, so body
+ * text and every mono surface need nothing. Saira does not - its digits vary by 30.7% - and Saira is
+ * what sets every heading, CTA, stat box and legend label. No figure is set in Saira on the twelve
+ * pages today; this is the guard that keeps it right the day one lands (a Reports KPI, a spec value).
+ * On text with no digits the declaration does nothing at all. */
+h1,
+h2,
+h3,
+h4,
+.four b,
+.legend b,
+.caphead .promise,
+.cap.blk ol.spec li b,
+.cap ul.all b {
+  font-variant-numeric: tabular-nums;
+}
+
 /* ── anchors under an absolute header ───────────────────────────────────────────────────────────── */
 /* The header sits at the document top (design.css: position:absolute, height 124px), so a jump to a
  * section must stop short of it or the section head hides underneath. */
@@ -52,47 +97,101 @@ summary:focus-visible {
   font-size: 0.9rem;
   padding: 0.7rem 1.1rem;
   border-bottom-right-radius: 4px;
-  transition: transform 0.16s ease;
+  transition: transform var(--dur-pop) var(--ease-out);
 }
 .skip:focus {
   transform: translateY(0);
 }
 
 /* ── links and buttons, in their states ─────────────────────────────────────────────────────────── */
+/* A colour settling takes plain `ease` - nothing travels, so no strong curve. */
 a {
-  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease, opacity 0.14s ease;
+  transition: color var(--dur-hover) ease, border-color var(--dur-hover) ease,
+    background-color var(--dur-hover) ease, opacity var(--dur-hover) ease;
 }
-a.plain:hover {
-  color: var(--navy);
+
+/* A1 - the press. Before this, every pressable thing on the site changed colour under the pointer and
+ * did nothing at all under a finger; the press is the moment a user looks for confirmation. 0.97 is
+ * the standard's range (0.95-0.98): enough to feel, not enough to see.
+ * It also closes a real inconsistency - `a.cta` inherited the colour transition from the `a` rule
+ * above and `button.cta` did not, so a link-button faded and a real button snapped. Same class, two
+ * behaviours. Both are named here. */
+a.cta,
+button.cta,
+.form button,
+button.plain {
+  transition: color var(--dur-hover) ease, border-color var(--dur-hover) ease,
+    background-color var(--dur-hover) ease, transform var(--dur-press) var(--ease-out);
 }
-a.cta:hover,
-button.cta:hover {
-  background: var(--navy);
-  border-color: var(--navy);
-  color: #fff;
+a.cta:active,
+button.cta:active,
+.form button:active,
+button.plain:active {
+  transform: scale(0.97);
 }
-.on-navy a.cta:hover,
-.on-navy button.cta:hover {
-  background: var(--cyan);
-  border-color: var(--cyan);
-  color: var(--navy);
+
+/* A8 - hover gated to a real pointer. A tap on a touch screen fires :hover and leaves it fired until
+ * you tap elsewhere, so an ungated hover rule makes the last card you touched stay lit - it reads as
+ * a bug in the page. Touch gets :active above instead. */
+@media (hover: hover) and (pointer: fine) {
+  a.plain:hover {
+    color: var(--navy);
+  }
+  a.cta:hover,
+  button.cta:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }
+  .on-navy a.cta:hover,
+  .on-navy button.cta:hover {
+    background: var(--cyan);
+    border-color: var(--cyan);
+    color: var(--navy);
+  }
 }
 a[aria-current="page"] {
   color: var(--cyan);
 }
 
-/* A framed product screen lifts a little when read (the mock cannot hover). */
-.cap.blk .frame,
-figure.frame {
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+/* A2 - the arrow leads. `.plain` sets its arrow with content:" ->" in design.css; a pseudo-element can
+ * be transitioned, so the affordance points without touching a single component's markup. */
+.plain::after {
+  display: inline-block;
+  transition: transform var(--dur-press) var(--ease-out);
 }
-figure.frame:hover {
-  box-shadow: 0 26px 56px rgba(20, 32, 47, 0.34);
+@media (hover: hover) and (pointer: fine) {
+  .plain:hover::after {
+    transform: translateX(4px);
+  }
 }
 
-/* Chooser tables: the row under the cursor, and a readable scroll on a phone. */
-table.ctable tbody tr:hover {
-  background: #fbfdfe;
+/* A3 - a framed product screen lifts a little when read (the mock cannot hover).
+ * It used to lift by growing a shadow alone: a shadow is a paint property, so every frame was
+ * repainted on the main thread, and the frame never actually moved - the lift was implied rather than
+ * felt. Now the movement is a transform (compositor only) and the shadow rides it. */
+.cap.blk .frame,
+figure.frame {
+  transition: box-shadow var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  figure.frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 26px 56px rgba(20, 32, 47, 0.34);
+  }
+}
+
+/* A5 - chooser tables: the row under the cursor, and a readable scroll on a phone.
+ * Two findings closed here. The easing is the obvious one. The other is the colour: #fbfdfe against
+ * #ffffff is about a 1% difference - a hover response nobody can see is not a response. --mist is
+ * already in the palette and already the fill of every alternate band on the site. */
+table.ctable tbody tr {
+  transition: background-color var(--dur-hover) ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  table.ctable tbody tr:hover {
+    background: var(--mist);
+  }
 }
 .ctable-scroll {
   overflow-x: auto;
@@ -181,24 +280,94 @@ table.ctable tbody tr:hover {
   height: 100%;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: opacity 600ms ease;
 }
 .hero .living.on {
   opacity: 1;
 }
 
 /* ── motion discipline ──────────────────────────────────────────────────────────────────────────── */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
+
+
+
+/* ══════════════════════════════════════════════════════════════════════════════════════════════════
+ * B' - MOTION ON A CLICK OR A POINTER, NEVER ON SCROLL (Karim, 2026-09-18).
+ * Four pieces: the header menus, the document gate, the forms' answer, and the page cross-fade.
+ * Everything here is a transition rather than a keyframe, so it can be interrupted and reversed
+ * halfway - open and shut a menu quickly and it retargets instead of restarting.
+ * ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+/* ── B1 - the three header menus arrive ─────────────────────────────────────────────────────────── */
+/* design.css opens them with display:none -> block, and `display` cannot be transitioned. Swapping to
+ * opacity + visibility + transform makes them animate WITHOUT costing the header its best property:
+ * it stays a server component with no JavaScript, opening on :hover AND :focus-within, working with
+ * scripts blocked. visibility (not display) keeps the closed panel out of the accessibility tree and
+ * unclickable; its 0s delay on the way out holds the panel present for the length of the fade.
+ *
+ * Scoped to the wide screen only: under 820px design.css turns the panel into a static block inside
+ * the burger menu, where it must simply be visible. */
+@media (min-width: 821px) {
+  body > header .panel {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(-6px) scale(0.98);
+    transform-origin: top center;
+    transition: opacity var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out),
+      visibility 0s linear var(--dur-pop);
   }
-  .hero .living {
-    display: none;
+  body > header .dd:hover .panel,
+  body > header .dd.open .panel,
+  body > header .dd:focus-within .panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0) scale(1);
+    transition: opacity var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out),
+      visibility 0s;
+  }
+  /* the caret answers the menu it belongs to */
+  body > header .caret {
+    transition: transform var(--dur-pop) var(--ease-out);
+  }
+  body > header .dd:hover .caret,
+  body > header .dd:focus-within .caret {
+    transform: rotate(225deg) translateY(-2px);
+  }
+}
+
+/* ── B2 - the document gate arrives ─────────────────────────────────────────────────────────────── */
+/* Eight buttons open it and it is the moment a visitor becomes a lead. It is an inline disclosure
+ * panel, not a modal: it mounts under the button, so it gets an ENTRANCE only - @starting-style is
+ * the initial style of a newly inserted element, and needs no JavaScript and no component change.
+ * There is no exit animation, because React unmounts the node; faking one would mean keeping it
+ * mounted, which is a component change this does not need. Targeted by its existing id. */
+[id^="doc-gate-"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--dur-panel) var(--ease-out), transform var(--dur-panel) var(--ease-out);
+}
+@starting-style {
+  [id^="doc-gate-"] {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+/* ── B4 - the answer a form gives ───────────────────────────────────────────────────────────────── */
+/* The rarest and highest-stakes moment on the site: someone wrote to us, or a file is ready. The
+ * frequency table allows real delight on a once-in-a-visit event - and a plant-automation company
+ * that throws confetti reads as a toy. Six pixels and a fade is the whole budget. */
+.form .ok,
+.form .err {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out);
+}
+@starting-style {
+  .form .ok,
+  .form .err {
+    opacity: 0;
+    transform: translateY(6px);
   }
 }
 
@@ -249,7 +418,8 @@ button.plain {
  */
 body > header {
   position: fixed;
-  transition: height 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+  transition: height var(--dur-pop) var(--ease-out), background-color var(--dur-pop) ease,
+    box-shadow var(--dur-pop) ease;
   will-change: height;
 }
 body[data-scrolled="1"] > header {
@@ -265,15 +435,15 @@ body[data-scrolled="1"] > header {
 }
 body[data-scrolled="1"] > header .lock .sym {
   height: 38px;
-  transition: height 0.22s ease;
+  transition: height var(--dur-pop) var(--ease-out);
 }
 body[data-scrolled="1"] > header .lock .word {
   height: 16px;
-  transition: height 0.22s ease;
+  transition: height var(--dur-pop) var(--ease-out);
 }
 body > header .lock .sym,
 body > header .lock .word {
-  transition: height 0.22s ease;
+  transition: height var(--dur-pop) var(--ease-out);
 }
 /* the phone menu hangs under whichever height the header currently has */
 @media (max-width: 820px) {
@@ -295,7 +465,7 @@ body > header .lock .word {
   z-index: 6;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--dur-panel) ease;
 }
 body[data-scrolled="1"] .progress {
   opacity: 1;
@@ -318,7 +488,7 @@ body[data-scrolled="1"] .progress {
   border-bottom: 1px solid #22344a;
   transform: translateY(-100%);
   pointer-events: none;
-  transition: transform 0.24s ease;
+  transition: transform var(--dur-panel) var(--ease-out);
 }
 @supports (backdrop-filter: blur(8px)) {
   .rail {
@@ -461,7 +631,8 @@ body[data-scrolled="1"] .rail {
   opacity: 0;
   transform: translateY(12px);
   pointer-events: none;
-  transition: opacity 0.22s ease, transform 0.22s ease, background-color 0.18s ease;
+  transition: opacity var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out),
+    background-color var(--dur-hover) ease;
 }
 .totop.on {
   opacity: 1;
@@ -503,4 +674,83 @@ body > header nav .navhome {
  * right edge is what says so - without it the last chip just looks cut. */
 .rail .rwrap {
   mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 44px), transparent 100%);
+}
+
+/* A7 - reduced motion, rewritten. The old rule set every duration on every element to 0.001ms with
+ * !important. It reads as thorough and it is a finding: a reader who asked for less motion then got a
+ * page where panels teleport and the menu blinks into place, which is harder to follow, not easier.
+ * The standard's words: "fewer and gentler animations, not zero - keep transitions that aid
+ * comprehension, remove movement."
+ *
+ * So: every fade, colour and opacity transition below SURVIVES. What goes is travel - the press, the
+ * lift, the arrow, the rise of a panel - and the two loops that play by themselves.
+ * Where a transform IS the hide/show mechanism (the skip link, the section rail), the transform has
+ * to stay or the element would never hide: those get their duration zeroed instead.
+ *
+ * THIS BLOCK LIVES LAST ON PURPOSE. Its selectors have the same specificity as the rules they
+ * undo (.totop, .rail, .skip, the hero's four scenes), so order is what decides: placed earlier
+ * in the file it lost every one of them silently, and the page still moved for a reader who had
+ * asked it not to. Caught in the browser on 2026-09-18, not in review. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* travel, removed */
+  a.cta:active,
+  button.cta:active,
+  .form button:active,
+  button.plain:active,
+  figure.frame:hover,
+  .plain:hover::after,
+  .totop,
+  .totop.on {
+    transform: none;
+  }
+
+  /* A panel still ARRIVES - it just arrives by fading, with no rise and no scale. Killing the
+   * transform transition outright is what removes the travel; the opacity transition is left alone,
+   * which is the whole distinction this block exists to make. */
+  [id^="doc-gate-"],
+  .form .ok,
+  .form .err {
+    transform: none;
+    transition-property: opacity;
+  }
+
+  /* The header menus are the one place `transform: none` would be a BUG rather than a fix: their
+   * transform carries translateX(-50%), which is what centres the panel under its trigger. Remove it
+   * and the menu jumps half its own width to the right for exactly the readers who asked for calm.
+   * So: keep the centring, drop the rise and the scale. Scoped to the wide screen, because under
+   * 820px design.css makes the panel a static block with no transform at all. */
+  @media (min-width: 821px) {
+    body > header .panel,
+    body > header .dd:hover .panel,
+    body > header .dd.open .panel,
+    body > header .dd:focus-within .panel {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* transform is the hide/show mechanism here: keep it, remove the travel time */
+  .skip,
+  .rail,
+  body > header {
+    transition-duration: 0.001ms;
+  }
+
+  /* the two things that move on their own */
+  .hero .living {
+    display: none;
+  }
+  .frames img,
+  .frames .f1,
+  .frames .f2,
+  .frames .f3,
+  .frames .f4 {
+    animation: none;
+  }
+  .frames .f1 {
+    opacity: 1;
+  }
 }
