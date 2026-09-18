@@ -1,0 +1,499 @@
+/* What a live browser gives and a static mock cannot (D94: faithful, with real interaction added).
+ * Nothing here changes a band, a type size or a spacing: it adds state, focus, motion discipline and
+ * print behaviour on top of design.css. If a rule would MOVE something already approved, it does
+ * not belong here - it belongs in a review round.
+ */
+
+/* ── anchors under an absolute header ───────────────────────────────────────────────────────────── */
+/* The header sits at the document top (design.css: position:absolute, height 124px), so a jump to a
+ * section must stop short of it or the section head hides underneath. */
+:target,
+[id^="scada-"],
+[id^="ems-"],
+[id^="eps-"],
+[id^="cmms-"],
+[id^="reporting-"],
+[id^="platform-"],
+[id^="why-"],
+[id^="partners-"],
+#capabilities,
+#partners,
+#material,
+#write {
+  scroll-margin-top: 96px;
+}
+
+/* ── focus, for a keyboard ──────────────────────────────────────────────────────────────────────── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.on-navy a:focus-visible,
+.on-navy button:focus-visible {
+  outline-color: var(--sky);
+}
+
+/* Skip link: first tab stop on every page, invisible until focused. */
+.skip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  transform: translateY(-120%);
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--display);
+  font-size: 0.9rem;
+  padding: 0.7rem 1.1rem;
+  border-bottom-right-radius: 4px;
+  transition: transform 0.16s ease;
+}
+.skip:focus {
+  transform: translateY(0);
+}
+
+/* ── links and buttons, in their states ─────────────────────────────────────────────────────────── */
+a {
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease, opacity 0.14s ease;
+}
+a.plain:hover {
+  color: var(--navy);
+}
+a.cta:hover,
+button.cta:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+.on-navy a.cta:hover,
+.on-navy button.cta:hover {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--navy);
+}
+a[aria-current="page"] {
+  color: var(--cyan);
+}
+
+/* A framed product screen lifts a little when read (the mock cannot hover). */
+.cap.blk .frame,
+figure.frame {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+figure.frame:hover {
+  box-shadow: 0 26px 56px rgba(20, 32, 47, 0.34);
+}
+
+/* Chooser tables: the row under the cursor, and a readable scroll on a phone. */
+table.ctable tbody tr:hover {
+  background: #fbfdfe;
+}
+.ctable-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* ── forms (contact, and the document gate) ─────────────────────────────────────────────────────── */
+.form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 34rem;
+}
+.form label {
+  display: grid;
+  gap: 0.3rem;
+  font-family: var(--display);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sky);
+}
+.on-white .form label {
+  color: var(--steel);
+}
+.form input,
+.form select,
+.form textarea {
+  font-family: var(--body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+.form textarea {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+.form .row {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: 1fr 1fr;
+}
+.form .hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form .note {
+  font-size: 0.86rem;
+  color: var(--sky);
+}
+.form .err {
+  color: var(--amber);
+  font-family: var(--display);
+  font-size: 0.9rem;
+}
+.form .ok {
+  color: var(--cyan);
+  font-family: var(--display);
+  font-size: 1rem;
+}
+.form button[disabled] {
+  opacity: 0.55;
+  cursor: progress;
+}
+@media (max-width: 640px) {
+  .form .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── the hero's living still (D91) ──────────────────────────────────────────────────────────────── */
+/* The plate stays the LCP element: the canvas lies over it and only breathes. */
+.hero .living {
+  position: absolute;
+  inset: 0;
+  /* the hero's scrim is z-index 1 and its words are 2: the canvas breathes between them */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.hero .living.on {
+  opacity: 1;
+}
+
+/* ── motion discipline ──────────────────────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero .living {
+    display: none;
+  }
+}
+
+/* ── print: the page as a document ──────────────────────────────────────────────────────────────── */
+@media print {
+  header,
+  footer .cols,
+  .skip,
+  .hero .living {
+    display: none !important;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .band,
+  section {
+    break-inside: avoid;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-family: var(--mono);
+    font-size: 8pt;
+  }
+}
+
+/* Tailwind v4's preflight gives a <button> the default cursor, and two of ours look like links
+ * (the eight "Get the file" buttons and the forms' submit). Give them the hand back. */
+button.plain,
+button.cta,
+.form button {
+  cursor: pointer;
+  font-family: var(--display);
+}
+button.plain {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--blue);
+  font-size: inherit;
+}
+
+/* ── the header stays (2026-09-18) --------------------------------------------
+ * The mock's header lives at the document top and scrolls away with it, which is fine for a mock and
+ * unusable on a page of 20 000 to 39 000 pixels: the menu would exist only at the top, so changing
+ * page would cost a scroll all the way back up. It is now fixed: transparent over the hero, exactly
+ * the approved look, and a compact navy bar from the moment the hero is behind you. The lock-up in
+ * it is the way home from anywhere.
+ */
+body > header {
+  position: fixed;
+  transition: height 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+  will-change: height;
+}
+body[data-scrolled="1"] > header {
+  height: 68px;
+  background: rgba(20, 32, 47, 0.94);
+  box-shadow: 0 10px 30px rgba(11, 14, 17, 0.3);
+}
+@supports (backdrop-filter: blur(8px)) {
+  body[data-scrolled="1"] > header {
+    background: rgba(20, 32, 47, 0.82);
+    backdrop-filter: saturate(1.3) blur(10px);
+  }
+}
+body[data-scrolled="1"] > header .lock .sym {
+  height: 38px;
+  transition: height 0.22s ease;
+}
+body[data-scrolled="1"] > header .lock .word {
+  height: 16px;
+  transition: height 0.22s ease;
+}
+body > header .lock .sym,
+body > header .lock .word {
+  transition: height 0.22s ease;
+}
+/* the phone menu hangs under whichever height the header currently has */
+@media (max-width: 820px) {
+  body[data-scrolled="1"] > header nav {
+    top: 68px;
+  }
+}
+
+/* ── how far down you are ────────────────────────────────────────────────────────────────────────── */
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(var(--progress, 0));
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--cyan), #8FD9F5);
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body[data-scrolled="1"] .progress {
+  opacity: 1;
+}
+
+/* ── "on this page": the page's own chapters ─────────────────────────────────────────────────────── */
+.rail {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  background: rgba(15, 25, 38, 0.93);
+  border-top: 1px solid #22344a;
+  border-bottom: 1px solid #22344a;
+  transform: translateY(-120%);
+  transition: transform 0.24s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .rail {
+    background: rgba(15, 25, 38, 0.82);
+    backdrop-filter: saturate(1.3) blur(10px);
+  }
+}
+body[data-scrolled="1"] .rail {
+  transform: translateY(0);
+}
+.rail .rwrap {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 clamp(16px, 3vw, 24px);
+  height: 46px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.rail .rwrap::-webkit-scrollbar {
+  display: none;
+}
+.rail .rlab {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6E8296;
+  white-space: nowrap;
+  padding-right: 0.5rem;
+  flex: 0 0 auto;
+}
+.rail a {
+  font-family: var(--display);
+  font-size: 0.86rem;
+  color: #CFE3F0;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rail a b {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: #7FA7BF;
+  font-weight: 400;
+}
+.rail a:hover {
+  color: #fff;
+  border-color: #2F4A63;
+}
+.rail a.on {
+  color: var(--navy);
+  background: var(--cyan);
+  border-color: var(--cyan);
+}
+.rail a.on b {
+  color: rgba(20, 32, 47, 0.65);
+}
+.rail .rhome {
+  color: var(--cyan);
+  border-color: #2F4A63;
+  margin-right: 0.35rem;
+}
+.rail .rhome:hover {
+  background: var(--cyan);
+  color: var(--navy);
+}
+.rail .rhome svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+/* a phone navigates with the burger; a bar of chips would eat the screen */
+@media (max-width: 820px) {
+  .rail {
+    display: none;
+  }
+}
+
+/* an anchor must clear the compact header AND the rail */
+:target,
+[id^="scada-"],
+[id^="ems-"],
+[id^="eps-"],
+[id^="cmms-"],
+[id^="reporting-"],
+[id^="platform-"],
+[id^="why-"],
+[id^="partners-"],
+[id^="cap-"],
+#capabilities,
+#partners,
+#material,
+#write {
+  scroll-margin-top: 128px;
+}
+@media (max-width: 820px) {
+  :target,
+  [id^="scada-"],
+  [id^="ems-"],
+  [id^="eps-"],
+  [id^="cmms-"],
+  [id^="reporting-"],
+  [id^="platform-"],
+  [id^="why-"],
+  [id^="partners-"],
+  [id^="cap-"],
+  #capabilities,
+  #partners,
+  #material,
+  #write {
+    scroll-margin-top: 84px;
+  }
+}
+
+/* ── back to the top ─────────────────────────────────────────────────────────────────────────────── */
+.totop {
+  position: fixed;
+  right: clamp(14px, 2.5vw, 28px);
+  bottom: clamp(14px, 2.5vw, 28px);
+  z-index: 7;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid var(--cyan);
+  background: rgba(20, 32, 47, 0.9);
+  color: var(--cyan);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s ease, background-color 0.18s ease;
+}
+.totop.on {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.totop:hover {
+  background: var(--cyan);
+  color: var(--navy);
+}
+.totop svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* the phone-only Home entry in the burger menu (the desktop menu is locked by D77: the lock-up is home) */
+body > header nav .navhome {
+  display: none;
+}
+@media (max-width: 820px) {
+  body > header nav .navhome {
+    display: flex;
+  }
+}
+
+@media print {
+  .rail,
+  .totop,
+  .progress {
+    display: none !important;
+  }
+  body > header {
+    position: static;
+  }
+}
+
+/* The rail scrolls sideways when a page has more chapters than fit (SCADA has ten): a fade at the
+ * right edge is what says so - without it the last chip just looks cut. */
+.rail .rwrap {
+  mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 44px), transparent 100%);
+}

@@ -1,0 +1,16 @@
+/* The hero's four scenes, cross-faded - the CSS the mock's builder GENERATED for Home and that the
+ * ported design.css does not carry (the kit's page template only has the still first frame). Without
+ * these four blocks scene 1 shows and scenes 2, 3 and 4 stay invisible: caught on 2026-09-18.
+ *
+ * Four scenes, 4 s each, a 0.8 s cross-fade, a slow zoom 1.00 -> 1.125, one 16 s loop - the numbers of
+ * `_build/build-home3.py` (N=4, dwell=4.0, fade=0.8), reproduced here for four scenes exactly.
+ * A reader who asked for less motion sees the first scene, still: interaction.css stops the animation.
+ */
+.frames .f1{animation:f1 16s linear infinite}
+@keyframes f1{0%{opacity:1;transform:scale(1.0)} 25.0%{opacity:1;transform:scale(1.11)} 30.0%{opacity:0;transform:scale(1.125)} 30.1%{opacity:0;transform:scale(1)} 95.0%{opacity:0;transform:scale(1)} 100%{opacity:1;transform:scale(1.0)}}
+.frames .f2{animation:f2 16s linear infinite}
+@keyframes f2{0%{opacity:0;transform:scale(1)} 20.0%{opacity:0;transform:scale(1)} 25.0%{opacity:1;transform:scale(1.0)} 50.0%{opacity:1;transform:scale(1.11)} 55.0%{opacity:0;transform:scale(1.125)} 55.1%{opacity:0;transform:scale(1)} 100%{opacity:0;transform:scale(1)}}
+.frames .f3{animation:f3 16s linear infinite}
+@keyframes f3{0%{opacity:0;transform:scale(1)} 45.0%{opacity:0;transform:scale(1)} 50.0%{opacity:1;transform:scale(1.0)} 75.0%{opacity:1;transform:scale(1.11)} 80.0%{opacity:0;transform:scale(1.125)} 80.1%{opacity:0;transform:scale(1)} 100%{opacity:0;transform:scale(1)}}
+.frames .f4{animation:f4 16s linear infinite}
+@keyframes f4{0%{opacity:0;transform:scale(1)} 70.0%{opacity:0;transform:scale(1)} 75.0%{opacity:1;transform:scale(1.0)} 95.0%{opacity:1;transform:scale(1.105)} 100%{opacity:0;transform:scale(1.12)}}

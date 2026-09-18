@@ -1,0 +1,802 @@
+{
+ "page": "04-ems",
+ "title": "Execution Manufacturing System",
+ "nav": "ems",
+ "promise": "The line runs its own orders.",
+ "hero": {
+  "kicker": "Capability 02 · Execution Manufacturing System",
+  "h1": "The line runs its own orders.",
+  "dek": "The execution system on the SCADA's own database: the plant model, the signed recipe, the calendar, the batches and the record — one database for the whole plant.",
+  "plate": "knowledge/assets/wb/WB-01g.jpg"
+ },
+ "sections": [
+  {
+   "type": "blockA",
+   "id": "ems-all",
+   "title": "Everything it does, before any page explains any part of it:",
+   "screen": {
+    "asset": "knowledge/assets/screens/home/EMS-plan-month-day-panel.png",
+    "chrome": "EMS · the plan · one month, one day opened",
+    "caption": "The plan · a month of orders on one line, one day opened: two orders, two batches, the real windows against the planned ones"
+   },
+   "items": [
+    {
+     "lead": "The plant is described once",
+     "text": "the batch vessel sizes the batch, the last stage's counter gives the good count; nobody types a quantity."
+    },
+    {
+     "lead": "The formula is signed before the plant may run it",
+     "text": "approving a new version retires the old in the same breath, and every batch keeps the copy it ran with."
+    },
+    {
+     "lead": "One press mints the order",
+     "text": "every batch, its window and the line's own tags; a wash, a changeover or a shutdown is planned, not suffered."
+    },
+    {
+     "lead": "Nobody presses start",
+     "text": "the line begins and ends its own jobs from two signals, stamped with the plant's own clock."
+    },
+    {
+     "lead": "Batches overlap, because lines do",
+     "text": "and you choose who decides a boundary, the plant or the counters, and change it live within a minute with no restart."
+    },
+    {
+     "lead": "Every number says who measured it",
+     "text": "counted, declared, or held by the arithmetic; the lab's signed count outranks the machine counter and both stay on the record; what cannot be known stays blank, never zero."
+    },
+    {
+     "lead": "The board an operator can read from the aisle",
+     "text": "one card per job, the batches as chips, the next boundary forecast — and the Quality door signed from the same screen."
+    },
+    {
+     "lead": "No second store, no batch server, no line of code at the edge",
+     "text": "the certificate prints from the engine that prints the shift handover."
+    }
+   ]
+  },
+  {
+   "type": "chooser",
+   "id": "ems-glance",
+   "title": "You want it, the line already knows how.",
+   "chips": [
+    "You want",
+    "What SOP does",
+    "The door"
+   ],
+   "columns": [
+    "You want",
+    "What SOP does",
+    "The door"
+   ],
+   "rows": [
+    [
+     "The plant written down once, in the order the product travels",
+     "Every machine takes a level and a stage, and the line reads its own shape back to you",
+     "the engineer's EMS · Plant"
+    ],
+    [
+     "One vessel to decide how big a batch is",
+     "Mark it the batch vessel with its capacity, its unit and what it holds. The batch size follows; nobody types a quantity",
+     "Plant · the machine card"
+    ],
+    [
+     "The good count to come off the right machine",
+     "Name the last stage and point it at its counter. Every batch end and every yield figure is read there",
+     "Plant · the machine card"
+    ],
+    [
+     "A catalogue the plan can do arithmetic with",
+     "Materials carry what they are, what one of them is, what is on hand and the density that lets weight and volume cross",
+     "the engineer's EMS · Materials"
+    ],
+    [
+     "What the line makes, and how it is packed",
+     "A product carries its base unit, what one piece holds, and a ladder of package sizes, biggest first",
+     "the engineer's EMS · Products"
+    ],
+    [
+     "A formula the plant may not run until quality signs it",
+     "Draft, in review, approved. A supervisor approves and signs; approving retires the one before it",
+     "the engineer's EMS · Recipes"
+    ],
+    [
+     "A second formula for the same product, running beside the first",
+     "Give the recipe its own name and its own timeline. One line can hold several",
+     "EMS · Recipes"
+    ],
+    [
+     "Next week on a calendar",
+     "Pick a day, one recipe, one number, one start time. The order, every batch, its window and the line's own tags are minted in one press",
+     "the engineer's EMS · Plan"
+    ],
+    [
+     "A wash, a changeover or a shutdown to be planned, not suffered",
+     "Declare the window on the day. The plan lays the batches around it and the performance number honours it",
+     "Plan · the day panel"
+    ],
+    [
+     "The line to start and finish its own jobs",
+     "Name the signal that rings when a job begins and the one that rings when it is done. A planned order then begins by itself",
+     "Plant · the line's truths"
+    ],
+    [
+     "The plant to say when a batch is charged and when it is finished",
+     "Declare those two signals and the plant decides. Leave them alone and the vessel and the last machine's counters decide instead",
+     "Plant · the line's truths"
+    ],
+    [
+     "What is running now, what is next, and how far it has to go",
+     "The board draws it: one card per job, its batches as chips, and the machine and number the next boundary is waiting on",
+     "the operator's EMS · Jobs"
+    ],
+    [
+     "A batch that came out off plan to find you",
+     "Set a tolerance and a time limit on the job. A batch outside either turns amber, shows its own arithmetic and asks one supervisor for one signature",
+     "Jobs · the job settings, then the chip"
+    ],
+    [
+     "The whole job read back, batch by batch, and signed",
+     "Tap the card. The record opens in place: what moved every boundary, planned against actual per machine, planned against used per material, then the two signatures",
+     "Jobs · the record"
+    ]
+   ],
+   "note": "Everything above is one module on the database the SCADA already writes. There is no second store, no batch server and no line of code at the edge."
+  },
+  {
+   "type": "head",
+   "n": "01",
+   "of": "07",
+   "id": "ems-plant-model",
+   "title": "The plant model",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "The plant is described once.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-plant.png",
+    "chrome": "EMS · Beverage Line 7 · Plant",
+    "caption": "the plant tree, and the facts that fall out of it: the vessel, the machine the good count comes off, the counters"
+   },
+   "items": [
+    {
+     "lead": "Plant tree, level and stage",
+     "text": "A machine joins the line and takes its place, in plant order, on every plan, every record and every report."
+    },
+    {
+     "lead": "The batch vessel",
+     "text": "Mark one vessel with its capacity, its unit and the material it holds; the batch size follows from the vessel, nobody types a quantity."
+    },
+    {
+     "lead": "The last stage and its counter",
+     "text": "Name the machine the good count comes off; every batch end and every yield figure is read there."
+    },
+    {
+     "lead": "Materials that can do arithmetic",
+     "text": "A material carries what it is, what one of it is, what is on hand against its minimum, and its density."
+    },
+    {
+     "lead": "Density crosses weight and volume",
+     "text": "A powder bought by weight and dosed by volume; without the density the plan refuses rather than guesses."
+    },
+    {
+     "lead": "A material made upstream",
+     "text": "Declare it made and name the line that makes it; the intermediate is modelled without a second catalogue and without a spreadsheet between them."
+    },
+    {
+     "lead": "The minimum on a material",
+     "text": "The catalogue shows what is short, and the shortfall is printed beside the order before it is planned."
+    },
+    {
+     "lead": "Products and their packing ladder",
+     "text": "A product carries its base unit, what one piece holds, and a ladder of package sizes, biggest first."
+    },
+    {
+     "lead": "Not measured, never zero",
+     "text": "A machine with no counter reads <em>not measured</em> on the record; what cannot be known stays blank."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-material.png",
+     "caption": "a material carries what it is, what one of it is, what is on hand against its minimum, and the density that lets weight and volume cross"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The plant is described once.",
+   "cols": [
+    [
+     "<b>The execution system does not ask you to describe your plant again:</b> it opens on the machines the SCADA already reads. You say which one sizes a batch, which one the good count comes off, and what each counter is counting, and the line reads its own shape back to you.",
+     "<b>The batch size follows from the vessel.</b> Nobody types a quantity."
+    ],
+    [
+     "<b>A machine with no counter reads <em>not measured</em> on the record, never zero.</b> What cannot be known stays blank, so nobody is asked to trust a figure the plant never made.",
+     "<b>Without it the plan refuses rather than guesses</b> — the density that lets weight and volume cross."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "02",
+   "of": "07",
+   "id": "ems-recipes",
+   "title": "Products, recipes, the quality door",
+   "plate": "knowledge/assets/wb/WB-09.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "The formula is signed before the plant may run it.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-recipe-approve.png",
+    "chrome": "EMS · Beverage Line 7 · Recipes",
+    "caption": "the quality door: draft, in review, approved, and the note kept with whichever was pressed"
+   },
+   "items": [
+    {
+     "lead": "The recipe itself",
+     "text": "Says what goes in, on which machine, into which container and at what rate, and is frozen into every batch it makes."
+    },
+    {
+     "lead": "Draft · in review · approved",
+     "text": "A new version is written and sent to quality; approving the new one retires the old one in the same breath, and every batch keeps the copy it ran with."
+    },
+    {
+     "lead": "A supervisor signs",
+     "text": "Nobody may run an unsigned formula; the server refuses anyone but a supervisor, in its own words, and the note is kept beside the signature."
+    },
+    {
+     "lead": "Only a draft is editable",
+     "text": "A draft is the only thing that can be edited and the only thing that can be deleted; everything else is kept."
+    },
+    {
+     "lead": "Two formulas for one product",
+     "text": "Give the recipe its own name and its own timeline; both live on the line, and the order picks the one it needs."
+    },
+    {
+     "lead": "The container the recipe packs into",
+     "text": "The batch size and the packing row are worked out from the container, and typed nowhere."
+    },
+    {
+     "lead": "Approval judges the promised rate",
+     "text": "A recipe promising a rate the line cannot hold is refused, and the refusal names the machine that cannot keep up, before a single batch is planned."
+    },
+    {
+     "lead": "A setpoint bound in the recipe",
+     "text": "Sent to the machine when the batch starts, on the same audited path an operator's own setpoint takes."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-recipe-sheet.png",
+     "caption": "the recipe sheet: what each machine takes in and what comes out, grouped the way the product travels, and how big one batch is"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The formula is signed before the plant may run it.",
+   "cols": [
+    [
+     "<b>A recipe says what goes in,</b> on which machine, into which container and at what rate, and it is frozen into every batch it makes. Nothing is edited in place after a supervisor signs it, so next month's improvement can never rewrite what happened last night.",
+     "<b>Approving the new one retires the old one in the same breath,</b> and every batch keeps the copy it ran with."
+    ],
+    [
+     "<b>A draft is the only thing that can be edited, and the only thing that can be deleted.</b> Everything else is kept.",
+     "<b>The refusal names the machine that cannot keep up,</b> before a single batch is planned."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "03",
+   "of": "07",
+   "id": "ems-orders",
+   "title": "Orders, the calendar, the job",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Nobody presses start.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-plan.png",
+    "chrome": "EMS · Beverage Line 7 · Plan",
+    "caption": "orders on the calendar: each batch with its own expected window, laid one after another"
+   },
+   "items": [
+    {
+     "lead": "One press mints the order",
+     "text": "Pick a day: one recipe, one number, one start time — the order, every batch, each batch's window and the line's own tags are minted in one press, laid one after another with the turnaround between them."
+    },
+    {
+     "lead": "A planned window",
+     "text": "Declare a wash, a changeover or a shutdown on the day; the plan lays the batches around it and the availability number honours it instead of punishing it."
+    },
+    {
+     "lead": "The two job signals",
+     "text": "Name the signal that rings when a job begins and the one that rings when it is finished; a planned order starts and ends by itself, stamped with the plant's own clock."
+    },
+    {
+     "lead": "The wait box",
+     "text": "When the line has not picked a job up, it says why before it offers anything; where it can, one press raises the line's own start signal."
+    },
+    {
+     "lead": "The line's own question",
+     "text": "When two planned orders could match the signal that just came, the line asks on the operator's own screen; the job starts at the signal's own moment."
+    },
+    {
+     "lead": "Reschedule, annotate, replace, cancel",
+     "text": "An order can move or go while its batches are still planned; a plan that has already run is never rewritten, and the change is on the record."
+    },
+    {
+     "lead": "An order with no planned time",
+     "text": "Can never be picked up, and the board says so rather than failing quietly."
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/ems/EM-05.svg",
+   "intro": "one press mints the order; two signals open and close the job",
+   "legend": [
+    {
+     "title": "The mint",
+     "line": "one press on the calendar writes the order, its batches and their windows"
+    },
+    {
+     "title": "Job started",
+     "line": "the pulse the plant raises opens the job"
+    },
+    {
+     "title": "The batches",
+     "line": "three bars inside the job, the last one tinted"
+    },
+    {
+     "title": "Job finished",
+     "line": "the pulse that closes it, on the plant's own clock"
+    }
+   ],
+   "ground": "light"
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-job-signals.png",
+     "caption": "the two signals the line begins and finishes on"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-ed-plan.png",
+     "caption": "the calendar in the editor: the state chips — planned, running, held, complete, aborted, late — and the day panel with the real durations against the planned ones"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Nobody presses start.",
+   "cols": [
+    [
+     "<b>Orders live on a calendar,</b> and minting one writes the order, every batch, each batch's own expected window and the line's own tags in a single press. Then two signals do the rest: the line opens its job when the plant says a job began, and closes it when the plant says it is done.",
+     "<b>A planned order starts and ends by itself,</b> stamped with the plant's own clock and not the moment somebody noticed."
+    ],
+    [
+     "<b>An order with no planned time can never be picked up,</b> and the board says so rather than failing quietly.",
+     "<b>A plan that has already run is never rewritten,</b> and the change is on the record. Nobody edits a record to make a job run."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "04",
+   "of": "07",
+   "id": "ems-batches",
+   "title": "Batches and the boundary",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Batches overlap, because lines do.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-batches-live.png",
+    "chrome": "EMS · Beverage Line 7 · Jobs",
+    "caption": "two batches running at once on one line: one draining at the packer, the next charging at the vessel"
+   },
+   "items": [
+    {
+     "lead": "Batches overlap by construction",
+     "text": "The engine opens the next batch at the vessel and closes the previous one at the last machine; two batches run at once on the board."
+    },
+    {
+     "lead": "The plant declares the boundary",
+     "text": "Declare a <em>batch charged</em> signal and a <em>batch finished</em> signal; every boundary is a pulse the plant raises, and any batch can come out short or over."
+    },
+    {
+     "lead": "The counters take the boundary",
+     "text": "Leave those two signals alone: the vessel and the last machine's counters decide, and only the last batch of a job can come out short."
+    },
+    {
+     "lead": "Change who decides, live",
+     "text": "Park the two signals or declare them; the boundary changes hands within a minute, with no restart and nothing to reconfigure."
+    },
+    {
+     "lead": "A counter reset or wrap",
+     "text": "It goes to zero and keeps counting; the total before the reset carries forward."
+    },
+    {
+     "lead": "A meter that drops out",
+     "text": "A reading that is not good never judges and never counts, so a comms loss invents no boundary."
+    },
+    {
+     "lead": "Batches tile the job",
+     "text": "Each batch's made and used are read off the segments that tile the job, so the batches always add up to the job's own count."
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/ems/EM-07.svg",
+   "intro": "the plant declares the boundary with a pulse, or the counters take it when the planned number is crossed",
+   "legend": [
+    {
+     "title": "Three batches",
+     "line": "overlapping at their ends, because lines do"
+    },
+    {
+     "title": "The plant declares",
+     "line": "two pulses above the bars"
+    },
+    {
+     "title": "The counter decides",
+     "line": "a counter track crossing its threshold, below"
+    },
+    {
+     "title": "The boundary changes hands",
+     "line": "within a minute, with no restart"
+    }
+   ],
+   "ground": "light"
+  },
+  {
+   "type": "prose",
+   "title": "Batches overlap, because lines do.",
+   "cols": [
+    [
+     "<b>The filler is still draining one batch while the vessel charges the next,</b> so the board shows both of them running. You choose who decides the boundary between them, and you can change your mind without stopping the line.",
+     "<b>The boundary changes hands within a minute,</b> with no restart and nothing to reconfigure."
+    ],
+    [
+     "<b>Each batch's made and used are read off the segments that tile the job,</b> so the batches always add up to the job's own count.",
+     "<b>A reading that is not good never judges and never counts,</b> so a comms loss invents no boundary."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "05",
+   "of": "07",
+   "id": "ems-batch-record",
+   "title": "The batch record",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Every number says who measured it.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-record.png",
+    "chrome": "EMS · Beverage Line 7 · the record",
+    "caption": "the record: every line says how it is known, and the balance that tells you when a meter is lying"
+   },
+   "items": [
+    {
+     "lead": "Every number says how it is known",
+     "text": "Counted by a meter, declared by a person, or held by the arithmetic — on the same row as the figure."
+    },
+    {
+     "lead": "The yield card and its balance",
+     "text": "The record's balance tells you when a meter is lying."
+    },
+    {
+     "lead": "The lab's signed reject count",
+     "text": "Sign the count: the signed number outranks the machine counter on every report covering that batch, and both stay on the record."
+    },
+    {
+     "lead": "Tolerance and time limit on the job",
+     "text": "A batch outside either turns amber, shows its own arithmetic and asks one supervisor for one signature: accept as it is, hold, or reject."
+    },
+    {
+     "lead": "No spreading a shortfall forward",
+     "text": "There is no such button, and there never will be; a signed plan is immutable and a restatement is recorded where it happened, never re-planned."
+    },
+    {
+     "lead": "Planned against used, per material",
+     "text": "The plan froze the material rows when the order was minted; each batch prints planned against used, material by material, marked on plan, off, or not measured."
+    },
+    {
+     "lead": "When judgement happens",
+     "text": "Quantity is judged only when a batch is finished, and time while it runs."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-record-qc.png",
+     "caption": "the two signatures that close a batch: the verdict a supervisor signs, and the count quality signs against the machine's own"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Every number says who measured it.",
+   "cols": [
+    [
+     "<b>The record's one habit is that no number appears without saying where it came from:</b> a meter counted it, a person declared it, or the arithmetic is holding it. That is what turns a batch record from a printout into evidence.",
+     "<b>The signed number outranks the machine counter</b> on every report covering that batch, and both stay on the record."
+    ],
+    [
+     "<b>Quantity is judged only when a batch is finished, and time while it runs,</b> which is what keeps the board quiet on the forty batches that were fine.",
+     "<b>A signed plan is immutable. A restatement is recorded where it happened, never re-planned.</b> There is no such button, and there never will be."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "06",
+   "of": "07",
+   "id": "ems-jobs-board",
+   "title": "The jobs board and the phone",
+   "plate": "knowledge/assets/wb/WB-06.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "The board an operator can read from the aisle.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/ems/shot-jobs-board.png",
+    "chrome": "EMS · Beverage Line 7 · Jobs",
+    "caption": "the running job with the machine and the number the next boundary is waiting on"
+   },
+   "items": [
+    {
+     "lead": "The jobs board",
+     "text": "One card per job: ordered against made, the batches as chips, and the period's own tally."
+    },
+    {
+     "lead": "The next-boundary forecast",
+     "text": "Names the machine, the number it is heading for, what happens when it gets there, and the distance left."
+    },
+    {
+     "lead": "The forecast stays honest",
+     "text": "It goes quiet on a boundary the plant declares by signal, because then the counter decides nothing."
+    },
+    {
+     "lead": "The plant's own shift plan",
+     "text": "The night shift stays one period across midnight, and a job carried in says which shift it started in."
+    },
+    {
+     "lead": "One row per live batch",
+     "text": "Hold a batch, end it, or declare a loss on that batch's own row, so a move can never touch the wrong one under overlap."
+    },
+    {
+     "lead": "The whole job read back",
+     "text": "Tap the card: the record opens in place — what moved every boundary, planned against actual per machine, planned against used per material, then the two signatures."
+    },
+    {
+     "lead": "The Quality door",
+     "text": "What is waiting for a verdict is listed, and it is signed from the same screen while the line runs."
+    },
+    {
+     "lead": "The same screen on a phone",
+     "text": "The board, the chips and the record, with nothing installed and no second application to buy."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-quality-door.png",
+     "caption": "the Quality door: everything still unsigned, signed from the same screen while the line runs"
+    },
+    {
+     "asset": "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
+     "caption": "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual"
+    }
+   ]
+  },
+  {
+   "type": "blockB",
+   "title": "The same application, sized for a hand",
+   "screens": [
+    {
+     "pair": [
+      "knowledge/assets/screens/crops/m-hmi-jobs-crop.png",
+      "knowledge/assets/screens/crops/m-hmi-overview-crop.png",
+      "knowledge/assets/screens/crops/m-hmi-report-crop.png"
+     ],
+     "alt": "the jobs board, the line the job is running on, and a report, on a phone",
+     "caption": "the same application, sized for a hand: the jobs board, the line the job is running on, and a report — nothing installed, nothing licensed per screen",
+     "size": "native"
+    }
+   ],
+   "items": [
+    {
+     "text": "jobs"
+    },
+    {
+     "text": "the line the job is running on"
+    },
+    {
+     "text": "a report"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The board an operator can read from the aisle.",
+   "cols": [
+    [
+     "<b>The operator's screen is one card per job,</b> its batches as chips, and a forecast the floor has never had: which machine reaches which number, and how far it has to go. The same screen, sized for a hand, is the supervisor's phone."
+    ],
+    [
+     "<b>The forecast goes quiet on a boundary the plant declares by signal,</b> because then the counter decides nothing, and a panel that cannot be honest says nothing at all.",
+     "<b>The board, the chips and the record,</b> with nothing installed and no second application to buy."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "07",
+   "of": "07",
+   "id": "ems-reports",
+   "title": "The certificate, from the engine",
+   "plate": "knowledge/assets/wb/WB-14.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "The certificate prints from the engine that prints the shift handover.",
+   "screen": {
+    "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+    "chrome": "Reports · Beverage Line 7 · the batch certificate",
+    "caption": "the reader: the document number, the hash, print, export and sign"
+   },
+   "items": [
+    {
+     "lead": "A batch is a report window",
+     "text": "The certificate exists the moment the batch closes, computed over exactly the thing that was made."
+    },
+    {
+     "lead": "Design",
+     "text": "Blocks bound to the line's own signals: tiles with targets, period tables, trends with their limits, alarm journals, the batch blocks, consumption and cost."
+    },
+    {
+     "lead": "Compute",
+     "text": "On the server, in the plant's own clock: every shift, day, week or month — or every batch, every order, every maintenance job. Nobody presses anything."
+    },
+    {
+     "lead": "Seal",
+     "text": "Frozen on arrival, numbered, hashed. Run it again and you get a second document beside the first, never a refresh."
+    },
+    {
+     "lead": "Sign",
+     "text": "By name and capacity, proved with the signer's own password, bound to the hash, never edited and never withdrawn."
+    },
+    {
+     "lead": "Deliver",
+     "text": "Printed on the plant's letterhead in three languages, e-mailed to the list, filed as a PDF, exported as a spreadsheet."
+    },
+    {
+     "lead": "The three zeros",
+     "text": "0 report servers · 0 third-party licences · 0 seats to read: every operator, supervisor, planner and auditor reads, prints, exports and signs."
+    },
+    {
+     "lead": "Ready-made sheets, yours to change",
+     "text": "The batch certificate, the shift handover, the maintenance record, the audit sheet for critical equipment, the excursion report, the monthly review."
+    },
+    {
+     "lead": "A blank certificate is refused at design",
+     "text": "A report that would print a blank certificate is refused while it is being designed."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-report-designer.png",
+     "caption": "the designer, where the batch certificate is drawn once against real signals"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-print.png",
+     "caption": "the same record as it comes off the paper"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The certificate prints from the engine that prints the shift handover.",
+   "cols": [
+    [
+     "<b>A batch or an order is a report window,</b> so the certificate exists the moment the batch closes. What the incumbents sell as a separate report server with its own designer, its own database and its own licence is an organ of the same platform, computing on the same rows the line wrote.",
+     "<b>Page x of y on every sheet,</b> an end marker, a document number, and a hash you can verify outside the building. A report that would print a blank certificate is refused while it is being designed."
+    ],
+    [
+     "<b>A released maintenance job books a window the production calendar already plans around.</b> The batch certificate prints from the engine that prints the shift handover. A reject count signed by the lab outranks the machine counter, and the period says it was restated. One security model reaches the sheet. <b>Nothing to connect, because there is nothing to connect.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "blockB",
+   "same": true,
+   "id": "ems-unique",
+   "title": "And what no other platform does like us",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-batches-live.png",
+     "chrome": "EMS · Beverage Line 7 · two batches at once",
+     "caption": "two batches running at once on one line: one draining at the packer, the next charging at the vessel"
+    },
+    {
+     "pair": [
+      "knowledge/assets/brochure/ems/shot-record.png",
+      "knowledge/assets/brochure/ems/shot-record-qc.png"
+     ],
+     "chrome": "EMS · Beverage Line 7 · the record and its two signatures",
+     "caption": "every line says how it is known, the balance that tells you when a meter is lying — and the two signatures that close a batch"
+    }
+   ],
+   "items": [
+    {
+     "lead": "Not a second system",
+     "text": "The module you have been reading is arithmetic over rows the SCADA already writes. Same pages, same alarms, same audited command path, same engineers' browser — and no store, server or connector between the plan and the line."
+    },
+    {
+     "lead": "Nobody presses start",
+     "text": "The line opens its job when the plant says a job began and closes it when the plant says it is done, stamped with the plant's own clock and not the moment somebody noticed."
+    },
+    {
+     "lead": "Batches overlap, because lines do",
+     "text": "The filler is still draining one batch while the vessel charges the next, so the board shows both of them running."
+    },
+    {
+     "lead": "Change who decides a boundary, while the line runs",
+     "text": "Park the two signals or declare them and the boundary changes hands within a minute, with no restart and nothing to reconfigure. A system that lets you do that is not a system that was bolted on afterwards."
+    },
+    {
+     "lead": "Every number says who measured it",
+     "text": "A meter counted it, a person declared it, or the arithmetic is holding it. That is what turns a batch record from a printout into evidence."
+    },
+    {
+     "lead": "The signed count outranks the machine",
+     "text": "The lab's signed reject count outranks the machine counter on every report covering that batch, and both stay on the record."
+    },
+    {
+     "lead": "One tag, through every module",
+     "text": "A counter that ends your batches is bound in a recipe, a page, a trend, an alarm and a report block; before anyone re-addresses it, the Tag Lens shows every one of them. We know of no other platform that follows one tag through every module of the plant like this."
+    },
+    {
+     "lead": "The certificate prints from the engine that prints the shift handover",
+     "text": "No second store, no batch server, no line of code at the edge."
+    }
+   ]
+  },
+  {
+   "type": "contact",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "id": "write"
+  }
+ ]
+}

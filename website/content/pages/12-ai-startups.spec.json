@@ -1,0 +1,126 @@
+{
+ "page": "12-ai-startups",
+ "title": "AI startups for industry",
+ "nav": "partners",
+ "hero": {
+  "kicker": "Partners · AI startups for industry",
+  "h1": "Your model, our plant.",
+  "dek": "SOP is the substrate: plan, reality, every stop with a human's reason, work orders, energy and money, one security model, one command door.",
+  "plate": "knowledge/assets/wb/WB-20.jpg",
+  "alt": "a desk at night, two screens and a lamp, an engineer seen from behind"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "partners-ai-substrate",
+   "n": "01",
+   "of": "04",
+   "title": "The substrate: plan, reality, every stop with a reason",
+   "plate": "knowledge/assets/wb/WB-07.jpg",
+   "alt": "the filler guard closing as the line restarts, the panel with the stop list and one row highlighted"
+  },
+  {
+   "type": "prose",
+   "title": "What the substrate holds.",
+   "cols": [
+    [
+     "<b>Who this page is for</b> — startups with a model or an agent for factories (optimisation, quality, energy, scheduling) and no plant floor of their own.",
+     "<b>What SOP is</b> — the substrate: plan, reality, every stop with a human's reason, work orders, energy and money, one security model, one command door."
+    ],
+    [
+     "<b>The division of labour</b> — we are your arms and legs; you bring the brain.",
+     "<b>What it replaces</b> — today the work is site by site."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-ai-data",
+   "n": "02",
+   "of": "04",
+   "title": "Data with provenance, a live stream",
+   "plate": "knowledge/assets/wb/WB-03.jpg",
+   "alt": "the server room behind glass: the open cabinet, the laptop on the steel cart, the console beyond",
+   "crop": "4:3 centre-cropped to 8:5",
+   "promise": "Plant data with provenance in one place, a live stream, and a safe, audited way to act on the plant."
+  },
+  {
+   "type": "prose",
+   "title": "What a model needs, and where it already is.",
+   "cols": [
+    [
+     "<b>In one place</b> — plan and reality, every stop with a human's reason, work orders, energy and money, on one database.",
+     "<b>Provenance on every number</b> — on every number in the batch record and in the OEE."
+    ],
+    [
+     "<b>A plant with a history</b> — the live cloud plant, with its history."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "These are what can be shown today, on the running plant."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-ai-door",
+   "n": "03",
+   "of": "04",
+   "title": "One security model, one command door",
+   "plate": "knowledge/assets/wb/WB-05.jpg",
+   "alt": "a hand on the line panel's touch screen, an engineer beside it"
+  },
+  {
+   "type": "prose",
+   "title": "A safe, audited way to act on the plant.",
+   "cols": [
+    [
+     "<b>One security model</b>, one command door.",
+     "<b>The audited command path</b> — every command that reaches the plant goes through it, and it is audited.",
+     "<b>A safe way to act</b> — the third thing a model needs, beside the data and the stream."
+    ],
+    [
+     "<b>A door for an agent, and for its data</b> — built on the interfaces the platform already serves.",
+     "<b>A plant to work against</b> — a sandbox plant with months of history.",
+     "<b>Read first, or write from day one</b> — open, and settled in the conversation."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-ai-together",
+   "n": "04",
+   "of": "04",
+   "title": "Go to market together",
+   "plate": "knowledge/assets/wb/WB-11.jpg",
+   "alt": "four people around a laptop on a stainless table at the end of a packaging line",
+   "crop": "12:5 centre-cropped to 8:5"
+  },
+  {
+   "type": "prose",
+   "title": "Where it goes together.",
+   "cols": [
+    [
+     "<b>The decision we are after</b> — build on SOP's data and agent door; go to market together.",
+     "<b>Whose go-to-market</b> — which industrial go-to-market is already yours; many models reach a plant through somebody else's."
+    ],
+    [
+     "<b>The shape</b> — open, and settled in the conversation."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue."
+  }
+ ]
+}

@@ -1,0 +1,947 @@
+{
+ "page": "10-machine-builders",
+ "title": "Machine builders · OEM",
+ "nav": "partners",
+ "hero": {
+  "kicker": "Partners · Machine and line builders",
+  "h1": "Your machine becomes a service business.",
+  "dek": "The machine leaves your hall with its own pages, its record, its maintenance package and a desk you open from your office.",
+  "plate": "knowledge/assets/wb/WB-18.jpg",
+  "alt": "a new machine in commissioning, protective film on the rails, the builder's service engineer at a laptop"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "partners-oem-offer",
+   "n": "01",
+   "of": "12",
+   "title": "Ships with the machine, earns every year after",
+   "plate": "knowledge/assets/wb/WB-17.jpg",
+   "alt": "a fresh edge box on an older machine's cabinet, a hand in a hi-vis sleeve on it"
+  },
+  {
+   "type": "prose",
+   "title": "The partnership, before the product.",
+   "cols": [
+    [
+     "Your machine leaves the factory with a panel HMI and nothing behind it: no record the plant keeps, no history, no maintenance system, and a service contract that begins when something breaks. With SOP on board it leaves with its own pages, its record, its maintenance package, and a desk you open from your office."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>No server at the client, nothing licensed per screen</b> — and every service line yours.",
+     "<b>Your machines, and your client</b> — you put SOP on every machine and line you build, in every country you sell to. You own the end client, and that is written into the agreement.",
+     "<b>No server to install at the client</b> — the machine's edge talks to a server on the cloud backbone, provisioned for that client plant and kept by us. You point it, then develop, commission and maintain the line from your office."
+    ],
+    [
+     "<b>Your service knowledge, on board</b> — your engineers author the machine's type package once: parts with your own numbers, plans, checklists, failure causes. It plants itself in every plant the machine lands in, and the standard project travels as one file.",
+     "<b>Every service line yours</b> — commissioning, the type package, remote assistance, optimisation visits and the on-premises server option are entirely your revenue.",
+     "<b>What you ship is not a nicer panel</b> — it is the complete execution system and the complete maintenance system, on the SCADA's own database, on the controller your machine already carries."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-scada",
+   "n": "02",
+   "of": "12",
+   "title": "The machine's own pages, on every screen",
+   "plate": "knowledge/assets/wb/WB-02b.jpg",
+   "alt": "five roles at one wide wall screen at the end of a running bottling line",
+   "crop": "4:3 centre-cropped to 8:5"
+  },
+  {
+   "type": "prose",
+   "title": "The machine's own pages, on every screen the client owns.",
+   "cols": [
+    [
+     "The machine you ship arrives with the screens the plant reads it on: drawn by you once, served from the client's own server, opened in a browser on the wall panel, the office desk and a phone. The panel you fit today can stay where it is; what it never carried is what arrives beside it."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The machine, live: what to press and what you get.",
+   "chips": [
+    "THE WALL PANEL",
+    "THE OFFICE DESK",
+    "A PHONE",
+    "THREE LANGUAGES, RIGHT TO LEFT INCLUDED"
+   ],
+   "columns": [
+    "The situation",
+    "What to choose",
+    "What you get"
+   ],
+   "rows": [
+    [
+     "the plant wants to see the machine, not a lamp on a panel",
+     "`the page you drew for that machine family`",
+     "the machine at a glance: what is running, what is stopped, what is alarming, and the day's counters under it"
+    ],
+    [
+     "an operator wants the pump itself, not the picture of it",
+     "`press the pump on the page`",
+     "the machine's own door: its state, its readings, and how far each one can be trusted"
+    ],
+    [
+     "the pump tripped and the shift does not know why",
+     "`the causes the machine's type carries`",
+     "the mechanical, electrical and process causes for that kind of machine, and one line naming what the alarm hides"
+    ],
+    [
+     "the same alarm comes back all night",
+     "`answer it, or shelve it with a reason`",
+     "a journal that keeps the raise, the return and who answered, and a shelf that says why and until when"
+    ],
+    [
+     "the technician wants your datasheet at the machine",
+     "`the documents you attached to it`",
+     "the sheet opens over the page with the others beside it, nothing to search for and nothing to download first"
+    ],
+    [
+     "a wash must be started from the screen",
+     "`the buttons inside the door`",
+     "a confirm, then a press that carries a name and a time, and that the database refuses when the person may not send it"
+    ],
+    [
+     "the plant reads and writes in another language",
+     "`the language on the person's profile`",
+     "the same drawing in three languages, right to left included, out of the one design you shipped"
+    ]
+   ],
+   "note": "Nothing is installed at the client for these screens and nothing is licensed per screen: the wall panel, the office and the phone open the same page, and one more operator costs the plant nothing. The alarm insights are the ones ISA-18.2 and EEMUA 191 ask for — the rate against its target, the response times, the flood episodes."
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-synoptic.png",
+     "caption": "the machine in its line, live: the process train with its faceplates, the area health and the day's counters"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-timelens",
+   "n": "03",
+   "of": "12",
+   "title": "The night your desk replays",
+   "plate": "knowledge/assets/wb/WB-20.jpg",
+   "alt": "the builder's service desk at night, two screens and a lamp, an engineer from behind"
+  },
+  {
+   "type": "prose",
+   "title": "The history the plant keeps, and the night your desk replays.",
+   "cols": [
+    [
+     "The machine writes its own history from the day it is commissioned, and the plant keeps it. In the control room that history is an instrument the operator finishes; from your office it is the night you were not there, played back on the operator's own screen."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The history, and the night you were not there.",
+   "chips": [
+    "THE SHIFT CHIP",
+    "TWO MARKERS ON THE CURVE",
+    "TIMELENS",
+    "ANY WINDOW YOU LIKE",
+    "A NOTE ON THE MOMENT"
+   ],
+   "columns": [
+    "The situation",
+    "What to choose",
+    "What you get"
+   ],
+   "rows": [
+    [
+     "what the afternoon shift did on the machine",
+     "`the shift chip, or pick the day`",
+     "the shift that actually ran that day, on the plant's own clock"
+    ],
+    [
+     "the argument is about a number",
+     "`drop the two markers on the curve`",
+     "the lowest, the average, the highest and the difference across the span"
+    ],
+    [
+     "the signal that matters is on nobody's chart",
+     "`the operator adds it`",
+     "it draws beside the saved curves, and the star keeps it under a name of their own"
+    ],
+    [
+     "the machine stopped in the night and you are a flight away",
+     "`open that moment in TimeLens`",
+     "the operator's own screen as it stood then, alarm to alarm, and a link to the moment you can paste to a colleague"
+    ],
+    [
+     "a slow drift over a month has to be seen",
+     "`any window you like`",
+     "it draws as fast as a short window, and says which resolution answered"
+    ],
+    [
+     "the next shift has to know why the setpoint moved",
+     "`write the note on the moment`",
+     "it stays on the chart with the name and the time on it, for whoever opens the chart next"
+    ]
+   ],
+   "note": "There is one copy of the history, on the client's own server, and the replay is the plant's own pages: a replayed screen wears gold so nobody mistakes it for live, and its buttons do not send."
+  },
+  {
+   "type": "prose",
+   "title": "The second lens: over the tags.",
+   "cols": [
+    [
+     "Two lenses: one over time, one over the tags — each answers from the one database."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The transport bar</b> — the alarms active at that moment, commands off, the day's timeline, the speeds, go to a moment, back to live.",
+     "<b>From an alarm row</b>, one press shows the page as it was when the alarm fired.",
+     "<b>Change a delivered signal</b> — renamed, re-addressed or dropped: the what-if painter shows every page, trend, alarm and report block that would feel it, each with its own fate, before you touch anything."
+    ],
+    [
+     "<b>The health sweep, before the machine ships</b> — signals polled and shown nowhere, bindings pointing at nothing, formulas that no longer parse; reports and conditions are in the thread too.",
+     "<b>Why a machine builder cares</b> — a machine already delivered is still yours to change: the Tag Lens shows what a signal touches before you move it, on a line that is not in your building."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "We know of no other platform that follows one tag through every module of the plant like this."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-timelens.png",
+     "caption": "the same overview replayed from your desk: the gold dress, the transport bar, the alarm flags"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-card.png",
+     "caption": "one tag: its identity card and live value, and the what-if painter"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-editor",
+   "n": "04",
+   "of": "12",
+   "title": "Drawn once, shipped with every machine",
+   "plate": null,
+   "alt": null
+  },
+  {
+   "type": "prose",
+   "title": "Drawn once. Shipped with every machine.",
+   "cols": [
+    [
+     "Your engineers draw a machine family once, in a browser, with nothing installed on their own PCs and nothing licensed per workstation. What they draw becomes the standard project that travels with every unit you build after it."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The standard project, and where it travels.",
+   "chips": [
+    "THE TOOLBOX BY EQUIPMENT FAMILY",
+    "PREVIEW",
+    "SAVE AS THE NEXT MACHINE",
+    "EXPORT / IMPORT"
+   ],
+   "columns": [
+    "The situation",
+    "What to choose",
+    "What you get"
+   ],
+   "rows": [
+    [
+     "a machine family that will be built again and again",
+     "`draw the standard project once`",
+     "its pages, faceplates, trends, alarms, equipment types and your documents, held together as one line"
+    ],
+    [
+     "draw a pump the plant will recognise",
+     "`the equipment symbol from the toolbox`",
+     "a body drawn to the process scale that already carries the failure words the maintenance record picks from"
+    ],
+    [
+     "the drawing is finished and nobody knows yet whether it is right",
+     "`press Preview`",
+     "the page the operator will open, on the machine's real values, drawn by the same screen"
+    ],
+    [
+     "a start button has to be proved before the machine runs on it",
+     "`press it in preview`",
+     "a real command in your name, refused in the database when you may not send it"
+    ],
+    [
+     "the next unit comes off your floor",
+     "`save the project as the second machine`",
+     "every binding, target and attached document follows, with fresh identities of its own"
+    ],
+    [
+     "the same machine goes to another client",
+     "`export one file, import it there`",
+     "the whole line arrives named as you named it, and nothing collides with what the client already runs"
+    ],
+    [
+     "a dealer commissions the machine you never see",
+     "`hand over the file, and point the edge`",
+     "the dealer installs and the machine still reports to you: the type package, the record and the desk stay yours"
+    ]
+   ],
+   "note": "The file carries the drawing, never the client: names travel and identities do not, so one machine can be imported into any plant on any server without touching what is already there. Draw the machine once, and every unit you build after it leaves with the same pages, the same alarms and the same record — the plant never learns a new screen because it bought a second machine."
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-editor-preview.png",
+     "caption": "the drawing previewed against the running machine"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-ed-pages-tiles.png",
+     "caption": "the editor in design mode: the toolbox, the canvas, the inspector"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-remote-desk",
+   "n": "05",
+   "of": "12",
+   "title": "No server at the client: the remote desk",
+   "plate": null,
+   "alt": null
+  },
+  {
+   "type": "prose",
+   "title": "No server at the client. Every machine on your desk.",
+   "cols": [
+    [
+     "Every client plant gets a server of its own, provisioned by us on the cloud backbone from scripts, in a single session. You point the machine's edge at it, and from that day you develop the line, commission it and maintain it from your own office."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>A server per client plant</b> — one client, one server, never two clients sharing one.",
+     "<b>The edge holds the line</b> — it sits beside the controller and never asks the backbone for permission to work: cut the link and it holds the readings on its own disk and sends them on when the link returns.",
+     "<b>The pages on the plant network</b> — while the backbone is unreachable the edge serves the machine's real pages on the plant network, behind a password the administrator armed once.",
+     "<b>The armed emergency access</b> — armed once by the administrator, and refused while the backbone is healthy."
+    ],
+    [
+     "<b>The desk, by the plant's grant</b> — a scope on the machine's edge or on its line, nothing wider: live pages, journal, trend, replay, and a fix drawn in the browser and saved to the project.",
+     "<b>The plant can withdraw the grant</b>, which is why it gives it.",
+     "<b>The client's own server, your option</b> — a client who wants its line on its own hardware gets it, installed and maintained by you, at your price; everything else on the page is identical.",
+     "<b>The fleet page</b> — every machine you delivered, the line it runs and when it last spoke."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Not one of these changes a screen anybody uses: you point the edge at an address, and everything after it is a grant the plant gives and can take back."
+    ]
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/oem/OE-D1-site.svg",
+   "ground": "light",
+   "intro": "the machine and its edge · the client's server on the backbone · your desk by the plant's grant · the plant network while the link is cut",
+   "alt": "the machine, its edge, the client's server, the builder's desk and the plant network",
+   "legend": [
+    {
+     "title": "The machine and its edge",
+     "line": "one program beside the controller"
+    },
+    {
+     "title": "The client's server on the backbone",
+     "line": "provisioned for that plant, kept by us"
+    },
+    {
+     "title": "Your desk, by the plant's grant",
+     "line": "a scope on the machine or its line, nothing wider"
+    },
+    {
+     "title": "The plant network while the link is cut",
+     "line": "the machine's real pages, served by the edge"
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/oem/shot-collectors.png",
+     "caption": "the console's fleet page: every machine you delivered, the line it runs and when it last spoke",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-m-config-fleet.png",
+     "caption": "the same fleet in a pocket: each edge, its state, its last beat",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-modules",
+   "n": "06",
+   "of": "12",
+   "title": "The line runs its orders, the machine its maintenance",
+   "plate": "knowledge/assets/wb/WB-06.jpg",
+   "alt": "the end of a packaging line, cases on the rollers, a tablet with the day's schedule"
+  },
+  {
+   "type": "prose",
+   "title": "The line runs its orders. The machine runs its own maintenance.",
+   "cols": [
+    [
+     "Your machine already knows what it made and what stopped it. The execution system and the maintenance system are not two more products to buy and join: they are the same database as the pages the operator watches, and they leave your factory with the machine. Your client gets one line, one contract, one screen. You get a service business that begins on the day of delivery."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The order is on the line</b>, not on a clipboard beside it. A job opens and closes on the machine's own signals — a vessel charge or a packer count — and the batches inside it open and close the same way; they overlap.",
+     "<b>The batch record says how</b> — line by line, how every number is known: counted, weighed, or left as the balance that does not close; the handover and the certificate print from the same rows.",
+     "<b>The machine knows its own service</b> — a stop or an alarm becomes a job from the alarm itself, with the reason already on it.",
+     "<b>The job on a phone</b> — why it is due now, the parts and whether the shelf has them, the window the line has protected, the checklist to tick, measure and photograph."
+    ],
+    [
+     "<b>Your part numbers on the close</b> — nothing is keyed twice and nothing is filed later; the close seals a record your service desk reads, and the parts carry your part numbers.",
+     "<b>Integrated by birth</b> — what was made, what stopped it and what was repaired print from the same rows the operator watched. Nothing to connect, because there is nothing to connect.",
+     "<b>The laboratory outranks the counter</b> — a reject signed by the laboratory outranks the counter, and the period says it was restated."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-jobs-board.png",
+     "caption": "the order running on the line, the next batch boundary already named by a signal"
+    },
+    {
+     "asset": "knowledge/assets/brochure/oem/shot-m-job-checklist.png",
+     "caption": "the job in the technician's hand: why it is due, the shelf, the protected window, the checklist",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-type",
+   "n": "07",
+   "of": "12",
+   "title": "Your service knowledge, shipped with the machine",
+   "plate": "knowledge/assets/wb/WB-21.jpg",
+   "alt": "an opened machine at night, a technician with a phone showing a job card, an apprentice beside him"
+  },
+  {
+   "type": "prose",
+   "title": "Your service knowledge, shipped with the machine.",
+   "cols": [
+    [
+     "Your service engineers know what this machine breaks, how often it wants attention and which part answers. Written once as the machine's type, that knowledge ships inside every machine you build and runs in every plant it lands in."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The machine's type, case by case.",
+   "chips": [
+    "GIVE IT ITS TYPE",
+    "DRESS IT FROM THE TYPE",
+    "ROOT CAUSE",
+    "CALL MAINTENANCE",
+    "EXPORT / IMPORT"
+   ],
+   "columns": [
+    "The situation",
+    "What to choose",
+    "What you get"
+   ],
+   "rows": [
+    [
+     "A new machine lands in a plant",
+     "`Give it its type`, then `Dress it from the type`",
+     "its parts under your own numbers, its service plans, the steps a fitter works through and the words he names a fault with — in one press"
+    ],
+    [
+     "A technician opens the machine's door on the page",
+     "`Root cause`, inside the faceplate",
+     "the mechanical, electrical and process causes for that kind of machine, and one line naming what the alarm hides"
+    ],
+    [
+     "A spare is wanted at the machine, mid-job",
+     "`Take it off the shelf on the step that calls for it`",
+     "your part number travels with the part — on the phone, on the shelf, in the signed record — so the call about the next one comes to you"
+    ],
+    [
+     "The plan falls due on hours nobody wrote down",
+     "`Nothing to choose`",
+     "the hours fold from the line's own run record; the job is raised for a person to release, with your checklist frozen as it stood"
+    ],
+    [
+     "A stop or an alarm needs a technician now",
+     "`Call maintenance`, on the stop receipt or on the alarm",
+     "a job carrying that stop or that alarm, the machine already named and your checklist on it before anyone walks to the line"
+    ],
+    [
+     "The family changes: an interval, a step, a cause you have learnt",
+     "`Your service engineers edit the type, once`",
+     "a new failure word reaches every machine of that kind at once; parts and plans are taken at the next dressing, so an interval a plant tuned is never put back"
+    ],
+    [
+     "The project goes to a dealer, or to another plant",
+     "`Export` here, import there",
+     "pages, faceplates, trends, alarms, documents and the equipment types ride inside the one file; an admin's import plants the types that plant has never seen"
+    ]
+   ],
+   "note": "The package is written by your own service engineers, in their own words, once — and it stays a starting point, never a rule: what a plant tunes on its own machine stays tuned. The class ships the machine and a paper manual; here the manual is a package the machine carries, and the plant runs it."
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/cmms/shot-type-package.png",
+     "caption": "the type package as a machine receives it: the parts, the plan on each, the steps a fitter works through and the spare that step will need"
+    },
+    {
+     "asset": "knowledge/assets/brochure/oem/shot-fp-rootcause.png",
+     "caption": "the same causes, on the operator's screen, inside the machine's own door",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-reports",
+   "n": "08",
+   "of": "12",
+   "title": "From the machine to the signed sheet",
+   "plate": "knowledge/assets/wb/WB-09.jpg",
+   "alt": "a standing desk at the edge of the hall, the shift handover signed on paper"
+  },
+  {
+   "type": "prose",
+   "title": "From the machine to the signed sheet.",
+   "cols": [
+    [
+     "The paper is the part of the machine your client keeps. Here the machine writes it: the acceptance that proves the rate you promised, the certificate that follows every batch, the review of what your service did all month. Designed once against the machine's own tags, computed on the server, sealed, signed by name and delivered, with nobody watching."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>01 Design</b> — blocks bound to the machine's own tags: tiles against the rate you promised, period tables, trends with limits, the alarm journal, the loss cascade, maintenance blocks.",
+     "<b>02 Compute</b> — on the server, in the plant's own clock: every shift, day, week or month, every batch or order, every maintenance job, or when a plant condition fires.",
+     "<b>03 Seal</b> — frozen on arrival, numbered, fingerprinted; run it again and a second document is filed beside the first, never a refresh of it.",
+     "<b>04 Sign</b> — by name and capacity, proved with the signer's own password, bound to the fingerprint, never edited and never withdrawn; an acceptance carries both sides.",
+     "<b>05 Deliver</b> — printed on the client's letterhead in three languages, sent to the list, filed as a document, exported."
+    ],
+    [
+     "<b>Judged against the promised rate</b> — over the window the contract names, every hour that did not become product is on the sheet and timed: not asked to run, breakdowns, small stops with the operator's reason, speed loss, rejects.",
+     "<b>The same sheet proves the gain</b> — nothing is left to argue about, and the same sheet proves the gain when you come back to make the line quicker.",
+     "<b>Zero report servers</b> — the engine runs on the backend the machine already talks to; a small worker beside it files the document and sends it on.",
+     "<b>Zero third-party licences</b> — no reporting product, no rendering licence, no designer bought separately: it is an organ of the platform.",
+     "<b>Zero seats to read</b> — every operator, supervisor, planner and auditor at the client reads, prints, exports and signs."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/oem/shot-report-read.png",
+     "caption": "the reader: the document number, its fingerprint, print, export and sign"
+    },
+    {
+     "asset": "knowledge/assets/brochure/oem/shot-perf-bands.png",
+     "caption": "the promised rate against the hours that did not become product"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-situations",
+   "n": "09",
+   "of": "12",
+   "title": "The twelve OEM situations",
+   "plate": "knowledge/assets/wb/WB-19.jpg",
+   "alt": "a visiting engineer with a tablet and the plant manager at the end of a running line",
+   "promise": "The trigger is what makes the client call this quarter."
+  },
+  {
+   "type": "prose",
+   "title": "Who you sell to, and what you say first.",
+   "cols": [
+    [
+     "The situations that were not a business yesterday: the second six are service lines you do not sell today."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The twelve situations.",
+   "chips": [
+    "SCADA",
+    "REPORTS",
+    "EMS",
+    "EPS",
+    "CMMS"
+   ],
+   "columns": [
+    "The situation",
+    "The trigger, in the client's words",
+    "What you sell",
+    "Why SOP wins"
+   ],
+   "rows": [
+    [
+     "A new machine, in a plant without SOP",
+     "\"We want to see the machine from the office, and keep what it did.\"",
+     "The machine on SOP: its pages, alarms, trends, faceplates and its record; the edge on the machine, the server on the backbone.",
+     "It arrives with a record and a history the plant keeps, on any screen and on a phone, with nothing installed at the client."
+    ],
+    [
+     "A complete line delivered as one project",
+     "\"One line, one contract, one screen for the whole of it.\"",
+     "The line on SOP: one project across the machines, the execution system on it, orders and batches, the line's record signed on paper.",
+     "One line, one database: what was made, stopped and repaired prints from the rows the operator watched."
+    ],
+    [
+     "The installed base, machines already in the field",
+     "\"We sold so many of these; they earn nothing after delivery.\"",
+     "The retrofit: an edge beside the controller already there, the standard project, the type package, remote assistance from your desk.",
+     "An annual relationship with machines that earned nothing since delivery, installed at the next service visit."
+    ],
+    [
+     "A performance to prove at acceptance",
+     "\"Show me the line does what the contract says.\"",
+     "The performance engine: the line judged against the rate you promised, every loss named, the acceptance signed by both sides.",
+     "The acceptance is a signed document from the machine's own rows, not a spreadsheet nobody keeps."
+    ],
+    [
+     "The service contract that becomes a relationship",
+     "\"They call us when it breaks, and only then.\"",
+     "The maintenance system with your type package: plans, checklists, parts with your numbers, jobs raised from stops and alarms.",
+     "Your service knowledge runs the client's maintenance, and the spares call comes to you because your number is on the part."
+    ],
+    [
+     "Remote support of a delivered fleet",
+     "\"The client is a flight away and the line stopped at night.\"",
+     "The remote desk: your grant on each client's server; the live pages, the journal, the trend, the replay, the fix saved to the project.",
+     "The first technician to travel arrives knowing what happened, or does not have to travel at all."
+    ],
+    [
+     "The client already runs a plant SCADA",
+     "\"Our plant has its system; your machine has to fit in.\"",
+     "The machine on SOP beside the plant's system: its own record, its maintenance package, your remote desk. The plant keeps its system.",
+     "Nothing is taken from the plant's system, and the machine carries what the panel screen never could."
+    ],
+    [
+     "A regulated client that needs signed records",
+     "\"Every batch needs a certificate somebody signed.\"",
+     "The record: the batch certificate, the shift sheet and the maintenance review printed from the same rows, sealed, numbered and signed.",
+     "The machine ships with its paper, in three languages: no report server, no second product, no seat to buy."
+    ],
+    [
+     "The spares business",
+     "\"They buy the parts from whoever answers first.\"",
+     "Your part numbers on the type package's parts list; what each job consumed, standing in the maintenance record.",
+     "The part the technician sees carries your number, and the reorder question lands on your desk."
+    ],
+    [
+     "A machine sold through a local dealer",
+     "\"The dealer commissions; we never see the line again.\"",
+     "Your standard project travels to the dealer as one file; the dealer points the edge; you keep the type package and the record.",
+     "The dealer installs, and the machine still reports to you."
+    ],
+    [
+     "The line optimisation service",
+     "\"We think the line could do more; nobody can say where it loses.\"",
+     "The optimisation visit, priced on the losses the performance engine names: speed loss, stops with human reasons, changeovers.",
+     "A service line that did not exist, sold on numbers the client already sees and proved on the same paper afterwards."
+    ],
+    [
+     "A group buying the same line for several plants",
+     "\"The same line in every plant, and every plant reports differently.\"",
+     "The same project by name in every plant, the type package in each, the record in the same shape everywhere.",
+     "Identical lines report identically, because the machine brought its own definition with it."
+    ]
+   ],
+   "note": "Who decides, row by row: the plant manager and your sales engineer (1) · the production manager (2) · your service director (3) · the plant manager and finance (4) · your service director and the maintenance manager (5) · your service desk (6) · the automation lead (7) · the quality manager (8) · your spares manager (9) · your channel manager (10) · the plant manager and your process engineers (11) · the group's operations director (12)."
+  },
+  {
+   "type": "prose",
+   "title": "How they combine.",
+   "cols": [
+    [
+     "<b>How they combine</b> — a new machine becomes a line, and then a performance to prove. The installed base opens the service contract, the remote desk and the spares business at once.",
+     "<b>What you say first</b> — new machine: what does the plant keep of what it did? Installed base: what do those machines earn you now? Service: when do you hear, apart from a breakdown?"
+    ],
+    [
+     "<b>Your own list</b> — list every family you ship and every machine in the field. Mark which is under a service contract, which was accepted on a rate, which stands in a regulated plant."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-packages",
+   "n": "10",
+   "of": "12",
+   "title": "What you sell, what you earn",
+   "plate": "knowledge/assets/wb/WB-16.jpg",
+   "alt": "a meeting room at dusk, a wall screen with five plant tiles, five people seen from behind"
+  },
+  {
+   "type": "prose",
+   "title": "Six packages.",
+   "cols": [
+    [
+     "A machine is a line in licence terms: one project on one edge. A line is paid when it is linked at a client.",
+     "Energy and cost reporting sits inside the record and the performance engine, never a line of its own. A module switches on per line, on the same database, with nothing to re-engineer."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The six packages.",
+   "chips": [
+    "PERPETUAL · PER DEPLOYED LINE",
+    "THE BUSINESS CAPABILITIES · PER LINE, PER YEAR",
+    "SERVICES · ENTIRELY YOURS"
+   ],
+   "columns": [
+    "The package",
+    "For these situations",
+    "What the client gets",
+    "Your services"
+   ],
+   "rows": [
+    [
+     "Machine on SOP",
+     "`1 · 7 · 10`",
+     "The machine's own pages, alarms, trends and faceplates, on the wall panel and on the phone; its history kept; the alarm journal; any moment replayed; the record printed and signed.",
+     "the standard project, commissioning, the client's operators trained"
+    ],
+    [
+     "Line on SOP",
+     "`2 · 8 · 12`",
+     "The whole line as one project; orders and batches run on it; the batch record and the shift sheet printed from the line's own rows.",
+     "the line project, the recipes, commissioning, the record on the client's letterhead"
+    ],
+    [
+     "The maintenance package",
+     "`3 · 5 · 9`",
+     "Your service knowledge running the client's maintenance: plans, checklists, parts with your numbers, jobs raised from stops and alarms, a technician's phone with the checklist on it.",
+     "the type package, authored once; the service contract; the spares"
+    ],
+    [
+     "The performance guarantee",
+     "`4 · 11`",
+     "The line judged against the rate you promised; every loss named and timed; the acceptance signed on the performance paper; the gain of an optimisation proven on the same paper.",
+     "the acceptance test, the optimisation visit"
+    ],
+    [
+     "The retrofit",
+     "`3 · 5 · 6`",
+     "A machine already in the field gets its record, its history and its maintenance package, and your desk can see it. The panel HMI stays if the client wants it.",
+     "the edge fitted at the next visit, the standard project, remote assistance"
+    ],
+    [
+     "The remote service desk",
+     "`6 · 10 · 12`",
+     "Every delivered machine reachable from your office: live, replayed, journalled; the fix designed in the browser and saved to the machine; the client's own server when the client asks for one.",
+     "the remote assistance contract, the on-premises server installed and kept by you"
+    ]
+   ],
+   "note": "One platform, one licence per line you deploy: perpetual, per deployed line, on the cloud backbone or on the client's own server; the business capabilities — Execution Manufacturing System, Equipment Performance System, maintenance — per line, per year, support and updates inside. Commissioning, the type package, remote assistance, the optimisation visit and the on-premises server option are entirely yours."
+  },
+  {
+   "type": "chooser",
+   "title": "Four revenue lines, three of them new.",
+   "chips": [],
+   "columns": [
+    "The revenue line",
+    "What it covers",
+    "The shape"
+   ],
+   "rows": [
+    [
+     "Perpetual",
+     "Every line you deploy, and every platform module you sell with a machine: the record and replay among them.",
+     "`perpetual · per deployed line`"
+    ],
+    [
+     "Annual",
+     "The execution, performance and maintenance modules, every year the client keeps them, support and updates inside. The line that repeats.",
+     "`per line · per year · support and updates inside`"
+    ],
+    [
+     "Services",
+     "The standard project, commissioning, the type package, the record templates on the client's letterhead, the operators trained, the on-premises server option. Nothing of it is shared with us.",
+     "`entirely yours`"
+    ],
+    [
+     "Relationship",
+     "The business that did not exist: remote assistance, the optimisation visit priced on the losses the line names, and the spares that carry your number.",
+     "`on machines you sold years ago`"
+    ]
+   ],
+   "note": "The backbone, the annual training, unlimited technical support and the brand clause are there from the first machine."
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-we-give",
+   "n": "11",
+   "of": "12",
+   "title": "What we give you",
+   "plate": "knowledge/assets/wb/WB-22.jpg",
+   "alt": "an automation engineer with a laptop resting on an open control cabinet, rolls of drawings beside him",
+   "crop": "4:3 centre-cropped to 8:5"
+  },
+  {
+   "type": "chooser",
+   "title": "The partnership, item by item.",
+   "chips": [
+    "THE MANUALS",
+    "A FLIGHT-TEST DOCUMENT PER MODULE",
+    "THE DEMONSTRATION PLANT",
+    "UNLIMITED TECHNICAL SUPPORT"
+   ],
+   "columns": [
+    "What we give you",
+    "What it means"
+   ],
+   "rows": [
+    [
+     "The backbone, no site visit",
+     "A server for each client plant, provisioned by us on the cloud backbone from scripts, in a single session. You install nothing at the client, unless the client wants a server of its own: your priced option."
+    ],
+    [
+     "The line runs without the link",
+     "The edge keeps the machine's history on its own disk and sends it on when the link returns, and serves the machine's real pages on the plant network meanwhile."
+    ],
+    [
+     "Your controllers, spoken",
+     "SOP supports all major drivers — Modbus, OPC DA, Siemens S7 and OPC UA among them — to the controllers you already ship. Where a machine family needs a driver or a function of its own, we build it: the work of the alliance."
+    ],
+    [
+     "Your project travels as one file",
+     "The standard project exports by name, with its symbols, faceplates, trends, alarms, documents and equipment types inside, and imports on any server without a collision. One machine, one file, every plant."
+    ],
+    [
+     "Annual training and support",
+     "Your service engineers trained every year on the platform and every module, with the manuals, the flight-test documents and the demonstration plant; unlimited technical support behind every machine you ship."
+    ],
+    [
+     "Powered by SOP, in your brand",
+     "Your symbols and pages, your letterhead on every printed record, your part numbers on the type package, your name on the service. The platform keeps its mark on the applications, and the clause is in every agreement."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Arguments a panel HMI cannot answer.",
+   "cols": [
+    [
+     "<b>The record the plant keeps and signs.</b>",
+     "<b>The history behind every value.</b>",
+     "<b>The maintenance package the machine brings.</b>",
+     "<b>The desk you open from your office.</b>"
+    ],
+    [
+     "<b>The pages the line keeps without the server.</b>",
+     "<b>Every screen and phone, at no licence cost.</b>",
+     "<b>Three languages, right to left included.</b>",
+     "<b>Import a machine, whole</b> — one file carries the machine's pages, its faceplates, its trends, its alarms, its documents and its equipment types. It lands on a fresh server and the types plant themselves."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The manuals cover every screen of the platform and of every module your engineers will touch; a flight-test document per module tells a tester how to exercise a whole feature on a real rig, start to finish. SOP is already running on several production lines."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-oem-start",
+   "n": "12",
+   "of": "12",
+   "title": "The first machine, together",
+   "plate": null,
+   "alt": null,
+   "promise": "Five steps, and our engineers beside yours on the first one."
+  },
+  {
+   "type": "prose",
+   "title": "How it starts.",
+   "cols": [
+    [
+     "<b>A conversation about your machines</b> — which families you build, which of them are in the field, and what the service contract earns you today.",
+     "<b>The OEM agreement</b> — the committed lines, the brand clause, the backbone, the training calendar.",
+     "<b>The training of your service engineers</b> — the platform and the modules, with the manuals and the demonstration plant, before a machine is drawn.",
+     "<b>The first machine, together</b> — the standard project, the type package in your engineers' words, the first client server on the backbone, the first signed acceptance."
+    ],
+    [
+     "<b>Every machine after that ships with it</b> — you sell the packages; we supply the backbone, the support, and what the next machine family needs.",
+     "<b>What we ask of you</b> — one machine family to start with, the one you know best. One service engineer who knows that machine and will write its type package. And the list of the machines you have in the field, because that is where the service business already waits.",
+     "<b>What you have on day one</b> — the machine's pages on every screen the client owns, its record printed and signed, its maintenance package in your own words, and your desk on it from your office. The same platform is ready for the line's execution and its performance the day the client asks for them."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Your machine, your client, your service — the machine leaves with its record, and comes back every year. Start with a conversation about your machines, then the agreement, the training of your service engineers, and the first machine together."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue."
+  }
+ ]
+}

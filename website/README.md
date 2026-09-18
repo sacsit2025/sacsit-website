@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# sacsit.com
 
-## Getting Started
-
-First, run the development server:
+The website of **SACS-IT** for **SOP**, the SCADA Open Platform.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run dev        # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No secret is needed to run or to build. With no environment set, the forms tell the visitor to write
+to info@sacsit.com instead of accepting a message nobody would receive; `.env.example` names every
+variable the live site uses.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How it is put together
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Where | What |
+|---|---|
+| `content/pages/*.spec.json` | the copy of each page - one file per page |
+| `content/home.ts` | the home page's copy (its bands are bespoke) |
+| `content/menu.ts`, `content/routes.ts` | the menu, and the twelve routes |
+| `components/sections/` | one component per section type: the renderer of a page file |
+| `components/home/` | the home page's bands |
+| `components/forms/` | the contact form and the document request |
+| `app/` | the routes, and the stylesheet (`design.css` the design system, `interaction.css` the states) |
+| `lib/` | the content types, the inline-markup parser, the image helpers, the mail and sheet plumbing |
+| `public/assets/` | every image the site serves, with its measured size in `lib/asset-manifest.json` |
 
-## Learn More
+Next.js 16 (App Router), React 19, next-intl (English live, the structure for more), Tailwind v4 tokens.
+No CMS and no database: a wording change is an edit in `content/` and a deploy.
 
-To learn more about Next.js, take a look at the following resources:
+## Checks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run typecheck
+npm run build && npm run gate:links     # every internal link and image resolves
+npm run build && npm start & npm run check:chrome
+```

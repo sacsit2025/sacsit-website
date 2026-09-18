@@ -1,0 +1,772 @@
+{
+ "page": "07-reporting",
+ "title": "Enterprise Reporting",
+ "nav": "reporting",
+ "source": "knowledge/capabilities/REPORTING.md (the Reports brochure, 14 pages)",
+ "hero": {
+  "kicker": "Capability 05 · Enterprise Reporting · the Reports module",
+  "h1": "The paperwork writes itself, sealed and signed.",
+  "dek": "A plant is rarely short of data. It is short of documents — a sheet with a window, an author, a number and a seal, that reads the same a year from now as it did the day it was filed.",
+  "plate": "knowledge/assets/wb/WB-09.jpg"
+ },
+ "sections": [
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "What leaves this plant is a record, not a dashboard. Say what one paper is about and the moment it should go out, and from then on it exists: on the clock, on a batch, on a plant condition, or on a maintenance job that has just closed."
+    ]
+   ],
+   "band": "white"
+  },
+  {
+   "type": "chooser",
+   "title": "Every sheet the plant needs, and what makes it appear.",
+   "chips": [
+    "the designer",
+    "the timing card",
+    "the condition",
+    "the maintenance job card",
+    "the plant floor",
+    "the runs pane"
+   ],
+   "columns": [
+    "You want",
+    "What SOP does",
+    "Where"
+   ],
+   "rows": [
+    [
+     "The shift handover on the desk when the next crew walks in",
+     "Every shift, delivered as soon as it ends, on the site's own shift plan",
+     "`set once in the designer, read on the plant floor`"
+    ],
+    [
+     "Yesterday's line on your desk before the morning meeting",
+     "Every day, handed over at the hour you name",
+     "`the designer, the delivery time`"
+    ],
+    [
+     "The week reviewed and out on the day you choose",
+     "Every week, delivered on the day you name",
+     "`the designer, the delivery day`"
+    ],
+    [
+     "The month closed and filed",
+     "Every month, delivered on a day the calendar always has",
+     "`the designer, the delivery day of the month`"
+    ],
+    [
+     "A certificate born with every batch",
+     "The batch is the window; the paper exists the moment the batch closes",
+     "`the designer, the timing card`"
+    ],
+    [
+     "One sheet for a whole production order",
+     "The order is the window, the same way",
+     "`the designer, the timing card`"
+    ],
+    [
+     "A signed record every time a maintenance job closes",
+     "The job is a period too: its checklist, its readings, its parts and its signature on one sheet",
+     "`the maintenance job card, at its foot`"
+    ],
+    [
+     "A record of each wash, run or charge",
+     "One report per cycle of a condition you name, out at the stop",
+     "`the designer, the condition`"
+    ],
+    [
+     "What led up to a trip or a spill",
+     "The stretch before the condition fired, and you set how far back it reaches",
+     "`the designer, the condition`"
+    ],
+    [
+     "Everything since the last delivery, refill or batch",
+     "Gap free, fired as the next one begins",
+     "`the designer, the condition`"
+    ],
+    [
+     "A sheet for a window nobody's calendar names",
+     "A range you type, stamped honestly as a fixed range and run on request",
+     "`the plant floor, above the sheet`"
+    ],
+    [
+     "The audit sheet for the machines the auditor names",
+     "The line review narrowed to that machine list, and nothing else changes",
+     "`the designer, the machines row`"
+    ],
+    [
+     "Last month's copy back exactly as it was, or the numbers in a spreadsheet",
+     "Every run ever filed, one press away, and one export carrying every table in the run",
+     "`the plant floor, the runs pane`"
+    ]
+   ],
+   "band": "mist",
+   "note": "A report is born covering every shift and going out to nobody, so it exists and holds its design until somebody says where it should go."
+  },
+  {
+   "type": "head",
+   "n": "01",
+   "of": "07",
+   "id": "reporting-engine",
+   "title": "A reporting engine",
+   "promise": "A reporting engine, not a report server.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "What the class sells as a separate report server — its own designer, its own store, its own licence and a seat for everyone who only reads — is an organ of this platform."
+    ],
+    [
+     "Design a sheet once against the tags the line already reads; the platform computes it, seals it, signs it and delivers it, with nobody watching."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Design once, and the paper writes itself:",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-report-designer.png",
+    "chrome": "the report designer · the blocks, the preview, the timing",
+    "caption": "The designer — the blocks, the live preview and the named timing cards."
+   },
+   "items": [
+    {
+     "lead": "01 Design",
+     "text": "Blocks bound to real tags: headline tiles against the plant's own plan tag, period tables, trends carrying their alarm limits, alarm journals, consumption and cost, the performance cascade, the maintenance sheets."
+    },
+    {
+     "lead": "02 Compute",
+     "text": "On the server, in the site's own clock: every shift, day, week or month; every batch or production order; every maintenance job; or the moment a plant condition fires. Nobody presses anything."
+    },
+    {
+     "lead": "03 Seal",
+     "text": "Frozen on arrival, given a document number, sealed with a hash. Run it again and a second document is filed beside the first — never a refresh."
+    },
+    {
+     "lead": "04 Sign",
+     "text": "By name and by the capacity the signer answers in, proved with their own password, bound to the seal, never edited and never withdrawn."
+    },
+    {
+     "lead": "05 Deliver",
+     "text": "Printed on the plant's own letterhead in three languages, posted to a list, filed as a PDF, exported when somebody wants to work the numbers."
+    },
+    {
+     "lead": "0 report servers",
+     "text": "The engine runs on the backend the plant already installed; a small worker beside it draws the sheet and posts it to the list."
+    },
+    {
+     "lead": "0 third-party licences",
+     "text": "No reporting product, no rendering licence, no designer bought separately — it is inside the platform."
+    },
+    {
+     "lead": "A blank certificate is refused",
+     "text": "A report that would print a blank certificate is refused while it is still being designed."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/home/REP-editor-batch-certificate-crop.png",
+     "caption": "The editor on a batch certificate — the blocks, the live preview, the name in three languages, the timing."
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-print.png",
+     "caption": "The same record as the plant prints it, on paper."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "02",
+   "of": "07",
+   "id": "reporting-design",
+   "title": "Bound to the tag, never typed",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "A report is a stack of blocks, and every block points at a real signal on the line.",
+     "Even the target a tile prints against is read off the plant's own plan tag, so there is no second copy of the plan to keep in step."
+    ],
+    [
+     "<b>Everything the plant otherwise rebuilds in a spreadsheet:</b> headline tiles with targets read off the plant's own plan tags · the period table · trends carrying their own alarm limits · bar, donut and scatter charts · gauges scaled from the tag's own range · heatmaps · machine timelines · alarm journals and rankings · consumption priced from a dated rate book · the performance cascade · and the maintenance blocks that put the plant's work orders on a sheet."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Say which tag a block reads, and what to ask of it:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/reports/shot-add-block.png",
+    "chrome": "the designer · add a block",
+    "caption": "The catalogue of blocks, one flat list."
+   },
+   "items": [
+    {
+     "lead": "The headline tile row",
+     "text": "The number, the plan and the gap on one line, from the plant's own two signals; the target is read off the plant's own plan tag, never typed."
+    },
+    {
+     "lead": "The period table",
+     "text": "The tags down the side, the periods across, the statistic named in each cell; the sheet already filled, with its totals, and no spreadsheet to maintain."
+    },
+    {
+     "lead": "The trend with its alarm limits",
+     "text": "The curve with the limit lines on it, inside the certificate — proof a tank never left its band."
+    },
+    {
+     "lead": "The alarm journal and its ranking",
+     "text": "What raised and when it was acknowledged during the window, and the worst offenders in order beside it."
+    },
+    {
+     "lead": "Consumption and cost",
+     "text": "Each medium metered and costed bucket by bucket, priced from the plant's dated rate book; a tariff that changed inside the window is honoured, not averaged."
+    },
+    {
+     "lead": "The performance cascade and the loss ranking",
+     "text": "Where the hours went: the losses in time, in units and in money, on paper, from the figures the screen already shows — and the losses ordered beside it."
+    },
+    {
+     "lead": "Charts, gauges, heatmaps, machine timelines",
+     "text": "The plant's own figures drawn on the sheet; gauges scaled from the tag's own range; the window read as a grid; each machine's window drawn end to end."
+    },
+    {
+     "lead": "The maintenance blocks",
+     "text": "They put the plant's work orders on a sheet."
+    },
+    {
+     "lead": "Every block points at a real signal",
+     "text": "The statistic is named per cell, at the bind-an-element door and the statistic menu."
+    },
+    {
+     "lead": "A tag with no history is called out",
+     "text": "While you are still designing, not when the paper comes out empty."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-bind-element.png",
+     "caption": "The door that says which element a block reads."
+    },
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-statistic.png",
+     "caption": "The statistic menu, and a target read from a tag, never typed in.",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "03",
+   "of": "07",
+   "id": "reporting-seal",
+   "title": "Compute, seal and sign",
+   "promise": "Never edited. Never withdrawn.",
+   "plate": "knowledge/assets/wb/WB-14.jpg"
+  },
+  {
+   "type": "prose",
+   "title": "Nobody presses anything.",
+   "cols": [
+    [
+     "Two questions, asked once: the stretch of time one paper is about, and the moment it leaves.",
+     "Six named cards write both, and a plain sentence reads the whole setting back before you save."
+    ],
+    [
+     "Each run is computed once, frozen the moment it arrives, given a document number and sealed with a hash.",
+     "A signature adds a person's name, the capacity they sign in and their own password, bound to that seal."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Two questions, asked once:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/reports/shot-timing-pane.png",
+    "chrome": "the timing pane · the named cards",
+    "caption": "The named cards, the read-back sentence and the next delivery."
+   },
+   "items": [
+    {
+     "lead": "Per shift",
+     "text": "The handover files itself as the shift closes, on the site's own shift plan."
+    },
+    {
+     "lead": "Daily digest, delivery time 06:00",
+     "text": "The day that ended, handed over at the hour you set; the clock chooses the delivery, never the window."
+    },
+    {
+     "lead": "Per batch",
+     "text": "No calendar at all: the record is the period, and the paper goes out as the batch closes — for a batch or a whole production order."
+    },
+    {
+     "lead": "Per cycle, then the condition",
+     "text": "One report per wash, start to stop, arriving as the wash ends (example setting: signal CIP pump run flag, running means 1)."
+    },
+    {
+     "lead": "On excursion, then the condition",
+     "text": "The stretch before the crossing, delivered minutes after it happens (example setting: signal tank level, above 95, reaching 120 minutes back)."
+    },
+    {
+     "lead": "Since it last ran",
+     "text": "Delivery to delivery, gap free, arriving as the next one begins (example setting: on the unloading pump's start)."
+    },
+    {
+     "lead": "A short grace past the edge",
+     "text": "The report waits a short grace so late readings still make the paper."
+    },
+    {
+     "lead": "A switched-off condition says so",
+     "text": "While a condition is switched off nothing fires, and the report says so wherever it is seen."
+    }
+   ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/reports/RP-D1.svg",
+   "ground": "light",
+   "alt": "the ruler: what a report covers, and when it goes out",
+   "caption": "the ruler, taught once: the shaded stretch is what the paper covers, the flag is when it leaves"
+  },
+  {
+   "type": "blockA",
+   "title": "Never edited. Never withdrawn:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/reports/shot-provenance.png",
+    "chrome": "the filed run · the provenance strip",
+    "caption": "The provenance strip above the first block."
+   },
+   "items": [
+    {
+     "lead": "Computed once, frozen, numbered, sealed",
+     "text": "Each run is computed once, frozen the moment it arrives, given a document number and sealed with a hash."
+    },
+    {
+     "lead": "Read the filed run, not a live screen",
+     "text": "One frozen document with a number, reading the same a year from now — so two people cannot quote different figures for the same shift."
+    },
+    {
+     "lead": "Run it again after a correction",
+     "text": "A second document filed beside the first and numbered in sequence; the original is never overwritten."
+    },
+    {
+     "lead": "Sign — name, capacity, own password",
+     "text": "The name, the capacity and the moment printed on the sheet and bound to the seal."
+    },
+    {
+     "lead": "Two signatures, one capacity each",
+     "text": "Both print; the same person may sign in more than one capacity, never twice in the same one — an author and a reviewer on the same sheet."
+    },
+    {
+     "lead": "The seal is checkable outside the building",
+     "text": "The document number and the full hash print on the sheet, and a printed warning appears the day the numbers stop matching it."
+    },
+    {
+     "lead": "No signing door on a shared station",
+     "text": "A signature names a person, not a device; sign from your own session."
+    },
+    {
+     "lead": "What a signature leaves behind",
+     "text": "The signer's name, the capacity, the moment and the site's own time zone, printed above the end marker and bound to the seal, with the note they chose to leave."
+    },
+    {
+     "lead": "A signature cannot be withdrawn",
+     "text": "It cannot be undone, and it cannot be quietly withdrawn."
+    },
+    {
+     "lead": "No ruled blank to sign by hand",
+     "text": "An unsigned sheet prints none, so a document is either signed properly or it is not signed at all."
+    }
+   ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/reports/RP-D2.svg",
+   "ground": "light",
+   "alt": "the seal chain: computed once, frozen, numbered, sealed, signed",
+   "caption": "the seal chain: computed once · frozen · numbered · sealed · signed — and, from frozen, a second document filed beside the first"
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-sign-door.png",
+     "caption": "The three doors a filed run offers, signing among them.",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-timing-ruler.png",
+     "caption": "The product's own timing guide, teaching the same ruler."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "04",
+   "of": "07",
+   "id": "reporting-letterhead",
+   "title": "The plant's letterhead, three languages",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "One design prints English, French and Arabic, right to left included, on the letterhead of the site that owns it.",
+     "It leaves by mail to a list, is filed as a PDF by a small worker beside the backend, and comes out as a spreadsheet when somebody wants to work the numbers."
+    ],
+    [
+     "<b>What the paper carries:</b> A4 on the letterhead of the site that owns it, page x of y on every sheet, an end marker that says the set is complete, a document number, and a hash anyone can check outside the building."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "It leaves, and it comes back:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/reports/shot-last-sheet.png",
+    "chrome": "the document, closed properly",
+    "caption": "The last sheet of a document: the end marker, page x of y, the document number."
+   },
+   "items": [
+    {
+     "lead": "Mail to a list",
+     "text": "The sheet lands in their mail as the shift closes, through the plant's own mail server."
+    },
+    {
+     "lead": "Filed by the worker",
+     "text": "The A4 in the plant's own store moments after the run, with nobody watching."
+    },
+    {
+     "lead": "Export the numbers",
+     "text": "One file carrying every table in the run, copied from the frozen document, never recomputed."
+    },
+    {
+     "lead": "Three languages from one design",
+     "text": "English, French and Arabic, right to left included, each reader in their own language — the same sheet, the same figures."
+    },
+    {
+     "lead": "The plant's own letterhead",
+     "text": "A4 on the letterhead of the site that owns it."
+    },
+    {
+     "lead": "Page x of y, and an end marker",
+     "text": "Page x of y on every sheet and an end marker that says the set is complete."
+    },
+    {
+     "lead": "Reprint from the archive",
+     "text": "The sheet it was issued on, page x of y, the end marker, and the document number it was born with — three years later."
+    },
+    {
+     "lead": "Only self-firing runs post themselves",
+     "text": "A run somebody pressed by hand is sent from the archive by hand, on purpose."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-archive-row.png",
+     "caption": "One filed run in the archive, its stored sheet one press away.",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/screens/home/REP-daily-production-sheet.png",
+     "caption": "A daily production sheet as the engine files it — the headline tiles, then the period tables by shift."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "05",
+   "of": "07",
+   "id": "reporting-sheets",
+   "title": "The sheets a plant runs on",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The reports a plant needs already exist as designs you can open and change: the shift handover, the batch certificate, the maintenance record, the audit sheet for critical equipment, the excursion report and the monthly review."
+    ],
+    [
+     "Each one asks which tag on your line is which, then lands in the designer as an ordinary report."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Ready made and yours to change:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/reports/shot-readymade.png",
+    "chrome": "the ready-made designs",
+    "caption": "Pick a design that already works, then answer the one question it asks."
+   },
+   "items": [
+    {
+     "lead": "The shift handover",
+     "text": "The classic sheet: what the shift made, what stopped it, and what the crew wrote down."
+    },
+    {
+     "lead": "The batch certificate",
+     "text": "What the batch was, what went in, how it ran against its plan, and a line for the person who releases it."
+    },
+    {
+     "lead": "The maintenance record",
+     "text": "One job: its checklist, every reading judged against its band, the parts it used, and the signature that closed it."
+    },
+    {
+     "lead": "The audit sheet for critical equipment",
+     "text": "The line review narrowed to that machine list: the same numbers as the whole line's review, turned into a machine dossier."
+    },
+    {
+     "lead": "The excursion investigation",
+     "text": "The trace, the alarms and the stops around a bad hour, with a line for what the plant thinks happened."
+    },
+    {
+     "lead": "The maintenance review",
+     "text": "Planned against done, what broke, what it cost, and who did the work."
+    },
+    {
+     "lead": "Each ready-made asks one question",
+     "text": "Which tag on your line is which — then it lands in the designer as an ordinary report."
+    },
+    {
+     "lead": "Blocks that contradict the period are refused",
+     "text": "Refused while it is being designed, so a certificate that would print blank never reaches a customer."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-bind-tags.png",
+     "caption": "The step that asks which tag on this line is which."
+    },
+    {
+     "asset": "knowledge/assets/brochure/reports/shot-job-record.png",
+     "caption": "One job's record as the plant prints it — each reading judged against the band it had to fall inside."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "06",
+   "of": "07",
+   "id": "reporting-phone",
+   "title": "In the hand",
+   "promise": "Read it, print it, sign it, from a phone.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The record is not a second application: the same console opens on a phone with nothing installed, and the person who has to act on the sheet reads it where the plant is.",
+     "The supervisor who signs the handover signs it on the floor."
+    ],
+    [
+     "The sheet is the record, not a copy of one."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "The same console, sized for a hand:",
+   "screen": {
+    "asset": "knowledge/assets/screens/crops/m-hmi-report-crop.png",
+    "chrome": "the record · on a phone",
+    "caption": "The filed sheet as it was filed, with its document number and its seal."
+   },
+   "items": [
+    {
+     "lead": "No second application",
+     "text": "No viewer application to install, no second licence, no separate rights."
+    },
+    {
+     "lead": "The same console",
+     "text": "The report list, the window chips, the sheet itself and its three doors are the ones the desk sees, in the reader's own language."
+    },
+    {
+     "lead": "Read the filed sheet on the phone",
+     "text": "The handover as it was filed, with its document number and its seal."
+    },
+    {
+     "lead": "The picker is the run",
+     "text": "Pick the batch above the sheet and the pick itself computes and files that batch's certificate — nothing else to press, nothing to type."
+    },
+    {
+     "lead": "Sign from the phone",
+     "text": "The signature on the sheet, bound to the seal, taken where the line is."
+    },
+    {
+     "lead": "Print or save from the same run",
+     "text": "The A4 on the plant's letterhead, sent from where you stand."
+    },
+    {
+     "lead": "On the floor",
+     "text": "The supervisor who signs the handover signs it where the line is, not at a desk on the way out of the building."
+    },
+    {
+     "lead": "The technician's own record",
+     "text": "A job closed on the phone prints its own record from the card: the checklist, the readings, the parts it used and the signature that closed it."
+    },
+    {
+     "lead": "One security model reaches the sheet",
+     "text": "What a person may not see on the line, they may not read on the paper — the same rule, the same session, whichever screen."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/m-hmi-job-crop.png",
+     "caption": "The job behind the record, on the same phone.",
+     "size": "native"
+    },
+    {
+     "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+     "caption": "The reader on the plant floor — the window it covers, the number and the seal."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "07",
+   "of": "07",
+   "id": "reporting-energy",
+   "title": "Energy",
+   "promise": "Each medium metered and costed, from the plant's own rate book.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "title": "Consumption priced from a dated rate book",
+   "cols": [
+    [
+     "Energy is not a product bought beside the plant's software: it is read by Equipment Performance System and by Enterprise Reporting, on the same rows as everything else.",
+     "Each medium is metered and costed bucket by bucket, priced from the plant's dated rate book."
+    ],
+    [
+     "A tariff that changed inside the window is honoured, not averaged.",
+     "The meter is a tag like any other: every block points at a real signal on the line, and the statistic is named per cell."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "What a sheet can say about a medium:",
+   "cols": [
+    [
+     "<b>Consumption and cost</b> — Each medium metered and costed bucket by bucket, priced from the plant's dated rate book; a tariff that changed inside the window is honoured, not averaged.",
+     "<b>The period table</b> — The tags down the side, the periods across, the statistic named in each cell; the sheet already filled, with its totals.",
+     "<b>What the losses cost</b> — The performance cascade puts the hours on paper in time, in units and in money, from the figures the screen already shows."
+    ],
+    [
+     "<b>Gauges and heatmaps</b> — Gauges scaled from the tag's own range; the window read as a grid.",
+     "<b>The cycle a medium is spent on</b> — One report per wash, run or charge, out at the stop, from a condition you name."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "What ships with it",
+   "columns": [
+    "Where",
+    "What ships"
+   ],
+   "rows": [
+    [
+     "On the line",
+     "The designer in a browser, the reader on every screen and every phone, and an archive that keeps every run for as long as the plant keeps anything."
+    ],
+    [
+     "On paper",
+     "Your own letterhead in three languages, page x of y on every sheet, an end marker, a document number and a seal anyone can check."
+    ],
+    [
+     "Around it",
+     "The manuals, a flight-test document per module a validation team can follow, and a demonstration line to try a sheet on before it goes near a customer."
+    ]
+   ]
+  },
+  {
+   "type": "blockB",
+   "title": "And what no other platform does like us",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+     "chrome": "the filed run · the number, the seal",
+     "caption": "A filed report as the plant floor reads it."
+    }
+   ],
+   "items": [
+    {
+     "lead": "A reporting engine, not a report server",
+     "text": "What the class sells as a separate product with its own designer, its own store and its own licence is an organ of this platform."
+    },
+    {
+     "lead": "Bound to the tag, never typed in",
+     "text": "Every block points at a real signal on the line, and even the target a tile prints against is read off the plant's own plan tag."
+    },
+    {
+     "lead": "Nobody presses anything",
+     "text": "Two questions asked once, six named cards, and the paper leaves by itself: on the clock, on a batch, on a plant condition, or on a maintenance job that has just closed."
+    },
+    {
+     "lead": "Never edited. Never withdrawn.",
+     "text": "Computed once, frozen on arrival, numbered and sealed; a signature cannot be undone and cannot be quietly withdrawn."
+    },
+    {
+     "lead": "A seal anyone can check outside the building",
+     "text": "The document number and the full hash print on the sheet, and a printed warning appears the day the numbers stop matching it."
+    },
+    {
+     "lead": "The plant's own letterhead, in three languages",
+     "text": "English, French and Arabic, right to left included, from one design — the same sheet, the same figures."
+    },
+    {
+     "lead": "What a person may not see on the line, they may not read on the paper",
+     "text": "The same rule, the same session, whichever screen it is opened on."
+    },
+    {
+     "lead": "One clock, one key, one archive",
+     "text": "The same shift on every module; a tag keeps one identity from the register in the controller to the printed sheet; the handover, the certificate, the job record and the review are filed side by side, and none can be edited or removed."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "A released maintenance job books a window the performance engine already honours, and the sheet that proves the job prints from the engine that prints the handover. There is no export, no nightly copy and no mapping table between them. Nothing to connect, because there is nothing to connect."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write"
+  }
+ ]
+}

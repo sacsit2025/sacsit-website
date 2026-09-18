@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700" role="img" aria-label="Maintenance at the centre of one database, giving to and taking from the SCADA, the performance system, the execution system and the record">
+  <defs>
+    <marker id="cmHeadR" viewBox="0 0 12 10" refX="11" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L12,5 L0,10 z" fill="#EE9F46"/>
+    </marker>
+    <style>
+      .lbl{font-family:Saira,Inter,sans-serif;font-weight:600}
+      .cap{font-family:Saira,Inter,sans-serif;font-weight:500;font-size:17px;fill:#5A6B7A;letter-spacing:.01em}
+      .chip{font-family:Saira,Inter,sans-serif;font-weight:700;font-size:23px;fill:#14202F;letter-spacing:.14em}
+      .gives{stroke:#46C3EE;stroke-width:2.4;fill:none}
+      .takes{stroke:#46C3EE;stroke-width:2.4;fill:none;stroke-dasharray:9 6;opacity:.85}
+    </style>
+  </defs>
+
+  <!-- the hub: maintenance, standing on one cylinder -->
+  <rect x="600" y="108" width="400" height="384" rx="10" fill="#14202F" stroke="#46C3EE" stroke-width="2"/>
+  <text class="lbl" x="800" y="168" text-anchor="middle" font-size="34" fill="#FFFFFF" letter-spacing=".06em">MAINTENANCE</text>
+  <line x1="648" y1="192" x2="952" y2="192" stroke="#46C3EE" stroke-width="1" opacity=".55"/>
+  <text class="lbl" x="800" y="216" text-anchor="middle" font-size="16" fill="#46C3EE" letter-spacing=".18em">A FOLD, NOT A PRODUCT</text>
+
+  <!-- the cylinder inside the hub -->
+  <path d="M680 288 h240 v122 a120 22 0 0 1 -240 0 z" fill="#0E1725" stroke="#46C3EE" stroke-width="1.6"/>
+  <ellipse cx="800" cy="288" rx="120" ry="22" fill="#1B2A3C" stroke="#46C3EE" stroke-width="1.6"/>
+  <text class="lbl" x="800" y="372" text-anchor="middle" font-size="19" fill="#46C3EE" letter-spacing=".14em">ONE DATABASE</text>
+  <text class="lbl" x="800" y="460" text-anchor="middle" font-size="16" fill="#9DB0C4" letter-spacing=".06em">the same rows, read five ways</text>
+
+  <!-- ============ top left · the SCADA ============ -->
+  <rect x="60" y="122" width="260" height="94" rx="6" fill="#46C3EE"/>
+  <text class="chip" x="190" y="177" text-anchor="middle">SCADA</text>
+  <line class="gives" x1="596" y1="152" x2="334" y2="152" marker-end="url(#cmHeadR)"/>
+  <line class="takes" x1="334" y1="190" x2="596" y2="190" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="465" y="141" text-anchor="middle">the fault, numbered</text>
+  <text class="cap" x="465" y="212" text-anchor="middle">machines, signals, the alarm</text>
+
+  <!-- ============ bottom left · the performance system ============ -->
+  <rect x="60" y="384" width="260" height="94" rx="6" fill="#46C3EE"/>
+  <text class="chip" x="190" y="439" text-anchor="middle">EPS</text>
+  <line class="gives" x1="596" y1="414" x2="334" y2="414" marker-end="url(#cmHeadR)"/>
+  <line class="takes" x1="334" y1="452" x2="596" y2="452" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="465" y="403" text-anchor="middle">protected time</text>
+  <text class="cap" x="465" y="474" text-anchor="middle">the run ledger, the stop</text>
+
+  <!-- ============ top right · the execution system ============ -->
+  <rect x="1280" y="122" width="260" height="94" rx="6" fill="#46C3EE"/>
+  <text class="chip" x="1410" y="177" text-anchor="middle">EMS</text>
+  <line class="gives" x1="1004" y1="152" x2="1266" y2="152" marker-end="url(#cmHeadR)"/>
+  <line class="takes" x1="1266" y1="190" x2="1004" y2="190" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="1135" y="141" text-anchor="middle">the window on the plan</text>
+  <text class="cap" x="1135" y="212" text-anchor="middle">the order that is running</text>
+
+  <!-- ============ bottom right · the record ============ -->
+  <rect x="1280" y="384" width="260" height="94" rx="6" fill="#46C3EE"/>
+  <text class="chip" x="1410" y="439" text-anchor="middle">REPORTS</text>
+  <line class="gives" x1="1004" y1="414" x2="1266" y2="414" marker-end="url(#cmHeadR)"/>
+  <line class="takes" x1="1266" y1="452" x2="1004" y2="452" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="1135" y="403" text-anchor="middle">the sealed record</text>
+  <text class="cap" x="1135" y="474" text-anchor="middle">the engine and the letterhead</text>
+
+  <!-- the line under the figure, and the reading grammar -->
+  <text class="lbl" x="800" y="588" text-anchor="middle" font-size="26" fill="#14202F">one database, so there is nothing to connect</text>
+  <line class="gives" x1="536" y1="638" x2="596" y2="638" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="608" y="644" text-anchor="start">what maintenance gives</text>
+  <line class="takes" x1="928" y1="638" x2="988" y2="638" marker-end="url(#cmHeadR)"/>
+  <text class="cap" x="1000" y="644" text-anchor="start">what it takes</text>
+</svg>

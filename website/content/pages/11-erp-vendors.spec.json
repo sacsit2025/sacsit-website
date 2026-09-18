@@ -1,0 +1,125 @@
+{
+ "page": "11-erp-vendors",
+ "title": "ERP vendors",
+ "nav": "partners",
+ "hero": {
+  "kicker": "Partners · ERP vendors",
+  "h1": "Close the loop between the order and the line.",
+  "dek": "The ERP sends the production order; SOP runs it on the line and sends back what was made, what was used, what stopped and what was repaired, with a signed record.",
+  "plate": "knowledge/assets/wb/WB-06.jpg",
+  "alt": "the end of a packaging line, cases on the rollers, the day's schedule on a tablet"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "partners-erp-loop",
+   "n": "01",
+   "of": "04",
+   "title": "The ERP sends the order, SOP runs it",
+   "plate": "knowledge/assets/wb/WB-13.jpg",
+   "alt": "a wall monitor with a synoptic and an open paper logbook on the desk beside it"
+  },
+  {
+   "type": "prose",
+   "title": "The loop, in one line.",
+   "cols": [
+    [
+     "<b>Who this page is for</b> — mid-market and regional ERP vendors and their implementation partners, the ones factories already run finance and orders on.",
+     "<b>What the shop floor asks for</b> — execution, consumption, meters, maintenance and the record."
+    ],
+    [
+     "<b>The loop</b> — the ERP sends the production order; SOP runs it on the line and sends back what was made, what was used, what stopped and what was repaired, with a signed record.",
+     "<b>Plant-to-ledger</b> — your offer becomes plant-to-ledger."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-erp-record",
+   "n": "02",
+   "of": "04",
+   "title": "What comes back: made, used, stopped, repaired — signed",
+   "plate": "knowledge/assets/wb/WB-09.jpg",
+   "alt": "a standing desk at the edge of the hall, the shift handover signed on paper",
+   "promise": "What was made, what was used, what stopped and what was repaired — with a signed record."
+  },
+  {
+   "type": "prose",
+   "title": "What comes back.",
+   "cols": [
+    [
+     "<b>Orders and batches</b> — EMS orders and batches, with made and used per batch.",
+     "<b>The parts-store ledger</b> — what moved off the shelf, against which job.",
+     "<b>Work orders</b> — with labour and parts priced."
+    ],
+    [
+     "<b>Reports over an order</b> — the record, computed and signed over the order itself.",
+     "<b>The seam</b> — order, material, stock-movement and work-order interfaces."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "These are what can be shown today, on the running plant."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-erp-white-label",
+   "n": "03",
+   "of": "04",
+   "title": "Inside your own contract",
+   "plate": "knowledge/assets/wb/WB-11.jpg",
+   "alt": "four people around a laptop on a stainless table at the end of a packaging line",
+   "crop": "12:5 centre-cropped to 8:5"
+  },
+  {
+   "type": "prose",
+   "title": "What a partnership would have to settle.",
+   "cols": [
+    [
+     "<b>Per line, inside your own contract</b> — per-line bundles you can price inside your own contracts.",
+     "<b>The decision we are after</b> — add SOP as the plant-floor module of your offer.",
+     "<b>Who owns the master data</b> — materials, products and units: the ERP, or SOP. Settled once, per plant."
+    ],
+    [
+     "<b>Which market first</b> — which ERP, in which region, fits first.",
+     "<b>Resell, or refer</b> — both shapes are open, and settled in the conversation."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-erp-references",
+   "n": "04",
+   "of": "04",
+   "title": "Joint reference plants",
+   "plate": "knowledge/assets/wb/WB-16.jpg",
+   "alt": "a meeting room at dusk, a wall screen with five plant tiles, five people seen from behind"
+  },
+  {
+   "type": "prose",
+   "title": "Where it goes together.",
+   "cols": [
+    [
+     "<b>Joint reference plants</b> — the plants where the loop is closed once, and both offers can point at it."
+    ],
+    [
+     "<b>No plant is named</b> — none exists yet to name, and none would be named."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue."
+  }
+ ]
+}

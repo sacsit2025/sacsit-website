@@ -1,0 +1,727 @@
+{
+ "page": "06-maintenance",
+ "title": "Maintenance",
+ "nav": "cmms",
+ "source": "knowledge/capabilities/CMMS.md (the CMMS brochure, 14 pages)",
+ "hero": {
+  "kicker": "Capability 04 · CMMS · Computerized Maintenance Management System",
+  "h1": "A maintenance system that needs no data entry.",
+  "dek": "The plant already knows when each machine ran, when it stopped and what the operator said about it. Maintenance should be arithmetic over that record — not a second one somebody has to keep.",
+  "plate": "knowledge/assets/wb/WB-08.jpg"
+ },
+ "sections": [
+  {
+   "type": "chooser",
+   "title": "Everything the maintenance system does, in one glance.",
+   "chips": [
+    "the maintenance board",
+    "the editor's maintenance room",
+    "the technician's phone",
+    "Reports"
+   ],
+   "columns": [
+    "You want",
+    "What SOP does, and where",
+    "the place"
+   ],
+   "rows": [
+    [
+     "To know what maintenance owes you right now",
+     "The board opens on the debt: overdue, due today, this week, later, and what the line has asked for.",
+     "`the board`"
+    ],
+    [
+     "To see the week the crew is walking into",
+     "Seven days from today, protected windows drawn as rooms, anything late pinned to today.",
+     "`the week`"
+    ],
+    [
+     "To ask which machine is hurting you",
+     "One card per machine: its open jobs, its meters, mean time between failures, mean time to repair, and the downtime behind it.",
+     "`the machines wall`"
+    ],
+    [
+     "To know whether the shelf will stop a job",
+     "Shortages pinned on top, each naming the jobs it is holding.",
+     "`parts`"
+    ],
+    [
+     "To tell maintenance something is wrong",
+     "Raise it: the machine, what is wrong, how bad, and whether the line is down because of it.",
+     "`the board, top`"
+    ],
+    [
+     "To turn a stop or an alarm into tracked work",
+     "Call maintenance on the restart receipt, or in the alarm acknowledgement: the machine, the moment and the reason ride along.",
+     "`the performance page, the alarm`"
+    ],
+    [
+     "To put the work in the crew's hands",
+     "Release it: the checklist freezes on the spot and a protected window is booked.",
+     "`the job's dossier`"
+    ],
+    [
+     "To do the work",
+     "Take it, start it, work the steps, finish it — on a phone, with nothing installed.",
+     "`the job screen`"
+    ],
+    [
+     "To close it properly",
+     "Minutes, stopped time, what you found, why it happened, then sign.",
+     "`the close pane`"
+    ],
+    [
+     "To set a machine up in one press",
+     "Choose the machine's type and dress it: its parts, its plans, their checklists, the spares each job needs and the failure words all arrive.",
+     "`the editor's maintenance room`"
+    ],
+    [
+     "To say when a machine gets serviced",
+     "On a date, so many days since the last one, every so many running hours or starts, when a tag says so, after too many breakdowns — and one that follows a signed repair by itself.",
+     "`the plan pane`"
+    ],
+    [
+     "To catalogue a spare or move stock",
+     "Received, taken, put back, corrected: the shelf is the sum of its movements, and the whole site's ledger is one door away.",
+     "`the store`"
+    ],
+    [
+     "To prove the work was done",
+     "On time against due, the money argument, what broke and why, and every closed job as its own sheet.",
+     "`the record, then Reports`"
+    ]
+   ],
+   "note": "Every job is born a draft. The machine and the operator propose; a supervisor releases."
+  },
+  {
+   "type": "head",
+   "n": "01",
+   "of": "07",
+   "id": "cmms-plant",
+   "title": "The plant under it",
+   "plate": "knowledge/assets/wb/WB-05.jpg",
+   "promise": "It opens on a plant that is already there."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Maintenance here is not a system you feed.",
+     "It is arithmetic over the plant the SCADA is already writing: the same machines, the same signals, the same alarm journal, and the same history the trends read."
+    ],
+    [
+     "Maintenance is not a product beside the SCADA here; it is a fold over the same rows."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "It opens on a plant that is already there:",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-synoptic.png",
+    "chrome": "the live pages · Beverage Line 7",
+    "caption": "The live line the maintenance sits on — drawn once, served on every screen."
+   },
+   "items": [
+    {
+     "lead": "The same pages everywhere",
+     "text": "The same pages follow a user from the wall panel to a phone, with nothing installed and nothing licensed per screen; three languages from one design."
+    },
+    {
+     "lead": "Every machine carries its own door",
+     "text": "Tap a pump for its faceplate, its journal and its documents, from the page it stands on."
+    },
+    {
+     "lead": "The journal a fault is called from",
+     "text": "Alarms prioritised, acknowledged, shelved with a reason, kept in a journal a tag delete cannot rewrite."
+    },
+    {
+     "lead": "The job and the alarm point at the same event",
+     "text": "It is the journal a fault is called into maintenance from."
+    },
+    {
+     "lead": "TimeLens replay",
+     "text": "Replays any screen from the history the plant already keeps: the alarms at that moment, commands off, the day's timeline, back to live."
+    },
+    {
+     "lead": "The Tag Lens",
+     "text": "Shows where one signal is used — pages, trends, alarms, report blocks, conditions — before anybody renames it."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-card.png",
+     "caption": "The Tag Lens — one signal, with every page, trend, alarm, report block and condition that uses it."
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-timelens-bar.png",
+     "caption": "TimeLens under any replayed screen — the alarms at that moment, commands off, the day's timeline, back to live.",
+     "size": "full"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "02",
+   "of": "07",
+   "id": "cmms-type",
+   "title": "The machine's type",
+   "promise": "One word plants the whole maintenance package.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "A machine arrives with a code, a name and one word: its kind.",
+     "That word carries its parts, its service plans, the steps a fitter will work through, the spares each job will need and the words he picks from when something breaks."
+    ],
+    [
+     "On the screens that word is the machine's <b>type</b>."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Dress it from the type, in one press:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/cmms/shot-type-package.png",
+    "chrome": "the editor's maintenance room · the type package",
+    "caption": "One press, and the machine's type hands down its parts, its plans and the words for a breakdown."
+   },
+   "items": [
+    {
+     "lead": "Register a machine and give it its type",
+     "text": "One word carries its parts, its service plans, the steps a fitter works through, the spares each job needs and the words he picks from when something breaks."
+    },
+    {
+     "lead": "Dress it from the type",
+     "text": "Sets a machine up in one press: its parts, its plans, their checklists, the spares each job needs and the failure words all arrive."
+    },
+    {
+     "lead": "Parts arrive ranked by criticality",
+     "text": "The parts a type hands down arrive ranked by how critical each one is."
+    },
+    {
+     "lead": "Restore this type's factory parts",
+     "text": "A deleted plan comes back whole with its steps and its tolerances; a type that never had a factory set says so in plain words instead of an error."
+    },
+    {
+     "lead": "Change a machine's type",
+     "text": "Refused while a job is open; once that job is finished or cancelled it sheds the old package and takes the new one."
+    },
+    {
+     "lead": "The delete dialog names the losses",
+     "text": "It names everything that would die with a machine before you press it."
+    },
+    {
+     "lead": "Not a maintained asset",
+     "text": "A vessel or a meter point leaves the maintenance wall and every machine count, and stops reading as somebody's missed maintenance."
+    },
+    {
+     "lead": "Change the interval on the machine",
+     "text": "The library is a starting point, never a rule: dressing again is additive, and no interval you changed is ever put back."
+    },
+    {
+     "lead": "The type's own failure words",
+     "text": "At the close the cause list is that machine's own, so the ranking of what breaks is never diluted by words somebody typed."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The type copies, it never lends: change the library afterwards and nothing already dressed moves."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "03",
+   "of": "07",
+   "id": "cmms-meters",
+   "title": "Meters and plans",
+   "promise": "A meter nobody types cannot drift.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Running hours and start counts are not typed here."
+    ],
+    [
+     "They are folded from the line's own record of when it ran and when it stopped, so a plan fires on what the machine actually did — not on what somebody remembered to write down."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Say when a machine gets serviced:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/cmms/shot-plan-fire.png",
+    "chrome": "the plan pane · when it will fire",
+    "caption": "The plan says when it will fire, and the same arithmetic that raises the job draws the preview."
+   },
+   "items": [
+    {
+     "lead": "Meters that keep themselves",
+     "text": "Running hours and starts keep themselves, every shift, with nobody asked and nothing to remember."
+    },
+    {
+     "lead": "Correct the offset once",
+     "text": "Every total since corrects itself, and the last-service mark moves by the same amount, so no plan fires early."
+    },
+    {
+     "lead": "A machine with no signal of its own",
+     "text": "It works the same plan grammar from a number a person read off it."
+    },
+    {
+     "lead": "Five ways a service comes due",
+     "text": "On a date; a set number of days after the last one; every so many running hours or starts; when a signal on the line says it is owed; once a machine has broken down too often."
+    },
+    {
+     "lead": "The follow-up born from a signed repair",
+     "text": "Born only when something was actually found; never scanned for and never guessed."
+    },
+    {
+     "lead": "The preview cannot disagree with the engine",
+     "text": "The next due date is previewed by the same arithmetic that raises the job."
+    },
+    {
+     "lead": "A meter plan's due date reads estimated",
+     "text": "It is projected from the rate the machine is actually running at."
+    },
+    {
+     "lead": "A plan with an open job stays quiet",
+     "text": "No second job while the crew is still on the last one, and every job it raises is born a draft for a person to release."
+    },
+    {
+     "lead": "The machines wall",
+     "text": "One card per machine: its open jobs, its meters, mean time between failures, mean time to repair, and the downtime behind it."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/cmms/shot-trigger-kinds.png",
+     "caption": "The ways a service comes due, as the plan pane offers them."
+    },
+    {
+     "asset": "knowledge/assets/screens/home/CMMS-machines-board.png",
+     "caption": "The machines — every machine's open jobs, its running hours against the next service, mean time between failures and mean time to repair."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "04",
+   "of": "07",
+   "id": "cmms-fault-to-job",
+   "title": "From fault to job",
+   "promise": "The stop becomes the job in one tap.",
+   "plate": "knowledge/assets/wb/WB-21.jpg"
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "A fault that stays in a conversation is a fault nobody can count."
+    ],
+    [
+     "Here the stop, the alarm and the operator's own words all become the same numbered job — and a supervisor decides what happens to it."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Turn a stop or an alarm into tracked work:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/cmms/shot-raise-door.png",
+    "chrome": "the board · raise a job",
+    "caption": "The door a fault becomes a numbered job through."
+   },
+   "items": [
+    {
+     "lead": "The board opens on the debt",
+     "text": "Overdue, due today, this week, later, and what the line has asked for."
+    },
+    {
+     "lead": "The week the crew walks into",
+     "text": "Seven days from today, protected windows drawn as rooms, anything late pinned to today."
+    },
+    {
+     "lead": "Raise it",
+     "text": "Tell maintenance something is wrong: the machine, what is wrong, how bad, whether the line is down because of it."
+    },
+    {
+     "lead": "Call maintenance from a stop",
+     "text": "Turns a stop into tracked work: the machine, the moment and the reason ride along, nothing retyped."
+    },
+    {
+     "lead": "Call maintenance from an alarm",
+     "text": "The same request carrying the alarm itself, so the job and the alarm can never point at different events."
+    },
+    {
+     "lead": "Make it a job",
+     "text": "Turns a real ask into a numbered work order; a request with no machine named is refused until one is."
+    },
+    {
+     "lead": "Release does three things at once",
+     "text": "The checklist freezes from the plan, the job goes to a name, and a protected window is booked when the job genuinely stops the line and the plant has left that switch on."
+    },
+    {
+     "lead": "Cancel the job, with a reason",
+     "text": "The reason is demanded, and the record keeps it next to who cancelled it and when."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "An ask is not a job: nothing is scheduled, nothing is counted and nobody is assigned until a supervisor turns it into one."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-alarm-console.png",
+     "caption": "The alarm a fitter is called from."
+    },
+    {
+     "asset": "knowledge/assets/screens/home/CMMS-the-board-job-panel-crop.png",
+     "caption": "One job opened — why now, the checklist that will freeze, the part the shelf is short of, one press to release.",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "05",
+   "of": "07",
+   "id": "cmms-phone",
+   "title": "The technician's phone",
+   "promise": "The phone is the technician's whole tool.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The same application, sized for a hand: nothing to install, nothing licensed per screen, and nothing filed later."
+    ],
+    [
+     "Every press writes at once."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Take it, start it, work it, finish it:",
+   "screen": {
+    "asset": "knowledge/assets/screens/crops/m-hmi-job-crop.png",
+    "chrome": "the job screen · on a phone",
+    "caption": "The frozen checklist with its readings, in a fitter's hand."
+   },
+   "items": [
+    {
+     "lead": "Filter to mine",
+     "text": "His jobs, late first, each with its machine, why it is due and what the plan expects to find on the shelf."
+    },
+    {
+     "lead": "I'll take it",
+     "text": "The job is his; a take can only ever point at the person pressing it, and the name is the state, so there is no badge to look for."
+    },
+    {
+     "lead": "A reading judged at the box",
+     "text": "A measurement with a limit is judged in red before anything is sent."
+    },
+    {
+     "lead": "A failed step blocks the close",
+     "text": "The job cannot be closed while a required step is failed or unfinished."
+    },
+    {
+     "lead": "Take a spare from the step",
+     "text": "Stock moves there and then against this job: no confirmation, no quantity box, no partial take, exactly what the plan froze."
+    },
+    {
+     "lead": "The store's own words when the shelf is short",
+     "text": "The store answers the take in its own words instead of failing quietly."
+    },
+    {
+     "lead": "A photograph on the step",
+     "text": "Filed with the job and readable for ever; a wrong photograph is answered with a better one, never removed."
+    },
+    {
+     "lead": "Finish, then close and sign",
+     "text": "The close books the minutes, prices the labour from the line's own rate, books the parts, moves the counters, records what broke and why, and seals the record."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The checklist freezes at release, so a plan edited next month never rewrites work already in flight."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/m-hmi-jobs-crop.png",
+     "caption": "The jobs board on a phone — the filters, the job rows.",
+     "size": "native"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-mnt-phone-wo.png",
+     "caption": "Finishing and closing a job where the machine is.",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "06",
+   "of": "07",
+   "id": "cmms-parts",
+   "title": "Parts and the shelf",
+   "promise": "The shelf answers before the technician walks to it.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The store is not a number somebody keeps up to date."
+    ],
+    [
+     "Stock is the sum of every receipt, issue, return and correction — so the shelf can answer a job before the crew is sent to do it."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Catalogue a spare or move stock:",
+   "screen": {
+    "asset": "knowledge/assets/brochure/cmms/shot-store.png",
+    "chrome": "the store · what a job will be short of",
+    "caption": "The store, read by what a job will be short of."
+   },
+   "items": [
+    {
+     "lead": "Parts held against the shelf",
+     "text": "A job's expected parts answer ready or short before anyone walks anywhere, with the quantity the plan asked for."
+    },
+    {
+     "lead": "Shortages pinned on top",
+     "text": "Each names the jobs it is holding, with its bin and its family."
+    },
+    {
+     "lead": "Record a movement",
+     "text": "Received, or corrected with a note: the shelf moves and the running balance shows it."
+    },
+    {
+     "lead": "The ledger refuses edits and deletes",
+     "text": "A mistake is corrected by a movement that says so."
+    },
+    {
+     "lead": "Bind the need to the spare",
+     "text": "“A mechanical seal” becomes this site's part number and quantity, and the picker puts what this machine actually eats at the top of the list."
+    },
+    {
+     "lead": "A spare that belongs to one line",
+     "text": "It leaves every other line's store, its stock report and its shortage count."
+    },
+    {
+     "lead": "Stock movements, the whole site's ledger",
+     "text": "Newest first, by day, with the job, the delivery note and the person — and a spreadsheet in one press."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "One shelf per site, shared by every line on it, unless a spare is marked as belonging to one line only."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/cmms/shot-ledger.png",
+     "caption": "Every hand that touched the shelf — what moved, against which job, and who."
+    },
+    {
+     "asset": "knowledge/assets/brochure/cmms/shot-dossier.png",
+     "caption": "The job's dossier — why now, the checklist that will freeze, the part the shelf is short of.",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "n": "07",
+   "of": "07",
+   "id": "cmms-record",
+   "title": "The record",
+   "promise": "A record nobody signed is a note.",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Every close writes a record the plant can hand over: designed once, computed on the server, frozen, numbered, sealed, signed, and printed on the plant's own letterhead."
+    ]
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Prove the work was done:",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-report-print.png",
+    "chrome": "the maintenance review · as it prints",
+    "caption": "The monthly review as SOP prints it, on the plant's own letterhead."
+   },
+   "items": [
+    {
+     "lead": "01 Design",
+     "text": "Blocks bound to real rows: the checklist and its readings, the parts a job consumed, done against due, what broke, and each machine's reliability."
+    },
+    {
+     "lead": "02 Compute",
+     "text": "On the server, in the plant's own clock: as each maintenance job closes, every week, every month, or over the range an auditor names."
+    },
+    {
+     "lead": "03 Seal",
+     "text": "Frozen on arrival, numbered, fingerprinted; run it again and you have a second document beside the first, never a refresh."
+    },
+    {
+     "lead": "04 Sign",
+     "text": "By name and capacity, proved with the signer's own password, bound to the fingerprint, never edited and never withdrawn."
+    },
+    {
+     "lead": "05 Deliver",
+     "text": "Printed on the plant's letterhead in three languages, e-mailed to the list, filed as a PDF, exported as a spreadsheet."
+    },
+    {
+     "lead": "0 report servers",
+     "text": "The engine runs on the backend already installed; a small worker files the PDF and posts it."
+    },
+    {
+     "lead": "0 third-party licences",
+     "text": "No reporting product, no rendering licence, no designer bought separately."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The sheets a maintenance manager is judged on",
+   "cols": [
+    [
+     "<b>The maintenance record</b> — One job on one sheet: its checklist, its readings against their limits, the parts it used and the signature.",
+     "<b>The week ahead</b> — What falls due, what is already late, and what part is missing.",
+     "<b>The maintenance review</b> — Done against due, what broke, mean time between failures and mean time to repair, what it cost and who did the work.",
+     "<b>Bad actors</b> — The worst machines and the worst causes, ranked by the downtime behind them."
+    ],
+    [
+     "<b>The audit sheet</b> — The same numbers narrowed to the machines a person ticked; critical equipment is a list a person ticks, not a flag the software keeps.",
+     "<b>Nothing on the sheet is typed</b> — Labour from the minutes the job booked and the line's own rate, parts from the ledger as they were priced the day they were issued.",
+     "<b>A dash, and how many</b> — Where a figure was never given the sheet prints a dash and says how many, never a confident zero.",
+     "<b>A signed record stays as signed</b> — Or it becomes an openly unsigned one."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/sheet-record-crop.png",
+     "caption": "The one-job record — numbered, sealed, with the machine, the part and where the job came from.",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/screens/crops/sheet-review-crop.png",
+     "caption": "The month as maintenance is judged on it — what actually breaks, and reliability per machine.",
+     "size": "full"
+    }
+   ]
+  },
+  {
+   "type": "blockB",
+   "title": "And what no other platform does like us",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/cmms/CM-D1.svg",
+     "chrome": "maintenance, and the four it lives with",
+     "caption": "What maintenance gives the rest of the plant, and what it takes from it — solid gives, dashed takes."
+    }
+   ],
+   "items": [
+    {
+     "lead": "It opens on a plant that is already there",
+     "text": "Maintenance is not a system you feed; it is arithmetic over the plant the SCADA is already writing, on the same rows."
+    },
+    {
+     "lead": "One word plants the whole maintenance package",
+     "text": "The machine's type carries its parts, its plans, their checklists, the spares each job needs and the failure words — and the type copies, it never lends."
+    },
+    {
+     "lead": "A meter nobody types cannot drift",
+     "text": "Running hours and starts keep themselves from the line's own record; correct an offset once and every total since corrects itself."
+    },
+    {
+     "lead": "The stop becomes the job in one tap",
+     "text": "From the restart receipt or from the alarm acknowledgement, so the job and the alarm can never point at different events."
+    },
+    {
+     "lead": "The phone is the technician's whole tool",
+     "text": "Nothing to install, nothing licensed per screen, nothing filed later: every press writes at once."
+    },
+    {
+     "lead": "The shelf answers before the technician walks to it",
+     "text": "Stock is the sum of its movements, shortages pinned on top naming the jobs they hold, and the ledger refuses edits and deletes."
+    },
+    {
+     "lead": "A record nobody signed is a note",
+     "text": "Computed on the server, frozen, numbered, sealed, signed by name and capacity, never edited and never withdrawn — with no report server and no second database."
+    },
+    {
+     "lead": "Nothing to connect, because there is nothing to connect",
+     "text": "A released job books a protected window the performance engine already honours, on the same plan the production orders are laid out on; no meter to transport, no asset register to type, and no nightly job that copies yesterday's plant into a second database."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "None of this is an interface between products. It is the same rows, read four ways, under one security model that reaches the printed sheet."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write"
+  }
+ ]
+}

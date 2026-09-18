@@ -1,0 +1,1105 @@
+{
+ "page": "03-scada",
+ "title": "SCADA",
+ "nav": "scada",
+ "promise": "One page, every screen it is opened on.",
+ "hero": {
+  "kicker": "Capability 01 · SCADA",
+  "h1": "The plant keeps its pages when the server stops.",
+  "dek": "One database for the whole plant. The pages, the alarms, the trends and the record are the same rows — and the line's own edge keeps serving them when the centre cannot.",
+  "plate": "knowledge/assets/wb/WB-01f.jpg"
+ },
+ "sections": [
+  {
+   "type": "blockA",
+   "id": "scada-all",
+   "title": "Everything a SCADA does, it does:",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-editor-preview.png",
+    "chrome": "the page designer · Beverage Line 7 · Preview",
+    "caption": "The page designer in Preview: the operator's own screen on the plant's real values, while the work is still being done"
+   },
+   "items": [
+    {
+     "lead": "Synoptics",
+     "text": "the whole line at a glance on one synoptic, live, on the wall panel, the desk and the phone"
+    },
+    {
+     "lead": "Machines",
+     "text": "a faceplate on every machine: its values, a small trend, its alarms, its causes, its commands and its documents"
+    },
+    {
+     "lead": "Commands",
+     "text": "attributed, timestamped, and refused in the database when the person may not"
+    },
+    {
+     "lead": "Alarms",
+     "text": "prioritised, acknowledged by name, shelved with a reason and a return time; the journal that keeps every one; the insights ISA-18.2 and EEMUA 191 ask for — the rate against its target, the response times, the flood episodes, the alarms that raise most; the shift handover sheet"
+    },
+    {
+     "lead": "Trends",
+     "text": "two cursors and the numbers across the span; shift-aware windows on the plant's clock; annotations that stay with your name and the time; a stamped export; a link that opens the same window for a colleague"
+    },
+    {
+     "lead": "History",
+     "text": "every reading kept; a month of a slow signal drawn as fast as an hour"
+    },
+    {
+     "lead": "Engineering",
+     "text": "a browser editor with live preview against the running line; a symbol library by equipment family; a line travels to the next plant as one file"
+    },
+    {
+     "lead": "Rights and record",
+     "text": "users, groups and rights down to one page, one signal, one module; the audit journal across the fleet"
+    },
+    {
+     "lead": "Languages and panels",
+     "text": "three languages, right to left included; the pinned panel that shows one line and nothing else"
+    },
+    {
+     "lead": "Drivers and servers",
+     "text": "the drivers a plant needs — Modbus, OPC DA, Siemens S7 and OPC UA among them; duty and standby servers"
+    }
+   ]
+  },
+  {
+   "type": "chooser",
+   "id": "scada-glance",
+   "title": "Everything it does, in one glance",
+   "chips": [
+    "You want",
+    "What SOP does",
+    "Where it is"
+   ],
+   "columns": [
+    "You want",
+    "What SOP does",
+    "Where it is"
+   ],
+   "rows": [
+    [
+     "the whole line at a glance",
+     "one synoptic drawn once and served on every screen, live",
+     "the HMI, the line overview"
+    ],
+    [
+     "to look inside one machine",
+     "a faceplate on the machine itself: its values, a small trend, its own alarms, its causes, its commands and its documents",
+     "tap the pump or the valve on the page"
+    ],
+    [
+     "to start, stop or set a value",
+     "a command that is attributed, timestamped, and refused in the database when the person may not",
+     "the command widgets on the page"
+    ],
+    [
+     "a panel that shows one line and nothing else",
+     "the panel is pinned to that line and cannot wander",
+     "the station, set once by the administrator"
+    ],
+    [
+     "the plant's own language",
+     "the same pages in three languages, right to left included, chosen per person",
+     "the account menu, and the page's own names"
+    ],
+    [
+     "to know an alarm the moment it raises",
+     "prioritised alarms with the rate against its target and the standing count",
+     "the HMI, alarms"
+    ],
+    [
+     "to park a nuisance alarm honestly",
+     "it is shelved with a reason and a return time, and everyone can see both",
+     "the alarm's own card"
+    ],
+    [
+     "the screen as it was when the alarm came in",
+     "one press from the alarm to that page at that moment",
+     "View in TimeLens, on the alarm card"
+    ],
+    [
+     "to compare two signals over a shift",
+     "lanes or one lane, two cursors, and the numbers across the span",
+     "the HMI, trends"
+    ],
+    [
+     "to send a colleague exactly this view",
+     "a link that opens the same window and the same pens",
+     "the trend's copy link"
+    ],
+    [
+     "to draw or change a screen",
+     "a browser editor with live preview against the running line",
+     "the editor, pages"
+    ],
+    [
+     "to know what a tag touches before changing it",
+     "every page, trend, alarm, report block, formula and condition that uses it",
+     "the editor, the Tag Lens"
+    ],
+    [
+     "to move a line to the next plant",
+     "duplicate it in one press, or carry it as one portable file",
+     "the editor, the project card"
+    ],
+    [
+     "the plant to keep running when the server does not",
+     "the edge serves the plant's real pages on the LAN, and a standby server takes the address when the duty stops",
+     "the line's own edge; the config console, the servers"
+    ],
+    [
+     "the datasheet, standing at the machine",
+     "the documents attached to the machine open over the page, the others beside them",
+     "the machine's own door, its documents"
+    ],
+    [
+     "a signal that is on nobody's chart",
+     "add it yourself; it draws beside the saved curves and the star keeps it for your next shift",
+     "the trend's Add tag and Save as my view"
+    ],
+    [
+     "one crew to see one set of screens, one module, one valve",
+     "a list on the page, the module or the signal; off the list a page goes away, not grey",
+     "the editor's Can see and open, the console's module access"
+    ],
+    [
+     "to answer an auditor about Tuesday",
+     "every command, acknowledgement, shelving and grant across the fleet, narrowed and exported",
+     "the config console, the audit journal"
+    ]
+   ],
+   "note": "Nothing on this page is a module you buy later. It is what the SCADA is."
+  },
+  {
+   "type": "head",
+   "n": "01",
+   "of": "10",
+   "id": "scada-synoptics",
+   "title": "Synoptics, every screen",
+   "plate": "knowledge/assets/wb/WB-05.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "One page, every screen it is opened on.",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-synoptic.png",
+    "chrome": "the HMI · Beverage Line 7 · the line overview",
+    "caption": "the live line overview: the process train, the day's counters, area health and the alarm banner"
+   },
+   "items": [
+    {
+     "lead": "One synoptic, every screen",
+     "text": "One page drawn once, served live on the wall panel, the desk and the phone; nothing installed, nothing licensed per screen."
+    },
+    {
+     "lead": "The page tree, drawn live",
+     "text": "The operator's pages in plant order, the page itself drawn live beside the tree, not a thumbnail."
+    },
+    {
+     "lead": "Alarm pressure before opening",
+     "text": "Live values, the state of every machine and the alarm pressure on a page before it is opened."
+    },
+    {
+     "lead": "Command widget, two-step confirm",
+     "text": "A press on a writable signal that is attributed, timestamped, and refused in the database when the person may not."
+    },
+    {
+     "lead": "The pinned panel",
+     "text": "A panel that opens on one line's home page and cannot be navigated away."
+    },
+    {
+     "lead": "Three languages, per person",
+     "text": "The same pages in three languages, right to left included, chosen per person and not per site."
+    },
+    {
+     "lead": "Quality on every reading",
+     "text": "A stale or bad value is dressed as stale or bad, never drawn as a fresh number."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-hmi-pages.png",
+     "caption": "the operator's page tree in plant order, with the page itself drawn live beside it, not a thumbnail"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-hmi-overview.png",
+     "caption": "the Overview the operator opens on: the state, the day's alarm pressure, the health of the edge and its drivers, the commands as they were sent"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "One page, every screen it is opened on.",
+   "cols": [
+    [
+     "<b>The operator's screens are drawn once</b> and served everywhere, from the wall panel to a phone, with nothing installed and nothing licensed per screen. Values, states, alarms and commands sit on the same page, in the language the person reading it chose."
+    ],
+    [
+     "<b>A page is never redrawn for a second screen size:</b> the wall panel, the desk and the phone all serve the same page."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "02",
+   "of": "10",
+   "id": "scada-machines",
+   "title": "Machines and their documents",
+   "plate": "knowledge/assets/wb/WB-08.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "Every machine carries its own door, and its documents.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-faceplate.png",
+    "chrome": "the machine's door · Beverage Line 7 · the transfer pump",
+    "caption": "the machine's own door on a running line: its state, its readings, its own alarms, the causes its type carries, and its buttons"
+   },
+   "items": [
+    {
+     "lead": "The machine's own door",
+     "text": "One door on the machine: its values, a small trend, its own alarms, its causes, its commands and its documents."
+    },
+    {
+     "lead": "Readings with their trust",
+     "text": "The machine's state, its readings, and how far each one can be trusted."
+    },
+    {
+     "lead": "Interlocks, then alarms under them",
+     "text": "The machine's own bits, and separately what the alarm system recorded against it, never one posing as the other."
+    },
+    {
+     "lead": "The small trend inside the door",
+     "text": "That machine's own readings over a short window, on the raw values, so a spike is still a spike."
+    },
+    {
+     "lead": "Causes the machine's type carries",
+     "text": "The mechanical, electrical and process causes for that kind of machine, and one line naming what the alarm hides."
+    },
+    {
+     "lead": "Buttons inside the door",
+     "text": "Start or stop without leaving the machine: two-step confirm, then a press attributed, timestamped and refused when the person may not."
+    },
+    {
+     "lead": "Documents at the machine",
+     "text": "The sheet opens over the page with the others beside it, nothing to search for and nothing to download first."
+    },
+    {
+     "lead": "Details — the machine's full page",
+     "text": "That machine's full page opens, in the same window."
+    }
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "Put the paper in once. It opens at the machine.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-doc-library.png",
+    "chrome": "the editor · Beverage Line 7 · the document library",
+    "caption": "the line's document library: what is in it, which pages carry each one, and the press that swaps a revision"
+   },
+   "items": [
+    {
+     "lead": "One line, one document library",
+     "text": "The drawings, the datasheets and the procedures that came with the machines, put in once by an engineer with design rights on the line."
+    },
+    {
+     "lead": "Documents follow the page's rights",
+     "text": "Everyone who can open the page the machine sits on sees it; the file stays in the plant's private store, handed out one view at a time."
+    },
+    {
+     "lead": "A new revision, no page redrawn",
+     "text": "Replace the file in the library and every machine that carries it shows the new one."
+    },
+    {
+     "lead": "Nothing removed blind",
+     "text": "The library names every page still carrying a document, and counts them, before it lets go."
+    },
+    {
+     "lead": "Documents travel with the line",
+     "text": "Copy the line and its documents copy with it; carry the line to the next plant as one file and the documents ride inside it."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-fp-document.png",
+     "caption": "the datasheet opened from the machine's own door, with the other documents beside it"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-doc-where-used.png",
+     "caption": "nothing is removed blind: the library names the pages that still carry it",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Every machine carries its own door, and its documents.",
+   "cols": [
+    [
+     "<b>An operator who presses a pump on the page gets the machine itself:</b> what it is doing now, what it has been doing, what the alarm system has recorded against it, and the buttons that move it. Behind the same door sits the plant's own paper, put into the line once and opened at the machine that needs it.",
+     "<b>The fault light on the machine and the alarms under it are two different things:</b> a pump can sit with its fault bit clear and three unanswered alarms in the journal, so the door shows both, separately."
+    ],
+    [
+     "<b>One line, one document library:</b> the drawings, the datasheets and the procedures that came with its machines. An engineer puts a file in once, and it opens at the machine, for everyone who can open the page that machine sits on.",
+     "<b>The paper is part of the line:</b> it is one press from the pump, and it goes wherever the line goes."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "03",
+   "of": "10",
+   "id": "scada-alarms",
+   "title": "Alarms",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "An alarm is an event with a record.",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-alarm-console.png",
+    "chrome": "the HMI · Beverage Line 7 · alarms",
+    "caption": "the alarm console under a flood: the rate against its target, what is standing, what is shelved"
+   },
+   "items": [
+    {
+     "lead": "Write the alarm rule once",
+     "text": "Signal, limit, how long it must hold, how urgent; the edge beside the machine starts judging it within seconds, with no deploy step and no restart."
+    },
+    {
+     "lead": "Prioritised alarms, rate and standing count",
+     "text": "The board shows what is standing, the rate against its target, and what is shelved."
+    },
+    {
+     "lead": "Acknowledge by name, with a note",
+     "text": "The name, the moment and the note enter the record, and every open screen shows it at once."
+    },
+    {
+     "lead": "The card's guidance",
+     "text": "The live value, the half hour before it against its limit, and the cause, the consequence and the action the engineer wrote."
+    },
+    {
+     "lead": "Bulk acknowledge with one reason",
+     "text": "One entry per alarm carrying that reason, and the most critical band held back to be answered one at a time."
+    },
+    {
+     "lead": "Shelve with a reason and a return time",
+     "text": "A nuisance alarm leaves the board for a bounded time, everyone sees why and until when, and it comes back by itself."
+    },
+    {
+     "lead": "Alarm insights",
+     "text": "The response times, the flood episodes and the alarms that raise most — the insights ISA-18.2 and EEMUA 191 ask for."
+    },
+    {
+     "lead": "A journal that survives the rule",
+     "text": "Switch a rule off, repoint or delete it, and every alarm it raised stays in the journal, each saying why it ended."
+    },
+    {
+     "lead": "Shift handover",
+     "text": "What was still standing and still unanswered at the boundary, with the outgoing supervisor's note and signature."
+    },
+    {
+     "lead": "View in TimeLens from an alarm",
+     "text": "One press from the alarm to that page at that moment."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-alarm-card.png",
+     "caption": "the alarm on its own card: the live value, the half hour against its limit, the guidance — and View in TimeLens"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-alarm-rules.png",
+     "caption": "the rules behind it: the editor's alarm list on a real line, one row per rule"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "An alarm is an event with a record.",
+   "cols": [
+    [
+     "<b>An engineer writes the rule once,</b> the edge beside the machine judges it, and the person who answers leaves their name on the record. The board, the journal, the numbers and the printed sheet all read the same rows, so an alarm cannot mean one thing on a screen and another on paper."
+    ],
+    [
+     "<b>The same event carries the rule that judged it,</b> the person who answered it, the screen it belonged to and the sheet it is printed on, with no second product under any of them.",
+     "<b>Switch a rule off, point it at another signal or delete it altogether,</b> and every alarm it already raised stays in the journal, each one saying in its own words why it ended."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "04",
+   "of": "10",
+   "id": "scada-trends",
+   "title": "Trends",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "The engineer draws the chart. The operator finishes it.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-trend-adhoc.png",
+    "chrome": "the Trend Studio · Beverage Line 7 · two curves added",
+    "caption": "two curves an operator added to a saved chart, marked temporary, and the star that keeps them under a name of their own"
+   },
+   "items": [
+    {
+     "lead": "A trend is a saved chart",
+     "text": "The signals an engineer chose, the window it opens on, and how the bands are laid out."
+    },
+    {
+     "lead": "Lanes or one lane",
+     "text": "Signals stacked in lanes, or laid over one another."
+    },
+    {
+     "lead": "Shift-aware windows",
+     "text": "The shift that actually ran that day, on the plant's clock."
+    },
+    {
+     "lead": "Two cursors, the numbers across the span",
+     "text": "The lowest, the average, the highest and the difference."
+    },
+    {
+     "lead": "Add a tag yourself, keep it",
+     "text": "The unplanned curve draws beside the saved ones, and the star keeps it for the next shift."
+    },
+    {
+     "lead": "Any window, named resolution",
+     "text": "A month of a slow signal draws as fast as a short window, and the chart names the resolution."
+    },
+    {
+     "lead": "Annotate a moment",
+     "text": "The note stays on the chart with the writer's name and the time on it."
+    },
+    {
+     "lead": "Export and copy link",
+     "text": "Exactly the window on screen, stamped with what drew it; a link opens the same window and the same pens."
+    },
+    {
+     "lead": "The live-only warning",
+     "text": "Before a chart is built, the curve's row says the signal is live only."
+    },
+    {
+     "lead": "The trend designer, drawing as it is typed",
+     "text": "The real chart draws beside the form, on real history, at the window the operator will open on."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-trend-lanes.png",
+     "caption": "a day of plant signals in lanes with the shifts behind them"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-trend-cursors.png",
+     "caption": "two cursors, and the numbers across the span"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The engineer draws the chart. The operator finishes it.",
+   "cols": [
+    [
+     "<b>A trend is a saved chart:</b> the signals an engineer chose, the window it opens on, and how the bands are laid out. In the control room it stops being a picture and becomes an instrument, because the operator can add the curve nobody planned for and keep it for the next shift."
+    ],
+    [
+     "<b>A curve you add is yours alone,</b> and nothing you do on the chart changes what anyone else opens.",
+     "<b>It is the same database the screen is already drawing from,</b> and every operator already has it."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "05",
+   "of": "10",
+   "id": "scada-historian",
+   "title": "Historian",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "The history is part of the platform, not a product beside it.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-trend-designer.png",
+    "chrome": "the editor · Beverage Line 7 · the trend designer",
+    "caption": "the chart being built, drawing as it is typed, on real history"
+   },
+   "items": [
+    {
+     "lead": "The plant and its history, one box",
+     "text": "The plant and its history stand on the same box, never two systems to reconcile."
+    },
+    {
+     "lead": "Not a product beside the SCADA",
+     "text": "In the class the history chart is a product beside the SCADA, with its own licence and its own seat; here it is the same database the screen is already drawing from, and every operator already has it."
+    },
+    {
+     "lead": "Averages that survive an audit",
+     "text": "Averages are count-weighted, never an average of averages."
+    },
+    {
+     "lead": "A quality byte on every reading",
+     "text": "A quality byte rides every reading, so a number the plant should not trust says so."
+    },
+    {
+     "lead": "A correction walks forward",
+     "text": "Correct a value from years ago and every total since corrects itself — there is no second copy to migrate."
+    },
+    {
+     "lead": "Any window, and it names the resolution",
+     "text": "A month of a slow signal draws as fast as a short window, and the chart names the resolution it answered from."
+    },
+    {
+     "lead": "The gap fills itself in",
+     "text": "Cut the network and the readings wait on the edge's own disk, then fill the gap in."
+    },
+    {
+     "lead": "One key, register to sheet",
+     "text": "One key follows a signal from the controller's register to the pixel, the trend, the batch, the work order and the printed sheet."
+    },
+    {
+     "lead": "The history is inside the licence",
+     "text": "The database and the historian are what the licence already contains, with every project drawn, duplicated and exported."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "One database. One history.",
+   "cols": [
+    [
+     "<b>One database, Postgres; one historian beside it, TimescaleDB;</b> the plant and its history on the same box — dozens of lines, every reading, on two servers. Nothing in the stack is sunsetting."
+    ],
+    [
+     "<b>Ask for a month of a slow signal</b> and it draws as fast as a short window — and the chart names the resolution it used.",
+     "<b>Nothing is mapped a second time.</b> One key follows a signal from the register to the pixel, the trend, the batch, the work order and the printed sheet."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "06",
+   "of": "10",
+   "id": "scada-editor",
+   "title": "The editor, live",
+   "plate": "knowledge/assets/wb/WB-18.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "Engineered in a browser. Travels as one file.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-toolbox.png",
+    "chrome": "the page designer · Beverage Line 7 · the toolbox",
+    "caption": "the toolbox by equipment family beside the canvas"
+   },
+   "items": [
+    {
+     "lead": "A browser editor, nothing per workstation",
+     "text": "Engineers draw in a browser; nothing is licensed per workstation."
+    },
+    {
+     "lead": "Two engineers, one page",
+     "text": "Each sees the other is there, and a stale save is refused rather than quietly merged."
+    },
+    {
+     "lead": "Symbols that know the machine",
+     "text": "A curated library by equipment family, each body drawn to process scale and carrying the failure words the maintenance record picks from."
+    },
+    {
+     "lead": "Layers, and the eye",
+     "text": "The engineer declutters for himself without taking anything off the operator's page."
+    },
+    {
+     "lead": "A widget shown by a plant condition",
+     "text": "It appears when the plant says so, and stays visible when the signal cannot speak."
+    },
+    {
+     "lead": "Duplicate the line",
+     "text": "Every binding, target and attached document follows, with fresh identities."
+    },
+    {
+     "lead": "The line as one portable file",
+     "text": "Export it, import it at the next plant: names travel and identities do not, so nothing can collide with what is already there."
+    }
+   ]
+  },
+  {
+   "type": "blockA",
+   "title": "The engineer builds against the running line.",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-editor-preview.png",
+    "chrome": "the page designer · Beverage Line 7 · Preview",
+    "caption": "the same page in preview: the operator's line drawn live inside the editor, and the role it is judged as"
+   },
+   "items": [
+    {
+     "lead": "Preview on the running line",
+     "text": "The page the operator will open, on the plant's real values, drawn by the same screen."
+    },
+    {
+     "lead": "A real command from preview",
+     "text": "A start button proved before the line runs on it: a real command, in your name, refused in the database when you may not."
+    },
+    {
+     "lead": "Signal settings beside the live reading",
+     "text": "Change the bounds, save, and the reading corrects itself on the next poll without leaving the editor."
+    },
+    {
+     "lead": "Write a value from the signal list",
+     "text": "The bolt, then arm and confirm: the value goes down the same audited path an operator's button uses, and the reading comes back confirmed."
+    },
+    {
+     "lead": "The binder shows what it reads now",
+     "text": "Each signal shows what it reads right now, with its unit, its range and whether it may be written."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-layers.png",
+     "caption": "the layers cockpit: every widget on the page with its eye and its switch"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-tags-live-settings.png",
+     "caption": "one driver's signals with the reading first, and the signal's own settings beside the reading they change"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The engineer builds against the running line.",
+   "cols": [
+    [
+     "<b>Engineers draw in a browser,</b> and nothing is licensed per workstation. A finished line is copied in one press and carried to the next plant as a single portable file.",
+     "<b>A banner says who else is on the page,</b> and it never blocks anyone. A save made against a page that has moved on is refused rather than quietly merged.",
+     "<b>The eye hides a layer for the engineer alone;</b> the operator's page keeps everything until a switch or a plant condition takes it off."
+    ],
+    [
+     "<b>The page designer has two modes,</b> and the second one is the operator's own screen. The rest of the editor works the same way: the signal list, the binder and the trend all read the running line while the work is still being done.",
+     "<b>No restart, no simulation:</b> the reading above is the real one.",
+     "<b>Preview dresses the buttons for the role you choose,</b> and the database still judges the person signed in."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "07",
+   "of": "10",
+   "id": "scada-timelens",
+   "title": "TimeLens · replay",
+   "plate": "knowledge/assets/wb/WB-20.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "Rewind any screen.",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-timelens.png",
+    "chrome": "TimeLens · Beverage Line 7 · replay",
+    "caption": "the same synoptic replayed from the history — the gold dress, the alarms active at that moment, commands off"
+   },
+   "items": [
+    {
+     "lead": "Rewind any screen",
+     "text": "The screen as it stood, the alarm flags on the timeline, commands off, the day's timeline, the speeds, go to a moment, back to live."
+    },
+    {
+     "lead": "A moment link",
+     "text": "Pastes into a message; a colleague opens the same second on the same screen."
+    },
+    {
+     "lead": "From an alarm, one press",
+     "text": "One press from the alarm to that page at that moment."
+    },
+    {
+     "lead": "It can never be mistaken for live",
+     "text": "The replayed screen wears gold and its commands are off."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-timelens-bar.png",
+     "caption": "the transport bar under any replayed page: the alarms active at that moment, commands off, the day's timeline, the speeds, go to a moment, back to live",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-alarm-card.png",
+     "caption": "and where a replay usually starts: View in TimeLens, on the alarm's own card"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Two lenses: one over time, one over the tags.",
+   "cols": [
+    [
+     "<b>The operator's question is what happened at a moment.</b> The engineer's question is what a signal touches before it is changed. Each has a lens, and each answers from the one database."
+    ],
+    [
+     "<b>Any page replays from the historian:</b> back and forward, alarm to alarm, or straight to a moment. The replayed screen wears gold and its commands are off, so it can never be mistaken for live.",
+     "<b>A moment link pastes into a message</b> and a colleague opens the same second on the same screen. From an alarm row, one press lands on the screen as it was when the alarm raised."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "08",
+   "of": "10",
+   "id": "scada-taglens",
+   "title": "Tag Lens",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "One signal, followed through every module",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-taglens-card.png",
+    "chrome": "Tag Lens · BLD-AIT-2201 · the card",
+    "caption": "one signal: its identity card and live value, then everything that uses it"
+   },
+   "items": [
+    {
+     "lead": "One signal, every module",
+     "text": "Every page, trend, alarm, report block, formula and condition that uses it."
+    },
+    {
+     "lead": "What if, before a rename",
+     "text": "Each page, trend, alarm, report block and formula shows its own fate first."
+    },
+    {
+     "lead": "The health sweep",
+     "text": "Signals polled and shown nowhere, bindings pointing at nothing, formulas that no longer read."
+    },
+    {
+     "lead": "The thread into reports and conditions",
+     "text": "A signal cannot disappear from a printed sheet by surprise."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-thread.png",
+     "caption": "the thread continued: trends, alarms, report blocks, conditions"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-health-path.png",
+     "caption": "the health page: the data path and its hops, for a whole line",
+     "size": "full"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "One signal, followed through every module.",
+   "cols": [
+    [
+     "<b>We know of no other platform that follows one tag through every module of the plant.</b> A migration is a thousand signals moved; here each one shows what it touches before it is touched."
+    ],
+    [
+     "<b>The engineer's question is what a signal touches before it is changed</b> — and it is answered from the one database, not from a spreadsheet of bindings."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "09",
+   "of": "10",
+   "id": "scada-emergency-hmi",
+   "title": "Emergency HMI",
+   "plate": "knowledge/assets/wb/WB-03b.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "The edge runs the line. The server only receives.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
+    "chrome": "the console · Beverage Line 7 · emergency access",
+    "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy"
+   },
+   "items": [
+    {
+     "lead": "The edge that holds the line",
+     "text": "One executable beside the controller polls the devices, judges the alarms, holds the history and writes the operator's commands back."
+    },
+    {
+     "lead": "The drivers it speaks",
+     "text": "SOP supports all major drivers — Modbus, OPC DA, Siemens S7 and OPC UA among them."
+    },
+    {
+     "lead": "Buffer and back-fill",
+     "text": "Cut the network and the readings wait on the edge's own disk, then fill the gap in."
+    },
+    {
+     "lead": "A second edge on the same devices",
+     "text": "Where a line cannot afford to lose its edge, a second one stands on the same devices and takes over."
+    },
+    {
+     "lead": "The server, on the substrate you choose",
+     "text": "From scripts, in a single session, on plain hardware in your own plant, air gapped if your rules say so, or on a cloud backbone; the plant and its history on the same box."
+    },
+    {
+     "lead": "Duty and standby, one address that moves",
+     "text": "Two identical servers, one address the plant dials; a planned handover refuses unless both are in step, and a standby that cannot see the plant stands down. The standby is part of the platform, not a second purchase."
+    },
+    {
+     "lead": "Two servers for the whole plant",
+     "text": "Not a standby bought for every engine: one duty, one standby, one address, for every line and every edge."
+    },
+    {
+     "lead": "The plant's own pages, served by the edge",
+     "text": "If the server cannot be reached, the edge serves the pages the operators trained on: the same drawing, the same symbols, the same commands, live values and standing alarms."
+    },
+    {
+     "lead": "It refuses a login while the server is healthy",
+     "text": "The emergency access opens only while the server is unreachable, and closes when it returns."
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/scada/SC-D1-site.svg",
+   "intro": "the four ways the line stays up: the edge · the server · the pair · the plant's own pages on the LAN",
+   "legend": [
+    {
+     "title": "The edge",
+     "line": "holds the line · buffers · back-fills itself"
+    },
+    {
+     "title": "The server",
+     "line": "holds the plant · your hardware, air-gapped, or a cloud backbone"
+    },
+    {
+     "title": "The pair",
+     "line": "two servers for the whole plant · one address moves"
+    },
+    {
+     "title": "The edge again",
+     "line": "the same pages, served directly when both servers are unreachable"
+    }
+   ],
+   "ground": "light"
+  },
+  {
+   "type": "prose",
+   "title": "Availability is the architecture, not an option.",
+   "cols": [
+    [
+     "<b>One executable sits beside the controller</b> and does the work the line depends on: it polls the devices, judges the alarms, holds the history and writes the operator's commands back. The server in the middle only receives, which is why a server that stops is an inconvenience and never an outage.",
+     "<b>A server that stops loses no plant data:</b> it never lived only there. One store, nothing to reconcile. Adding a way to stay up costs a setting, not a licence."
+    ],
+    [
+     "<b>The emergency HMI — we know of no other platform that does this.</b> If both servers are unreachable, the operators keep running the plant from the edge itself: no extra HMI panel, no second application — the same SCADA pages the server designed are already stored on the edge, and the edge serves them directly, with the same symbols, the same commands, live values and standing alarms, until the centre is back.",
+     "<b>Not one of these four changes a screen anybody uses:</b> the edge buffers on every install, and the pair and the emergency password are set once by the administrator."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "10",
+   "of": "10",
+   "id": "scada-rights",
+   "title": "Rights and the record",
+   "plate": "knowledge/assets/wb/WB-14.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "What a user may not see never reaches them.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-audit-journal.png",
+    "chrome": "the console · the fleet · the audit journal",
+    "caption": "the audit journal across the whole fleet, in four lenses, filtered and exported"
+   },
+   "items": [
+    {
+     "lead": "Rights in one console, read in the database",
+     "text": "A screen a person may not open is never sent to their browser, their export or their sheet."
+    },
+    {
+     "lead": "The rights ladder",
+     "text": "Six rungs: the licence · the switch · the role and the scope · the group · the list · the record."
+    },
+    {
+     "lead": "A role on a scope",
+     "text": "A contractor runs one line and nothing else; the press is refused in the database anywhere else, not merely greyed out on the screen."
+    },
+    {
+     "lead": "Groups instead of people",
+     "text": "One list to keep, and a new starter is covered the day they join it."
+    },
+    {
+     "lead": "Can see and open, per page",
+     "text": "The pages leave everyone else's tree, in the control room and on the phone; off the list a page goes away, not grey."
+    },
+    {
+     "lead": "Can send command, per signal",
+     "text": "Everybody keeps watching the valve, and nobody else can move it."
+    },
+    {
+     "lead": "Module access, per line",
+     "text": "The module leaves everyone else's menu on that line, and stays as it was on the others."
+    },
+    {
+     "lead": "Disable the account",
+     "text": "The next sign in is refused, and the record of what they did stays."
+    },
+    {
+     "lead": "The licence and the module switch",
+     "text": "A module nobody bought never appears, and a line it is off on never shows it."
+    },
+    {
+     "lead": "The audit journal",
+     "text": "Every command, acknowledgement, shelving and grant across the fleet, each with its moment, in four lenses, narrowed and exported."
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/scada/SC-D2.svg",
+   "intro": "the rights ladder: six rungs, each with the console word it is set in",
+   "legend": [
+    {
+     "title": "The licence",
+     "line": "what this server owns · Licensing"
+    },
+    {
+     "title": "The switch",
+     "line": "which lines show it · Licensing"
+    },
+    {
+     "title": "The role and the scope",
+     "line": "what a person may do, and where · Users & Access"
+    },
+    {
+     "title": "The group",
+     "line": "the crew a list names instead of each person · Groups"
+    },
+    {
+     "title": "The list",
+     "line": "this page, this signal, this module · Can see & open · Can send command"
+    },
+    {
+     "title": "The record",
+     "line": "what was actually done · Audit"
+    }
+   ],
+   "ground": "light"
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-page-acl.png",
+     "caption": "one page narrowed to one crew: for everyone else it is gone, not greyed",
+     "size": "native"
+    },
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-module-access.png",
+     "caption": "who may use one module on one line: a crew, or everyone",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "What a user may not see never reaches them.",
+   "cols": [
+    [
+     "<b>Rights are set in one console and decided in the database,</b> so a screen a person may not open is never sent to their browser, their export or their sheet. The same console reaches from a whole site down to one screen, one signal and one module, and it keeps the record of every act that follows.",
+     "<b>Off a list a page does not go grey for other people, it goes away:</b> it leaves the operator's page browser, it leaves the editor's tree, and every button that led to it goes with it. A global administrator is the one who can hand it back."
+    ],
+    [
+     "<b>A right set in a client menu can only withhold the drawing,</b> because the data has already travelled. Here the rule that hides a screen is the same rule that filters the export and the printed sheet, because there is one database under all three: what a person may not see is never sent.",
+     "<b>And the record the auditor reads is the screen's own rows:</b> the numbers on the sheet are the same rows the operator was watching, so the tile and the paper cannot disagree."
+    ]
+   ]
+  },
+  {
+   "type": "blockB",
+   "same": true,
+   "id": "scada-unique",
+   "title": "And what no other platform does like us",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-timelens.png",
+     "chrome": "TimeLens · Beverage Line 7 · replay",
+     "caption": "TimeLens · the same synoptic replayed from the history — the gold bar, the alarms at that moment, commands off"
+    },
+    {
+     "pair": [
+      "knowledge/assets/screens/shot-taglens-card.png",
+      "knowledge/assets/screens/shot-taglens-thread.png"
+     ],
+     "chrome": "Tag Lens · BLD-AIT-2201 · the card and the thread",
+     "caption": "Tag Lens · one signal: its identity card, and the thread of every page, trend, alarm, report block and formula that uses it — and what if, before the change"
+    }
+   ],
+   "items": [
+    {
+     "lead": "One synoptic, every screen",
+     "text": "One synoptic drawn once and served on every screen, live — the wall panel, the desk and the phone serve the same page; nothing installed, no separate app."
+    },
+    {
+     "lead": "The editor previews the line, not sample numbers",
+     "text": "The page designer's second mode is the operator's own screen, on the plant's real values; the signal list, the binder and the trend read the running line while the work is still being done."
+    },
+    {
+     "lead": "Tag Lens",
+     "text": "One signal followed through every page, trend, alarm, report block and formula; press <em>what if</em> and every one of them shows its own fate before the tag is touched. We know of no other platform that follows one tag through every module of the plant."
+    },
+    {
+     "lead": "TimeLens",
+     "text": "Any page replays from the history, back and forward, alarm to alarm, or straight to a moment; the replayed screen wears gold and its commands are off."
+    },
+    {
+     "lead": "An alarm is an event with a record",
+     "text": "Prioritised, acknowledged by name, shelved with a reason and a return time; delete the rule and every alarm it raised stays in the journal."
+    },
+    {
+     "lead": "Every machine carries its own door",
+     "text": "Its values, a small trend, its own alarms, its causes, its commands and its documents; put the datasheet in once and it opens at the machine."
+    },
+    {
+     "lead": "The engineer draws the chart; the operator finishes it",
+     "text": "Two cursors, the numbers across the span, add a curve and keep it."
+    },
+    {
+     "lead": "Engineered in a browser",
+     "text": "A line travels to the next plant as one file."
+    }
+   ]
+  },
+  {
+   "type": "contact",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "id": "write"
+  }
+ ]
+}

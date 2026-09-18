@@ -1,0 +1,31 @@
+/* The site's one stylesheet, in load order:
+ *   fonts.css       GENERATED - the three self-hosted faces (scripts/extract-fonts.mjs)
+ *   design.css      GENERATED - the design system of the mocks, ported verbatim (scripts/build-design-css.mjs)
+ *   interaction.css hand-written - what a live browser gives and a static mock cannot (D94)
+ * Tailwind is loaded last for utilities and for the brand tokens; it never restyles the bands.
+ */
+@import "./fonts.css";
+@import "./design.css";
+@import "./hero.css";
+@import "./interaction.css";
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #ffffff;
+  --color-mist: #f2f6f9;
+  --color-band: #e6ecf1;
+  --color-rule: #d5dce3;
+  --color-ink: #0b0e11;
+  --color-slate: #5a6b7a;
+  --color-steel: #3d5670;
+  --color-blue: #1e7fa6;
+  --color-navy: #14202f;
+  --color-navy2: #1b2a3b;
+  --color-deep: #0f1926;
+  --color-cyan: #46c3ee;
+  --color-sky: #bee6f5;
+  --color-amber: #ee9f46;
+  --font-display: "Saira", Arial, sans-serif;
+  --font-body: "IBM Plex Serif", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}

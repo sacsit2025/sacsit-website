@@ -1,0 +1,1094 @@
+{
+ "/assets/brand/lockup-dark.svg": {
+  "w": 326,
+  "h": 486,
+  "bytes": 20981,
+  "id": "lockup-dark"
+ },
+ "/assets/brand/lockup-light.svg": {
+  "w": 319,
+  "h": 476,
+  "bytes": 7459,
+  "id": "lockup-light"
+ },
+ "/assets/brand/lockups/lockup-black-2048.png": {
+  "w": 2048,
+  "h": 3054,
+  "bytes": 61723,
+  "id": "lockup-black-2048"
+ },
+ "/assets/brand/lockups/lockup-black.svg": {
+  "w": 326,
+  "h": 486,
+  "bytes": 7215,
+  "id": "lockup-black"
+ },
+ "/assets/brand/lockups/lockup-dark-2048.png": {
+  "w": 2048,
+  "h": 3054,
+  "bytes": 102343,
+  "id": "lockup-dark-2048"
+ },
+ "/assets/brand/lockups/lockup-dark.svg": {
+  "w": 326,
+  "h": 486,
+  "bytes": 20981,
+  "id": "lockup-dark"
+ },
+ "/assets/brand/lockups/lockup-light-2048.png": {
+  "w": 2048,
+  "h": 3056,
+  "bytes": 71952,
+  "id": "lockup-light-2048"
+ },
+ "/assets/brand/lockups/lockup-light.svg": {
+  "w": 319,
+  "h": 476,
+  "bytes": 7459,
+  "id": "lockup-light"
+ },
+ "/assets/brand/lockups/lockup-white-2048.png": {
+  "w": 2048,
+  "h": 3054,
+  "bytes": 65640,
+  "id": "lockup-white-2048"
+ },
+ "/assets/brand/lockups/lockup-white.svg": {
+  "w": 326,
+  "h": 486,
+  "bytes": 7513,
+  "id": "lockup-white"
+ },
+ "/assets/brand/lockups/wordmark-black.svg": {
+  "w": 326,
+  "h": 93,
+  "bytes": 7221,
+  "id": "wordmark-black"
+ },
+ "/assets/brand/lockups/wordmark-dark.svg": {
+  "w": 326,
+  "h": 93,
+  "bytes": 20987,
+  "id": "wordmark-dark"
+ },
+ "/assets/brand/lockups/wordmark-light.svg": {
+  "w": 319,
+  "h": 91,
+  "bytes": 7465,
+  "id": "wordmark-light"
+ },
+ "/assets/brand/lockups/wordmark-white.svg": {
+  "w": 326,
+  "h": 93,
+  "bytes": 7519,
+  "id": "wordmark-white"
+ },
+ "/assets/brand/sop-mark.svg": {
+  "w": 319,
+  "h": 362,
+  "bytes": 2443,
+  "id": "sop-mark"
+ },
+ "/assets/brand/specs/clear-space-guide.png": {
+  "w": 1600,
+  "h": 760,
+  "bytes": 24044,
+  "id": "clear-space-guide"
+ },
+ "/assets/brand/specs/do-dont.png": {
+  "w": 1120,
+  "h": 1120,
+  "bytes": 47363,
+  "id": "do-dont"
+ },
+ "/assets/brand/specs/min-size-guide.png": {
+  "w": 1700,
+  "h": 600,
+  "bytes": 36241,
+  "id": "min-size-guide"
+ },
+ "/assets/brand/symbol/1024/symbol-black.png": {
+  "w": 1017,
+  "h": 1088,
+  "bytes": 14453,
+  "id": "symbol-black"
+ },
+ "/assets/brand/symbol/1024/symbol-dark.png": {
+  "w": 1017,
+  "h": 1088,
+  "bytes": 27648,
+  "id": "symbol-dark"
+ },
+ "/assets/brand/symbol/1024/symbol-light.png": {
+  "w": 1015,
+  "h": 1086,
+  "bytes": 17818,
+  "id": "symbol-light"
+ },
+ "/assets/brand/symbol/1024/symbol-white.png": {
+  "w": 1017,
+  "h": 1088,
+  "bytes": 15343,
+  "id": "symbol-white"
+ },
+ "/assets/brand/symbol/128/symbol-black.png": {
+  "w": 127,
+  "h": 136,
+  "bytes": 1232,
+  "id": "symbol-black"
+ },
+ "/assets/brand/symbol/128/symbol-dark.png": {
+  "w": 127,
+  "h": 136,
+  "bytes": 2114,
+  "id": "symbol-dark"
+ },
+ "/assets/brand/symbol/128/symbol-light.png": {
+  "w": 127,
+  "h": 137,
+  "bytes": 1807,
+  "id": "symbol-light"
+ },
+ "/assets/brand/symbol/128/symbol-white.png": {
+  "w": 127,
+  "h": 136,
+  "bytes": 1446,
+  "id": "symbol-white"
+ },
+ "/assets/brand/symbol/256/symbol-black.png": {
+  "w": 254,
+  "h": 272,
+  "bytes": 2704,
+  "id": "symbol-black"
+ },
+ "/assets/brand/symbol/256/symbol-dark.png": {
+  "w": 254,
+  "h": 272,
+  "bytes": 4634,
+  "id": "symbol-dark"
+ },
+ "/assets/brand/symbol/256/symbol-light.png": {
+  "w": 254,
+  "h": 272,
+  "bytes": 3708,
+  "id": "symbol-light"
+ },
+ "/assets/brand/symbol/256/symbol-white.png": {
+  "w": 254,
+  "h": 272,
+  "bytes": 3037,
+  "id": "symbol-white"
+ },
+ "/assets/brand/symbol/512/symbol-black.png": {
+  "w": 508,
+  "h": 544,
+  "bytes": 6039,
+  "id": "symbol-black"
+ },
+ "/assets/brand/symbol/512/symbol-dark.png": {
+  "w": 508,
+  "h": 544,
+  "bytes": 11240,
+  "id": "symbol-dark"
+ },
+ "/assets/brand/symbol/512/symbol-light.png": {
+  "w": 508,
+  "h": 544,
+  "bytes": 7892,
+  "id": "symbol-light"
+ },
+ "/assets/brand/symbol/512/symbol-white.png": {
+  "w": 508,
+  "h": 544,
+  "bytes": 6504,
+  "id": "symbol-white"
+ },
+ "/assets/brand/symbol/symbol-black.svg": {
+  "w": 326,
+  "h": 369,
+  "bytes": 7219,
+  "id": "symbol-black"
+ },
+ "/assets/brand/symbol/symbol-dark.svg": {
+  "w": 326,
+  "h": 369,
+  "bytes": 20985,
+  "id": "symbol-dark"
+ },
+ "/assets/brand/symbol/symbol-light.svg": {
+  "w": 319,
+  "h": 362,
+  "bytes": 7463,
+  "id": "symbol-light"
+ },
+ "/assets/brand/symbol/symbol-white.svg": {
+  "w": 326,
+  "h": 369,
+  "bytes": 7517,
+  "id": "symbol-white"
+ },
+ "/assets/brand/web/Email-Signature/signature-200x40.png": {
+  "w": 200,
+  "h": 40,
+  "bytes": 2017,
+  "id": "signature-200x40"
+ },
+ "/assets/brand/web/Email-Signature/signature-300x60.png": {
+  "w": 300,
+  "h": 60,
+  "bytes": 2769,
+  "id": "signature-300x60"
+ },
+ "/assets/brand/web/Favicon/favicon-16.png": {
+  "w": 16,
+  "h": 16,
+  "bytes": 331,
+  "id": "favicon-16"
+ },
+ "/assets/brand/web/Favicon/favicon-192.png": {
+  "w": 192,
+  "h": 192,
+  "bytes": 1985,
+  "id": "favicon-192"
+ },
+ "/assets/brand/web/Favicon/favicon-32.png": {
+  "w": 32,
+  "h": 32,
+  "bytes": 551,
+  "id": "favicon-32"
+ },
+ "/assets/brand/web/Favicon/favicon-96.png": {
+  "w": 96,
+  "h": 96,
+  "bytes": 1247,
+  "id": "favicon-96"
+ },
+ "/assets/brand/web/OG-Card/og-1200x630.png": {
+  "w": 1200,
+  "h": 630,
+  "bytes": 12892,
+  "id": "og-1200x630"
+ },
+ "/assets/brand/web/Twitter-Card/twitter-1200x675.png": {
+  "w": 1200,
+  "h": 675,
+  "bytes": 13568,
+  "id": "twitter-1200x675"
+ },
+ "/assets/brochure/cmms/CM-D1.svg": {
+  "w": 1600,
+  "h": 700,
+  "bytes": 4773,
+  "id": "CM-D1"
+ },
+ "/assets/brochure/cmms/shot-dossier.png": {
+  "w": 392,
+  "h": 422,
+  "bytes": 30206,
+  "id": "shot-dossier"
+ },
+ "/assets/brochure/cmms/shot-ledger.png": {
+  "w": 759,
+  "h": 596,
+  "bytes": 57642,
+  "id": "shot-ledger"
+ },
+ "/assets/brochure/cmms/shot-plan-fire.png": {
+  "w": 759,
+  "h": 602,
+  "bytes": 50667,
+  "id": "shot-plan-fire"
+ },
+ "/assets/brochure/cmms/shot-raise-door.png": {
+  "w": 560,
+  "h": 588,
+  "bytes": 52987,
+  "id": "shot-raise-door"
+ },
+ "/assets/brochure/cmms/shot-store.png": {
+  "w": 759,
+  "h": 596,
+  "bytes": 66869,
+  "id": "shot-store"
+ },
+ "/assets/brochure/cmms/shot-trigger-kinds.png": {
+  "w": 759,
+  "h": 596,
+  "bytes": 48137,
+  "id": "shot-trigger-kinds"
+ },
+ "/assets/brochure/cmms/shot-type-package.png": {
+  "w": 759,
+  "h": 596,
+  "bytes": 69830,
+  "id": "shot-type-package"
+ },
+ "/assets/brochure/ems/EM-05.svg": {
+  "w": 1600,
+  "h": 500,
+  "bytes": 3639,
+  "id": "EM-05"
+ },
+ "/assets/brochure/ems/EM-07.svg": {
+  "w": 1600,
+  "h": 600,
+  "bytes": 3922,
+  "id": "EM-07"
+ },
+ "/assets/brochure/ems/shot-batches-live.png": {
+  "w": 1365,
+  "h": 550,
+  "bytes": 55476,
+  "id": "shot-batches-live"
+ },
+ "/assets/brochure/ems/shot-job-signals.png": {
+  "w": 810,
+  "h": 485,
+  "bytes": 39902,
+  "id": "shot-job-signals"
+ },
+ "/assets/brochure/ems/shot-jobs-board.png": {
+  "w": 1365,
+  "h": 490,
+  "bytes": 43010,
+  "id": "shot-jobs-board"
+ },
+ "/assets/brochure/ems/shot-material.png": {
+  "w": 805,
+  "h": 497,
+  "bytes": 31600,
+  "id": "shot-material"
+ },
+ "/assets/brochure/ems/shot-plan.png": {
+  "w": 1763,
+  "h": 713,
+  "bytes": 86778,
+  "id": "shot-plan"
+ },
+ "/assets/brochure/ems/shot-plant.png": {
+  "w": 1175,
+  "h": 535,
+  "bytes": 87850,
+  "id": "shot-plant"
+ },
+ "/assets/brochure/ems/shot-quality-door.png": {
+  "w": 1365,
+  "h": 560,
+  "bytes": 45027,
+  "id": "shot-quality-door"
+ },
+ "/assets/brochure/ems/shot-recipe-approve.png": {
+  "w": 1175,
+  "h": 390,
+  "bytes": 61830,
+  "id": "shot-recipe-approve"
+ },
+ "/assets/brochure/ems/shot-recipe-sheet.png": {
+  "w": 810,
+  "h": 630,
+  "bytes": 72554,
+  "id": "shot-recipe-sheet"
+ },
+ "/assets/brochure/ems/shot-record-qc.png": {
+  "w": 1365,
+  "h": 480,
+  "bytes": 32650,
+  "id": "shot-record-qc"
+ },
+ "/assets/brochure/ems/shot-record.png": {
+  "w": 1365,
+  "h": 440,
+  "bytes": 44994,
+  "id": "shot-record"
+ },
+ "/assets/brochure/eps/EP-D1.svg": {
+  "w": 1600,
+  "h": 700,
+  "bytes": 2777,
+  "id": "EP-D1"
+ },
+ "/assets/brochure/eps/shot-backlog.png": {
+  "w": 1028,
+  "h": 580,
+  "bytes": 94861,
+  "id": "shot-backlog"
+ },
+ "/assets/brochure/eps/shot-data-quality.png": {
+  "w": 342,
+  "h": 106,
+  "bytes": 8252,
+  "id": "shot-data-quality"
+ },
+ "/assets/brochure/eps/shot-dial-row.png": {
+  "w": 1354,
+  "h": 144,
+  "bytes": 9975,
+  "id": "shot-dial-row"
+ },
+ "/assets/brochure/eps/shot-editor-tiles.png": {
+  "w": 1750,
+  "h": 670,
+  "bytes": 95157,
+  "id": "shot-editor-tiles"
+ },
+ "/assets/brochure/eps/shot-hour-board.png": {
+  "w": 1256,
+  "h": 468,
+  "bytes": 32063,
+  "id": "shot-hour-board"
+ },
+ "/assets/brochure/eps/shot-narrow-sheet.png": {
+  "w": 814,
+  "h": 346,
+  "bytes": 42760,
+  "id": "shot-narrow-sheet"
+ },
+ "/assets/brochure/eps/shot-pdf-door.png": {
+  "w": 1368,
+  "h": 67,
+  "bytes": 4811,
+  "id": "shot-pdf-door"
+ },
+ "/assets/brochure/eps/shot-rejects.png": {
+  "w": 940,
+  "h": 178,
+  "bytes": 27232,
+  "id": "shot-rejects"
+ },
+ "/assets/brochure/eps/shot-report-page.png": {
+  "w": 1028,
+  "h": 325,
+  "bytes": 30175,
+  "id": "shot-report-page"
+ },
+ "/assets/brochure/eps/shot-restart-card.png": {
+  "w": 568,
+  "h": 350,
+  "bytes": 33919,
+  "id": "shot-restart-card"
+ },
+ "/assets/brochure/eps/shot-stop-doors.png": {
+  "w": 586,
+  "h": 350,
+  "bytes": 33356,
+  "id": "shot-stop-doors"
+ },
+ "/assets/brochure/eps/shot-stretch-strip.png": {
+  "w": 1030,
+  "h": 346,
+  "bytes": 43138,
+  "id": "shot-stretch-strip"
+ },
+ "/assets/brochure/eps/shot-two-oees.png": {
+  "w": 1254,
+  "h": 138,
+  "bytes": 12130,
+  "id": "shot-two-oees"
+ },
+ "/assets/brochure/eps/shot-waterfall.png": {
+  "w": 1871,
+  "h": 390,
+  "bytes": 77178,
+  "id": "shot-waterfall"
+ },
+ "/assets/brochure/oem/OE-D1-site.svg": {
+  "w": 1800,
+  "h": 620,
+  "bytes": 10768,
+  "id": "OE-D1-site"
+ },
+ "/assets/brochure/oem/shot-collectors.png": {
+  "w": 1328,
+  "h": 224,
+  "bytes": 31301,
+  "id": "shot-collectors"
+ },
+ "/assets/brochure/oem/shot-fp-rootcause.png": {
+  "w": 382,
+  "h": 124,
+  "bytes": 12846,
+  "id": "shot-fp-rootcause"
+ },
+ "/assets/brochure/oem/shot-m-job-checklist.png": {
+  "w": 390,
+  "h": 782,
+  "bytes": 50290,
+  "id": "shot-m-job-checklist"
+ },
+ "/assets/brochure/oem/shot-perf-bands.png": {
+  "w": 1404,
+  "h": 387,
+  "bytes": 50332,
+  "id": "shot-perf-bands"
+ },
+ "/assets/brochure/oem/shot-report-read.png": {
+  "w": 1064,
+  "h": 600,
+  "bytes": 72703,
+  "id": "shot-report-read"
+ },
+ "/assets/brochure/reports/RP-D1.svg": {
+  "w": 1600,
+  "h": 342,
+  "bytes": 2264,
+  "id": "RP-D1"
+ },
+ "/assets/brochure/reports/RP-D2.svg": {
+  "w": 1600,
+  "h": 400,
+  "bytes": 2522,
+  "id": "RP-D2"
+ },
+ "/assets/brochure/reports/shot-add-block.png": {
+  "w": 530,
+  "h": 610,
+  "bytes": 53549,
+  "id": "shot-add-block"
+ },
+ "/assets/brochure/reports/shot-archive-row.png": {
+  "w": 1064,
+  "h": 86,
+  "bytes": 17092,
+  "id": "shot-archive-row"
+ },
+ "/assets/brochure/reports/shot-bind-element.png": {
+  "w": 766,
+  "h": 608,
+  "bytes": 51237,
+  "id": "shot-bind-element"
+ },
+ "/assets/brochure/reports/shot-bind-tags.png": {
+  "w": 756,
+  "h": 360,
+  "bytes": 28541,
+  "id": "shot-bind-tags"
+ },
+ "/assets/brochure/reports/shot-job-record.png": {
+  "w": 1062,
+  "h": 246,
+  "bytes": 32624,
+  "id": "shot-job-record"
+ },
+ "/assets/brochure/reports/shot-last-sheet.png": {
+  "w": 1045,
+  "h": 470,
+  "bytes": 16874,
+  "id": "shot-last-sheet"
+ },
+ "/assets/brochure/reports/shot-provenance.png": {
+  "w": 1072,
+  "h": 38,
+  "bytes": 9692,
+  "id": "shot-provenance"
+ },
+ "/assets/brochure/reports/shot-readymade.png": {
+  "w": 750,
+  "h": 464,
+  "bytes": 53741,
+  "id": "shot-readymade"
+ },
+ "/assets/brochure/reports/shot-sign-door.png": {
+  "w": 1074,
+  "h": 180,
+  "bytes": 27954,
+  "id": "shot-sign-door"
+ },
+ "/assets/brochure/reports/shot-statistic.png": {
+  "w": 290,
+  "h": 670,
+  "bytes": 39993,
+  "id": "shot-statistic"
+ },
+ "/assets/brochure/reports/shot-timing-pane.png": {
+  "w": 1170,
+  "h": 282,
+  "bytes": 56803,
+  "id": "shot-timing-pane"
+ },
+ "/assets/brochure/reports/shot-timing-ruler.png": {
+  "w": 930,
+  "h": 304,
+  "bytes": 21688,
+  "id": "shot-timing-ruler"
+ },
+ "/assets/brochure/scada/SC-D1-site.svg": {
+  "w": 1800,
+  "h": 620,
+  "bytes": 10020,
+  "id": "SC-D1-site"
+ },
+ "/assets/brochure/scada/SC-D2.svg": {
+  "w": 1600,
+  "h": 210,
+  "bytes": 4553,
+  "id": "SC-D2"
+ },
+ "/assets/brochure/scada/shot-alarm-card.png": {
+  "w": 1440,
+  "h": 838,
+  "bytes": 245058,
+  "id": "shot-alarm-card"
+ },
+ "/assets/brochure/scada/shot-alarm-rules.png": {
+  "w": 1166,
+  "h": 658,
+  "bytes": 114902,
+  "id": "shot-alarm-rules"
+ },
+ "/assets/brochure/scada/shot-audit-journal.png": {
+  "w": 1352,
+  "h": 620,
+  "bytes": 78036,
+  "id": "shot-audit-journal"
+ },
+ "/assets/brochure/scada/shot-doc-library.png": {
+  "w": 1168,
+  "h": 275,
+  "bytes": 34689,
+  "id": "shot-doc-library"
+ },
+ "/assets/brochure/scada/shot-doc-where-used.png": {
+  "w": 520,
+  "h": 258,
+  "bytes": 19382,
+  "id": "shot-doc-where-used"
+ },
+ "/assets/brochure/scada/shot-edge-emergency.png": {
+  "w": 1468,
+  "h": 374,
+  "bytes": 53510,
+  "id": "shot-edge-emergency"
+ },
+ "/assets/brochure/scada/shot-faceplate.png": {
+  "w": 1125,
+  "h": 1280,
+  "bytes": 202842,
+  "id": "shot-faceplate"
+ },
+ "/assets/brochure/scada/shot-fp-document.png": {
+  "w": 1306,
+  "h": 1284,
+  "bytes": 262140,
+  "id": "shot-fp-document"
+ },
+ "/assets/brochure/scada/shot-health-path.png": {
+  "w": 1440,
+  "h": 127,
+  "bytes": 20572,
+  "id": "shot-health-path"
+ },
+ "/assets/brochure/scada/shot-hmi-pages.png": {
+  "w": 1440,
+  "h": 788,
+  "bytes": 167466,
+  "id": "shot-hmi-pages"
+ },
+ "/assets/brochure/scada/shot-layers.png": {
+  "w": 718,
+  "h": 560,
+  "bytes": 56182,
+  "id": "shot-layers"
+ },
+ "/assets/brochure/scada/shot-module-access.png": {
+  "w": 560,
+  "h": 603,
+  "bytes": 40274,
+  "id": "shot-module-access"
+ },
+ "/assets/brochure/scada/shot-page-acl.png": {
+  "w": 298,
+  "h": 324,
+  "bytes": 25708,
+  "id": "shot-page-acl"
+ },
+ "/assets/brochure/scada/shot-tags-live-settings.png": {
+  "w": 1474,
+  "h": 1249,
+  "bytes": 236936,
+  "id": "shot-tags-live-settings"
+ },
+ "/assets/brochure/scada/shot-toolbox.png": {
+  "w": 875,
+  "h": 547,
+  "bytes": 71192,
+  "id": "shot-toolbox"
+ },
+ "/assets/brochure/scada/shot-trend-adhoc.png": {
+  "w": 1600,
+  "h": 632,
+  "bytes": 261242,
+  "id": "shot-trend-adhoc"
+ },
+ "/assets/brochure/scada/shot-trend-designer.png": {
+  "w": 1168,
+  "h": 628,
+  "bytes": 107888,
+  "id": "shot-trend-designer"
+ },
+ "/assets/brochure/scada/shot-trend-lanes.png": {
+  "w": 1376,
+  "h": 695,
+  "bytes": 163216,
+  "id": "shot-trend-lanes"
+ },
+ "/assets/screens/crops/m-hmi-job-crop.png": {
+  "w": 392,
+  "h": 708,
+  "bytes": 136288,
+  "id": "S-crop-m-hmi-job"
+ },
+ "/assets/screens/crops/m-hmi-jobs-crop.png": {
+  "w": 392,
+  "h": 708,
+  "bytes": 163457,
+  "id": "S-crop-m-hmi-jobs"
+ },
+ "/assets/screens/crops/m-hmi-overview-crop.png": {
+  "w": 392,
+  "h": 708,
+  "bytes": 131198,
+  "id": "S-crop-m-hmi-overview"
+ },
+ "/assets/screens/crops/m-hmi-report-crop.png": {
+  "w": 392,
+  "h": 528,
+  "bytes": 137855,
+  "id": "S-crop-m-hmi-report"
+ },
+ "/assets/screens/crops/m-perf-chip-crop.png": {
+  "w": 390,
+  "h": 701,
+  "bytes": 38902,
+  "id": "S-crop-m-perf-chip"
+ },
+ "/assets/screens/crops/report-viewer-crop.png": {
+  "w": 1074,
+  "h": 250,
+  "bytes": 36339,
+  "id": "S-crop-report-viewer"
+ },
+ "/assets/screens/crops/sheet-record-crop.png": {
+  "w": 1063,
+  "h": 180,
+  "bytes": 32731,
+  "id": "S-crop-sheet-record"
+ },
+ "/assets/screens/crops/sheet-review-crop.png": {
+  "w": 1061,
+  "h": 299,
+  "bytes": 40306,
+  "id": "S-crop-sheet-review"
+ },
+ "/assets/screens/home/CMMS-machines-board.png": {
+  "w": 994,
+  "h": 537,
+  "bytes": 87945,
+  "id": "H-cmms-machines"
+ },
+ "/assets/screens/home/CMMS-the-board-job-panel-crop.png": {
+  "w": 284,
+  "h": 276,
+  "bytes": 15422,
+  "id": "H-cmms-board-crop"
+ },
+ "/assets/screens/home/EMS-job-panel-batches-per-machine.png": {
+  "w": 944,
+  "h": 582,
+  "bytes": 70199,
+  "id": "H-ems-job"
+ },
+ "/assets/screens/home/EMS-plan-month-day-panel.png": {
+  "w": 975,
+  "h": 588,
+  "bytes": 103815,
+  "id": "H-ems-plan"
+ },
+ "/assets/screens/home/EPS-period-sheet-where-the-time-went.png": {
+  "w": 930,
+  "h": 751,
+  "bytes": 94971,
+  "id": "H-eps-sheet"
+ },
+ "/assets/screens/home/REP-daily-production-sheet.png": {
+  "w": 662,
+  "h": 761,
+  "bytes": 75489,
+  "id": "H-rep-daily"
+ },
+ "/assets/screens/home/REP-editor-batch-certificate-crop.png": {
+  "w": 821,
+  "h": 512,
+  "bytes": 102103,
+  "id": "H-rep-editor-crop"
+ },
+ "/assets/screens/shot-alarm-console.png": {
+  "w": 1642,
+  "h": 1000,
+  "bytes": 167981,
+  "id": "S-alarm-console"
+ },
+ "/assets/screens/shot-ed-pages-tiles.png": {
+  "w": 2160,
+  "h": 1240,
+  "bytes": 187889,
+  "id": "S-ed-pages-tiles"
+ },
+ "/assets/screens/shot-ed-plan.png": {
+  "w": 2160,
+  "h": 1240,
+  "bytes": 176732,
+  "id": "S-ed-plan"
+ },
+ "/assets/screens/shot-editor-preview.png": {
+  "w": 1440,
+  "h": 900,
+  "bytes": 178221,
+  "id": "S-editor-preview"
+ },
+ "/assets/screens/shot-hmi-overview.png": {
+  "w": 2160,
+  "h": 1350,
+  "bytes": 272928,
+  "id": "S-hmi-overview"
+ },
+ "/assets/screens/shot-m-config-fleet.png": {
+  "w": 390,
+  "h": 844,
+  "bytes": 56186,
+  "id": "S-m-config-fleet"
+ },
+ "/assets/screens/shot-mnt-phone-wo.png": {
+  "w": 780,
+  "h": 1688,
+  "bytes": 133490,
+  "id": "S-mnt-phone-wo"
+ },
+ "/assets/screens/shot-perf-waterfall.png": {
+  "w": 2160,
+  "h": 1350,
+  "bytes": 191840,
+  "id": "S-perf-waterfall"
+ },
+ "/assets/screens/shot-report-designer.png": {
+  "w": 1440,
+  "h": 900,
+  "bytes": 167517,
+  "id": "S-report-designer"
+ },
+ "/assets/screens/shot-report-print.png": {
+  "w": 1440,
+  "h": 900,
+  "bytes": 100556,
+  "id": "S-report-print"
+ },
+ "/assets/screens/shot-synoptic.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 188117,
+  "id": "S-synoptic"
+ },
+ "/assets/screens/shot-taglens-card.png": {
+  "w": 737,
+  "h": 720,
+  "bytes": 85029,
+  "id": "S-taglens-card"
+ },
+ "/assets/screens/shot-taglens-thread.png": {
+  "w": 734,
+  "h": 679,
+  "bytes": 88579,
+  "id": "S-taglens-thread"
+ },
+ "/assets/screens/shot-timelens-bar.png": {
+  "w": 704,
+  "h": 120,
+  "bytes": 41225,
+  "id": "S-timelens-bar"
+ },
+ "/assets/screens/shot-timelens.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 231621,
+  "id": "S-timelens"
+ },
+ "/assets/screens/shot-trend-cursors.png": {
+  "w": 1642,
+  "h": 950,
+  "bytes": 133809,
+  "id": "S-trend-cursors"
+ },
+ "/assets/wb/WB-01.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 494434,
+  "id": "WB-01"
+ },
+ "/assets/wb/WB-01b.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 365147,
+  "id": "WB-01b"
+ },
+ "/assets/wb/WB-01c.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 516109,
+  "id": "WB-01c"
+ },
+ "/assets/wb/WB-01d.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 467479,
+  "id": "WB-01d"
+ },
+ "/assets/wb/WB-01e.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 542536,
+  "id": "WB-01e"
+ },
+ "/assets/wb/WB-01f.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 467086,
+  "id": "WB-01f"
+ },
+ "/assets/wb/WB-01g.jpg": {
+  "w": 2560,
+  "h": 1360,
+  "bytes": 564654,
+  "id": "WB-01g"
+ },
+ "/assets/wb/WB-02b.jpg": {
+  "w": 1800,
+  "h": 1350,
+  "bytes": 379022,
+  "id": "WB-02b"
+ },
+ "/assets/wb/WB-03.jpg": {
+  "w": 1800,
+  "h": 1350,
+  "bytes": 372746,
+  "id": "WB-03"
+ },
+ "/assets/wb/WB-03b.jpg": {
+  "w": 1800,
+  "h": 1350,
+  "bytes": 356164,
+  "id": "WB-03b"
+ },
+ "/assets/wb/WB-04.svg": {
+  "w": 1600,
+  "h": 900,
+  "bytes": 134634,
+  "id": "WB-04-drawn"
+ },
+ "/assets/wb/WB-05.jpg": {
+  "w": 1680,
+  "h": 1050,
+  "bytes": 246305,
+  "id": "WB-05"
+ },
+ "/assets/wb/WB-06.jpg": {
+  "w": 1680,
+  "h": 1050,
+  "bytes": 254503,
+  "id": "WB-06"
+ },
+ "/assets/wb/WB-07.jpg": {
+  "w": 1680,
+  "h": 1050,
+  "bytes": 270994,
+  "id": "WB-07"
+ },
+ "/assets/wb/WB-08.jpg": {
+  "w": 1680,
+  "h": 1050,
+  "bytes": 266008,
+  "id": "WB-08"
+ },
+ "/assets/wb/WB-09.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 157539,
+  "id": "WB-09"
+ },
+ "/assets/wb/WB-10.jpg": {
+  "w": 1780,
+  "h": 970,
+  "bytes": 256246,
+  "id": "WB-10"
+ },
+ "/assets/wb/WB-11.jpg": {
+  "w": 2400,
+  "h": 1000,
+  "bytes": 336275,
+  "id": "WB-11"
+ },
+ "/assets/wb/WB-12.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 149141,
+  "id": "WB-12"
+ },
+ "/assets/wb/WB-13.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 118279,
+  "id": "WB-13"
+ },
+ "/assets/wb/WB-14.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 147247,
+  "id": "WB-14"
+ },
+ "/assets/wb/WB-15.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 158142,
+  "id": "WB-15"
+ },
+ "/assets/wb/WB-16.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 157985,
+  "id": "WB-16"
+ },
+ "/assets/wb/WB-17.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 137458,
+  "id": "WB-17"
+ },
+ "/assets/wb/WB-18.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 179689,
+  "id": "WB-18"
+ },
+ "/assets/wb/WB-19.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 171327,
+  "id": "WB-19"
+ },
+ "/assets/wb/WB-20.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 120704,
+  "id": "WB-20"
+ },
+ "/assets/wb/WB-21.jpg": {
+  "w": 1200,
+  "h": 750,
+  "bytes": 213896,
+  "id": "WB-21"
+ },
+ "/assets/wb/WB-22.jpg": {
+  "w": 1800,
+  "h": 1350,
+  "bytes": 415583,
+  "id": "WB-22"
+ }
+}

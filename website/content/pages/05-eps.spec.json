@@ -1,0 +1,830 @@
+{
+ "page": "05-eps",
+ "title": "Equipment Performance System",
+ "nav": "eps",
+ "promise": "Lost hours stop being an opinion.",
+ "hero": {
+  "kicker": "Capability 03 · Equipment Performance System",
+  "h1": "Lost hours stop being an opinion. Every one has a name.",
+  "dek": "One database for the whole plant. The line's own run signal and its own counters are worked out once, on the server — and every lost hour walks back to a minute, a machine and a person's word about what happened.",
+  "plate": "knowledge/assets/wb/WB-01c.jpg"
+ },
+ "sections": [
+  {
+   "type": "blockA",
+   "id": "eps-all",
+   "title": "Everything this module does, and where you press for it:",
+   "screen": {
+    "asset": "knowledge/assets/screens/home/EPS-period-sheet-where-the-time-went.png",
+    "chrome": "EPS · Beverage Line 7 · the period sheet",
+    "caption": "One day on one line · the minutes lost hour by hour, the verdict against the plan, and where the time went — six bands, in minutes and units"
+   },
+   "items": [
+    {
+     "lead": "One calculation, on the server, for every screen",
+     "text": "the wall tile, the synoptic, the report block and the exported table are the same arithmetic and cannot disagree."
+    },
+    {
+     "lead": "The stop is named at the restart, in two taps",
+     "text": "nobody is interrupted while the line is down, and the short stops are never a popup."
+    },
+    {
+     "lead": "A backlog no period can hide",
+     "text": "every unnamed stop from commissioning to this minute, ranked by what it cost; forty small stops named in one drag."
+    },
+    {
+     "lead": "Two honest OEEs over any window",
+     "text": "what the machine could have made, and whether the jobs met the rate their own recipe promised; one number cannot answer two fair questions."
+    },
+    {
+     "lead": "Six bands turn a bad percentage into minutes, units and money",
+     "text": "the four loss families ranked in one glance; breakdowns, longest first."
+    },
+    {
+     "lead": "Quality counts the first pass, every time",
+     "text": "a signed verdict restates without erasing; nothing anybody wrote is ever quietly removed."
+    },
+    {
+     "lead": "A dash, never a flattering zero",
+     "text": "a planned wash or a released maintenance job leaves the availability number; doing the right thing stops being punished."
+    },
+    {
+     "lead": "The shift printed, sealed and signed in one press",
+     "text": "from the same engine as the batch certificate."
+    }
+   ]
+  },
+  {
+   "type": "chooser",
+   "id": "eps-glance",
+   "title": "What you want to know, and where it is.",
+   "chips": [
+    "You want",
+    "What SOP does",
+    "Where you press"
+   ],
+   "columns": [
+    "You want",
+    "What SOP does",
+    "Where you press"
+   ],
+   "rows": [
+    [
+     "To know how the shift that just ended went",
+     "Nothing to press: the page opens on the last window that <b>finished</b>, never on the one being lived.",
+     "the top of the performance page"
+    ],
+    [
+     "Yesterday, last week, this month against last",
+     "Press the kind you want, then walk back with the arrow.",
+     "the period dial"
+    ],
+    [
+     "The four hours around a trip, a wash-up or a trial",
+     "Custom, pick the two ends, Apply.",
+     "the dial's own picker"
+    ],
+    [
+     "To judge one product run start to finish",
+     "Tap the job in the jobs table and the whole page becomes that job.",
+     "jobs in this period"
+    ],
+    [
+     "To know whether the period went well at all",
+     "Read the Asset card and its strip; the longest cut is the thing to chase.",
+     "the two OEEs"
+    ],
+    [
+     "To know whether the jobs met the rate their own recipe promised",
+     "Read the Schedule card beside it.",
+     "the two OEEs"
+    ],
+    [
+     "To turn a bad percentage into minutes",
+     "Read the six bands, top to bottom.",
+     "where the time went"
+    ],
+    [
+     "To know what those minutes cost in units and money",
+     "Read the losses card across a row to price one loss, down the cost column to rank them.",
+     "losses, this period"
+    ],
+    [
+     "To know which hour of the day hurt",
+     "Read the board's bars, or its sheet, worst first.",
+     "the hour board"
+    ],
+    [
+     "To know whether you are going to make the plan",
+     "Read the chips: made so far, where that leaves you against plan, and where the recent pace lands.",
+     "under the bars"
+    ],
+    [
+     "To know which single stop hurt most",
+     "Breakdowns, sorted longest.",
+     "the stop rooms"
+    ],
+    [
+     "To name a stop",
+     "Tap the card, tap a reason, Record.",
+     "the backlog"
+    ],
+    [
+     "To name forty small stops at once",
+     "Drag the stretch, one reason, Record.",
+     "the stretch panel"
+    ],
+    [
+     "This window on paper, signed and filed",
+     "The PDF button on the dial.",
+     "the top of the performance page"
+    ]
+   ],
+   "note": "Every window is measured in the site's own clock, and a window that is still running says so out loud instead of pretending to be finished. Nothing on the page is set here: every dial it reads is declared once on a plant screen, and this page only reads."
+  },
+  {
+   "type": "head",
+   "n": "01",
+   "of": "08",
+   "id": "eps-one-calculation",
+   "title": "One calculation, every screen",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "One calculation, on the server, for every screen.",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-synoptic.png",
+    "chrome": "the HMI · Beverage Line 7 · the line overview",
+    "caption": "the operator's own line page: the run signal the performance number is read from"
+   },
+   "items": [
+    {
+     "lead": "One calculation, on the server",
+     "text": "The run signal and the counters are worked out once; the wall tile, the synoptic number, the report block and the exported table are the same arithmetic and cannot disagree."
+    },
+    {
+     "lead": "Nothing new wired",
+     "text": "Point the module at the run signal the SCADA already shows: the performance number comes from signals the plant already has, and no code on the edge."
+    },
+    {
+     "lead": "A run signal but no counter",
+     "text": "Mark the critical machine and leave the rest: availability, honestly, and a dash wherever a count is needed."
+    },
+    {
+     "lead": "A corrected old reading",
+     "text": "Correct it where it was declared and every total that used it corrects itself, back through the history."
+    },
+    {
+     "lead": "The numbers on the operator's own page",
+     "text": "An engineer drops the performance tiles on a synoptic, so the figure lives on the screen the operator already watches."
+    },
+    {
+     "lead": "A dash, never a flattering zero",
+     "text": "A figure the plant never declared prints as a dash, and one screen names the machine still missing a figure."
+    },
+    {
+     "lead": "The number, the screen and the recording are one record",
+     "text": "The run signal is the one the SCADA already shows, and TimeLens replays that same page from the historian at any moment you name."
+    }
+   ]
+  },
+  {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/eps/EP-D1.svg",
+   "intro": "one calculation on the plant's own rows, and four faces that read it",
+   "legend": [
+    {
+     "title": "The run signal and the counter",
+     "line": "the whole input, on the left"
+    },
+    {
+     "title": "One calculation",
+     "line": "worked out once, on the server"
+    },
+    {
+     "title": "Four faces",
+     "line": "the tile, the synoptic, the report, the export"
+    },
+    {
+     "title": "They never disagree",
+     "line": "joined to the centre and to nothing else"
+    }
+   ],
+   "ground": "light"
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-editor-tiles.png",
+     "caption": "the engineer's page in the editor: the same numbers, dropped on a synoptic"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "One calculation, on the server, for every screen.",
+   "cols": [
+    [
+     "<b>The line's own run signal and its own counters are the whole input,</b> and they are worked out once, on the server. The tile on the wall, the same number dropped on a synoptic, the block in a report and the exported table are therefore the same arithmetic, and cannot disagree.",
+     "<b>The performance number comes from signals the plant already has,</b> and no code on the edge."
+    ],
+    [
+     "<b>The run signal is the one the SCADA already shows</b> on the operator's page, and TimeLens replays that same page from the historian at any moment you name. The number, the screen and the recording are one plant record.",
+     "<b>Every total that used it corrects itself,</b> back through the history."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "02",
+   "of": "08",
+   "id": "eps-stops",
+   "title": "Stops and the reason",
+   "plate": "knowledge/assets/wb/WB-07.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "Asked once, at the restart, in two taps.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-restart-card.png",
+    "chrome": "EPS · Beverage Line 7 · the restart card",
+    "caption": "the card that opens by itself when the line comes back: which side did it come from, then the machine"
+   },
+   "items": [
+    {
+     "lead": "The card that opens at the restart",
+     "text": "The line comes back, the operator has just cleared the cause, and the card is already open — named in two taps."
+    },
+    {
+     "lead": "This machine's own reasons",
+     "text": "Tap one, then Record: the stop leaves the list, named, with who said so and when."
+    },
+    {
+     "lead": "Another machine caused it",
+     "text": "More reasons, then the side it came from, then the machine, the kind and the cause — the loss is filed against the machine that caused it, not the one that stopped."
+    },
+    {
+     "lead": "No word for it yet",
+     "text": "Type it in the box and record it as <em>other</em>: an honest record of a stop nobody can name, instead of a wrong reason on the sheet."
+    },
+    {
+     "lead": "Later",
+     "text": "The operator still firefighting presses Later: the stop waits in the backlog, nothing is written, and nobody is told he looked."
+    },
+    {
+     "lead": "Small stops are never a popup",
+     "text": "A stop too short for anybody to reach counts against the number with no clicks, and gets named a stretch at a time."
+    },
+    {
+     "lead": "A stop inside a planned window never asks",
+     "text": "Planned time stays planned, and the availability number is not punished for a wash."
+    },
+    {
+     "lead": "Naming a calendar-filed stop",
+     "text": "Naming it turns it back into an unplanned stop and its time re-enters the number — a person's call, not a calendar's."
+    },
+    {
+     "lead": "The three doors from the list",
+     "text": "The same three doors answer a stop later, from the list, when the answer did not come at the restart."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-stop-doors.png",
+     "caption": "the same three doors from the list, when the answer comes later",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Asked once, at the restart, in two taps.",
+   "cols": [
+    [
+     "<b>The line comes back, the operator has just cleared the cause, and the card is already open.</b> Nobody is ever interrupted while the line is down, and the short stops are never a popup.",
+     "<b>The loss is filed against the machine that caused it,</b> not against the one that stopped."
+    ],
+    [
+     "<b>Naming a stop the calendar had filed by itself turns it back into an unplanned stop,</b> and its time re-enters the number. That choice belongs to a person, not to a calendar.",
+     "<b>An honest record of a stop nobody can name,</b> instead of a wrong reason on the sheet."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "03",
+   "of": "08",
+   "id": "eps-backlog",
+   "title": "The backlog",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "A backlog no period can hide.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-backlog.png",
+    "chrome": "EPS · Beverage Line 7 · the backlog",
+    "caption": "the backlog, all time: the stops still without a name, dearest first"
+   },
+   "items": [
+    {
+     "lead": "The backlog, all time",
+     "text": "Every stop nobody has named waits in one list, from commissioning to this minute, ranked by what it cost; change the period and the list does not move."
+    },
+    {
+     "lead": "Forty stops in one drag",
+     "text": "Drag the stretch, pick one reason, Record: forty records named in one act, with the count and the cost shown before the write."
+    },
+    {
+     "lead": "Change a hurried answer",
+     "text": "The correction sits beside the first answer, both kept, with who wrote each and when."
+    },
+    {
+     "lead": "What twenty minutes of naming is worth",
+     "text": "The top three rows carry the plain figure, and a ranking the morning meeting can argue with."
+    },
+    {
+     "lead": "The data-quality card",
+     "text": "Finds the stops where the crew's machine differs from the machine the engine suspected — the crew tapping the first reason on the list."
+    },
+    {
+     "lead": "The disagreement card",
+     "text": "When the line and the plan disagreed about a stretch of the shift, the person entitled to say so files that time as what it really was."
+    },
+    {
+     "lead": "An unnamed stop from last Tuesday",
+     "text": "Still there, still carrying its cost: no period can hide it."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-stretch-strip.png",
+     "caption": "one drag across a bad afternoon, one reason, and the count before the write"
+    },
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-data-quality.png",
+     "caption": "the card that finds the answers the engine did not expect",
+     "size": "native"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "A backlog no period can hide.",
+   "cols": [
+    [
+     "<b>Every stop nobody has named waits in one list,</b> from commissioning to this minute, ranked by what it cost. Change the period and the list does not move, because the whole point of a backlog is that no window can hide it.",
+     "<b>Forty records named in one act,</b> with the count and the cost shown before the write."
+    ],
+    [
+     "<b>The disagreement card is the one thing here answered once and for good;</b> everywhere else the first answer stays on the record and the correction sits beside it.",
+     "<b>The correction beside the first answer, both kept,</b> with who wrote each and when."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "04",
+   "of": "08",
+   "id": "eps-oee",
+   "title": "Two OEEs, any window",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Two honest OEEs, over the window you choose.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-two-oees.png",
+    "chrome": "EPS · Beverage Line 7 · the two OEEs",
+    "caption": "two fair questions, two numbers, both true on the same day"
+   },
+   "items": [
+    {
+     "lead": "The page opens on the last finished window",
+     "text": "Never on the one being lived — a number that can be judged instead of a half-lived one."
+    },
+    {
+     "lead": "The period dial",
+     "text": "Press the kind you want — shift, day, week, month — then walk back with the arrow."
+    },
+    {
+     "lead": "Custom, two ends, Apply",
+     "text": "Any window from a few minutes to a year, cut by hand — the four hours around a trip, a wash-up or a trial."
+    },
+    {
+     "lead": "One job becomes the page",
+     "text": "Tap the job row and the whole page becomes that job, judged against the rate its own recipe promised."
+    },
+    {
+     "lead": "Asset OEE",
+     "text": "What the machine could have made; read the Asset card and its strip — the longest cut is the thing to chase."
+    },
+    {
+     "lead": "Schedule OEE",
+     "text": "Whether the jobs met the rate their own recipe promised; read the Schedule card beside it."
+    },
+    {
+     "lead": "Two numbers, both true",
+     "text": "On a mixed period a low machine number sits beside a comfortable plan number, and both are true."
+    },
+    {
+     "lead": "A running window says so out loud",
+     "text": "The time played so far, and a warning that these figures will move."
+    },
+    {
+     "lead": "Running empty is never running slow",
+     "text": "And a window the line has no figures for says so rather than printing a zero."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-dial-row.png",
+     "caption": "the dial: the window every number on the page is measured over",
+     "size": "full"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Two honest OEEs, over the window you choose.",
+   "cols": [
+    [
+     "<b>One number cannot answer two fair questions,</b> so the page prints both: what the machine could have made, and whether the jobs met the rate their own recipe promised. Everything on the page obeys one window, and the page opens on the window that has just finished.",
+     "<b>A low machine number beside a comfortable plan number, and both are true.</b>"
+    ],
+    [
+     "<b>Running empty is never counted as running slow,</b> and a window the line has no figures for says so rather than printing a zero. A mixed day needs both numbers, and neither of them is the flattering one.",
+     "<b>Any window from a few minutes to a year, cut by hand</b> — and a number that can be judged, instead of a half-lived one."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "05",
+   "of": "08",
+   "id": "eps-quality",
+   "title": "Quality, first pass",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Quality counts the first pass, every time.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-rejects.png",
+    "chrome": "EPS · Beverage Line 7 · the reject count",
+    "caption": "where the reject count came from, and whether it has been restated since"
+   },
+   "items": [
+    {
+     "lead": "The reject count, first pass",
+     "text": "The count comes off the line's own counter, taken from the count point furthest down the flow."
+    },
+    {
+     "lead": "The signed count wins",
+     "text": "The lab signs the verdict on the batch record; the signed count replaces the counter for that batch and the period redraws."
+    },
+    {
+     "lead": "A verdict after the shift closed",
+     "text": "Sign it anyway: the period that made the product owns it, and wears a mark saying when, by whom, and from what to what."
+    },
+    {
+     "lead": "Tap the mark, read both",
+     "text": "Both figures side by side, so the gap closes itself instead of costing trust."
+    },
+    {
+     "lead": "No reject count at all",
+     "text": "The page says what became of the rejects is not measured, rather than printing a zero."
+    },
+    {
+     "lead": "A unit put right stays a reject",
+     "text": "First pass and every pass — so the figure cannot flatter the process it exists to expose."
+    },
+    {
+     "lead": "A verdict is added, never edited",
+     "text": "An older signed count is superseded on the record and stays readable beside the one that replaced it, with who signed each and when."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-record-qc.png",
+     "caption": "where the verdict is signed: the batch record's two signatures, and the count quality signs against the machine's own"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Quality counts the first pass, every time.",
+   "cols": [
+    [
+     "<b>The reject count comes off the line's own counter until a person signs a different one,</b> and then the signed count wins. A unit that had to be put right counts as a reject the first time, so the figure cannot flatter the process it exists to expose.",
+     "<b>The period that made the product owns it,</b> and wears a mark saying when, by whom, and from what to what."
+    ],
+    [
+     "<b>A verdict is added, never edited:</b> an older signed count is superseded on the record and stays readable beside the one that replaced it, with who signed each and when. A supervisor who saw the old figure on the wall can tap the mark and read both, so a restated shift costs nothing in trust. Nothing anybody wrote is ever quietly removed."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "06",
+   "of": "08",
+   "id": "eps-bands",
+   "title": "Where the time went",
+   "plate": null
+  },
+  {
+   "type": "blockA",
+   "title": "Where the time went, hour by hour.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-waterfall.png",
+    "chrome": "EPS · Beverage Line 7 · where the time went",
+    "caption": "six bands, five losses, and the minutes each one took — with the same losses priced beside them"
+   },
+   "items": [
+    {
+     "lead": "The six bands",
+     "text": "The period's whole clock stepped down one loss at a time, so a disappointing percentage always has somewhere to point — the loss named, with the minutes beside it."
+    },
+    {
+     "lead": "Losses priced across the row",
+     "text": "The same loss in minutes, in units never made, and in money."
+    },
+    {
+     "lead": "Losses ranked down the cost column",
+     "text": "The four families ranked against each other, in one glance."
+    },
+    {
+     "lead": "The hour board",
+     "text": "The same period cut into equal buckets: each says what it made, what the plan wanted, and what it lost — as bars, or as a sheet worst first."
+    },
+    {
+     "lead": "The three chips under the bars",
+     "text": "Made so far, where that leaves you against plan, and where the recent pace lands."
+    },
+    {
+     "lead": "Breakdowns, longest first",
+     "text": "Which single stop hurt most."
+    },
+    {
+     "lead": "Protected windows",
+     "text": "Plan the wash, changeover or shutdown in the calendar, or release the maintenance job: those hours leave the availability denominator, and a stop inside one never asks."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-hour-board.png",
+     "caption": "the same period hour by hour: what was made, what the plan wanted, what was lost"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-perf-waterfall.png",
+     "caption": "the performance page as the operator opens it, the loss waterfall under the numbers"
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Where the time went, hour by hour.",
+   "cols": [
+    [
+     "<b>Six bands take the period's whole clock and step it down one loss at a time,</b> so a disappointing percentage always has somewhere to point. The same period is then cut into equal buckets, and each one says what it made, what the plan wanted, and what it lost."
+    ],
+    [
+     "<b>Doing the right thing stops being punished by the number,</b> and the sheet is the part a handover can be read out from on any screen, including a phone.",
+     "<b>Those hours leave the availability denominator,</b> and a stop inside one never asks."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "07",
+   "of": "08",
+   "id": "eps-energy",
+   "title": "Energy",
+   "plate": null
+  },
+  {
+   "type": "prose",
+   "title": "Energy is a fold inside the record and the performance engine.",
+   "cols": [
+    [
+     "<b>Not a different edition, not a per-meter licence</b> — Energy is a fold inside the record and EPS, not a different edition or a per-meter licence.",
+     "<b>Inside the record and the performance engine</b> — Energy and cost reporting is inside the record and EPS, not a separate line.",
+     "<b>Never a line of its own</b> — Energy and cost reporting sits inside the record and the performance engine, never a line of its own."
+    ],
+    [
+     "<b>What it puts on the sheet</b> — Consumption and cost on the record, the dated rate book, downtime priced in money, per-batch used versus planned.",
+     "<b>The question it answers</b> — The energy bill, a sustainability report, a cost-per-unit question from finance.",
+     "<b>Named among the nine</b> — Energy is one of the modules the corpus names, and on this site it is presented inside EPS and Enterprise Reporting, never bought on its own."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "Energy is a fold, not a module.",
+   "cols": [
+    [
+     "<b>The same loss in minutes, in units never made, and in money</b> — the losses card prices a row across, and ranks them down the cost column."
+    ],
+    [
+     "<b>Energy and cost reporting is inside the record and EPS, not a separate line.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "n": "08",
+   "of": "08",
+   "id": "eps-handover",
+   "title": "The handover, one press",
+   "plate": "knowledge/assets/wb/WB-19.jpg"
+  },
+  {
+   "type": "blockA",
+   "title": "The handover, printed and signed in one press.",
+   "screen": {
+    "asset": "knowledge/assets/brochure/eps/shot-report-page.png",
+    "chrome": "Reports · Beverage Line 7 · the shift review",
+    "caption": "a review as SOP prints it: the document number, the fingerprint, and the line that says it is uncontrolled without a signature"
+   },
+   "items": [
+    {
+     "lead": "The handover on paper, in one press",
+     "text": "The window you are reading becomes a document with a number, a seal and a place in the archive."
+    },
+    {
+     "lead": "Design",
+     "text": "The page's own parts, bound to real tags: the two OEE tiles, the six bands, the hour grid, the loss ranking and the downtime table."
+    },
+    {
+     "lead": "Compute",
+     "text": "On the server, in the site's own clock, over exactly the window on the dial: a shift, a day, a month, one job, or two instants cut by hand."
+    },
+    {
+     "lead": "Seal",
+     "text": "Frozen on arrival, given a document number and a fingerprint. Press again and you have a second document beside the first, never a refresh."
+    },
+    {
+     "lead": "Sign",
+     "text": "By name and capacity, proved with the signer's own password, bound to the run's seal, never edited and never withdrawn."
+    },
+    {
+     "lead": "Deliver",
+     "text": "On the plant's letterhead in three languages, e-mailed to the list, filed as a PDF, exported as a table."
+    },
+    {
+     "lead": "The three zeros",
+     "text": "0 report servers · 0 third-party licences · 0 seats to read: no reporting product, no rendering licence, no designer bought separately. It is inside the platform."
+    },
+    {
+     "lead": "Where paper and screen differ",
+     "text": "Where a job window makes the two disagree about what the rate is called, the paper is the one telling the truth."
+    }
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-pdf-door.png",
+     "caption": "one button on the dial, and the window you are reading becomes paper",
+     "size": "full"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-print.png",
+     "caption": "the same record as it comes off the paper"
+    }
+   ]
+  },
+  {
+   "type": "blockB",
+   "title": "The whole module fits in a hand",
+   "screens": [
+    {
+     "pair": [
+      "knowledge/assets/screens/crops/m-perf-chip-crop.png",
+      "knowledge/assets/screens/crops/m-hmi-report-crop.png"
+     ],
+     "alt": "the module's door and the shift report, on a phone",
+     "caption": "the module's one door, always in the top bar · the shift report, read off the phone at the line",
+     "size": "native"
+    },
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-narrow-sheet.png",
+     "caption": "a narrow screen keeps every number: the chips carry the period, the sheet carries the hours"
+    }
+   ],
+   "items": [
+    {
+     "lead": "The operator",
+     "text": "The door, and the card at the restart: what is waiting rides on the chip in the top bar, and the answering card opens where he is standing, not where a desk is."
+    },
+    {
+     "lead": "The supervisor",
+     "text": "The sheet, worst first: the hours ranked by what they lost, and the shift report beside them. The handover is read off the phone, at the line."
+    },
+    {
+     "lead": "The manager",
+     "text": "The same shift report: the document the shift closed with, and a trend under it. The number reaches him before the meeting does."
+    }
+   ]
+  },
+  {
+   "type": "prose",
+   "title": "The handover, printed and signed in one press.",
+   "cols": [
+    [
+     "<b>The window you are reading prints through the same engine that prints your batch certificates.</b> One press, and the shift is a document with a number, a seal and a place in the archive.",
+     "<b>The paper is the same calculation as the screen,</b> and where a job window makes the two disagree about what the rate is called, the paper is the one telling the truth."
+    ],
+    [
+     "<b>The same application, sized for a hand:</b> nothing to install, nothing licensed per screen, three languages including right-to-left Arabic. On a phone the module has one door, and it is always in the top bar.",
+     "<b>On a narrow screen the bars are dropped and every number is kept,</b> so nothing is hidden from the person who happens to be holding a phone."
+    ]
+   ]
+  },
+  {
+   "type": "blockB",
+   "same": true,
+   "id": "eps-unique",
+   "title": "And what no other platform does like us",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/eps/shot-two-oees.png",
+     "chrome": "EPS · Beverage Line 7 · the two OEEs",
+     "caption": "two fair questions, two numbers, both true on the same day"
+    },
+    {
+     "pair": [
+      "knowledge/assets/brochure/eps/shot-restart-card.png",
+      "knowledge/assets/brochure/eps/shot-backlog.png"
+     ],
+     "chrome": "EPS · Beverage Line 7 · the restart card and the backlog",
+     "caption": "the card that opens by itself when the line comes back — and the backlog behind it, all time, dearest first"
+    }
+   ],
+   "items": [
+    {
+     "lead": "One calculation, on the server, for every screen",
+     "text": "The wall tile, the synoptic number, the report block and the exported table are the same arithmetic, and cannot disagree."
+    },
+    {
+     "lead": "Asked once, at the restart, in two taps",
+     "text": "Nobody is ever interrupted while the line is down, and the short stops are never a popup."
+    },
+    {
+     "lead": "The loss is filed against the machine that caused it",
+     "text": "Not against the one that stopped."
+    },
+    {
+     "lead": "A backlog no period can hide",
+     "text": "Every stop nobody has named waits in one list, from commissioning to this minute, ranked by what it cost; change the period and the list does not move."
+    },
+    {
+     "lead": "Forty small stops named in one act",
+     "text": "Drag the stretch, one reason, Record — with the count and the cost shown before the write."
+    },
+    {
+     "lead": "Two honest OEEs",
+     "text": "One number cannot answer two fair questions, so the page prints both; and neither of them is the flattering one."
+    },
+    {
+     "lead": "Quality counts the first pass, every time",
+     "text": "A unit that had to be put right counts as a reject the first time, so the figure cannot flatter the process it exists to expose; and a verdict is added, never edited."
+    },
+    {
+     "lead": "Doing the right thing stops being punished",
+     "text": "Plan the wash or release the maintenance job and those hours leave the availability denominator; a figure the plant never declared prints as a dash, never a flattering zero."
+    }
+   ]
+  },
+  {
+   "type": "contact",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "id": "write"
+  }
+ ]
+}

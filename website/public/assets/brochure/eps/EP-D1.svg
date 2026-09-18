@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+<title>One calculation, four faces</title>
+<g font-family="Saira, Inter, sans-serif">
+
+  <!-- the four lines out of the centre: each face joined to the calculation, and to nothing else -->
+  <g stroke="#46C3EE" stroke-width="1.6" fill="none" opacity=".9">
+    <path d="M1000 325 L1290 145"/>
+    <path d="M1000 325 L1290 265"/>
+    <path d="M1000 325 L1290 385"/>
+    <path d="M1000 325 L1290 505"/>
+  </g>
+
+  <!-- the two inputs join the calculation -->
+  <g stroke="#46C3EE" stroke-width="1.6" fill="none" opacity=".9">
+    <path d="M310 270 L560 305"/>
+    <path d="M310 430 L560 345"/>
+  </g>
+
+  <!-- left: the line's own inputs -->
+  <g>
+    <rect x="60" y="232" width="250" height="76" rx="4" fill="#14202F" stroke="#46C3EE" stroke-width="1.6"/>
+    <text x="185" y="280" fill="#FFFFFF" font-size="26" font-weight="600" letter-spacing="2.4" text-anchor="middle">RUN SIGNAL</text>
+    <rect x="60" y="392" width="250" height="76" rx="4" fill="#14202F" stroke="#46C3EE" stroke-width="1.6"/>
+    <text x="185" y="440" fill="#FFFFFF" font-size="26" font-weight="600" letter-spacing="2.4" text-anchor="middle">COUNTER</text>
+    <text x="185" y="530" fill="#5A6B7A" font-size="20" font-weight="600" letter-spacing="2.6" text-anchor="middle">THE LINE&#8217;S OWN INPUTS</text>
+  </g>
+
+  <!-- centre: one calculation, on one database -->
+  <g>
+    <rect x="560" y="250" width="440" height="150" rx="8" fill="#14202F"/>
+    <text x="780" y="341" fill="#FFFFFF" font-size="36" font-weight="700" letter-spacing="1.6" text-anchor="middle">ONE CALCULATION</text>
+    <path d="M690 470 V545 a90 22 0 0 0 180 0 V470" fill="#14202F" stroke="#46C3EE" stroke-width="1.6"/>
+    <ellipse cx="780" cy="470" rx="90" ry="22" fill="#1B2A3C" stroke="#46C3EE" stroke-width="1.6"/>
+  </g>
+
+  <!-- right: the four faces -->
+  <g font-size="26" font-weight="700" letter-spacing="2.4" text-anchor="middle">
+    <rect x="1290" y="107" width="250" height="76" rx="4" fill="#46C3EE"/>
+    <text x="1415" y="155" fill="#0C3547">THE TILE</text>
+    <rect x="1290" y="227" width="250" height="76" rx="4" fill="#46C3EE"/>
+    <text x="1415" y="275" fill="#0C3547">THE SYNOPTIC</text>
+    <rect x="1290" y="347" width="250" height="76" rx="4" fill="#46C3EE"/>
+    <text x="1415" y="395" fill="#0C3547">THE REPORT</text>
+    <rect x="1290" y="467" width="250" height="76" rx="4" fill="#46C3EE"/>
+    <text x="1415" y="515" fill="#0C3547">THE EXPORT</text>
+  </g>
+
+  <!-- the amber rule -->
+  <path d="M1290 578 H1540" stroke="#EE9F46" stroke-width="3" fill="none"/>
+  <text x="1415" y="612" fill="#C97F2E" font-size="23" font-weight="700" letter-spacing="3" text-anchor="middle">THEY NEVER DISAGREE</text>
+
+</g>
+</svg>

@@ -1,0 +1,387 @@
+{
+ "page": "02-platform",
+ "title": "The platform",
+ "nav": "platform",
+ "hero": {
+  "kicker": "The platform",
+  "h1": "One database for the whole plant.",
+  "dek": "One Postgres for the plant and one historian beside it, joined by one key that follows a signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet.",
+  "plate": "knowledge/assets/wb/WB-01f.jpg",
+  "alt": "a glass-walled engineering room beside the filling hall, the plant's page on the wall screen"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "platform-born",
+   "title": "One platform. Born integrated.",
+   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors. They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>Nothing to reconcile.</b> The tile on the wall, the sheet in the auditor's hand and the export in the analyst's spreadsheet read one server-side answer — not three that agree on a good day.",
+     "<b>Nothing to integrate.</b> The next module is a migration on infrastructure you already run, not a connector, a licence and a services engagement.",
+     "<b>Nothing stranded.</b> Start with screens and alarms; add performance, then maintenance, then production — without re-engineering a single page you already drew."
+    ],
+    [
+     "<b>The difference is not what they do — it is where the data lands.</b>",
+     "<b>The work order and the PLC tag are rows in the same place</b>, under the same security, in the same transaction. Adding the next is a migration.",
+     "<b>Nothing to connect, because there is nothing to connect.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "diagram",
+   "id": "platform-architecture",
+   "kicker": "The architecture",
+   "title": "One database. One history. One key, from the controller's register to the signed sheet.",
+   "intro": "The edges beside their controllers, live channels both ways, two servers with one address, one database with the plant's whole history compressed beside it — and every screen, order, job and signed sheet drawn from the same rows.",
+   "asset": "knowledge/assets/wb/WB-04.svg",
+   "alt": "the backbone, drawn: six controllers, six edges with one doubled, six channels to the plinth, two servers under one address, the core and its history",
+   "legend": [
+    {
+     "title": "The controllers · the outer ring",
+     "line": "the plant's PLCs and field devices, on the machines they drive"
+    },
+    {
+     "title": "The edges · the inner ring",
+     "line": "one beside each controller, some in pairs · reads · judges · keeps · serves"
+    },
+    {
+     "title": "The channels",
+     "line": "every edge to the core · readings in, commands out · live, both ways"
+    },
+    {
+     "title": "The pair",
+     "line": "duty and standby · one address the plant dials"
+    },
+    {
+     "title": "The core",
+     "line": "one database, Postgres · the history compressed beside it, TimescaleDB"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-edge",
+   "title": "The edge",
+   "n": "01",
+   "of": "06",
+   "plate": "knowledge/assets/wb/WB-03b.jpg",
+   "alt": "the line running in the foreground with its wall panel alive, the server rack dark behind the glass",
+   "promise": "One program beside the PLC: it reads the machines, judges the alarms, keeps the data and serves the pages; it runs redundant against the same devices."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The edge runs the line. The server only receives.</b> One executable sits beside the controller and does the work the line depends on, which is why a server that stops is an inconvenience and never an outage.",
+     "<b>It polls, judges and writes back.</b> It polls the devices, judges the alarms and writes the operator's commands back.",
+     "<b>All major drivers.</b> SOP supports all major drivers — Modbus, OPC DA, Siemens S7 and OPC UA among them.",
+     "<b>Cut the network and the readings wait on its own disk</b>, then fill the gap in."
+    ],
+    [
+     "<b>A dead server loses no plant data</b>, by construction.",
+     "<b>Where a line cannot afford to lose its edge</b>, a second one stands on the same devices and takes over.",
+     "<b>Proven in anger.</b> A day-long cut of the history link: the lines still running on the plant's own edge, the missing hours back-filled in seconds when it returned — unattended.",
+     "<em>Not one of these changes a screen anybody uses: the edge buffers on every install, and the pair and the emergency password are set once by the administrator.</em>"
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-server",
+   "title": "The server and the pair",
+   "n": "02",
+   "of": "06",
+   "promise": "Where every SCADA engine used to need its own standby — or a ring of servers standing by for each other — SOP protects dozens of lines with two: one duty, one standby, one address the plant dials. The standby takes the address the moment the duty stops, with nothing lost; a planned handover is a button that refuses unless both are in step; and the standby is part of the platform, not a second purchase."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The server, on the substrate you choose.</b> From scripts, in a single session, on plain hardware in your own plant, air gapped if your rules say so, or on a cloud backbone when a group runs several sites.",
+     "<b>The plant and its history stand on the same box</b>, never two systems to reconcile.",
+     "<b>Duty and standby, one address that moves.</b> Two identical servers, one address the plant dials. A planned handover is a button that refuses unless both are in step, and a standby that cannot see the plant stands down."
+    ],
+    [
+     "<b>A server that stops loses no plant data:</b> it never lived only there. One store, nothing to reconcile.",
+     "<b>Adding a way to stay up costs a setting, not a licence.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/scada/SC-D1-site.svg",
+   "ground": "light",
+   "alt": "the four ways the line stays up: the edge, the server, the pair, the plant's own pages on the LAN",
+   "caption": "the four ways the line stays up: the edge · the server · the pair · the plant's own pages on the LAN"
+  },
+  {
+   "type": "head",
+   "id": "platform-emergency",
+   "title": "The emergency HMI — we know of no other platform that does this.",
+   "n": "03",
+   "of": "06",
+   "promise": "If both servers are unreachable, the operators keep running the plant from the edge itself: no extra HMI panel, no second application — the same SCADA pages the server designed are already stored on the edge, and the edge serves them directly to the operators, with the same symbols, the same commands, live values and standing alarms, until the centre is back."
+  },
+  {
+   "type": "blockA",
+   "screen": {
+    "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
+    "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy",
+    "chrome": "the edge · emergency access"
+   },
+   "items": [
+    {
+     "lead": "The plant's own pages, on the LAN.",
+     "text": "If the server cannot be reached, the edge serves the pages the operators trained on: the same drawing, the same symbols, the same commands, live values and standing alarms."
+    },
+    {
+     "lead": "It refuses a login while the server is healthy.",
+     "text": ""
+    },
+    {
+     "lead": "Armed once by the administrator",
+     "text": "and refused while the server is healthy."
+    },
+    {
+     "lead": "The synoptics, not the business capabilities.",
+     "text": "The emergency HMI serves the plant's designed HMI synoptics with their live values and standing alarms, and the operator can send commands."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-database",
+   "title": "The database and the history",
+   "n": "04",
+   "of": "06",
+   "promise": "One database for the plant and one history beside it, on the same box, never two systems to reconcile. The history is part of the platform, not a product beside it: the same database the screen is already drawing from, and every operator already has it."
+  },
+  {
+   "type": "blockA",
+   "screen": {
+    "asset": "knowledge/assets/screens/shot-trend-cursors.png",
+    "caption": "the trend studio with two cursors and the numbers across the span",
+    "chrome": "the trend studio · two cursors"
+   },
+   "items": [
+    {
+     "lead": "The historian is part of the platform, not a product beside it.",
+     "text": ""
+    },
+    {
+     "lead": "Averages are count-weighted",
+     "text": "never an average of averages."
+    },
+    {
+     "lead": "A quality byte rides every reading.",
+     "text": "A stale or bad value is dressed as stale or bad, never drawn as a fresh number."
+    },
+    {
+     "lead": "Correct a value from years ago and every total since corrects itself",
+     "text": "there is no second copy to migrate."
+    },
+    {
+     "lead": "Any window you like:",
+     "text": "it draws as fast as a short window, and names the resolution."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-one-key",
+   "title": "One key, from the register to the signed sheet",
+   "n": "05",
+   "of": "06",
+   "promise": "One key follows a signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet. Nothing is mapped a second time."
+  },
+  {
+   "type": "blockA",
+   "screens": [
+    {
+     "pair": [
+      "knowledge/assets/screens/shot-taglens-card.png",
+      "knowledge/assets/screens/shot-taglens-thread.png"
+     ],
+     "chrome": "Tag Lens · one signal · the card and the thread",
+     "caption": "one signal: its identity card and live value, then every page, trend, alarm and report block that uses it"
+    }
+   ],
+   "items": [
+    {
+     "lead": "Security lives in the database and reaches the report.",
+     "text": ""
+    },
+    {
+     "lead": "One signal, followed through every module.",
+     "text": "Every page, trend, alarm, report block, formula and condition that uses it — counted live, before anything is changed."
+    },
+    {
+     "lead": "We know of no other platform that follows one tag through every module of the plant.",
+     "text": ""
+    },
+    {
+     "lead": "One clock, one key, one archive:",
+     "text": "the same shift on every module, one signal one identity, every sheet filed side by side."
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-rights",
+   "title": "Rights decided in the database",
+   "n": "06",
+   "of": "06",
+   "promise": "Who may open a page and who may send a command is decided in the database, not in a menu on a screen: what a user may not see never reaches them — not the screen, not the export, not the printed sheet."
+  },
+  {
+   "type": "blockA",
+   "screens": [
+    {
+     "pair": [
+      "knowledge/assets/brochure/scada/shot-page-acl.png",
+      "knowledge/assets/brochure/scada/shot-audit-journal.png"
+     ],
+     "chrome": "the page's list · the audit journal",
+     "caption": "one page narrowed to one crew — for everyone else it is gone, not greyed; and the audit journal across the whole fleet, in four lenses, filtered and exported"
+    }
+   ],
+   "items": [
+    {
+     "lead": "Rights in one console, read in the database.",
+     "text": "A screen a person may not open is never sent to their browser, their export or their sheet."
+    },
+    {
+     "lead": "Why this is not a menu setting.",
+     "text": "A right set in a client menu can only withhold the drawing, because the data has already travelled. Here the rule that hides a screen is the same rule that filters the export and the printed sheet, because there is one database under all three."
+    },
+    {
+     "lead": "Row-level security in the database, not a hidden menu in the client.",
+     "text": ""
+    },
+    {
+     "lead": "From a whole site down to one screen, one signal and one module.",
+     "text": "The same console reaches that far, and it keeps the record of every act that follows."
+    },
+    {
+     "lead": "Off a list a page goes away, not grey.",
+     "text": "It leaves the operator's page browser, it leaves the editor's tree, and every button that led to it goes with it; a global administrator is the one who can hand it back."
+    },
+    {
+     "lead": "The record of acts.",
+     "text": "Every command, acknowledgement, shelving and grant across the fleet, each with its moment, narrowed and exported."
+    }
+   ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/scada/SC-D2.svg",
+   "ground": "light",
+   "alt": "the rights ladder, six rungs, each with the console word it is set in",
+   "caption": "the rights ladder: the licence · the switch · the role and the scope · the group · the list · the record, each with the console word it is set in"
+  },
+  {
+   "type": "head",
+   "id": "platform-install",
+   "title": "Deployed from scripts, in a single session."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>From scripts, in a single session.</b> Database, historian, applications and the standby pair install from scripts on plain hardware, and ask nothing on the way. Air-gapped if the plant requires it.",
+     "<b>On the substrate you choose.</b> On plain hardware in your own plant, air gapped if your rules say so, or on a cloud backbone when a group runs several sites.",
+     "<b>Same product, same migrations, two substrates.</b>",
+     "<b>What it takes to run it.</b> A server, or a duty and standby pair, on plain hardware; the edge on any PC beside the PLC. The code and the data sit on the client's own servers."
+    ],
+    [
+     "<b>Your partner installs</b> — a server, or a duty and standby pair, from scripts, in a single session.",
+     "<b>Draws or imports the line</b> — in a browser, from a portable file, with the machine builder's package if there is one.",
+     "<b>Deploys and supports it.</b>",
+     "<b>Modules switch on per line</b> — reports, execution, performance, maintenance — when you want them.",
+     "<em>It starts on one line: its pages, its alarms, its trends and its record, with your own engineers at the same screen. The second line then starts as a copy of the first.</em>"
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "platform-stack",
+   "title": "Nothing in the stack is sunsetting.",
+   "promise": "One database, Postgres; one historian beside it, TimescaleDB; the plant and its history on the same box — dozens of lines, every reading, on two servers. Nothing in the stack is sunsetting."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>One database</b> and <b>one historian beside it</b>, the plant and its history on the same box.",
+     "<b>One program at the edge</b> — a single executable that polls, evaluates, buffers and serves, on any PC beside the PLC."
+    ],
+    [
+     "<b>One renderer in the browser</b> — purely web, nothing installed.",
+     "<b>A whole line travels as one file</b> to the next line or the next plant, and lands with every binding intact: names travel and identities do not."
+    ]
+   ]
+  },
+  {
+   "type": "cards",
+   "id": "platform-capabilities",
+   "kicker": "Capabilities",
+   "title": "Five capabilities. One platform.",
+   "groups": [
+    {
+     "label": "SCADA first — the plant's screens, alarms, trends and history — then the four business capabilities born on the same rows: Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting.",
+     "cards": [
+      {
+       "plate": "knowledge/assets/wb/WB-05.jpg",
+       "title": "SCADA",
+       "trigger": "One page, every screen it is opened on.",
+       "text": "The pages, the alarms, the trends and the record are the same rows — and the line's own edge keeps serving them when the centre cannot."
+      },
+      {
+       "plate": "knowledge/assets/wb/WB-06.jpg",
+       "title": "Execution Manufacturing System",
+       "trigger": "The line runs its own orders.",
+       "text": "Nobody presses start: the line begins and ends its own jobs from two signals, stamped with the plant's own clock."
+      },
+      {
+       "plate": "knowledge/assets/wb/WB-07.jpg",
+       "title": "Equipment Performance System",
+       "trigger": "Lost hours stop being an opinion.",
+       "text": "Every one has a name: the stop is named at the restart, in two taps."
+      },
+      {
+       "plate": "knowledge/assets/wb/WB-08.jpg",
+       "title": "Maintenance",
+       "trigger": "A maintenance system that needs no data entry.",
+       "text": "It opens on a plant that is already there: the machines, their kinds, their run history and their alarms."
+      },
+      {
+       "plate": "knowledge/assets/wb/WB-09.jpg",
+       "title": "Enterprise Reporting",
+       "trigger": "The paperwork writes itself, sealed and signed.",
+       "text": "A reporting engine, not a report server: the numbers on the sheet are the same rows the operator was watching."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue.",
+   "desks": [
+    "PARTNER",
+    "PLANT",
+    "PRESS",
+    "INVEST"
+   ],
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line"
+  }
+ ]
+}

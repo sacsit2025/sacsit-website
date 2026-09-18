@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 210" width="1600" height="210" role="img" aria-label="the rights ladder, from the licence down to one signal, and the record of what was done">
+  <defs>
+    <marker id="cy2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#46C3EE"/>
+    </marker>
+    <style>
+      .rt{font-family:Saira,Inter,sans-serif;font-size:20px;font-weight:600;letter-spacing:1px;fill:#FFFFFF}
+      .rl{font-family:Saira,Inter,sans-serif;font-size:16px;font-weight:400;letter-spacing:.4px;fill:#9DB0C4}
+      .rc{font-family:'JetBrains Mono',Consolas,monospace;font-size:15px;font-weight:400;letter-spacing:.6px;fill:#46C3EE}
+      .say{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:600;fill:#1E7FA6}
+    </style>
+  </defs>
+
+  <!-- the arrow along the top, widest to narrowest -->
+  <line x1="20" y1="14" x2="1572" y2="14" stroke="#46C3EE" stroke-width="2.4" marker-end="url(#cy2)"/>
+
+  <!-- rung 1 · the licence -->
+  <rect x="20" y="24" width="302" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="171" y="46" text-anchor="middle">The licence</text>
+  <text class="rl" x="171" y="80" text-anchor="middle">what this server owns</text>
+  <rect x="120" y="130" width="102" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="171" y="148" text-anchor="middle">Licensing</text>
+
+  <!-- rung 2 · the switch -->
+  <rect x="334" y="24" width="288" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="478" y="46" text-anchor="middle">The switch</text>
+  <text class="rl" x="478" y="80" text-anchor="middle">which lines show it</text>
+  <rect x="427" y="130" width="102" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="478" y="148" text-anchor="middle">Licensing</text>
+
+  <!-- rung 3 · the role and the scope -->
+  <rect x="634" y="24" width="274" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="771" y="46" text-anchor="middle">The role and the scope</text>
+  <text class="rl" x="771" y="70" text-anchor="middle">what a person may do,</text>
+  <text class="rl" x="771" y="90" text-anchor="middle">and where</text>
+  <rect x="698" y="130" width="146" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="771" y="148" text-anchor="middle">Users &amp; Access</text>
+
+  <!-- rung 4 · the group -->
+  <rect x="920" y="24" width="238" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="1039" y="46" text-anchor="middle">The group</text>
+  <text class="rl" x="1039" y="70" text-anchor="middle">the crew a list names</text>
+  <text class="rl" x="1039" y="90" text-anchor="middle">instead of each person</text>
+  <rect x="1001" y="130" width="76" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="1039" y="148" text-anchor="middle">Groups</text>
+
+  <!-- rung 5 · the list · two doors, so two chips -->
+  <rect x="1170" y="24" width="210" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="1275" y="46" text-anchor="middle">The list</text>
+  <text class="rl" x="1275" y="70" text-anchor="middle">this page, this signal,</text>
+  <text class="rl" x="1275" y="90" text-anchor="middle">this module</text>
+  <rect x="1202" y="100" width="146" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="1275" y="118" text-anchor="middle">Can see &amp; open</text>
+  <rect x="1193" y="130" width="164" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="1275" y="148" text-anchor="middle">Can send command</text>
+
+  <!-- rung 6 · the record -->
+  <rect x="1392" y="24" width="188" height="142" rx="8" fill="#14202F"/>
+  <text class="rt" x="1486" y="46" text-anchor="middle">The record</text>
+  <text class="rl" x="1486" y="70" text-anchor="middle">what was</text>
+  <text class="rl" x="1486" y="90" text-anchor="middle">actually done</text>
+  <rect x="1453" y="130" width="66" height="26" rx="5" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.4"/>
+  <text class="rc" x="1486" y="148" text-anchor="middle">Audit</text>
+
+  <!-- the one rule under the rungs -->
+  <line x1="20" y1="181" x2="1580" y2="181" stroke="#EE9F46" stroke-width="2.6"/>
+  <text class="say" x="800" y="203" text-anchor="middle">every rung is read in the database, on the way to the screen.</text>
+</svg>

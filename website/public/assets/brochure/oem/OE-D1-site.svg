@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 620" width="1800" height="620" role="img" aria-label="How a machine builder ships and supports a machine: the edge rides on the machine, polls the PLC and buffers its history on the way to the backbone; one server is provisioned for that client alone, on the backbone or on the client's own hardware; the builder watches every delivered machine from its own desk, by the plant's grant, and can be withdrawn; and when the link is cut the machine keeps serving its own pages on the plant LAN, with the history filling in when the link returns">
+  <defs>
+    <marker id="cy" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#46C3EE"/>
+    </marker>
+    <style>
+      .ttl{font-family:Saira,Inter,sans-serif;font-size:23px;font-weight:700;letter-spacing:2.6px;fill:#5A6B7A}
+      .num{font-family:Saira,Inter,sans-serif;font-size:21px;font-weight:700;fill:#EE9F46;letter-spacing:1.6px}
+      .box{font-family:Saira,Inter,sans-serif;font-size:26px;font-weight:700;fill:#FFFFFF;letter-spacing:1.4px}
+      .boxs{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:400;fill:#9DB0C4;letter-spacing:1.2px}
+      .chip{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:700;fill:#14202F;letter-spacing:1.2px}
+      .chipd{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:700;fill:#46C3EE;letter-spacing:1.2px}
+      .chipw{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:700;fill:#FFFFFF;letter-spacing:.8px}
+      .tag{font-family:Saira,Inter,sans-serif;font-size:16px;font-weight:400;fill:#FFFFFF;letter-spacing:.5px}
+      .rider{font-family:Saira,Inter,sans-serif;font-size:16px;font-weight:700;fill:#C97F2E;letter-spacing:1px}
+      .lbln{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#14202F;letter-spacing:1.4px}
+      .lblb{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#1E7FA6;letter-spacing:1.4px}
+      .cap{font-family:Saira,Inter,sans-serif;font-size:21px;font-weight:400;fill:#14202F}
+      .dead{font-family:Saira,Inter,sans-serif;font-size:22px;font-weight:700;fill:#A9B5C1;letter-spacing:1.4px}
+    </style>
+  </defs>
+
+  <!-- panel rules -->
+  <line x1="450" y1="40" x2="450" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+  <line x1="900" y1="40" x2="900" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+  <line x1="1350" y1="40" x2="1350" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+
+  <!-- ================= PANEL 01 · THE MACHINE ================= -->
+  <text class="num" x="26" y="70">01</text>
+  <text class="ttl" x="64" y="70">THE MACHINE</text>
+
+  <!-- the machine -->
+  <rect x="26" y="112" width="88" height="96" rx="6" fill="none" stroke="#14202F" stroke-width="2.4"/>
+  <line x1="26" y1="146" x2="114" y2="146" stroke="#14202F" stroke-width="1.6"/>
+  <circle cx="48" cy="130" r="6" fill="#46C3EE"/>
+  <circle cx="70" cy="130" r="6" fill="#EE9F46"/>
+  <text class="lbln" x="72" y="192" text-anchor="middle">PLC</text>
+
+  <!-- into the edge -->
+  <line x1="70" y1="216" x2="70" y2="272" stroke="#46C3EE" stroke-width="3" marker-end="url(#cy)"/>
+
+  <rect x="26" y="280" width="292" height="112" rx="8" fill="#14202F"/>
+  <text class="box" x="48" y="330">THE EDGE</text>
+  <text class="boxs" x="48" y="364">polls · judges · serves</text>
+
+  <rect x="26" y="406" width="292" height="46" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="172" y="435" text-anchor="middle">BUFFER · HOLDS HISTORY</text>
+
+  <!-- out of the panel, to the backbone -->
+  <line x1="326" y1="318" x2="428" y2="230" stroke="#46C3EE" stroke-width="3" marker-end="url(#cy)"/>
+  <text class="lblb" x="426" y="208" text-anchor="end">TO THE BACKBONE</text>
+
+  <text class="cap" x="26" y="496">Ships on the machine. Nothing else is</text>
+  <text class="cap" x="26" y="526">installed at the client.</text>
+
+  <!-- ================= PANEL 02 · THE CLIENT'S SERVER ================= -->
+  <text class="num" x="476" y="70">02</text>
+  <text class="ttl" x="514" y="70">THE CLIENT'S SERVER</text>
+
+  <rect x="476" y="104" width="398" height="46" rx="23" fill="#5A6B7A"/>
+  <text class="chipw" x="675" y="133" text-anchor="middle">ON THE BACKBONE · ONE PER CLIENT</text>
+
+  <line x1="675" y1="150" x2="675" y2="176" stroke="#46C3EE" stroke-width="3"/>
+
+  <rect x="478" y="176" width="392" height="136" rx="8" fill="#14202F"/>
+  <text class="box" x="500" y="218">SERVER</text>
+  <rect x="500" y="240" width="150" height="46" rx="6" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chipd" x="575" y="269" text-anchor="middle">THE PLANT</text>
+  <rect x="668" y="240" width="176" height="46" rx="6" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chipd" x="756" y="269" text-anchor="middle">THE HISTORY</text>
+
+  <line x1="675" y1="312" x2="675" y2="366" stroke="#46C3EE" stroke-width="3"/>
+
+  <rect x="512" y="366" width="326" height="64" rx="6" fill="rgba(238,159,70,.16)" stroke="#EE9F46" stroke-width="1.6"/>
+  <text class="rider" x="675" y="392" text-anchor="middle">OR THE CLIENT'S OWN SERVER,</text>
+  <text class="rider" x="675" y="416" text-anchor="middle">YOUR OPTION</text>
+
+  <text class="cap" x="476" y="496">Provisioned from scripts for that client</text>
+  <text class="cap" x="476" y="526">alone. The plant's data stays the plant's.</text>
+
+  <!-- ================= PANEL 03 · THE OEM'S DESK ================= -->
+  <text class="num" x="926" y="70">03</text>
+  <text class="ttl" x="964" y="70">THE OEM'S DESK</text>
+
+  <line x1="926" y1="142" x2="1324" y2="142" stroke="#46C3EE" stroke-width="3"/>
+  <text class="lblb" x="1324" y="130" text-anchor="end">YOUR DESK</text>
+
+  <!-- laptop -->
+  <line x1="1000" y1="142" x2="1000" y2="164" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="956" y="164" width="96" height="58" rx="5" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <rect x="944" y="226" width="120" height="9" rx="4" fill="#46C3EE"/>
+  <line x1="970" y1="184" x2="1038" y2="184" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="970" y1="198" x2="1014" y2="198" stroke="#46C3EE" stroke-width="2"/>
+
+  <!-- phone -->
+  <line x1="1230" y1="142" x2="1230" y2="164" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1204" y="164" width="52" height="84" rx="9" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <line x1="1214" y1="184" x2="1246" y2="184" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="1214" y1="198" x2="1234" y2="198" stroke="#46C3EE" stroke-width="2"/>
+  <circle cx="1230" cy="234" r="5" fill="#46C3EE"/>
+
+  <!-- the rail carries on, and the tags hang on it -->
+  <line x1="1318" y1="142" x2="1318" y2="282" stroke="#46C3EE" stroke-width="3"/>
+  <line x1="926" y1="282" x2="1318" y2="282" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="926" y="265" width="95" height="34" rx="5" fill="#14202F"/>
+  <text class="tag" x="974" y="288" text-anchor="middle">live pages</text>
+  <rect x="1033" y="265" width="65" height="34" rx="5" fill="#14202F"/>
+  <text class="tag" x="1066" y="288" text-anchor="middle">replay</text>
+  <rect x="1110" y="265" width="70" height="34" rx="5" fill="#14202F"/>
+  <text class="tag" x="1145" y="288" text-anchor="middle">journal</text>
+  <rect x="1192" y="265" width="119" height="34" rx="5" fill="#14202F"/>
+  <text class="tag" x="1252" y="288" text-anchor="middle">the fix, saved</text>
+
+  <rect x="983" y="326" width="284" height="46" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="1125" y="355" text-anchor="middle">BY THE PLANT'S GRANT</text>
+
+  <text class="lblb" x="926" y="406">TO THE SERVER</text>
+  <line x1="1200" y1="424" x2="932" y2="424" stroke="#46C3EE" stroke-width="2.2" marker-end="url(#cy)"/>
+
+  <text class="cap" x="926" y="496">Every delivered machine, from your</text>
+  <text class="cap" x="926" y="526">office. The plant can withdraw the grant.</text>
+
+  <!-- ================= PANEL 04 · THE LINK IS CUT ================= -->
+  <text class="num" x="1376" y="70">04</text>
+  <text class="ttl" x="1414" y="70">THE LINK IS CUT</text>
+
+  <rect x="1622" y="100" width="152" height="80" rx="8" fill="none" stroke="#A9B5C1" stroke-width="2.4"/>
+  <text class="dead" x="1698" y="148" text-anchor="middle">SERVER</text>
+
+  <!-- the link, cut -->
+  <line x1="1616" y1="240" x2="1644" y2="240" stroke="#A9B5C1" stroke-width="2.4" stroke-dasharray="9 8"/>
+  <line x1="1672" y1="240" x2="1700" y2="240" stroke="#A9B5C1" stroke-width="2.4" stroke-dasharray="9 8"/>
+  <line x1="1700" y1="240" x2="1700" y2="180" stroke="#A9B5C1" stroke-width="2.4" stroke-dasharray="9 8"/>
+  <line x1="1646" y1="228" x2="1670" y2="252" stroke="#EE9F46" stroke-width="4"/>
+  <line x1="1670" y1="228" x2="1646" y2="252" stroke="#EE9F46" stroke-width="4"/>
+
+  <rect x="1376" y="190" width="236" height="96" rx="8" fill="#14202F"/>
+  <text class="box" x="1398" y="236">THE EDGE</text>
+  <text class="boxs" x="1398" y="268">serves the real pages</text>
+
+  <line x1="1400" y1="286" x2="1400" y2="298" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1376" y="298" width="284" height="56" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="1518" y="319" text-anchor="middle">HISTORY FILLS IN WHEN</text>
+  <text class="chip" x="1518" y="345" text-anchor="middle">THE LINK RETURNS</text>
+  <line x1="1400" y1="354" x2="1400" y2="366" stroke="#46C3EE" stroke-width="3"/>
+
+  <line x1="1376" y1="366" x2="1774" y2="366" stroke="#46C3EE" stroke-width="3"/>
+  <text class="lblb" x="1774" y="392" text-anchor="end">PLANT LAN</text>
+
+  <!-- laptop -->
+  <line x1="1440" y1="366" x2="1440" y2="386" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1396" y="386" width="96" height="58" rx="5" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <rect x="1384" y="448" width="120" height="9" rx="4" fill="#46C3EE"/>
+  <line x1="1410" y1="406" x2="1478" y2="406" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="1410" y1="420" x2="1454" y2="420" stroke="#46C3EE" stroke-width="2"/>
+
+  <!-- phone -->
+  <line x1="1620" y1="366" x2="1620" y2="386" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1596" y="386" width="52" height="78" rx="9" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <line x1="1606" y1="406" x2="1638" y2="406" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="1606" y1="420" x2="1626" y2="420" stroke="#46C3EE" stroke-width="2"/>
+  <circle cx="1622" cy="450" r="5" fill="#46C3EE"/>
+
+  <text class="cap" x="1376" y="496">The machine keeps its pages on the LAN,</text>
+  <text class="cap" x="1376" y="526">behind one password, until the link is</text>
+  <text class="cap" x="1376" y="556">back.</text>
+</svg>

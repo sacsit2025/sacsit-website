@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 58 1600 342" width="1600" height="342" role="img" aria-label="The ruler: what a report covers, and when it goes out">
+  <style>
+    .lbl{font-family:Saira,Inter,sans-serif;font-weight:700;letter-spacing:.14em;font-size:26px}
+    .lgd{font-family:Saira,Inter,sans-serif;font-weight:600;font-size:26px;fill:#5A6B7A}
+    .tick{font-family:Saira,Inter,sans-serif;font-weight:600;font-size:21px;letter-spacing:.08em;fill:#8C9AA9}
+  </style>
+
+  <!-- the covered stretch -->
+  <rect x="380" y="150" width="700" height="110" fill="#46C3EE" fill-opacity="0.17"/>
+  <line x1="380" y1="150" x2="380" y2="264" stroke="#46C3EE" stroke-width="4"/>
+  <line x1="1080" y1="150" x2="1080" y2="300" stroke="#46C3EE" stroke-width="4"/>
+
+  <!-- the axis -->
+  <line x1="140" y1="260" x2="1460" y2="260" stroke="#5A6B7A" stroke-width="4"/>
+  <line x1="140" y1="248" x2="140" y2="272" stroke="#5A6B7A" stroke-width="4"/>
+  <line x1="1460" y1="248" x2="1460" y2="272" stroke="#5A6B7A" stroke-width="4"/>
+  <line x1="730" y1="252" x2="730" y2="268" stroke="#8C9AA9" stroke-width="3"/>
+
+  <!-- the grace: a dotted stub from the edge of the stretch to the flag -->
+  <line x1="1080" y1="260" x2="1215" y2="260" stroke="#EE9F46" stroke-width="5" stroke-dasharray="9 11" stroke-linecap="round"/>
+
+  <!-- the flag: where the paper goes out -->
+  <line x1="1215" y1="260" x2="1215" y2="118" stroke="#EE9F46" stroke-width="5"/>
+  <path d="M1215 118 L1330 143 L1215 168 Z" fill="#EE9F46"/>
+  <circle cx="1215" cy="260" r="9" fill="#EE9F46"/>
+
+  <!-- labels -->
+  <text class="lbl" x="730" y="118" text-anchor="middle" fill="#14202F">WHAT IT COVERS</text>
+  <text class="lbl" x="1215" y="88" text-anchor="middle" fill="#C97F2E">IT GOES OUT HERE</text>
+  <text class="tick" x="1148" y="300" text-anchor="middle" fill="#C97F2E">grace</text>
+  <text class="tick" x="140" y="308" text-anchor="start">the stretch begins</text>
+  <text class="tick" x="1460" y="308" text-anchor="end">time</text>
+
+  <!-- the legend, read once for the whole page -->
+  <text class="lgd" x="140" y="382">shaded = what the paper is about &#183; the flag = when it leaves &#183; the dotted stub = the wait for late readings</text>
+</svg>

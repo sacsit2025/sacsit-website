@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" font-family="Saira, Inter, sans-serif">
+  <defs>
+    <marker id="up" viewBox="0 0 12 12" refX="6" refY="10" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M6 0 L12 11 L0 11 Z" fill="#46C3EE"/>
+    </marker>
+    <marker id="right" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 L11 6 L0 12 Z" fill="#5A6B7A"/>
+    </marker>
+    <marker id="rightsm" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L11 6 L0 12 Z" fill="#8C9AA9"/>
+    </marker>
+  </defs>
+
+  <!-- the order is minted -->
+  <g>
+    <rect x="50" y="70" width="80" height="76" rx="6" fill="none" stroke="#5A6B7A" stroke-width="2"/>
+    <rect x="50" y="70" width="80" height="18" rx="6" fill="#14202F"/>
+    <rect x="50" y="82" width="80" height="6" fill="#14202F"/>
+    <rect x="63" y="62" width="5" height="14" rx="2.5" fill="#14202F"/>
+    <rect x="112" y="62" width="5" height="14" rx="2.5" fill="#14202F"/>
+    <g fill="#5A6B7A" opacity="0.55">
+      <rect x="62" y="99" width="14" height="10" rx="2"/><rect x="83" y="99" width="14" height="10" rx="2"/><rect x="104" y="99" width="14" height="10" rx="2"/>
+      <rect x="62" y="118" width="14" height="10" rx="2"/><rect x="83" y="118" width="14" height="10" rx="2"/>
+    </g>
+    <rect x="104" y="118" width="14" height="10" rx="2" fill="#EE9F46"/>
+    <text x="146" y="102" font-size="21" fill="#5A6B7A">the order is minted, with</text>
+    <text x="146" y="130" font-size="21" fill="#5A6B7A">every batch and its window</text>
+    <line x1="146" y1="150" x2="400" y2="150" stroke="#8C9AA9" stroke-width="1.6" marker-end="url(#rightsm)" opacity="0.75"/>
+  </g>
+
+  <!-- the two boundary pulses -->
+  <g stroke="#46C3EE" stroke-width="3.4" fill="none">
+    <line x1="470" y1="194" x2="470" y2="122" marker-end="url(#up)"/>
+    <line x1="1400" y1="194" x2="1400" y2="122" marker-end="url(#up)"/>
+  </g>
+  <text x="470" y="92" font-size="22" fill="#46C3EE" text-anchor="middle">job started</text>
+  <text x="1400" y="92" font-size="22" fill="#46C3EE" text-anchor="middle">job finished</text>
+
+  <!-- the job -->
+  <rect x="470" y="194" width="930" height="92" rx="10" fill="#14202F"/>
+  <text x="488" y="222" font-size="16" letter-spacing="3.4" fill="#FFFFFF" font-weight="600">THE JOB</text>
+  <g>
+    <rect x="488" y="232" width="288" height="44" rx="4" fill="#2C4257"/>
+    <rect x="790" y="232" width="288" height="44" rx="4" fill="#2C4257"/>
+    <rect x="1092" y="232" width="290" height="44" rx="4" fill="#EE9F46"/>
+    <text x="504" y="261" font-size="17" fill="#9DB0C4">B-01</text>
+    <text x="806" y="261" font-size="17" fill="#9DB0C4">B-02</text>
+    <text x="1108" y="261" font-size="17" fill="#3A2606" font-weight="600">B-03</text>
+  </g>
+
+  <!-- the time line -->
+  <g stroke="#46C3EE" stroke-width="2" stroke-dasharray="6 6">
+    <line x1="470" y1="286" x2="470" y2="314"/>
+    <line x1="1400" y1="286" x2="1400" y2="314"/>
+  </g>
+  <line x1="56" y1="320" x2="1544" y2="320" stroke="#5A6B7A" stroke-width="2" marker-end="url(#right)"/>
+  <circle cx="470" cy="320" r="6.5" fill="#46C3EE"/>
+  <circle cx="1400" cy="320" r="6.5" fill="#46C3EE"/>
+  <text x="1500" y="304" font-size="17" fill="#8C9AA9" text-anchor="end">time</text>
+
+  <text x="1237" y="364" font-size="20" fill="#C97F2E" text-anchor="middle">the last batch may be short</text>
+  <text x="800" y="430" font-size="22" fill="#5A6B7A" text-anchor="middle">both boundaries are stamped with the plant&#8217;s own clock</text>
+</svg>

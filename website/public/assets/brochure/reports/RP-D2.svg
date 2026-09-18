@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 1600 400" width="1600" height="400" role="img" aria-label="The seal chain: computed once, frozen, numbered, sealed, signed">
+  <style>
+    .chip{font-family:Saira,Inter,sans-serif;font-weight:700;font-size:25px;letter-spacing:.05em;fill:#FFFFFF}
+    .cap{font-family:Saira,Inter,sans-serif;font-weight:600;font-size:23px;fill:#5A6B7A}
+    .capam{font-family:Saira,Inter,sans-serif;font-weight:600;font-size:23px;fill:#C97F2E}
+  </style>
+
+  <!-- the connectors -->
+  <g stroke="#46C3EE" stroke-width="4">
+    <line x1="294" y1="73" x2="329" y2="73"/>
+    <line x1="617" y1="73" x2="652" y2="73"/>
+    <line x1="940" y1="73" x2="975" y2="73"/>
+    <line x1="1263" y1="73" x2="1298" y2="73"/>
+  </g>
+
+  <!-- the chain -->
+  <g fill="#14202F">
+    <rect x="6"    y="40" width="288" height="66" rx="6"/>
+    <rect x="329"  y="40" width="288" height="66" rx="6"/>
+    <rect x="652"  y="40" width="288" height="66" rx="6"/>
+    <rect x="975"  y="40" width="288" height="66" rx="6"/>
+    <rect x="1298" y="40" width="288" height="66" rx="6"/>
+  </g>
+  <text class="chip" x="150"  y="81" text-anchor="middle">COMPUTED ONCE</text>
+  <text class="chip" x="473"  y="81" text-anchor="middle">FROZEN</text>
+  <text class="chip" x="796"  y="81" text-anchor="middle">NUMBERED</text>
+  <text class="chip" x="1119" y="81" text-anchor="middle">SEALED</text>
+  <text class="chip" x="1442" y="81" text-anchor="middle">SIGNED</text>
+
+  <!-- under SEALED: the broken-seal marker -->
+  <line x1="1119" y1="106" x2="1119" y2="150" stroke="#EE9F46" stroke-width="4"/>
+  <g transform="translate(1119,180)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#EE9F46" stroke-width="5"/>
+    <path d="M-3 -25 L6 -7 L-8 3 L3 25" fill="none" stroke="#EE9F46" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+  <text class="capam" x="1119" y="240" text-anchor="middle">a warning prints on the sheet the day</text>
+  <text class="capam" x="1119" y="270" text-anchor="middle">the numbers stop matching the seal</text>
+
+  <!-- from FROZEN: a second run makes a second document -->
+  <path d="M473 106 L473 285 Q473 305 493 305 L540 305" fill="none" stroke="#46C3EE" stroke-width="4"/>
+  <path d="M536 295 L562 305 L536 315 Z" fill="#46C3EE"/>
+  <rect x="562" y="272" width="330" height="66" rx="6" fill="#14202F"/>
+  <text class="chip" x="727" y="313" text-anchor="middle">A SECOND DOCUMENT</text>
+  <text class="cap" x="562" y="378">run it again: filed beside the first, never over it</text>
+</svg>

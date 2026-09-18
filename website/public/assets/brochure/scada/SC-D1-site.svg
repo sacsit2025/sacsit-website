@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 620" width="1800" height="620" role="img" aria-label="Four ways the line stays up: the edge holds the line and keeps its history on its own disk when the link to the server is cut; the server installs on your own hardware or on a cloud backbone, with the plant and its history on the same box; a duty and a standby share one address that moves; and the edge serves the plant's own pages on the LAN while the server is unreachable">
+  <defs>
+    <marker id="cy" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#46C3EE"/>
+    </marker>
+    <marker id="am" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#EE9F46"/>
+    </marker>
+    <style>
+      .ttl{font-family:Saira,Inter,sans-serif;font-size:23px;font-weight:700;letter-spacing:2.6px;fill:#5A6B7A}
+      .num{font-family:Saira,Inter,sans-serif;font-size:21px;font-weight:700;fill:#EE9F46;letter-spacing:1.6px}
+      .box{font-family:Saira,Inter,sans-serif;font-size:26px;font-weight:700;fill:#FFFFFF;letter-spacing:1.4px}
+      .boxn{font-family:Saira,Inter,sans-serif;font-size:26px;font-weight:700;fill:#14202F;letter-spacing:1.4px}
+      .boxs{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:400;fill:#9DB0C4;letter-spacing:1.2px}
+      .boxsl{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:400;fill:#5A6B7A;letter-spacing:1.2px}
+      .chip{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:700;fill:#14202F;letter-spacing:1.2px}
+      .chipd{font-family:Saira,Inter,sans-serif;font-size:18px;font-weight:700;fill:#46C3EE;letter-spacing:1.2px}
+      .rider{font-family:Saira,Inter,sans-serif;font-size:16px;font-weight:700;fill:#C97F2E;letter-spacing:1px}
+      .lbl{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#5A6B7A;letter-spacing:1.4px}
+      .lbln{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#14202F;letter-spacing:1.4px}
+      .lblb{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#1E7FA6;letter-spacing:1.4px}
+      .lbla{font-family:Saira,Inter,sans-serif;font-size:17px;font-weight:600;fill:#C97F2E;letter-spacing:1.4px}
+      .cap{font-family:Saira,Inter,sans-serif;font-size:21px;font-weight:400;fill:#14202F}
+      .dead{font-family:Saira,Inter,sans-serif;font-size:22px;font-weight:700;fill:#A9B5C1;letter-spacing:1.4px}
+    </style>
+  </defs>
+
+  <!-- panel rules -->
+  <line x1="450" y1="40" x2="450" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+  <line x1="900" y1="40" x2="900" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+  <line x1="1350" y1="40" x2="1350" y2="580" stroke="#D5DCE3" stroke-width="1.4"/>
+
+  <!-- ================= PANEL 01 · THE EDGE ================= -->
+  <text class="num" x="26" y="70">01</text>
+  <text class="ttl" x="64" y="70">THE EDGE</text>
+
+  <!-- the machine -->
+  <rect x="26" y="112" width="88" height="96" rx="6" fill="none" stroke="#14202F" stroke-width="2.4"/>
+  <line x1="26" y1="146" x2="114" y2="146" stroke="#14202F" stroke-width="1.6"/>
+  <circle cx="48" cy="130" r="6" fill="#46C3EE"/>
+  <circle cx="70" cy="130" r="6" fill="#EE9F46"/>
+  <text class="lbln" x="70" y="192" text-anchor="middle">PLC</text>
+  <text class="lbl" x="130" y="176">THE MACHINE</text>
+
+  <!-- into the edge -->
+  <line x1="70" y1="216" x2="70" y2="272" stroke="#46C3EE" stroke-width="3" marker-end="url(#cy)"/>
+
+  <rect x="26" y="280" width="292" height="112" rx="8" fill="#14202F"/>
+  <text class="box" x="48" y="330">THE EDGE</text>
+  <text class="boxs" x="48" y="364">polls · judges · serves</text>
+
+  <rect x="26" y="406" width="292" height="46" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="172" y="435" text-anchor="middle">BUFFER · HOLDS HISTORY</text>
+
+  <!-- the link to the server, cut -->
+  <line x1="326" y1="330" x2="356" y2="300" stroke="#8C9AA9" stroke-width="2.4" stroke-dasharray="9 8"/>
+  <line x1="400" y1="256" x2="428" y2="228" stroke="#8C9AA9" stroke-width="2.4" stroke-dasharray="9 8"/>
+  <line x1="367" y1="267" x2="389" y2="289" stroke="#EE9F46" stroke-width="4"/>
+  <line x1="389" y1="267" x2="367" y2="289" stroke="#EE9F46" stroke-width="4"/>
+  <text class="lbla" x="430" y="204" text-anchor="end">NETWORK CUT</text>
+
+  <text class="cap" x="26" y="496">The line runs. History waits on the</text>
+  <text class="cap" x="26" y="526">edge's own disk and fills itself in.</text>
+
+  <!-- ================= PANEL 02 · THE SERVER ================= -->
+  <text class="num" x="476" y="70">02</text>
+  <text class="ttl" x="514" y="70">THE SERVER</text>
+
+  <rect x="478" y="112" width="362" height="124" rx="8" fill="#14202F"/>
+  <text class="box" x="500" y="152">SERVER</text>
+  <rect x="500" y="172" width="140" height="46" rx="6" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chipd" x="570" y="201" text-anchor="middle">THE PLANT</text>
+  <rect x="658" y="172" width="162" height="46" rx="6" fill="rgba(70,195,238,.14)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chipd" x="739" y="201" text-anchor="middle">THE HISTORY</text>
+
+  <line x1="670" y1="240" x2="670" y2="266" stroke="#46C3EE" stroke-width="3"/>
+
+  <!-- the two substrates, braced as one product -->
+  <path d="M516 272 L494 272 L494 422 L516 422" fill="none" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="520" y="272" width="300" height="46" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="670" y="301" text-anchor="middle">YOUR OWN HARDWARE</text>
+  <rect x="546" y="330" width="254" height="38" rx="6" fill="rgba(238,159,70,.16)" stroke="#EE9F46" stroke-width="1.6"/>
+  <text class="rider" x="673" y="355" text-anchor="middle">AIR GAPPED, IF YOU ASK</text>
+  <rect x="520" y="376" width="300" height="46" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="670" y="405" text-anchor="middle">A CLOUD BACKBONE</text>
+  <text class="lblb" x="670" y="452" text-anchor="middle">SAME PRODUCT · SAME DATABASE</text>
+
+  <text class="cap" x="476" y="496">One product on two substrates,</text>
+  <text class="cap" x="476" y="526">installed from scripts, with the same</text>
+  <text class="cap" x="476" y="556">database either way.</text>
+
+  <!-- ================= PANEL 03 · THE PAIR ================= -->
+  <text class="num" x="926" y="70">03</text>
+  <text class="ttl" x="964" y="70">THE PAIR</text>
+
+  <rect x="982" y="110" width="280" height="46" rx="23" fill="#46C3EE"/>
+  <text class="chip" x="1122" y="139" text-anchor="middle">ONE ADDRESS · MOVES</text>
+  <line x1="1023" y1="158" x2="1023" y2="192" stroke="#46C3EE" stroke-width="3"/>
+  <line x1="1229" y1="158" x2="1229" y2="192" stroke="#46C3EE" stroke-width="3" stroke-dasharray="8 7"/>
+
+  <rect x="926" y="196" width="194" height="112" rx="8" fill="#14202F"/>
+  <text class="box" x="948" y="246">DUTY</text>
+  <text class="boxs" x="948" y="280">serving the plant</text>
+
+  <rect x="1140" y="196" width="178" height="112" rx="8" fill="none" stroke="#14202F" stroke-width="2.4"/>
+  <text class="boxn" x="1160" y="246">STANDBY</text>
+  <text class="boxsl" x="1160" y="280">licensed free</text>
+
+  <path d="M1000 314 L1000 360 L1229 360 L1229 316" fill="none" stroke="#EE9F46" stroke-width="3.4" marker-end="url(#am)"/>
+  <text class="lbla" x="1114" y="388" text-anchor="middle">THE ADDRESS MOVES ACROSS</text>
+
+  <rect x="1068" y="402" width="250" height="44" rx="6" fill="rgba(70,195,238,.16)" stroke="#46C3EE" stroke-width="1.8"/>
+  <text class="chip" x="1193" y="430" text-anchor="middle">BUILDS, THEN CLAIMS</text>
+
+  <text class="cap" x="926" y="496">The standby builds and proves itself,</text>
+  <text class="cap" x="926" y="526">then takes the address the plant</text>
+  <text class="cap" x="926" y="556">already dials.</text>
+
+  <!-- ================= PANEL 04 · ON THE LAN ================= -->
+  <text class="num" x="1376" y="70">04</text>
+  <text class="ttl" x="1414" y="70">ON THE LAN</text>
+
+  <rect x="1618" y="112" width="150" height="88" rx="8" fill="none" stroke="#C6CDD5" stroke-width="2.4"/>
+  <text class="dead" x="1693" y="164" text-anchor="middle">SERVER</text>
+  <line x1="1626" y1="192" x2="1760" y2="120" stroke="#EE9F46" stroke-width="4"/>
+  <line x1="1618" y1="246" x2="1664" y2="204" stroke="#C6CDD5" stroke-width="2.4" stroke-dasharray="9 8"/>
+
+  <rect x="1376" y="214" width="236" height="112" rx="8" fill="#14202F"/>
+  <text class="box" x="1398" y="264">THE EDGE</text>
+  <text class="boxs" x="1398" y="298">serves the real pages</text>
+
+  <line x1="1494" y1="330" x2="1494" y2="358" stroke="#46C3EE" stroke-width="3"/>
+  <line x1="1376" y1="358" x2="1768" y2="358" stroke="#46C3EE" stroke-width="3"/>
+  <text class="lblb" x="1768" y="348" text-anchor="end">PLANT LAN</text>
+
+  <!-- laptop -->
+  <line x1="1440" y1="358" x2="1440" y2="378" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1396" y="378" width="96" height="58" rx="5" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <rect x="1384" y="440" width="120" height="9" rx="4" fill="#46C3EE"/>
+  <line x1="1410" y1="398" x2="1478" y2="398" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="1410" y1="412" x2="1454" y2="412" stroke="#46C3EE" stroke-width="2"/>
+
+  <!-- phone -->
+  <line x1="1620" y1="358" x2="1620" y2="378" stroke="#46C3EE" stroke-width="3"/>
+  <rect x="1596" y="378" width="52" height="84" rx="9" fill="none" stroke="#46C3EE" stroke-width="2.6"/>
+  <line x1="1606" y1="398" x2="1638" y2="398" stroke="#46C3EE" stroke-width="2"/>
+  <line x1="1606" y1="412" x2="1626" y2="412" stroke="#46C3EE" stroke-width="2"/>
+  <circle cx="1622" cy="448" r="5" fill="#46C3EE"/>
+
+  <text class="cap" x="1376" y="496">The plant's own designed pages, on the</text>
+  <text class="cap" x="1376" y="526">LAN, behind one password, until the</text>
+  <text class="cap" x="1376" y="556">server is back.</text>
+</svg>

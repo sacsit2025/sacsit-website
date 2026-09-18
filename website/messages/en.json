@@ -1,0 +1,53 @@
+{
+  "site": {
+    "name": "SOP · SCADA Open Platform",
+    "company": "SACS-IT",
+    "titleSuffix": "SOP · SACS-IT",
+    "skip": "Skip to the page",
+    "logoAlt": "SOP · SCADA Open Platform",
+    "menuOpen": "Menu",
+    "menuClose": "Close",
+    "home": "Home",
+    "toTop": "Back to the top",
+    "onThisPage": "On this page"
+  },
+  "footer": {
+    "legal": "© 2026 SACS-IT. All rights reserved. · SOP, the SCADA Open Platform, is the product of SACS-IT. · Technical data is subject to change. · All photography on this site was generated for it; no stock images are used. · www.sacsit.com · info@sacsit.com",
+    "analytics": "Traffic is counted by Cloudflare Web Analytics: no cookie, and nothing stored on your device."
+  },
+  "contact": {
+    "name": "Your name",
+    "email": "Your e-mail",
+    "company": "Company",
+    "country": "Country",
+    "desk": "What about",
+    "message": "What you need",
+    "send": "Send",
+    "sending": "Sending…",
+    "sent": "Thank you — your message is with us. We answer from info@sacsit.com.",
+    "failed": "The message did not go through. Write to info@sacsit.com and we will pick it up there.",
+    "required": "Your name, your e-mail and a line about what you need.",
+    "badEmail": "That e-mail address does not look right.",
+    "robot": "The check did not pass. Reload the page and try once more.",
+    "privacy": "What you send reaches info@sacsit.com and is used to answer you. Nothing else.",
+    "website": "Your website",
+    "mailto": "Or write straight to us:"
+  },
+  "documents": {
+    "title": "Get the file",
+    "lede": "Tell us where to send it and the link comes straight back.",
+    "send": "Send me the file",
+    "sending": "Preparing the link…",
+    "ready": "Here is your file.",
+    "download": "Download",
+    "failed": "The link did not come through. Write to info@sacsit.com and we will send the file.",
+    "missing": "That document is not on the site yet. Write to info@sacsit.com and we will send it to you.",
+    "close": "Close"
+  },
+  "notFound": {
+    "kicker": "Nothing here",
+    "title": "That page is not on this site.",
+    "lede": "The platform, the five capabilities, why SOP and the four partner channels are all one click away.",
+    "cta": "Go to the home page"
+  }
+}

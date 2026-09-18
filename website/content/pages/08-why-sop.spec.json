@@ -1,0 +1,305 @@
+{
+ "page": "08-why-sop",
+ "title": "Why SOP",
+ "nav": "why-sop",
+ "hero": {
+  "kicker": "Why SOP",
+  "h1": "What makes SOP different.",
+  "dek": "Integrated by birth — and everything that follows from it. Eight things to hold us to.",
+  "plate": "knowledge/assets/wb/WB-01g.jpg",
+  "alt": "the aisle between two running lines, two people walking it"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "why-born",
+   "n": "01",
+   "of": "08",
+   "title": "Integrated by birth",
+   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors. They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The difference is not what they do — it is where the data lands.</b> Every industrial platform sells the same capabilities; that is the one comparison that decides anything.",
+     "<b>The work order and the PLC tag are rows in the same place</b>, under the same security, in the same transaction. Adding the next is a migration.",
+     "<b>Nothing to reconcile.</b> The tile on the wall, the sheet in the auditor's hand and the export in the analyst's spreadsheet read one server-side answer — not three that agree on a good day.",
+     "<b>Nothing stranded.</b> Start with screens and alarms; add performance, then maintenance, then production — without re-engineering a single page you already drew.",
+     "<b>In the class</b> these are separate products with their own databases and licences, joined by connectors and an integration project. Here they are the same rows."
+    ],
+    [
+     "<b>Enterprise Reporting</b> takes every reading, every alarm and every command in the rows the engine already reads, and gives back a sheet on the plant's letterhead, sealed and signed, printed from the numbers the screen showed.",
+     "<b>Execution Manufacturing System</b> takes the signals a line writes its own plan into, so a batch trends, alarms and replays like any plant signal, and gives back the order and the batch that name what a screen was making at that moment.",
+     "<b>Equipment Performance System</b> takes the run signal, the counters and the operator's own word at the restart, and gives back the lost hours, priced, on the same pages and in the same sheets.",
+     "<b>Maintenance</b> takes the equipment symbol with its failure words and the run record the meters are folded from, and gives back a job raised from a stop or from an alarm, and protected time the performance engine already honours.",
+     "<b>Nothing to connect, because there is nothing to connect.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-availability",
+   "n": "02",
+   "of": "08",
+   "title": "Availability is the architecture",
+   "promise": "The server was never the plant's single point of failure. The edge polls, evaluates and serves; the centre only receives — which is why a server that stops is an inconvenience and never an outage."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The edge holds the line; the server holds the plant.</b> One program beside the PLC reads the machines, judges the alarms and keeps the readings; the server holds the one database every capability runs on.",
+     "<b>Cut the network and the readings wait on the edge's own disk</b>, then fill the gap in when the link returns: a dead server loses no plant data, by construction.",
+     "<b>Where a line cannot afford to lose its edge</b>, a second one stands on the same devices and takes over.",
+     "<b>Two servers for the whole plant.</b> One duty, one standby, one address the plant dials; the standby takes the address the moment the duty stops, with nothing lost, and a planned handover is a button that refuses unless both are in step.",
+     "<b>Adding a way to stay up costs a setting, not a licence.</b>"
+    ],
+    [
+     "<b>We know of no other platform that does this.</b>",
+     "<b>The plant's own pages, on the LAN.</b> If both servers are unreachable, the operators keep running the plant from the edge itself: the same SCADA pages the server designed are already stored on the edge, and the edge serves them directly, with the same symbols, the same commands, live values and standing alarms, until the centre is back.",
+     "<b>It refuses a login while the server is healthy</b>, and the password is armed once by the administrator.",
+     "<b>Proven in anger.</b> A day-long cut of the history link: the lines still running on the plant's own edge, the missing hours back-filled in seconds when it returned — unattended.",
+     "<b>Not one of these changes a screen anybody uses.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
+     "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-unique",
+   "n": "03",
+   "of": "08",
+   "title": "What no other platform does",
+   "promise": "The operator's question is what happened at a moment. The engineer's question is what a signal touches before it is changed. Each has a lens, and each answers from the one database."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>TimeLens — any screen rewinds, with no second recorder.</b> Any page replays from the historian: back and forward, alarm to alarm, or straight to a moment. The replayed screen wears gold and its commands are off, so it can never be mistaken for live.",
+     "<b>A moment link</b> pastes into a message, and a colleague opens the same second on the same screen; from an alarm row, one press lands on the screen as it was when the alarm raised.",
+     "<b>Tag Lens — one signal, followed through every module.</b> Every page, trend, alarm, report block, formula and condition that uses it, counted live; press <em>what if</em> and each one shows its own fate before the tag is touched.",
+     "<b>We know of no other platform that follows one tag through every module of the plant.</b>"
+    ],
+    [
+     "<b>The editor previews the line, not sample numbers.</b> The page designer has two modes, and the second one is the operator's own screen; the signal list, the binder and the trend all read the running line while the work is still being done.",
+     "<b>No restart, no simulation:</b> the reading above is the real one.",
+     "<b>A real command from preview.</b> A start button proved before the line runs on it: a real command, in your name, refused in the database when you may not.",
+     "<b>The plant keeps its pages when the server stops.</b>",
+     "<b>We know of no other platform that does this</b> — the same edge serving the plant's real designed pages on the LAN, live values, alarms, commands, until the server is back."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-timelens.png",
+     "caption": "the same synoptic replayed from the history — the gold dress, the alarms at that moment, commands off"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-thread.png",
+     "caption": "one signal's thread: every trend, alarm, report block and condition that uses it"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-editor-preview.png",
+     "caption": "the same page in preview: the operator's line drawn live inside the editor, and the role it is judged as"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-one-key",
+   "n": "04",
+   "of": "08",
+   "title": "One key, from the register to the signed sheet",
+   "promise": "One Postgres for the plant and one historian beside it, joined by one key that follows a signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet. Security lives in the database and reaches the report."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>Nothing is mapped a second time.</b> One key follows the signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet.",
+     "<b>The plant and its history stand on the same box</b>, never two systems to reconcile; the historian is part of the platform, not a product beside it.",
+     "<b>One clock, one key, one archive:</b> the same shift on every module, one signal one identity, every sheet filed side by side and none removable.",
+     "<b>A whole line travels as one file</b> to the next line or the next plant, and lands with every binding intact — names travel and identities do not."
+    ],
+    [
+     "<b>Averages are count-weighted, never an average of averages.</b>",
+     "<b>A quality byte rides every reading</b>, so a number the plant should not trust says so — a stale or bad value is dressed as stale or bad, never drawn as a fresh number.",
+     "<b>Correct a value from years ago and every total since corrects itself</b> — there is no second copy to migrate.",
+     "<b>Any window you like:</b> it draws as fast as a short window, and names the resolution it answered from."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-card.png",
+     "caption": "one signal's identity card: its live value with its quality, its element, its driver, its address, its history — and everywhere it is used"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-record",
+   "n": "05",
+   "of": "08",
+   "title": "The record",
+   "promise": "What the class sells as a separate report server — its own designer, its own store, its own licence and a seat for everyone who only reads — is an organ of this platform. Design a sheet once against the tags the line already reads; the platform computes it, seals it, signs it and delivers it, with nobody watching."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>Design</b> — blocks bound to real tags: headline tiles against the plant's own plan tag, period tables, trends carrying their alarm limits, alarm journals, consumption and cost, the performance cascade, the maintenance sheets.",
+     "<b>Compute</b> — on the server, in the site's own clock: every shift, day, week or month; every batch or production order; every maintenance job; or the moment a plant condition fires. Nobody presses anything.",
+     "<b>Seal</b> — frozen on arrival, given a document number, sealed with a hash. Run it again and a second document is filed beside the first — never a refresh.",
+     "<b>Sign</b> — by name and by the capacity the signer answers in, proved with their own password, bound to the seal, never edited and never withdrawn.",
+     "<b>Deliver</b> — printed on the plant's own letterhead in three languages, posted to a list, filed as a PDF, exported when somebody wants to work the numbers."
+    ],
+    [
+     "<b>A reporting engine, not a report server.</b> No report server, no second designer, no seat to read.",
+     "<b>A picture of a screen is not a record.</b>",
+     "<b>A plant is rarely short of data. It is short of documents</b> — a sheet with a window, an author, a number and a seal, that reads the same a year from now as it did the day it was filed.",
+     "<b>The numbers on the sheet are the same rows the operator was watching</b>, so the tile and the paper cannot disagree.",
+     "<b>It cannot be undone, and it cannot be quietly withdrawn.</b>",
+     "<b>What a person may not see on the line, they may not read on the paper.</b>"
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+     "caption": "the reader: the document number, the hash, print, export and sign"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-print.png",
+     "caption": "the same record as it comes off the paper"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-rights",
+   "n": "06",
+   "of": "08",
+   "title": "Rights decided in the database",
+   "promise": "Rights are set in one console and decided in the database, so a screen a person may not open is never sent to their browser, their export or their sheet. The same console reaches from a whole site down to one screen, one signal and one module, and it keeps the record of every act that follows."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>A right set in a client menu can only withhold the drawing</b>, because the data has already travelled.",
+     "<b>Here the rule that hides a screen is the same rule that filters the export and the printed sheet</b>, because there is one database under all three.",
+     "<b>Row-level security in the database, not a hidden menu in the client.</b>",
+     "<b>Off a list a page goes away, not grey.</b> It leaves the operator's page browser, it leaves the editor's tree, and every button that led to it goes with it; a global administrator is the one who can hand it back."
+    ],
+    [
+     "<b>A role on a scope.</b> A contractor runs one line and nothing else; the press is refused in the database anywhere else, not merely greyed out on the screen.",
+     "<b>Groups instead of people</b> — one list to keep, and a new starter is covered the day they join it.",
+     "<b>Per page, per signal, per module.</b> The pages leave everyone else's tree, in the control room and on the phone; everybody keeps watching the valve, and nobody else can move it.",
+     "<b>The record of acts.</b> Every command, acknowledgement, shelving and grant across the fleet, each with its moment, narrowed and exported."
+    ]
+   ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/scada/SC-D2.svg",
+   "ground": "light",
+   "alt": "the rights ladder, six rungs, each with the console word it is set in",
+   "caption": "the rights ladder: the licence · the switch · the role and the scope · the group · the list · the record, each with the console word it is set in"
+  },
+  {
+   "type": "head",
+   "id": "why-stack",
+   "n": "07",
+   "of": "08",
+   "title": "Nothing in the stack is sunsetting",
+   "promise": "One database, Postgres; one historian beside it, TimescaleDB; the plant and its history on the same box — dozens of lines, every reading, on two servers. Nothing in the stack is sunsetting."
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>One database</b> for the plant, and <b>one historian beside it</b>, on the same box.",
+     "<b>One program at the edge</b> — a single executable that polls, evaluates, buffers and serves, on any PC beside the PLC.",
+     "<b>One renderer in the browser</b> — purely web, nothing installed, nothing licensed per screen.",
+     "<b>Nothing is licensed per workstation</b>, so the engineer sits wherever the work is."
+    ],
+    [
+     "<b>Same product, same migrations, two substrates</b> — on plain hardware in your own plant, air gapped if your rules say so, or on a cloud backbone when a group runs several sites.",
+     "<b>Deployed from scripts, in a single session.</b> Database, historian, applications and the standby pair install from scripts on plain hardware, and ask nothing on the way.",
+     "<b>Why the door is open now.</b> Web-native front ends that need nothing installed, an open plant database serious enough for a historian and a security model, a single-binary edge that polls, evaluates, buffers and serves, and an AI era that needs one coherent dataset to act on — four things arrived together.",
+     "<b>We do not sell you AI. We sell you the substrate it needs.</b> No machine-learning model ships in the product today."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "why-partners",
+   "n": "08",
+   "of": "08",
+   "title": "Through partners, in your market",
+   "promise": "SOP reaches a plant through a partner — the system integrator who installs it and trains the crew, or the machine builder who ships it inside the machine. Two partnership models:",
+   "plate": "knowledge/assets/wb/WB-11.jpg",
+   "alt": "four around a laptop on a stainless table, the packaging line and wrapped pallets behind"
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>System integrators · One platform for the whole plant. Integrated by you.</b>",
+     "<b>Annual training</b> — your engineers trained every year on the platform and every module, on the six manuals and the flight-test documents, and on what shipped since the last session.",
+     "<b>Unlimited technical support</b> — every implementation you sign has our support behind it, without a ticket quota. You honour your projects; we make sure you can.",
+     "<b>Market-specific engineering</b> — where a market needs a driver, a protocol variant or a functionality to win a challenging project, we build it.",
+     "<b>On day one</b> — six manuals, a flight-test document per module, a demonstration plant with months of history, the server package that installs from scripts in a single session, and a line already drawn to import into the first client's plant.",
+     "<b>The first project together</b> — our engineers beside yours, from the install to the first signed record.",
+     "<b>The work at the plant is yours.</b> Engineering, installation, training and support at the client: entirely your revenue."
+    ],
+    [
+     "<b>Machine and line builders · Your machine becomes a service business. Ships with the machine. Earns every year after.</b>",
+     "<b>The machine leaves your hall with its own pages, its record, its maintenance package and a desk you open from your office.</b>",
+     "<b>The backbone, no site visit</b> — a server for each client plant, provisioned by us on the cloud backbone from scripts, in a single session; you install nothing at the client, unless the client wants a server of its own.",
+     "<b>The line runs without the link</b> — the edge keeps the history on its own disk and serves the machine's real pages on the plant network meanwhile.",
+     "<b>One machine, one file, every plant</b> — the project travels as one file, and the file carries the drawing, never the client.",
+     "<b>Your controllers, spoken</b> — and where a machine family needs a driver or a function of its own, we build it: the work of the alliance.",
+     "<b>\"Powered by SOP\", in your brand</b> — your symbols and pages, your letterhead on every printed record, your part numbers on the type package, your name on the service.",
+     "<b>The service is yours.</b> Commissioning, the type package, remote assistance, optimisation visits and the on-premises server option are entirely your revenue."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue.",
+   "desks": [
+    "PARTNER",
+    "PLANT",
+    "PRESS",
+    "INVEST"
+   ],
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line"
+  }
+ ]
+}

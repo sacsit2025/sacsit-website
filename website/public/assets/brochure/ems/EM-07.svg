@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" font-family="Saira, Inter, sans-serif">
+  <defs>
+    <marker id="up2" viewBox="0 0 12 12" refX="6" refY="10" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M6 0 L12 11 L0 11 Z" fill="#46C3EE"/>
+    </marker>
+    <marker id="upam" viewBox="0 0 12 12" refX="6" refY="10" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M6 0 L12 11 L0 11 Z" fill="#EE9F46"/>
+    </marker>
+    <marker id="right2" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0 0 L11 6 L0 12 Z" fill="#5A6B7A"/>
+    </marker>
+    <marker id="hand-a" viewBox="0 0 12 12" refX="6" refY="2" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M6 0 L12 11 L0 11 Z" fill="#8C9AA9"/>
+    </marker>
+    <marker id="hand-b" viewBox="0 0 12 12" refX="6" refY="10" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M6 0 L12 11 L0 11 Z" fill="#8C9AA9"/>
+    </marker>
+  </defs>
+
+  <!-- the boundary changes hands -->
+  <line x1="70" y1="150" x2="70" y2="500" stroke="#8C9AA9" stroke-width="2" marker-start="url(#hand-a)" marker-end="url(#hand-b)"/>
+  <text x="96" y="300" font-size="18" fill="#5A6B7A">the boundary</text>
+  <text x="96" y="324" font-size="18" fill="#5A6B7A">changes hands</text>
+  <text x="96" y="348" font-size="18" fill="#5A6B7A">within a minute</text>
+
+  <!-- the plant declares -->
+  <text x="210" y="50" font-size="20" letter-spacing="3.2" font-weight="600" fill="#46C3EE">THE PLANT DECLARES</text>
+  <text x="210" y="80" font-size="19" fill="#5A6B7A">a batch charged signal, a batch finished signal</text>
+  <g stroke="#46C3EE" stroke-width="3.4" fill="none">
+    <line x1="730" y1="188" x2="730" y2="126" marker-end="url(#up2)"/>
+    <line x1="1130" y1="188" x2="1130" y2="126" marker-end="url(#up2)"/>
+  </g>
+  <text x="730" y="112" font-size="18" fill="#46C3EE" text-anchor="middle">charged</text>
+  <text x="1130" y="112" font-size="18" fill="#46C3EE" text-anchor="middle">finished</text>
+
+  <!-- three batches that overlap -->
+  <rect x="640" y="196" width="180" height="96" fill="#46C3EE" opacity="0.12"/>
+  <rect x="1040" y="248" width="180" height="96" fill="#46C3EE" opacity="0.12"/>
+  <g fill="none" stroke="#46C3EE" stroke-width="1.6" stroke-dasharray="5 5">
+    <rect x="640" y="196" width="180" height="96"/>
+    <rect x="1040" y="248" width="180" height="96"/>
+  </g>
+  <rect x="240" y="196" width="580" height="44" rx="4" fill="#2C4257"/>
+  <rect x="640" y="248" width="580" height="44" rx="4" fill="#2C4257"/>
+  <rect x="1040" y="300" width="520" height="44" rx="4" fill="#2C4257"/>
+  <text x="258" y="225" font-size="17" fill="#9DB0C4">B-01</text>
+  <text x="658" y="277" font-size="17" fill="#9DB0C4">B-02</text>
+  <text x="1058" y="329" font-size="17" fill="#9DB0C4">B-03</text>
+
+  <!-- the time line -->
+  <line x1="210" y1="386" x2="1570" y2="386" stroke="#5A6B7A" stroke-width="2" marker-end="url(#right2)"/>
+  <text x="1516" y="370" font-size="17" fill="#8C9AA9" text-anchor="end">time</text>
+
+  <!-- the counter decides -->
+  <text x="210" y="438" font-size="20" letter-spacing="3.2" font-weight="600" fill="#C97F2E">THE COUNTER DECIDES</text>
+  <text x="210" y="468" font-size="19" fill="#5A6B7A">the vessel and the last machine cross the planned number</text>
+  <line x1="240" y1="522" x2="1500" y2="522" stroke="#5A6B7A" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="1500" y="512" font-size="17" fill="#5A6B7A" text-anchor="end">the planned number</text>
+  <polyline points="240,576 450,560 700,542 950,524 1200,504 1450,486" fill="none" stroke="#EE9F46" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="975" cy="522" r="7" fill="#EE9F46"/>
+  <line x1="975" y1="512" x2="975" y2="398" stroke="#EE9F46" stroke-width="2.4" stroke-dasharray="6 6" marker-end="url(#upam)"/>
+</svg>

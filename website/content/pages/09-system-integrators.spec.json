@@ -1,0 +1,622 @@
+{
+ "page": "09-system-integrators",
+ "title": "System Integrators",
+ "nav": "partners",
+ "hero": {
+  "kicker": "Partners · System Integrators",
+  "h1": "One platform for the whole plant. Integrated by you.",
+  "dek": "SCADA, execution, performance, maintenance and the record on one database, on the PLCs your client already has.",
+  "plate": "knowledge/assets/wb/WB-11.jpg",
+  "alt": "four people around a laptop on a stainless table at the end of a packaging line, wrapped pallets behind"
+ },
+ "sections": [
+  {
+   "type": "head",
+   "id": "partners-si-market",
+   "n": "01",
+   "of": "11",
+   "title": "The partnership, before the product",
+   "plate": "knowledge/assets/wb/WB-19.jpg",
+   "alt": "a visiting engineer with a tablet and the plant manager at the end of a running line",
+   "promise": "Sell five things with one install."
+  },
+  {
+   "type": "prose",
+   "title": "What the partnership is.",
+   "cols": [
+    [
+     "<b>Annual training</b> — your engineers trained every year on the platform and every module, on the six manuals and the flight-test documents, and on what shipped since the last session.",
+     "<b>Unlimited technical support</b> — every implementation you sign has our support behind it, without a ticket quota. You honour your projects; we make sure you can.",
+     "<b>A technological edge</b> — where your market needs a driver, a protocol variant or a functionality to win a challenging project, we build it. That is how you take the projects others cannot."
+    ],
+    [
+     "<b>The services are yours</b> — engineering, installation, training and support at the client: entirely your revenue.",
+     "<b>Not a nicer SCADA</b> — what you sell is not a nicer SCADA. It is the complete execution system and the complete maintenance system, on the SCADA's own database, on the PLCs your client already has — installed from scripts in a single session."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-scada",
+   "n": "02",
+   "of": "11",
+   "title": "The SCADA, live to the phone",
+   "plate": "knowledge/assets/wb/WB-05.jpg",
+   "alt": "an engineer and an apprentice at a line panel, a hand on the touch screen"
+  },
+  {
+   "type": "prose",
+   "title": "Live, from the wall panel to the phone.",
+   "cols": [
+    [
+     "<b>Purely web</b> — the same live pages follow a user from the control room to a phone, with nothing installed and nothing licensed per screen. A panel can be pinned to one line in kiosk mode.",
+     "<b>Three languages, one design</b> — three languages, right-to-left Arabic included, from one design.",
+     "<b>Pages</b> — synoptics drawn once, served everywhere. Tap any pump or motor for its faceplate: live values, a raw mini-trend, its journal alarms, its commands. Equipment symbols that carry their own maintenance knowledge.",
+     "<b>Alarms</b> — prioritised, acknowledged, shelved with a reason. A flood is named with its rate, its target and the area behind it. An audit-grade journal that survives a tag delete or a redesign."
+    ],
+    [
+     "<b>Commands</b> — every command attributed and timestamped, refused in the database when the user may not, and switched off during replay.",
+     "<b>Access</b> — row-level security in the database, not a hidden menu in the client. What a user may not see never reaches a screen, an export or a sheet.",
+     "<b>The whole platform, in the operator's hand</b> — not a viewer app beside the product: the same three applications, sized for a hand. The operator's HMI, the engineer's editor and the administrator's console all open on a phone with nothing installed, the same rights, the same live data, the same three languages.",
+     "<b>The technician's tool</b> — take the job, work the frozen checklist with each reading judged at the box, take the spare from the shelf, add a photograph, sign the close."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "The alarm insights are the ones ISA-18.2 and EEMUA 191 ask for — the rate against its target, the response times, the flood episodes."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-synoptic.png",
+     "caption": "a live line overview: the process train with its faceplates, area health, the day's counters, and the alarm banner across the top"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-alarm-console.png",
+     "caption": "the supervisor's alarm console during a flood drill: the rate against its target, the standing and shelved counts, and the culprit area named"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-lenses",
+   "n": "03",
+   "of": "11",
+   "title": "TimeLens and Tag Lens",
+   "plate": "knowledge/assets/wb/WB-20.jpg",
+   "alt": "a service desk at night, two screens and a lamp, an engineer from behind"
+  },
+  {
+   "type": "prose",
+   "title": "Two lenses: one over time, one over the tags.",
+   "cols": [
+    [
+     "The operator's question is \"what happened at 16:03?\". The engineer's question is \"where is this tag used, and what breaks if I change it?\". Each has a lens, and each answers from the one database."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>The historian is part of the platform</b>, not a product beside it. TimeLens replays any synoptic from it like a recorder — with no second recorder to buy.",
+     "<b>Read the plant like an instrument</b> — lanes or overlay, live or any window. Cursors that read minimum, average, maximum and delta over the span. Annotations that survive a reload. An alarm lane over the pens.",
+     "<b>Share what you found</b> — CSV and PNG in one press, and a link that opens the same view for a colleague.",
+     "<b>Rewind any screen</b> — back and forward at half to sixty times speed, alarm to alarm, to a moment, with a link to that moment you can paste.",
+     "<b>The gold dress</b> — the replayed screen wears gold so it can never be mistaken for live, and commands are off.",
+     "<b>From an alarm to the screen</b> — from an alarm row, one press lands on the screen as it was when the alarm fired.",
+     "<b>Numbers that survive an audit</b> — averages are count-weighted, never an average of averages. A quality byte rides every reading. The right tier of history serves every zoom."
+    ],
+    [
+     "<b>A correction reaches every total</b> — correct a value from years ago and every total since corrects itself.",
+     "<b>The thread</b> — every page, trend, alarm, report block, formula and condition that uses one tag, counted live from the database, never from a stale report.",
+     "<b>The what-if painter</b> — rename, re-address or delete, and every dependent card shows its own fate before you touch anything.",
+     "<b>The health sweep</b> — orphans polled and shown nowhere, ghost bindings, formulas that no longer parse.",
+     "<b>Why an integrator cares</b> — a migration is a thousand tags moved. The Tag Lens shows what each one touches before you move it, and the health sweep shows what you left behind."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "We know of no other platform that follows one tag through every module of the plant like this."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-timelens.png",
+     "caption": "the same overview in replay: the gold dress, the transport bar, the alarms active at that moment, commands off"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-taglens-card.png",
+     "caption": "one tag: its identity card and live value, and the what-if painter"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-editor",
+   "n": "04",
+   "of": "11",
+   "title": "The editor and the engine",
+   "plate": "knowledge/assets/wb/WB-03b.jpg",
+   "alt": "the rack dark and the line still running, an operator at a steel-built panel",
+   "crop": "4:3 centre-cropped to 8:5"
+  },
+  {
+   "type": "prose",
+   "title": "Engineered in a browser. Served from the edge.",
+   "cols": [
+    [
+     "Nothing installed, nothing licensed per workstation. Several engineers on the same page at once, a live preview against the running line, and a whole line that travels as one file to the next plant."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>Presence, not a lock</b> — a presence banner that never blocks; a stale save refused rather than silently merged; every page, symbol and trend versioned.",
+     "<b>Duplicate, export, import</b> — a line is duplicated in one press, exported as one portable file, and imported on the next plant with every binding intact.",
+     "<b>Symbols that know the machine</b> — a curated library of equipment symbols by family, each drawn to the process scale and each carrying the failure vocabulary the maintenance module picks from.",
+     "<b>Draw the pump once</b>; the maintenance record already knows what a pump breaks.",
+     "<b>One program at the edge</b> — beside the PLC it polls, evaluates, buffers and serves, and runs redundant against the same devices.",
+     "<b>The protocols</b> — SOP supports all major drivers, Modbus, OPC DA, Siemens S7 and OPC UA among them."
+    ],
+    [
+     "<b>The centre only receives</b> — the edge polls, evaluates and serves, so a dead server loses no plant data.",
+     "<b>The emergency HMI</b> — when the server is unreachable, the edge serves the plant's real pages on the plant network until it is back.",
+     "<b>Three substrates, one install</b> — installs from scripts in a single session: on-prem, air-gapped, or on a cloud backbone.",
+     "<b>The engineer's editor, on the floor</b> — the page tree, the tags, the equipment, the Tag Lens and a line's readiness, from the plant floor, beside the machine being commissioned.",
+     "<b>The administrator's console</b> — the fleet of edges with their last beat, enrollments waiting for approval, users and grants, the health of the backend and the historian, the audit journal."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-editor-preview.png",
+     "caption": "the page designer: the toolbox by equipment family, the live preview as engineer, operator or viewer, the layers, the inspector"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-modules",
+   "n": "05",
+   "of": "11",
+   "title": "EMS, CMMS and EPS, with the SCADA",
+   "plate": "knowledge/assets/wb/WB-06.jpg",
+   "alt": "the end of a packaging line, cases on the rollers, a tablet with the day's schedule"
+  },
+  {
+   "type": "prose",
+   "title": "The complete EMS and CMMS, integrated with the SCADA.",
+   "cols": [
+    [
+     "In the class, the execution system, the maintenance system and the report server are separate products with their own databases and licences, joined by an integration project. Here they are the same rows. That is the whole difference, and it is the one your client can price."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>EMS · execution</b> — plant model, materials and stock, products, recipes behind a quality door, orders on a calendar. Jobs the line starts and ends itself; batches that overlap like lines do; a batch record where every number says who measured it.",
+     "<b>CMMS · no data entry</b> — the machine's type plants parts, plans, checklists and failure words. Meters folded from the run record; the fault turned into a job in one tap; the technician on a phone; a parts ledger; a signed close that seals the record.",
+     "<b>EPS · performance</b> — the run signal and the counters fold once, on the server. The operator is asked once, at the restart, in two taps. Losses priced in time, units and money; two honest OEEs; the page printed as paper in one press."
+    ],
+    [
+     "<b>Integrated by birth</b> — a released maintenance job books a planned window the performance engine already honours. The batch certificate prints from the engine that prints the shift handover.",
+     "<b>The lab outranks the counter</b> — a reject count signed by the lab outranks the counter, and the period says it was restated.",
+     "<b>One security model</b> reaches the report.",
+     "<b>Nothing to connect</b>, because there is nothing to connect."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-reports",
+   "n": "06",
+   "of": "11",
+   "title": "A reporting engine, not a report server",
+   "plate": "knowledge/assets/wb/WB-09.jpg",
+   "alt": "a standing desk at the edge of the hall, the shift handover signed on paper"
+  },
+  {
+   "type": "prose",
+   "title": "A reporting engine, not a report server.",
+   "cols": [
+    [
+     "What the incumbents sell as a separate report server with its own designer, its own database and its own licence is an organ of SOP. Design a report once against real tags; the platform computes it, seals it, signs it and delivers it, with nobody watching."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "<b>01 Design</b> — blocks bound to real tags: tiles with targets, period tables, trends with their limits, alarm journals, consumption and cost, the performance cascade, the maintenance blocks.",
+     "<b>02 Compute</b> — on the server, in the site's own clock: every shift, day, week or month, every batch or order, every maintenance job, or when a plant condition fires. Nobody presses anything.",
+     "<b>03 Seal</b> — frozen on arrival, numbered, hashed. Run it again and you get a second document beside the first, never a refresh.",
+     "<b>04 Sign</b> — by name and capacity, proved with the signer's own password, bound to the hash, never edited and never withdrawn.",
+     "<b>05 Deliver</b> — printed on the plant's letterhead in three languages, e-mailed to the list, filed as a PDF, exported."
+    ],
+    [
+     "<b>Zero report servers</b> — the engine runs on the backend already installed. A small worker beside it files the PDF and posts it to the list.",
+     "<b>Zero third-party licences</b> — no reporting product, no rendering licence, no designer bought separately. It is inside the platform.",
+     "<b>Zero seats to read</b> — every operator, supervisor, planner and auditor reads, prints, exports and signs.",
+     "<b>The sheets a plant runs on</b> — the shift handover, the batch certificate, the maintenance record, the audit sheet for critical equipment, the excursion report, the monthly review.",
+     "<b>A blank certificate is refused</b> while it is being designed."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+     "caption": "the operator's reader: the document number, the hash, print, export and sign"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-designer.png",
+     "caption": "the designer: blocks, live preview, the six timing cards"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-situations",
+   "n": "07",
+   "of": "11",
+   "title": "Who you sell to: ten situations",
+   "plate": "knowledge/assets/wb/WB-13.jpg",
+   "alt": "a wall monitor with a synoptic and an open paper logbook on the desk beside it",
+   "promise": "The trigger is what makes the client call this quarter."
+  },
+  {
+   "type": "prose",
+   "title": "Read your client list by trigger.",
+   "cols": [
+    [
+     "Situations 1 and 2 open with the SCADA and close with EMS and CMMS. Situations 3, 4 and 5 are one plant seen from production, maintenance and quality. Situation 9 is the door to machine builders. Mark each client on your list with the situations they are in today; most are in three or four."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The ten situations, and what you sell into each.",
+   "chips": [
+    "SCADA",
+    "REPORTS",
+    "EMS",
+    "EPS",
+    "CMMS"
+   ],
+   "columns": [
+    "The client",
+    "The trigger, in their words",
+    "What you sell",
+    "Why SOP wins"
+   ],
+   "rows": [
+    [
+     "A plant with a SCADA, no execution system and no maintenance system",
+     "\"We see the line. We know nothing about last night's production, or when that pump was serviced.\"",
+     "The complete EMS and CMMS on the existing PLCs; the SCADA replaced or kept beside; the record on top.",
+     "The whole plant on one database with no integration project."
+    ],
+    [
+     "An end-of-life SCADA, the renewal on the table",
+     "\"The incumbent's renewal invoice, an unsupported Windows, a discontinued version.\"",
+     "Migration line by line, PLCs kept; EMS and CMMS as the reason to switch rather than renew.",
+     "The record, EMS and CMMS arrive with the migration, not as three more products."
+    ],
+    [
+     "Production on paper and spreadsheets",
+     "\"A customer complaint, a lost batch, an audit, a new quality manager.\"",
+     "EMS: recipes through a quality door, orders on a calendar, jobs the line runs itself, the batch record.",
+     "A switch on the line, not a batch server; the plan is written to the line's own tags."
+    ],
+    [
+     "Maintenance nobody updates, or none at all",
+     "\"A breakdown that cost a week, a maintenance system the technicians abandoned, spare-parts chaos.\"",
+     "CMMS: the type plants the package, meters folded from the run record, the phone technician, the signed close.",
+     "No data entry; the meter is a tag; a released job protects the availability number."
+    ],
+    [
+     "A regulated producer facing an audit",
+     "\"Food, beverage, pharma, cosmetics, chemicals: a customer audit, a recall drill.\"",
+     "The record: signed recipes, batch certificates, electronic signatures, sealed reports, the maintenance record.",
+     "Frozen recipes per batch, hashed and signed documents, three languages, no report server."
+    ],
+    [
+     "A group with several plants",
+     "\"The board wants one truth across sites; every plant reports differently.\"",
+     "The central backbone, cloud or a central server; one project per line; consolidated reports.",
+     "One product on-prem or cloud, the same migrations; a line travels as one file to the next plant."
+    ],
+    [
+     "A remote, harsh or air-gapped site",
+     "\"Water, mining, utilities, oil and gas, defence: no reliable link, no cloud allowed, no IT on site.\"",
+     "The scripted install, the duty and standby pair, the emergency HMI.",
+     "The plant keeps its pages when the server is gone; licensed by two strings carried in and out."
+    ],
+    [
+     "A plant that must not stop",
+     "\"A server failure that blinded the operators, a 24-hour line, an uptime clause from an insurer or a client.\"",
+     "High availability: duty and standby, the emergency HMI, a second edge on the same devices.",
+     "A dead server loses no plant data by construction; failover is calm, not a race."
+    ],
+    [
+     "A new line or machine being commissioned",
+     "\"An OEM delivers a line; the plant wants it on its own system from day one.\"",
+     "The line's HMI imported as one file, the machine builder's maintenance package, EMS and EPS switched on at start-up.",
+     "Build once, travel anywhere; the type library carries the builder's knowledge."
+    ],
+    [
+     "Energy and cost pressure",
+     "\"The energy bill, a sustainability report, a cost-per-unit question from finance.\"",
+     "Consumption and cost on the record, the dated rate book, downtime priced in money, per-batch used versus planned.",
+     "Energy is inside the record and EPS, not a different edition or a per-meter licence."
+    ]
+   ],
+   "note": "Who decides, row by row: the plant and production managers (1) · automation, IT and finance (2) · production and quality managers (3) · the maintenance and plant managers (4) · the quality and plant managers (5) · group operations and group IT (6) · the site manager and the security officer (7) · the plant manager and IT (8) · the project manager and automation (9) · finance and the plant manager (10)."
+  },
+  {
+   "type": "head",
+   "id": "partners-si-packages",
+   "n": "08",
+   "of": "11",
+   "title": "What you sell, what you earn",
+   "plate": "knowledge/assets/wb/WB-16.jpg",
+   "alt": "a meeting room at dusk, a wall screen with five plant tiles, five people seen from behind"
+  },
+  {
+   "type": "prose",
+   "title": "Six packages a client can say yes to.",
+   "cols": [
+    [
+     "Each package names what the client gets in plant words, and the services that are yours on top. Energy and cost reporting is inside the record and EPS, not a separate line.",
+     "The install runs from scripts in a single session. Modules switch on per line when the client is ready, on the same database, with nothing to re-engineer."
+    ]
+   ]
+  },
+  {
+   "type": "chooser",
+   "title": "The six packages.",
+   "chips": [
+    "PERPETUAL · PER DEPLOYED LINE",
+    "THE BUSINESS CAPABILITIES · PER LINE, PER YEAR",
+    "SERVICES · ENTIRELY YOURS"
+   ],
+   "columns": [
+    "The package",
+    "For these situations",
+    "What the client gets",
+    "Your services"
+   ],
+   "rows": [
+    [
+     "Line on SOP",
+     "`2 · 7 · 9`",
+     "The line on one database: live pages on the wall panel and the phone, alarms, trends, replay, the audit journal, three languages. Engineers in a browser. A line that travels as one file.",
+     "migration or drawing, commissioning, training"
+    ],
+    [
+     "Line + Performance",
+     "`1 · 2 · 10`",
+     "Lost hours stop being an opinion: the run signal and the counters fold into a number the shift is judged on; the operator asked once at the restart; losses in time, units and money; the page printed as paper.",
+     "machine model, counters, shift plan, reason vocabulary"
+    ],
+    [
+     "Production on SOP",
+     "`1 · 3 · 5`",
+     "The complete execution system: recipes through a quality door, orders on a calendar, jobs the line starts and ends itself, batches that overlap like lines do, the batch record and the certificate.",
+     "plant model, materials and products, recipes, the quality door"
+    ],
+    [
+     "Maintenance on SOP",
+     "`1 · 4 · 9`",
+     "The complete maintenance system with no data entry: the type plants the package; meters folded from the run record; the phone technician; the parts ledger; the signed close; the five sheets.",
+     "equipment register, types, spares store, crew set-up"
+    ],
+    [
+     "The whole plant",
+     "`1 · 2 · 5 · 6`",
+     "Everything above on one database, integrated by birth: a released job protects the performance number, the certificate prints from the engine that prints the handover, one security model reaches the report.",
+     "the full project, in stages, line by line"
+    ],
+    [
+     "Always-on plant",
+     "`7 · 8`",
+     "Duty and standby servers with one moving address, the emergency HMI served by the edge on the plant network, a second edge on the same devices.",
+     "the pair install, the drills, the runbook"
+    ]
+   ],
+   "note": "One platform, one licence per line you deploy: perpetual, per deployed line, on your own hardware or on the cloud backbone; the business capabilities — Execution Manufacturing System, Equipment Performance System, maintenance — per line, per year, support and updates inside. The engineering, the commissioning and the support at the plant are entirely yours."
+  },
+  {
+   "type": "chooser",
+   "title": "Three revenue lines. One of them recurring.",
+   "chips": [],
+   "columns": [
+    "The revenue line",
+    "What it covers",
+    "The shape"
+   ],
+   "rows": [
+    [
+     "Perpetual",
+     "Every deployed line, and every platform module you sell with it.",
+     "`perpetual · per deployed line`"
+    ],
+    [
+     "Annual",
+     "EMS, EPS and CMMS every year the client keeps them, support and updates inside. The recurring line.",
+     "`per line · per year · support and updates inside`"
+    ],
+    [
+     "Services",
+     "Migration, drawing, plant model, recipes, equipment register, commissioning, training, support at the client. Nothing of it is shared with us.",
+     "`entirely yours`"
+    ]
+   ],
+   "note": "The annual line is the one the incumbents' programmes rarely give you."
+  },
+  {
+   "type": "head",
+   "id": "partners-si-we-give",
+   "n": "09",
+   "of": "11",
+   "title": "What we give you",
+   "plate": "knowledge/assets/wb/WB-22.jpg",
+   "alt": "an automation engineer with a laptop resting on an open control cabinet, rolls of drawings beside him",
+   "crop": "4:3 centre-cropped to 8:5"
+  },
+  {
+   "type": "chooser",
+   "title": "The partnership, item by item.",
+   "chips": [
+    "PAGE DESIGNER MANUAL",
+    "CONFIGURATION MANUAL",
+    "REPORTS MANUAL",
+    "EMS MANUAL",
+    "EPS MANUAL",
+    "CMMS MANUAL",
+    "A FLIGHT-TEST DOCUMENT PER MODULE",
+    "A DEMO PLANT WITH MONTHS OF HISTORY",
+    "THE SERVER PACKAGE, A SCRIPTED INSTALL",
+    "THE CLOUD BACKBONE"
+   ],
+   "columns": [
+    "What we give you",
+    "What it means"
+   ],
+   "rows": [
+    [
+     "Annual training",
+     "Your engineers trained every year on the platform and every module, on the six manuals and the flight-test documents, and on what shipped since the last session."
+    ],
+    [
+     "Unlimited technical support",
+     "Every implementation you sign has our support behind it, without a ticket quota. You honour your projects; we make sure you can."
+    ],
+    [
+     "Market-specific engineering",
+     "Where a market needs a driver, a protocol variant or a functionality to win a challenging project, we build it. Your competitors' partners cannot ask their vendor for that."
+    ]
+   ],
+   "note": "Enablement that exists today, handed to your team on day one."
+  },
+  {
+   "type": "prose",
+   "title": "The argument no competitor's partner can make.",
+   "cols": [
+    [
+     "<b>The plant keeps its pages.</b> When the server is gone, the edge serves the plant's real designed pages on the plant network. No competitor's partner can say that."
+    ]
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-proof",
+   "n": "10",
+   "of": "11",
+   "title": "Not a slide, a plant",
+   "plate": "knowledge/assets/wb/WB-02b.jpg",
+   "alt": "five roles at one wide wall screen at the end of a running bottling line",
+   "crop": "4:3 centre-cropped to 8:5"
+  },
+  {
+   "type": "prose",
+   "title": "Not a slide. A plant.",
+   "cols": [
+    [
+     "<b>The live plant</b> — a real line with months of history, in the client's browser, on their phone. Alarms, trends, replay, the batch record, the maintenance board.",
+     "<b>The install</b> — the package installing itself on a clean box from scripts, asking nothing on the way, in a single session.",
+     "<b>The record</b> — a shift report computed, sealed, signed and filed while they watch, on their letterhead, in their language.",
+     "<b>The server down</b> — the standby takes over, the address moves, the operators never notice, nothing is lost."
+    ],
+    [
+     "<b>The network cut</b> — the plant keeps its real pages, served by the edge on the plant network, until the server is back.",
+     "<b>Read it before you buy it</b> — six manuals cover every screen of every module; a flight-test document per module tells a tester how to exercise the whole feature on a real rig, start to finish.",
+     "<b>The estate</b> — SOP is already running on several production lines."
+    ]
+   ]
+  },
+  {
+   "type": "navy-screens",
+   "label": "Seen in the product",
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/shot-hmi-overview.png",
+     "caption": "the operator's overview"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-perf-waterfall.png",
+     "caption": "where the time went"
+    }
+   ]
+  },
+  {
+   "type": "head",
+   "id": "partners-si-start",
+   "n": "11",
+   "of": "11",
+   "title": "How it starts",
+   "plate": null,
+   "alt": null,
+   "promise": "Five steps, and the first project done together."
+  },
+  {
+   "type": "prose",
+   "title": "From a conversation to your market.",
+   "cols": [
+    [
+     "<b>A conversation about your market</b> — which clients, which situations, which incumbents. We decide together where you will sell, and what the first project is.",
+     "<b>The partner agreement</b> — the training calendar, the support commitment, the brand clause.",
+     "<b>The first training</b> — your engineers on the platform and the modules, with the manuals and the demo plant."
+    ],
+    [
+     "<b>The first project, together</b> — our engineers beside yours, from the install to the first signed record.",
+     "<b>Your market</b> — you sell the packages; we supply the edge, the support, and what the next challenging project needs.",
+     "<b>What we ask of you</b> — a market you know and a client list you can read by trigger. A team that will be trained and will do the first project with us. The will to sell the whole plant, not a screen.",
+     "<b>What you have on day one</b> — the six manuals, the flight-test documents, the demo plant, the server package, this edition and the general brochure, and a line already drawn you can import to your first client's plant."
+    ]
+   ]
+  },
+  {
+   "type": "prose",
+   "cols": [
+    [
+     "Start with a conversation about your market, then the agreement, the training, and the first project together."
+    ]
+   ]
+  },
+  {
+   "type": "contact",
+   "id": "write",
+   "kicker": "Contact",
+   "title": "Write to us.",
+   "plate": "knowledge/assets/wb/WB-10.jpg",
+   "alt": "an engineer at an open cabinet noting the controllers on the line",
+   "text": "Start with one word so it reaches the right desk: DESKS. Tell us the country, what the line or machine produces, and which controllers are already on it. We reply from a person, never a queue."
+  }
+ ]
+}
