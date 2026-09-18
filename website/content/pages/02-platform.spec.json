@@ -14,7 +14,8 @@
    "type": "head",
    "id": "platform-born",
    "title": "One platform. Born integrated.",
-   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors. They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
+   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors.",
+   "brief": "They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
   },
   {
    "type": "prose",
@@ -95,7 +96,8 @@
    "title": "The server and the pair",
    "n": "02",
    "of": "06",
-   "promise": "Where every SCADA engine used to need its own standby — or a ring of servers standing by for each other — SOP protects dozens of lines with two: one duty, one standby, one address the plant dials. The standby takes the address the moment the duty stops, with nothing lost; a planned handover is a button that refuses unless both are in step; and the standby is part of the platform, not a second purchase."
+   "promise": "Where every SCADA engine used to need its own standby — or a ring of servers standing by for each other — SOP protects dozens of lines with two: one duty, one standby, one address the plant dials.",
+   "brief": "The standby takes the address the moment the duty stops, with nothing lost; a planned handover is a button that refuses unless both are in step; and the standby is part of the platform, not a second purchase."
   },
   {
    "type": "prose",
@@ -124,7 +126,8 @@
    "title": "The emergency HMI — we know of no other platform that does this.",
    "n": "03",
    "of": "06",
-   "promise": "If both servers are unreachable, the operators keep running the plant from the edge itself: no extra HMI panel, no second application — the same SCADA pages the server designed are already stored on the edge, and the edge serves them directly to the operators, with the same symbols, the same commands, live values and standing alarms, until the centre is back."
+   "promise": "If both servers are unreachable, the operators keep running the plant from the edge itself.",
+   "brief": "No extra HMI panel, no second application — the same SCADA pages the server designed are already stored on the edge, and the edge serves them directly to the operators, with the same symbols, the same commands, live values and standing alarms, until the centre is back."
   },
   {
    "type": "blockA",
@@ -158,7 +161,8 @@
    "title": "The database and the history",
    "n": "04",
    "of": "06",
-   "promise": "One database for the plant and one history beside it, on the same box, never two systems to reconcile. The history is part of the platform, not a product beside it: the same database the screen is already drawing from, and every operator already has it."
+   "promise": "One database for the plant and one history beside it, on the same box, never two systems to reconcile.",
+   "brief": "The history is part of the platform, not a product beside it: the same database the screen is already drawing from, and every operator already has it."
   },
   {
    "type": "blockA",
@@ -235,7 +239,8 @@
    "title": "Rights decided in the database",
    "n": "06",
    "of": "06",
-   "promise": "Who may open a page and who may send a command is decided in the database, not in a menu on a screen: what a user may not see never reaches them — not the screen, not the export, not the printed sheet."
+   "promise": "Who may open a page and who may send a command is decided in the database, not in a menu on a screen.",
+   "brief": "What a user may not see never reaches them — not the screen, not the export, not the printed sheet."
   },
   {
    "type": "blockA",

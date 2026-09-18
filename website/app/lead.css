@@ -1,0 +1,153 @@
+/* THE SECTION LEAD - hand-written, loaded after premium.css.
+ *
+ * Why its own file and not the premium layer: design.css and premium.css are GENERATED
+ * (scripts/build-design-css.mjs, scripts/build-premium-css.py). A rule hand-written into either one
+ * dies the next time its generator runs, and on 2026-09-18 two sessions were editing the premium
+ * generator at once (the hero lane). This layer is hand-written, owned by nobody else, and loaded
+ * last, so it wins on equal specificity.
+ *
+ * Karim, 2026-09-18, on a screenshot of /platform: "our style patternis so ugly, look our style is
+ * in each section main text is cyan, this is ugly, propose what are the 3 best options to have best
+ * visual experience" - then, on the three: "we will go with option B".
+ *
+ * What was wrong. The lead was Signal Blue #1E7FA6 - the colour of every link on the page - in the
+ * display face at 500, on a 26-character measure. Nine heads carry a lead over 200 characters; at
+ * 26ch that is a fourteen-line tower of blue with the right half of the band empty.
+ *
+ * OPTION B - the head speaks twice.
+ *   the statement   `promise`   ink, Saira Light, one size up, a short cyan rule above it
+ *   the paragraph   `brief`     IBM Plex Serif, steel, in the head's THIRD column - the column the
+ *                               photograph uses when there is a plate. The spec decides: a head
+ *                               with a `brief` wears `.twin` (components/sections/Head.tsx).
+ *                               NOT `.two`: design.css already owns that class - a navy two-up
+ *                               block whose `.two h3{color:#fff}` turned every such title white
+ *                               on white. Caught by the AFTER sheet, 2026-09-18.
+ * A head without a `brief` - 28 of the site's 34 - is the statement alone on a wider measure.
+ * Cyan leaves the prose entirely and keeps the jobs where it carries meaning: the kicker, the
+ * chapter rule, the links, the mono labels, the navy bands.
+ *
+ * The sheet Karim judged: review/lead-colour-2026-09-18/LEAD.html
+ */
+
+/* ── the statement ────────────────────────────────────────────────────────────────────────────── */
+.caphead .promise {
+  color: var(--ink);
+  font-weight: 300;
+  font-size: clamp(1.2rem, 1.62vw, 1.56rem);
+  line-height: 1.32;
+  letter-spacing: -0.018em;
+  max-width: 44ch;
+  margin-top: 0;
+  padding-top: 1.15rem;
+  position: relative;
+}
+/* the accent moves off the words and onto a mark */
+.caphead .promise::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.2em;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), rgba(70, 195, 238, 0));
+}
+
+/* The chapter rule must not paint when there is no chapter number. Three heads have none, and the
+ * rule - absolutely positioned inside a zero-width span - printed a cyan line straight through the
+ * title. It is the strike across "One platform" in Karim's screenshot. */
+.caphead .n:empty::after {
+  display: none;
+}
+
+/* ── the paragraph, and the head that speaks twice ────────────────────────────────────────────── */
+.caphead .brief {
+  font-family: var(--body);
+  font-size: 1.02rem;
+  line-height: 1.62;
+  color: var(--steel);
+  max-width: 46ch;
+  margin: 0.4rem 0 0;
+}
+
+/* .cap.blk to out-rank design.css's `.cap.blk .caphead.nopic` (same weight, and this file is last) */
+.cap.blk .caphead.twin {
+  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 2.6rem;
+}
+.cap.blk .caphead.twin h3 {
+  grid-column: 2;
+}
+.cap.blk .caphead.twin .promise {
+  grid-column: 2;
+  max-width: 30ch;
+}
+.cap.blk .caphead.twin .brief {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: start;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--rule);
+}
+/* a head that has BOTH a plate and a paragraph: the photograph keeps the third column and the
+ * paragraph folds under the statement. No head does this today; the rule is the guard. */
+.cap.blk .caphead.twin:not(.nopic) .brief {
+  grid-column: 2;
+  grid-row: auto;
+  border-left: 0;
+  padding-left: 0;
+  max-width: 52ch;
+  margin-top: 0.9rem;
+}
+
+/* ── between a phone and a desktop: two columns, the paragraph under the statement ─────────────── */
+@media (min-width: 821px) and (max-width: 1040px) {
+  .cap.blk .caphead.twin {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .cap.blk .caphead.twin .promise {
+    max-width: 42ch;
+  }
+  .cap.blk .caphead.twin .brief {
+    grid-column: 2;
+    grid-row: auto;
+    border-left: 0;
+    padding-left: 0;
+    max-width: 62ch;
+    margin-top: 0.95rem;
+  }
+}
+
+/* ── the phone: one column, full measure, the divider gone ────────────────────────────────────── */
+/* design.css folds .caphead to a single column at 820px. The three-column rule above is heavier
+ * than that fold, so it is restated here or a phone would keep three columns. */
+@media (max-width: 820px) {
+  .cap.blk .caphead.twin {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .cap.blk .caphead.twin h3,
+  .cap.blk .caphead.twin .promise,
+  .cap.blk .caphead.twin .brief {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  /* a measure is for a column; on a phone the words take the whole width */
+  .caphead .promise,
+  .cap.blk .caphead.twin .promise {
+    max-width: none;
+    font-size: 1.22rem;
+    line-height: 1.36;
+    padding-top: 1rem;
+  }
+  /* the left rule is a column divider - stacked, it means nothing. The paragraph grows instead,
+   * because a phone reads a serif paragraph at 16px, not at 15. */
+  .caphead .brief,
+  .cap.blk .caphead.twin .brief {
+    max-width: none;
+    border-left: 0;
+    padding-left: 0;
+    font-size: 1.05rem;
+    line-height: 1.66;
+    margin-top: 1.05rem;
+  }
+}

@@ -53,7 +53,11 @@ export interface HeadSection extends Common {
   n?: string;
   of?: string;
   title: string;
+  /** the statement: one or two lines in ink, the head's first voice */
   promise?: string;
+  /** the rest of the paragraph, in the reading face, in the head's third column (option B,
+   *  Karim 2026-09-18). A head without one keeps the statement alone, on a wider measure. */
+  brief?: string;
   plate?: string;
   alt?: string;
 }

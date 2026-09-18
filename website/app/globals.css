@@ -3,6 +3,7 @@
  *   design.css      GENERATED - the design system of the mocks, ported verbatim (scripts/build-design-css.mjs)
  *   interaction.css hand-written - what a live browser gives and a static mock cannot (D94)
  *   premium.css     GENERATED - the premium layer, additive (scripts/build-premium-css.py)
+ *   lead.css        hand-written - the section lead, two voices (Karim 2026-09-18, option B)
  * Tailwind is loaded last for utilities and for the brand tokens; it never restyles the bands.
  */
 @import "./fonts.css";
@@ -10,6 +11,7 @@
 @import "./hero.css";
 @import "./interaction.css";
 @import "./premium.css";
+@import "./lead.css";
 @import "tailwindcss";
 
 @theme {

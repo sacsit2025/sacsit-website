@@ -16,7 +16,8 @@
    "n": "01",
    "of": "08",
    "title": "Integrated by birth",
-   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors. They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
+   "promise": "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting are not five products that talk to each other through connectors.",
+   "brief": "They were born on one database, in the same transaction, under the same rights: what the operator watches, what the line runs, what maintenance plans and what the auditor signs are the same rows — so they cannot disagree, and there is nothing to connect, because there is nothing to connect."
   },
   {
    "type": "prose",
@@ -124,7 +125,8 @@
    "n": "04",
    "of": "08",
    "title": "One key, from the register to the signed sheet",
-   "promise": "One Postgres for the plant and one historian beside it, joined by one key that follows a signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet. Security lives in the database and reaches the report."
+   "promise": "One Postgres for the plant and one historian beside it, joined by one key that follows a signal from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet.",
+   "brief": "Security lives in the database and reaches the report."
   },
   {
    "type": "prose",
@@ -159,7 +161,8 @@
    "n": "05",
    "of": "08",
    "title": "The record",
-   "promise": "What the class sells as a separate report server — its own designer, its own store, its own licence and a seat for everyone who only reads — is an organ of this platform. Design a sheet once against the tags the line already reads; the platform computes it, seals it, signs it and delivers it, with nobody watching."
+   "promise": "What the class sells as a separate report server — its own designer, its own store, its own licence and a seat for everyone who only reads — is an organ of this platform.",
+   "brief": "Design a sheet once against the tags the line already reads; the platform computes it, seals it, signs it and delivers it, with nobody watching."
   },
   {
    "type": "prose",
@@ -201,7 +204,8 @@
    "n": "06",
    "of": "08",
    "title": "Rights decided in the database",
-   "promise": "Rights are set in one console and decided in the database, so a screen a person may not open is never sent to their browser, their export or their sheet. The same console reaches from a whole site down to one screen, one signal and one module, and it keeps the record of every act that follows."
+   "promise": "Rights are set in one console and decided in the database, so a screen a person may not open is never sent to their browser, their export or their sheet.",
+   "brief": "The same console reaches from a whole site down to one screen, one signal and one module, and it keeps the record of every act that follows."
   },
   {
    "type": "prose",
