@@ -325,6 +325,23 @@ table.ctable tbody tr {
     transition: opacity var(--dur-pop) var(--ease-out), transform var(--dur-pop) var(--ease-out),
       visibility 0s;
   }
+  /* The two wide panels are RIGHT-ANCHORED in design.css (`right:-150px; transform:none`), not centred:
+   * centred under a trigger at the right edge they would run off the screen. The generic rule above
+   * gave them translateX(-50%) too, which threw them half their own width off the LEFT edge instead
+   * (seen live 2026-09-18, the first column clipped). Same rise and scale, no horizontal shift. */
+  body > header .caps,
+  body > header .partners {
+    transform: translateY(-6px) scale(0.98);
+    transform-origin: top right;
+  }
+  body > header .dd:hover .caps,
+  body > header .dd.open .caps,
+  body > header .dd:focus-within .caps,
+  body > header .dd:hover .partners,
+  body > header .dd.open .partners,
+  body > header .dd:focus-within .partners {
+    transform: translateY(0) scale(1);
+  }
   /* the caret answers the menu it belongs to */
   body > header .caret {
     transition: transform var(--dur-pop) var(--ease-out);
@@ -418,6 +435,10 @@ button.plain {
  */
 body > header {
   position: fixed;
+  /* above the rail (4) and the progress line (6): an open menu must never sit under the "on this
+   * page" bar, which it did when the rail was the higher layer (seen live 2026-09-18, Partners open
+   * on a scrolled page). The back-to-top button (7) stays above, it lives in the opposite corner. */
+  z-index: 6;
   transition: height var(--dur-pop) var(--ease-out), background-color var(--dur-pop) ease,
     box-shadow var(--dur-pop) ease;
   will-change: height;
@@ -431,6 +452,13 @@ body[data-scrolled="1"] > header {
   body[data-scrolled="1"] > header {
     background: rgba(20, 32, 47, 0.82);
     backdrop-filter: saturate(1.3) blur(10px);
+  }
+}
+/* the two viewport-hung panels (design.css) follow the compact header down: 56 (the trigger's bottom) + 8 */
+@media (min-width: 821px) {
+  body[data-scrolled="1"] > header .caps,
+  body[data-scrolled="1"] > header .partners {
+    top: 64px;
   }
 }
 body[data-scrolled="1"] > header .lock .sym {
@@ -729,6 +757,15 @@ body > header nav .navhome {
     body > header .dd.open .panel,
     body > header .dd:focus-within .panel {
       transform: translateX(-50%);
+    }
+    /* the two right-anchored panels carry no centring at all (see B1) */
+    body > header .caps,
+    body > header .partners,
+    body > header .dd:hover .caps,
+    body > header .dd:hover .partners,
+    body > header .dd:focus-within .caps,
+    body > header .dd:focus-within .partners {
+      transform: none;
     }
   }
 

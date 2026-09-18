@@ -250,9 +250,15 @@ body > header .panel{position:absolute;top:calc(100% + 8px);left:50%;transform:t
 body > header .dd:hover .panel,body > header .dd.open .panel,body > header .dd:focus-within .panel{display:block}
 body > header .panel::before{content:"";position:absolute;top:-7px;left:50%;width:12px;height:12px;background:var(--paper);border-left:1px solid var(--rule);border-top:1px solid var(--rule);transform:translateX(-50%) rotate(45deg)}
 body > header .pk{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 14px;white-space:nowrap}
-body > header .caps{width:min(1120px,calc(100vw - 48px));left:auto;right:-150px;transform:none}body > header .caps::before{left:auto;right:196px;transform:rotate(45deg)}
+/* The two wide panels hang from the VIEWPORT, not from their trigger (2026-09-18, seen live: anchored 150px right of
+ * a trigger they ran off the left edge below 1400px). Their right edge is the nav's right edge - the container's
+ * content edge, which is also the CTA's - and their width never exceeds the viewport minus the page gutters. The
+ * arrow keeps pointing at the trigger: its centre sits a fixed distance left of the nav's edge. Vertical: 92px = the
+ * trigger's bottom (84) + the 8px gap, exactly where the trigger-relative panel used to sit; the compact header's
+ * value lives in interaction.css. Under 820px the burger rules turn every panel static again. */
+body > header .caps{position:fixed;width:min(1120px,calc(100vw - 2*clamp(16px,3vw,40px)));left:auto;top:92px;right:calc(max((100vw - var(--container)) / 2,0px) + clamp(16px,3vw,40px));transform:none}body > header .caps::before{left:auto;right:301px;transform:rotate(45deg)}
 body > header .caps .cols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 26px}
-body > header .partners{width:min(1080px,calc(100vw - 48px));left:auto;right:-140px;transform:none}body > header .partners::before{left:auto;right:196px;transform:rotate(45deg)}
+body > header .partners{position:fixed;width:min(1080px,calc(100vw - 2*clamp(16px,3vw,40px)));left:auto;top:92px;right:calc(max((100vw - var(--container)) / 2,0px) + clamp(16px,3vw,40px));transform:none}body > header .partners::before{left:auto;right:183px;transform:rotate(45deg)}
 body > header .partners .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 26px}
 body > header .col{border-top:2px solid var(--navy);padding-top:12px}
 body > header .capname{display:block;font-family:var(--display);font-weight:500;font-size:16px;line-height:1.25;color:var(--ink);text-decoration:none;margin:0 0 6px;min-height:40px;padding:0;opacity:1}
