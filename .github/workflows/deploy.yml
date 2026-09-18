@@ -1,0 +1,51 @@
+# A safety net for the deploy, and a button to press.
+#
+# Vercel's GitHub App normally builds every push to main by itself - that is the primary path and this
+# workflow does not replace it. But an app event can be lost (it was, on 2026-09-18: one push out of
+# three reached Vercel and the other two did not, with no error anywhere), and the site then sits a
+# commit behind with nothing to show why. This workflow calls a Vercel Deploy Hook so a deploy can
+# always be made to happen - from the Actions tab, or automatically.
+#
+# ── one-time setup (two minutes, in this order) ─────────────────────────────────────────────────────
+# 1. Vercel -> the project -> Settings -> Git -> Deploy Hooks -> Create Hook
+#       name: github-actions   branch: main
+#    Copy the URL it gives you. Treat it as a secret: anyone holding it can trigger a production build.
+# 2. GitHub -> this repo -> Settings -> Secrets and variables -> Actions -> New repository secret
+#       name: VERCEL_DEPLOY_HOOK   value: the URL
+# 3. Optional, only if you want EVERY push to be belt-and-braces:
+#    same page -> Variables -> New repository variable
+#       name: DEPLOY_ON_PUSH   value: true
+#    Leave it unset and this workflow only runs when you press "Run workflow" in the Actions tab.
+#    With it set to true, a push that Vercel already picked up may build twice; Vercel cancels the
+#    superseded build on its own, so the cost is a little build time, never a wrong result.
+name: Deploy
+
+on:
+  workflow_dispatch: # the button: Actions -> Deploy -> Run workflow
+  push:
+    branches: [main]
+
+jobs:
+  hook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the Vercel deploy hook
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+          ON_PUSH: ${{ vars.DEPLOY_ON_PUSH }}
+          MANUAL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK is not set - nothing to call."
+            echo "Set it in Settings -> Secrets and variables -> Actions (see the notes in this file)."
+            exit 0
+          fi
+          if [ "$MANUAL" != "true" ] && [ "$ON_PUSH" != "true" ]; then
+            echo "A push, and DEPLOY_ON_PUSH is not 'true' - leaving it to Vercel's own integration."
+            echo "Press 'Run workflow' here to deploy on demand, or set the variable to deploy on every push."
+            exit 0
+          fi
+          code=$(curl -s -o response.txt -w '%{http_code}' -X POST "$HOOK")
+          echo "deploy hook -> HTTP $code"
+          cat response.txt
+          test "$code" -ge 200 && test "$code" -lt 300
