@@ -10,9 +10,11 @@ import { Pic } from "./Asset";
  * jumped to the top of the page instead of the form. Here the hero carries NO id; #write belongs
  * to the contact band alone.
  */
-export function Hero({ hero: h }: { hero: HeroSpec }) {
+export function Hero({ hero: h, group }: { hero: HeroSpec; group?: string }) {
+  // the hero dresses itself by the page it belongs to (Karim, 2026-09-18): capability pages take
+  // the glass card, partner pages take the split, Platform and Why SOP stay exactly as they were.
   return (
-    <section className="hero inner">
+    <section className={"hero inner" + (group ? " hero-" + group : "")}>
       {h.plate ? (
         <div className="frames" aria-hidden="true">
           <Pic path={h.plate} slot="hero" alt="" className="f f1" priority />

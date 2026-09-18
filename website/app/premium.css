@@ -223,6 +223,78 @@
   body[data-scrolled="1"] > header::before{ display:none; }   /* the compact bar is already opaque */
 }
 
+/* ══ 11 THE DESKTOP HERO, BY PAGE (Karim, 2026-09-18) ══════════════════════════════════════════
+ * He chose a different hero per family after seeing the three options side by side:
+ *
+ *   Home, Platform, Why SOP   unchanged - "let it as it is"
+ *   the five capabilities     A4 GLASS: kicker and headline behind a glass card, the dek beside it
+ *   the four partner pages    B THE SPLIT: the words on the brand colour, the photograph beside them
+ *
+ * The page dresses itself from route.nav, which already classified every page - Hero.tsx puts it on
+ * the section as .hero-capabilities / .hero-partners / .hero-platform / .hero-why.
+ *
+ * DESKTOP ONLY. Below 821px the phone treatment of block 10 governs every page, untouched: a phone
+ * has no room for a split, and the card there is already the same object.
+ *
+ * NOT carried over from the mock: the "live" line (a tag and a value under the headline). It read
+ * well, and the numbers in it were invented. Invented plant data on a public page is a fabricated
+ * fact, which the knowledge law forbids. It can come back the day it is fed by something real.
+ */
+@media (min-width:821px){
+
+  /* ── the five capability pages: A4, the glass card ─────────────────────────────────────────── */
+  /* A moderate lift of the site's own scrim - enough that white type is safe on the brightest plates
+   * (the SCADA office, the CMMS ceiling), and NOT so much that the glass card has nothing to read
+   * against. Darkening the whole area erased the card on the first attempt: a translucent dark panel
+   * over an already-dark photograph is invisible. The card earns its contrast locally, below. */
+  .hero-capabilities::after{
+    background:linear-gradient(180deg, rgba(20,32,47,.58) 0, rgba(20,32,47,.20) 190px,
+      rgba(20,32,47,.34) 58%, rgba(20,32,47,.68));
+  }
+  .hero-capabilities .wrap{
+    position:relative;
+    display:grid; grid-template-columns:minmax(0,600px) minmax(0,1fr);
+    grid-template-rows:auto auto; column-gap:2.8rem; align-items:end;
+  }
+  /* the card is a grid ITEM drawn behind the kicker and the headline - a pseudo-element on a grid
+     container is placeable, so the card needs no wrapper in the markup */
+  .hero-capabilities .wrap::before{
+    content:""; grid-column:1; grid-row:1 / 3; z-index:0;
+    margin:-26px -30px -24px -30px; border-radius:5px;
+    background:linear-gradient(180deg, rgba(15,25,38,.54), rgba(15,25,38,.38));
+    border:1px solid rgba(70,195,238,.30); border-left:4px solid var(--cyan);
+    box-shadow:0 2px 6px rgba(0,0,0,.26), 0 26px 60px rgba(0,0,0,.32),
+      inset 0 1px 0 rgba(255,255,255,.10);
+  }
+  @supports (backdrop-filter: blur(14px)){
+    .hero-capabilities .wrap::before{ backdrop-filter:saturate(1.35) blur(16px); }
+  }
+  .hero-capabilities .cat{ grid-column:1; grid-row:1; z-index:1; color:var(--cyan); margin:0 0 .8rem; }
+  .hero-capabilities h1{ grid-column:1; grid-row:2; z-index:1;
+    font-size:clamp(38px,3.6vw,52px); line-height:1.06; letter-spacing:-.02em; }
+  .hero-capabilities .dek{ grid-column:2; grid-row:1 / 3; align-self:end; z-index:1;
+    margin:0 0 6px; max-width:44ch; }
+  .hero-capabilities .sig{ grid-column:1 / 3; z-index:1; }
+
+  /* ── the four partner pages: B, the split ──────────────────────────────────────────────────── */
+  /* the photograph keeps its own half and is never cropped by text; the words sit on the brand
+     colour, so legibility stops being a question about each plate. */
+  .hero-partners{ background:var(--navy); }
+  .hero-partners .frames{ left:44%; }
+  .hero-partners::after{ left:44%;
+    background:linear-gradient(180deg, rgba(20,32,47,.34) 0, rgba(20,32,47,0) 180px,
+      rgba(20,32,47,.10) 60%, rgba(20,32,47,.42)); }
+  .hero-partners .wrap{
+    position:absolute; left:0; top:0; bottom:0; width:44%; max-width:none; margin:0; z-index:2;
+    display:flex; flex-direction:column; justify-content:center;
+    padding:130px clamp(28px,3vw,48px) 56px clamp(28px,4vw,64px);
+    background:linear-gradient(160deg, var(--navy2), var(--deep));
+  }
+  .hero-partners h1{ font-size:clamp(34px,3.2vw,52px); line-height:1.05; letter-spacing:-.02em; }
+  .hero-partners .dek{ max-width:40ch; font-size:1.06rem; margin-top:1rem; }
+  .hero-partners .cat{ color:var(--cyan); }
+}
+
 /* ── reduced motion: the lift is travel, so it goes; the shadows and colour stay ───────────────── */
 @media (prefers-reduced-motion: reduce){
   .cap.blk .frame:hover, .shot:hover{ transform:none; }
