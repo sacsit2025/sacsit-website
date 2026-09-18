@@ -260,14 +260,24 @@
      container is placeable, so the card needs no wrapper in the markup */
   .hero-capabilities .wrap::before{
     content:""; grid-column:1; grid-row:1 / 3; z-index:0;
+    /* align-self:stretch is load-bearing. The wrap is a grid with align-items:end, which shrink-wraps
+     * every item to its own content - and a pseudo-element has none, so the card computed to 660 x 1
+     * px: a one-pixel strip. Raising its opacity did nothing, twice, because there was nothing there
+     * to raise. Measured, not guessed: getComputedStyle(wrap,'::before').height was 1.03964px. */
+    align-self:stretch;
     margin:-26px -30px -24px -30px; border-radius:5px;
-    background:linear-gradient(180deg, rgba(15,25,38,.54), rgba(15,25,38,.38));
-    border:1px solid rgba(70,195,238,.30); border-left:4px solid var(--cyan);
+    /* Karim on the EMS plate, 2026-09-18: "the glasses is too transparent". At .54/.38 the panel
+     * read as nothing on a bright, busy photograph - the words looked like bare text on the picture,
+     * which is the thing the card exists to prevent - though the real cause was the 1px bug above.
+     * With the panel actually painting, .66/.52 sits between the A3 and A2 he was shown: the line
+     * and the bottles still come through, and it is unmistakably a panel. */
+    background:linear-gradient(180deg, rgba(15,25,38,.66), rgba(15,25,38,.52));
+    border:1px solid rgba(70,195,238,.38); border-left:4px solid var(--cyan);
     box-shadow:0 2px 6px rgba(0,0,0,.26), 0 26px 60px rgba(0,0,0,.32),
       inset 0 1px 0 rgba(255,255,255,.10);
   }
   @supports (backdrop-filter: blur(14px)){
-    .hero-capabilities .wrap::before{ backdrop-filter:saturate(1.35) blur(16px); }
+    .hero-capabilities .wrap::before{ backdrop-filter:saturate(1.3) blur(12px); }
   }
   .hero-capabilities .cat{ grid-column:1; grid-row:1; z-index:1; color:var(--cyan); margin:0 0 .8rem; }
   .hero-capabilities h1{ grid-column:1; grid-row:2; z-index:1;
