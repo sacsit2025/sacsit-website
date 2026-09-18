@@ -2,13 +2,21 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { CAPABILITIES, PARTNERS, WHY, HEADER, type MenuColumn } from "@/content/menu";
 import { href } from "@/content/routes";
+import MenuCloser from "./MenuCloser";
 
 /**
  * The header, from the menu's ONE definition (content/menu.ts, ported from the mocks - D77, D97).
  *
- * No JavaScript: the three dropdowns open on hover AND on focus-within (design.css), and the phone
- * menu is a checkbox and a label, exactly as the mocks do it. That is why this is a server component -
- * nothing here needs the client, and the menu works with scripts blocked.
+ * No JavaScript for the menus themselves: the three dropdowns open on hover AND on focus-within
+ * (design.css), and the phone menu is a checkbox and a label, exactly as the mocks do it. That is why
+ * this is a server component - the menu works with scripts blocked.
+ *
+ * The phone (2026-09-18, rebuilt from the live fault): the sheet under the burger is opaque, fixed
+ * and scrolls on its own; each of the three lists folds shut behind its own row - a checkbox and a
+ * label again (`.mtog` + `.mlab`, phone only) - and opens on a tap; the first line inside is the link
+ * to the page itself (`.mpage`). The one piece of JavaScript is MenuCloser: it closes the sheet on a
+ * tap on any link and on every route or hash change, because the router keeps this header alive
+ * across pages and a ticked checkbox would otherwise stay ticked.
  */
 export default async function Header() {
   const t = await getTranslations("site");
@@ -42,7 +50,14 @@ export default async function Header() {
             <Link href={HEADER.why.href}>
               {HEADER.why.label} <i className="caret" />
             </Link>
+            <input type="checkbox" id="m-why" className="mtog" aria-label={`${HEADER.why.label} - the list`} />
+            <label htmlFor="m-why" className="mlab">
+              {HEADER.why.label} <i className="caret" />
+            </label>
             <div className="panel why">
+              <Link className="mpage" href={HEADER.why.href}>
+                {HEADER.why.label} · the whole page →
+              </Link>
               <p className="pk">The proof · eight things to hold us to</p>
               <ul className="whyl">
                 {WHY.map((w) => (
@@ -61,7 +76,14 @@ export default async function Header() {
             <Link href={HEADER.capabilities.href}>
               {HEADER.capabilities.label} <i className="caret" />
             </Link>
+            <input type="checkbox" id="m-caps" className="mtog" aria-label={`${HEADER.capabilities.label} - the list`} />
+            <label htmlFor="m-caps" className="mlab">
+              {HEADER.capabilities.label} <i className="caret" />
+            </label>
             <div className="panel caps">
+              <Link className="mpage" href={HEADER.capabilities.href}>
+                The five capabilities, on Home →
+              </Link>
               <p className="pk">Five capabilities · the nine modules · every chapter of the brochures</p>
               <div className="cols">
                 {CAPABILITIES.map((c) => (
@@ -75,7 +97,14 @@ export default async function Header() {
             <Link href={HEADER.partners.href}>
               {HEADER.partners.label} <i className="caret" />
             </Link>
+            <input type="checkbox" id="m-partners" className="mtog" aria-label={`${HEADER.partners.label} - the list`} />
+            <label htmlFor="m-partners" className="mlab">
+              {HEADER.partners.label} <i className="caret" />
+            </label>
             <div className="panel partners">
+              <Link className="mpage" href={HEADER.partners.href}>
+                The four channels, on Home →
+              </Link>
               <p className="pk">Four partner channels · two editions, two pages</p>
               <div className="cols">
                 {PARTNERS.map((c) => (
@@ -89,6 +118,7 @@ export default async function Header() {
             {HEADER.write.label}
           </a>
         </nav>
+        <MenuCloser />
       </div>
     </header>
   );
