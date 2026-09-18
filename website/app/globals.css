@@ -2,12 +2,14 @@
  *   fonts.css       GENERATED - the three self-hosted faces (scripts/extract-fonts.mjs)
  *   design.css      GENERATED - the design system of the mocks, ported verbatim (scripts/build-design-css.mjs)
  *   interaction.css hand-written - what a live browser gives and a static mock cannot (D94)
+ *   premium.css     GENERATED - the premium layer, additive (scripts/build-premium-css.py)
  * Tailwind is loaded last for utilities and for the brand tokens; it never restyles the bands.
  */
 @import "./fonts.css";
 @import "./design.css";
 @import "./hero.css";
 @import "./interaction.css";
+@import "./premium.css";
 @import "tailwindcss";
 
 @theme {
