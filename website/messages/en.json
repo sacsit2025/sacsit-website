@@ -35,13 +35,17 @@
   },
   "documents": {
     "title": "Get the file",
-    "lede": "Tell us where to send it and the link comes straight back.",
+    "kicker": "Brochure · PDF",
+    "lede": "Tell us where to send it.",
+    "required": "Your name and your e-mail, so we know where to send it.",
     "send": "Send me the file",
     "sending": "Preparing the link…",
     "ready": "Here is your file.",
     "download": "Download",
     "failed": "The link did not come through. Write to info@sacsit.com and we will send the file.",
     "missing": "That document is not on the site yet. Write to info@sacsit.com and we will send it to you.",
+    "thanks": "Thank you — the file is on its way.",
+    "thanksNote": "Our team sends it to your e-mail address, usually within the working day. Questions in the meantime: info@sacsit.com.",
     "close": "Close"
   },
   "notFound": {

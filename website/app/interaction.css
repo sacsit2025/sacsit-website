@@ -358,15 +358,128 @@ table.ctable tbody tr {
  * the initial style of a newly inserted element, and needs no JavaScript and no component change.
  * There is no exit animation, because React unmounts the node; faking one would mean keeping it
  * mounted, which is a component change this does not need. Targeted by its existing id. */
-[id^="doc-gate-"] {
+/* ── the document gate - a dialog over the page ─────────────────────────────────────────────────── */
+/* "Get the file" opens the platform's own <dialog>: a white card in the middle of a dimmed page, the
+ * document's title on top, three fields and one button. The page behind it neither scrolls nor
+ * moves. The card ARRIVES the way a panel does - a rise of ten pixels and a fade, within the panel
+ * budget - and the backdrop only fades. */
+dialog.gate {
+  width: min(100% - 2rem, 29rem);
+  max-width: none;
+  max-height: min(100% - 2rem, 100dvh - 2rem);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  overflow: visible;
+}
+dialog.gate::backdrop {
+  background: rgba(11, 14, 17, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+body:has(dialog.gate[open]) {
+  overflow: hidden;
+}
+.gate-card {
+  position: relative;
+  background: var(--paper);
+  border-top: 3px solid var(--amber);
+  border-radius: 6px;
+  padding: 1.9rem 2rem 1.75rem;
+  box-shadow:
+    0 30px 70px -24px rgba(11, 14, 17, 0.5),
+    0 0 0 1px var(--rule);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+.gate-close {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0;
+  border-radius: 3px;
+  background: none;
+  color: var(--slate);
+  font-family: var(--display);
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color var(--dur-hover) var(--ease-out), color var(--dur-hover) var(--ease-out);
+}
+.gate-close:hover {
+  background: var(--mist);
+  color: var(--ink);
+}
+.gate-head {
+  margin: 0 0 1.25rem;
+  padding-right: 2.25rem;
+}
+.gate-head .kicker {
+  margin: 0 0 0.4rem;
+}
+.gate-head h3 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: var(--navy);
+}
+.gate-head .meta {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--steel);
+  margin: 0.35rem 0 0;
+}
+.gate .form {
+  max-width: none;
+}
+.gate .form .note {
+  color: var(--slate);
+}
+.gate .form .ok {
+  color: var(--blue);
+  font-size: 1.15rem;
+}
+.gate .form input {
+  padding: 0.8rem 0.9rem;
+}
+.gate .form input:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+  border-color: var(--blue);
+}
+.gate .form .cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.gate .form .note:last-child {
+  font-size: 0.78rem;
+  margin: 0;
+}
+dialog.gate[open] {
   opacity: 1;
   transform: translateY(0);
   transition: opacity var(--dur-panel) var(--ease-out), transform var(--dur-panel) var(--ease-out);
 }
+dialog.gate[open]::backdrop {
+  opacity: 1;
+  transition: opacity var(--dur-panel) var(--ease-out);
+}
 @starting-style {
-  [id^="doc-gate-"] {
+  dialog.gate[open] {
     opacity: 0;
-    transform: translateY(-6px);
+    transform: translateY(10px);
+  }
+  dialog.gate[open]::backdrop {
+    opacity: 0;
+  }
+}
+@media (max-width: 480px) {
+  .gate-card {
+    padding: 1.5rem 1.15rem 1.25rem;
   }
 }
 
@@ -739,7 +852,7 @@ body > header nav .navhome {
   /* A panel still ARRIVES - it just arrives by fading, with no rise and no scale. Killing the
    * transform transition outright is what removes the travel; the opacity transition is left alone,
    * which is the whole distinction this block exists to make. */
-  [id^="doc-gate-"],
+  dialog.gate[open],
   .form .ok,
   .form .err {
     transform: none;

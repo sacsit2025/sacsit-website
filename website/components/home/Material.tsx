@@ -34,7 +34,7 @@ export function Material() {
               <div>
                 <h4>{rich(doc.title, `h-${doc.id}`)}</h4>
                 <p className="meta">{doc.meta}</p>
-                <DocumentButton doc={doc.id} title={doc.title} />
+                <DocumentButton doc={doc.id} title={doc.title} meta={doc.meta} />
               </div>
             </div>
           ))}
