@@ -328,6 +328,23 @@
    "caption": "the six stations of the one key: the register · the pixel · the trend · the batch · the work order · the signed sheet — the same key on every card, nothing mapped a second time"
   },
   {
+   "type": "prose",
+   "title": "For regulated plants: the technical controls Part 11 and Annex 11 require.",
+   "cols": [
+    [
+     "<b>Unique accounts.</b> A signature names a person, not a device; no signing door on a shared station.",
+     "<b>Role-based authority checks.</b> Who may open a page or send a command is decided in the database, from a whole site down to one screen.",
+     "<b>Append-only audit journals.</b> Every command, acknowledgement, shelving and grant across the fleet, each with its moment; nothing deleted."
+    ],
+    [
+     "<b>Electronic signatures with re-authentication.</b> The signer's own password at the moment of signing; name, capacity, moment and time zone on the sheet; never withdrawn.",
+     "<b>Frozen manifestation.</b> Each run computed once, frozen on arrival, given a document number, sealed with a hash.",
+     "<b>Tamper-evident records.</b> A hash anyone can check outside the building; run it again and a second document is filed beside the first, never a refresh.",
+     "<em>Compliance is achieved together with your own procedures and training.</em>"
+    ]
+   ]
+  },
+  {
    "type": "head",
    "id": "platform-rights",
    "title": "Rights decided in the database",
