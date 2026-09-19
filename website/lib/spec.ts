@@ -48,6 +48,8 @@ export interface ItemSpec {
 export interface LegendEntry {
   title?: string;
   line?: string;
+  /** a colour dot instead of the ring glyph - the drawing's own colour grammar (2026-09-19, WB-27) */
+  swatch?: string;
 }
 
 export interface CardSpec {

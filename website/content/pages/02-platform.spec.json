@@ -91,6 +91,57 @@
    ]
   },
   {
+   "type": "diagram",
+   "id": "platform-collector",
+   "kicker": "Inside the SOP Edge Device",
+   "intro": "The SOP Edge Device — the collector beside the PLC — cut open: eight stations from the port to the page, drawn; every count exact. The link to the server is cut for a third of every cycle: watch the safe brighten and the plant's own screens come alive.",
+   "asset": "knowledge/assets/wb/WB-27.svg",
+   "ground": "navy",
+   "alt": "A drawing of the collector cut open: three controllers feed three ports on the left wall; inside, the driver bay, the bench with three dials, the watchman's screen under an orange beacon, the safe of eight plates, the order desk with its violet line, the spare control room's green screen with a lock, the log cards; two delivery tubes out through the back wall to the server and the history stack, cut for a third of every cycle while the safe brightens and the lock opens; two green tubes out of the open front to the plant's own screens",
+   "legend": [
+    {
+     "swatch": "#46C3EE",
+     "title": "The ports",
+     "line": "it speaks the plant's own protocols — all major drivers; Modbus, OPC DA, Siemens S7 and OPC UA among them"
+    },
+    {
+     "swatch": "#BEE6F5",
+     "title": "The bench",
+     "line": "a raw count becomes a real number: scaled to its unit, a noise band, a quality mark on every reading"
+    },
+    {
+     "swatch": "#F39A3C",
+     "title": "The watchman",
+     "line": "the alarm limits are judged beside the machine, on every good reading; a rule changed in the editor reaches it live, no restart"
+    },
+    {
+     "swatch": "#D8E1EA",
+     "title": "The safe",
+     "line": "the readings wait on the edge's own disk through a cut of the network, then fill the gap in when the link returns"
+    },
+    {
+     "swatch": "#F1C56B",
+     "title": "The delivery run",
+     "line": "one reading feeds two places from one gate: the live page now, the history behind it, in batches"
+    },
+    {
+     "swatch": "#B48CFF",
+     "title": "The order desk",
+     "line": "an operator's setpoint is taken by exactly one box, held within its limits, written, read back and stamped done"
+    },
+    {
+     "swatch": "#4CE08A",
+     "title": "The spare control room",
+     "line": "when the server goes dark the plant keeps its own pages on the LAN — armed once by the administrator, refused while the server is healthy"
+    },
+    {
+     "swatch": "#5FD3F2",
+     "title": "The pulse and the paper trail",
+     "line": "a heartbeat every few seconds, and the box's own log lines readable from the console without walking to the cabinet"
+    }
+   ]
+  },
+  {
    "type": "head",
    "id": "platform-server",
    "title": "The server and the pair",

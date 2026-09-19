@@ -23,7 +23,7 @@ export function Diagram({ section: s }: { section: DiagramSection }) {
         <div className="legend rings">
           {s.legend.map((e, i) => (
             <div key={i}>
-              <Glyph index={i} />
+              {e.swatch ? <i className="sw" style={{ background: e.swatch }} aria-hidden="true">{i + 1}</i> : <Glyph index={i} />}
               <b>{rich(e.title, `lt${i}`)}</b>
               {rich(e.line, `ll${i}`)}
             </div>
