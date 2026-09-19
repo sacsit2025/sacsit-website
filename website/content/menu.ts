@@ -176,43 +176,45 @@ export interface WhyEntry {
   title: string;
   key: string;
   line: string;
+  /** where the proof lives (D121: the Why SOP page left; each proof points to its section) */
+  href: string;
 }
 
 export const WHY: WhyEntry[] = [
-  { title: "Integrated by birth", key: "born", line: "one database, one transaction, one set of rights — nothing to connect" },
+  { title: "Integrated by birth", key: "born", href: "/platform#platform-born", line: "one database, one transaction, one set of rights — nothing to connect" },
   {
     title: "Availability is the architecture",
-    key: "availability",
+    key: "availability", href: "/platform#platform-server",
     line: "the edge holds the line; two servers, one address; the emergency HMI",
   },
   {
     title: "What no other platform does",
-    key: "unique",
+    key: "unique", href: "/scada#scada-timelens",
     line: "TimeLens · Tag Lens · the editor previews the line · the plant keeps its pages",
   },
   {
     title: "One key, from the register to the signed sheet",
-    key: "one-key",
+    key: "one-key", href: "/platform#platform-one-key",
     line: "nothing mapped twice; count-weighted averages; a quality byte on every reading",
   },
   {
     title: "The record",
-    key: "record",
+    key: "record", href: "/reporting#reporting-seal",
     line: "computed on the server, sealed with a hash, signed by name — never edited, never withdrawn",
   },
   {
     title: "Rights decided in the database",
-    key: "rights",
+    key: "rights", href: "/platform#platform-rights",
     line: "what a user may not see never reaches them — not the screen, not the export, not the sheet",
   },
   {
     title: "Nothing in the stack is sunsetting",
-    key: "stack",
+    key: "stack", href: "/platform#platform-database",
     line: "Postgres, TimescaleDB, one program at the edge, one renderer in the browser",
   },
   {
     title: "Through partners, in your market",
-    key: "partners",
+    key: "partners", href: "/partners/system-integrators#partners-si-market",
     line: "the integrator who installs it, the builder who ships it inside the machine",
   },
 ];
@@ -220,7 +222,7 @@ export const WHY: WhyEntry[] = [
 /** The five links of the header, in order (D77). */
 export const HEADER = {
   platform: { label: "Platform", href: href("platform") },
-  why: { label: "Why SOP", href: href("why") },
+  why: { label: "Why SOP", href: href("platform") },   // D121: the page left; the trigger goes to Platform, the dropdown lists the proofs
   capabilities: { label: "Capabilities", href: homeHash("capabilities") },
   partners: { label: "Partners", href: homeHash("partners") },
   // the contact band is on EVERY page, so the header CTA stays on the page the reader is on
@@ -233,7 +235,6 @@ export const FOOTER_LINKS = [
   // Home first: D85 took the Company and Privacy links off and left the footer with no way home
   { label: "Home", href: HOME },
   { label: "Platform", href: href("platform") },
-  { label: "Why SOP", href: href("why") },
   { label: "Capabilities", href: homeHash("capabilities") },
   { label: "Partners", href: homeHash("partners") },
   { label: "Write to us", href: "#write" },

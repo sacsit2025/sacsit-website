@@ -21,6 +21,13 @@ const config: NextConfig = {
   },
   // The site loads nothing from anywhere else: fonts, images and scripts are ours. The one exception is
   // Cloudflare's Turnstile widget (D19) and Cloudflare Web Analytics (D20), both named here explicitly.
+  // D121 (2026-09-20): the Why SOP page left the site; its address goes to the Platform page, where its proofs live
+  async redirects() {
+    return [
+      { source: "/why-sop", destination: "/platform", permanent: true },
+      { source: "/:locale(en|fr|ar)/why-sop", destination: "/:locale/platform", permanent: true },
+    ];
+  },
   async headers() {
     const csp = [
       "default-src 'self'",

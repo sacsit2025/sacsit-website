@@ -24,7 +24,7 @@ export interface RailItem {
  * keep in step by hand. The current chapter is found with an IntersectionObserver against a band
  * across the middle of the window: no scroll maths, no jitter.
  */
-export default function PageRail({ items, home = true }: { items: RailItem[]; home?: boolean }) {
+export default function PageRail({ items, home = true, page }: { items: RailItem[]; home?: boolean; page?: string }) {
   const t = useTranslations("site");
   const [current, setCurrent] = useState<string | null>(null);
   const bar = useRef<HTMLDivElement>(null);
@@ -77,14 +77,18 @@ export default function PageRail({ items, home = true }: { items: RailItem[]; ho
   return (
     <nav className="rail" aria-label={t("onThisPage")}>
       <div className="rwrap" ref={bar}>
-        {home ? (
-          <Link className="rhome" href="/" title={t("home")}>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 4l-8 7h2.4v8h4.2v-5h2.8v5h4.2v-8H20z" />
-            </svg>
-            {t("home")}
-          </Link>
-        ) : null}
+        {/* pinned at the left while the chips scroll: the way home and the page's own name (D121: "we know in which page we are") */}
+        <div className="rpin">
+          {home ? (
+            <Link className="rhome" href="/" title={t("home")}>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4l-8 7h2.4v8h4.2v-5h2.8v5h4.2v-8H20z" />
+              </svg>
+              {t("home")}
+            </Link>
+          ) : null}
+          {page ? <span className="rpage">{page}</span> : null}
+        </div>
         <span className="rlab">{t("onThisPage")}</span>
         {items.map((i) => (
           <a

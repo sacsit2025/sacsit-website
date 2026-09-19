@@ -12,7 +12,6 @@ const SPECS: Record<string, () => Promise<{ default: unknown }>> = {
   "05-eps": () => import("@/content/pages/05-eps.spec.json"),
   "06-maintenance": () => import("@/content/pages/06-maintenance.spec.json"),
   "07-reporting": () => import("@/content/pages/07-reporting.spec.json"),
-  "08-why-sop": () => import("@/content/pages/08-why-sop.spec.json"),
   "09-system-integrators": () => import("@/content/pages/09-system-integrators.spec.json"),
   "10-machine-builders": () => import("@/content/pages/10-machine-builders.spec.json"),
   "11-erp-vendors": () => import("@/content/pages/11-erp-vendors.spec.json"),

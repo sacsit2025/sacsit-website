@@ -5,8 +5,8 @@
  "promise": "One page, every screen it is opened on.",
  "hero": {
   "kicker": "Capability 01 · SCADA",
-  "h1": "The plant keeps its pages when the server stops.",
-  "dek": "One database for the whole plant. The pages, the alarms, the trends and the record are the same rows — and the line's own edge keeps serving them when the centre cannot.",
+  "h1": "Every screen of the plant, from one database.",
+  "dek": "Synoptics, faceplates, alarms, trends and the record, drawn once and served on the wall, the desk and the phone. And the line's own edge keeps serving them when the centre cannot.",
   "plate": "knowledge/assets/plates/01-sop-scada-open-platform.jpg"
  },
  "sections": [
@@ -17,7 +17,17 @@
    "screen": {
     "asset": "knowledge/assets/screens/shot-editor-preview.png",
     "chrome": "the page designer · Beverage Line 7 · Preview",
-    "caption": "The page designer in Preview: the operator's own screen on the plant's real values, while the work is still being done"
+    "caption": "The page designer in Preview: the operator's own screen on the plant's real values, while the work is still being done — and the same pages in the hand, on a phone",
+    "phones": [
+     {
+      "path": "knowledge/assets/screens/shot-m-hmi-overview.png",
+      "alt": "the line overview on a phone: the KPI tiles and the mini synoptic"
+     },
+     {
+      "path": "knowledge/assets/screens/shot-m-hmi-trend.png",
+      "alt": "a trend on a phone"
+     }
+    ]
    },
    "items": [
     {
@@ -838,11 +848,19 @@
   {
    "type": "blockA",
    "title": "The edge runs the line. The server only receives.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
-    "chrome": "the console · Beverage Line 7 · emergency access",
-    "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy"
-   },
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
+     "chrome": "the console · Beverage Line 7 · emergency access",
+     "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy"
+    },
+    {
+     "asset": "knowledge/assets/wb/WB-23.svg",
+     "chrome": "the emergency HMI · the two routes",
+     "caption": "drawn: the normal route in green - the server, the collector, the pages on the LAN - and the emergency route in orange when the server is unreachable: the collector serves the plant's own pages until the server returns",
+     "alt": "A drawing: the plant's controllers, the collector and the screens on the LAN; the route through the server in green while it runs, the collector's own route to the screens in orange while the server is cut"
+    }
+   ],
    "items": [
     {
      "lead": "The edge that holds the line",

@@ -4,6 +4,7 @@ import { CAPABILITIES, PARTNERS, WHY, HEADER, type MenuColumn } from "@/content/
 import { href } from "@/content/routes";
 import MenuCloser from "./MenuCloser";
 import ScrollTop from "./ScrollTop";
+import CurrentPage from "./CurrentPage";
 
 /**
  * The header, from the menu's ONE definition (content/menu.ts, ported from the mocks - D77, D97).
@@ -59,13 +60,13 @@ export default async function Header() {
             </label>
             <div className="panel why">
               <Link className="mpage" href={HEADER.why.href} scroll={false}>
-                {HEADER.why.label} · the whole page →
+                The platform, whole →
               </Link>
               <p className="pk">The proof · eight things to hold us to</p>
               <ul className="whyl">
                 {WHY.map((w) => (
                   <li key={w.key}>
-                    <Link href={href("why", w.key)}>
+                    <Link href={w.href}>
                       <b>{w.title}</b>
                       <span>{w.line}</span>
                     </Link>
@@ -123,6 +124,7 @@ export default async function Header() {
         </nav>
         <MenuCloser />
         <ScrollTop />
+        <CurrentPage />
       </div>
     </header>
   );

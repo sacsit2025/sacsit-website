@@ -22,7 +22,7 @@ export default function GlobalNotFound() {
                 <p className="kicker">Nothing here</p>
                 <h2>That page is not on this site.</h2>
                 <p className="lead">
-                  The platform, the five capabilities, why SOP and the four partner channels are all one
+                  The platform, the five capabilities, the four partner channels are all one
                   click away.
                 </p>
                 <a className="cta" href="/">

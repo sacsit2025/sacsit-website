@@ -33,7 +33,6 @@ const PAGES = [
   "/eps",
   "/maintenance",
   "/reporting",
-  "/why-sop",
   "/partners/system-integrators",
   "/partners/machine-builders",
   "/partners/erp-vendors",

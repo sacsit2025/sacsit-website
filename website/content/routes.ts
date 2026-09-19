@@ -28,7 +28,6 @@ export const ROUTES: Route[] = [
   { slug: "05-eps", path: "eps", nav: "capabilities", anchor: "eps", name: "Equipment Performance System" },
   { slug: "06-maintenance", path: "maintenance", nav: "capabilities", anchor: "cmms", name: "Maintenance" },
   { slug: "07-reporting", path: "reporting", nav: "capabilities", anchor: "reporting", name: "Enterprise Reporting" },
-  { slug: "08-why-sop", path: "why-sop", nav: "why", anchor: "why", name: "Why SOP" },
   {
     slug: "09-system-integrators",
     path: "partners/system-integrators",

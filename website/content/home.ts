@@ -246,7 +246,7 @@ export const availability: AvailabilityBand = {
   lines: "Adding a way to stay up costs a setting, not a licence. \u00a0·\u00a0 Proven in anger: a day-long cut of the history link, the lines still running on the plant's own edge, the missing hours back-filled in seconds when it returned — unattended. \u00a0·\u00a0 Not one of these changes a screen anybody uses.",
   link: {
     label: "How the plant stays up",
-    href: href("why", "availability"),
+    href: "/platform#platform-server",   // D121: the Why SOP page left
   },
   plate: {
     path: "knowledge/assets/wb/WB-03b.jpg",
@@ -685,7 +685,7 @@ export const differences: DifferencesBand = {
   ],
   cta: {
     label: "All the differences",
-    href: href("why"),
+    href: href("platform"),   // D121
   },
 };
 

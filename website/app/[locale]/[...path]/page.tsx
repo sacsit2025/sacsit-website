@@ -59,7 +59,7 @@ export default async function Page({
   return (
     <>
       <Hero hero={spec.hero} group={route.nav} />
-      <PageRail items={rail} />
+      <PageRail items={rail} page={spec.hero.kicker || spec.title} />
       <Sections sections={spec.sections} />
     </>
   );
