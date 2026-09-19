@@ -392,7 +392,7 @@
    "type": "figure",
    "asset": "knowledge/assets/wb/WB-28.svg",
    "ground": "light",
-   "alt": "the server journey, two roads from one portal: the client's portal at the left; the cloud road above - our team confirms on payment, the URL and the admin access within 24 hours, nothing to install; the plant road below - our team replies with the install link, the client prepares one box, one command installs, the licence is activated; both roads meet at the right: link the SOP Edge Devices, draw the line in the editor, the pages run",
+   "alt": "the server journey, two roads from one portal: the client's portal at the left; the cloud road above - our team confirms, the URL and the admin access within 24 hours, nothing to install; the plant road below - our team replies with the install link, the client prepares one box, one command installs, the licence is activated; both roads meet at the right: link the SOP Edge Devices, draw the line in the editor, the pages run",
    "caption": "two roads from one portal: in the cloud, a complete VPS of your own within 24 hours; in your plant, a box of your own installed by one command - and the same last step on both: link your SOP Edge Devices, draw the first line in the editor, its pages run"
   },
   {
@@ -404,7 +404,7 @@
    "cols": [
     [
      "<b>A complete VPS, yours alone.</b> Not a shared resource: one server for your plant, nothing else on it.",
-     "<b>Within 24 hours.</b> Our team confirms on payment and sends your URL and the admin access.",
+     "<b>Within 24 hours.</b> Our team confirms and sends your URL and the admin access.",
      "<b>Nothing to install on your side.</b> Your SOP Edge Devices link to it from the plant; the editor and the pages run in a browser.",
      "<b>Hosted in Germany, in the EU.</b> A German provider's data centre in Nuremberg, certified ISO 27001 and ISO 27701 and audited every year. A GDPR data processing agreement on request."
     ],
