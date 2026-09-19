@@ -50,12 +50,15 @@ export function Pic({
   alt,
   className,
   priority,
+  style,
 }: {
   path: string;
   slot: Slot;
   alt: string;
   className?: string;
   priority?: boolean;
+  /** only for a cropped detail, which positions the whole image inside a smaller window */
+  style?: React.CSSProperties;
 }) {
   const a = bound(path, slot);
   if (isSvg(path)) {
@@ -70,6 +73,7 @@ export function Pic({
         height={a.h}
         alt={alt}
         className={className}
+        style={style}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
       />
@@ -83,6 +87,7 @@ export function Pic({
       sizes={a.sizes}
       alt={alt}
       className={className}
+      style={style}
       priority={priority}
     />
   );

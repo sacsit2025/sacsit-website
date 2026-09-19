@@ -755,6 +755,12 @@
   "bytes": 137855,
   "id": "S-crop-m-hmi-report"
  },
+ "/assets/screens/crops/m-hmi-trend-crop.png": {
+  "w": 392,
+  "h": 708,
+  "bytes": 130567,
+  "id": "S-crop-m-hmi-trend"
+ },
  "/assets/screens/crops/m-perf-chip-crop.png": {
   "w": 390,
   "h": 701,
@@ -893,6 +899,12 @@
   "bytes": 85029,
   "id": "S-taglens-card"
  },
+ "/assets/screens/shot-taglens-full.png": {
+  "w": 1121,
+  "h": 1444,
+  "bytes": 204239,
+  "id": "S-taglens-full"
+ },
  "/assets/screens/shot-taglens-thread.png": {
   "w": 734,
   "h": 679,
@@ -920,7 +932,7 @@
  "/assets/wb/WB-01.jpg": {
   "w": 2560,
   "h": 1360,
-  "bytes": 494434,
+  "bytes": 536224,
   "id": "WB-01"
  },
  "/assets/wb/WB-01b.jpg": {
@@ -950,7 +962,7 @@
  "/assets/wb/WB-01f.jpg": {
   "w": 2560,
   "h": 1360,
-  "bytes": 398818,
+  "bytes": 448215,
   "id": "WB-01f"
  },
  "/assets/wb/WB-01g.jpg": {
@@ -962,7 +974,7 @@
  "/assets/wb/WB-02b.jpg": {
   "w": 1800,
   "h": 1350,
-  "bytes": 394531,
+  "bytes": 362780,
   "id": "WB-02b"
  },
  "/assets/wb/WB-03.jpg": {
@@ -1096,5 +1108,17 @@
   "h": 1000,
   "bytes": 54719,
   "id": "WB-23"
+ },
+ "/assets/wb/WB-24.svg": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 48155,
+  "id": "WB-24"
+ },
+ "/assets/wb/WB-25.svg": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 35700,
+  "id": "WB-25"
  }
 }

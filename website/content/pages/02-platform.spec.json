@@ -159,39 +159,70 @@
   {
    "type": "head",
    "id": "platform-database",
-   "title": "The database and the history",
+   "title": "The engine under the history",
    "n": "04",
    "of": "06",
-   "promise": "One database for the plant and one history beside it, on the same box, never two systems to reconcile.",
+   "promise": "PostgreSQL 17 with TimescaleDB — the same open engine crypto exchanges and trading platforms keep their tick data in. Your plant is a smaller problem than an election night.",
    "brief": "The history is part of the platform, not a product beside it: the same database the screen is already drawing from, and every operator already has it."
   },
   {
    "type": "blockA",
    "screen": {
-    "asset": "knowledge/assets/screens/shot-trend-cursors.png",
-    "caption": "the trend studio with two cursors and the numbers across the span",
-    "chrome": "the trend studio · two cursors"
+    "asset": "knowledge/assets/wb/WB-24.svg",
+    "chrome": "the history · one tower, two rollup tiers, one trend",
+    "caption": "readings land raw at the crown and pack as they age; the minute and hour tiers keep themselves up to date from the tower's flank; the trend answers from the tier the window deserves — drawn, every count exact",
+    "alt": "A drawing: a tall tower of slices, bright and loose at the top and packed and dark toward the base, on a plinth under a ring of light; a collector at the left feeding readings into its crown; two smaller stacks of plates at the right fed from its flank; a trend screen in front fed from the stacks"
    },
    "items": [
     {
-     "lead": "The historian is part of the platform, not a product beside it.",
-     "text": ""
+     "lead": "The engine, named",
+     "text": "PostgreSQL 17 with TimescaleDB beside it: the full community engine, hyperfunctions and all, not a private file format and not a cut-down edition.",
+     "icon": "engine"
     },
     {
-     "lead": "Averages are count-weighted",
-     "text": "never an average of averages."
+     "lead": "What its makers publish",
+     "text": "80 to 95 per cent compression on industrial workloads; rollups that answer in under a millisecond where the raw query took a quarter of a second to a second and a half — hundreds of times faster on compressed history. Their figures, on their own pages — we did not invent a benchmark.",
+     "icon": "publish"
     },
     {
-     "lead": "A quality byte rides every reading.",
-     "text": "A stale or bad value is dressed as stale or bad, never drawn as a fresh number."
+     "lead": "Who else runs it",
+     "text": "A prediction market that ramped up fourfold through an election night to carry 3.7 billion dollars of trades; an infrastructure company at a hundred thousand rows a second; a trading venue at five hundred million dollars a day and 88 per cent compression. A bottling line is a smaller problem than that.",
+     "icon": "ticks"
     },
     {
-     "lead": "Correct a value from years ago and every total since corrects itself",
-     "text": "there is no second copy to migrate."
+     "lead": "What we do with it",
+     "text": "Readings land raw and fold into a compressed column store as they age; a minute rollup and an hour rollup keep themselves up to date; the trend answers from the tier your window deserves. Ask for a month of a slow signal and it draws as fast as an hour, and the chart names the resolution it answered from.",
+     "icon": "tiers"
     },
     {
-     "lead": "Any window you like:",
-     "text": "it draws as fast as a short window, and names the resolution."
+     "lead": "Averages weighted by count",
+     "text": "Never an average of averages; time-weighted where time is what matters. Numbers that survive an audit.",
+     "icon": "weighted"
+    },
+    {
+     "lead": "A quality byte rides every reading",
+     "text": "A stale or bad value is dressed as stale or bad, never drawn as a fresh number, and never quietly averaged into a good one.",
+     "icon": "quality"
+    },
+    {
+     "lead": "Correct a value from years ago",
+     "text": "Every total since corrects itself. No second copy to migrate, no cube to rebuild, no report to re-issue by hand.",
+     "icon": "correct"
+    },
+    {
+     "lead": "It is still just Postgres",
+     "text": "One key from the PLC register to the pixel, the trend, the batch, the work order and the printed sheet; the history in an open database you can query with any SQL tool and back up like any database. Nothing in the stack is sunsetting.",
+     "icon": "key"
+    },
+    {
+     "lead": "What already stands on it",
+     "text": "The trend studio, the replay of any synoptic with no second recorder, the OEE, the batch record and the report engine: not one of them is another store. The report is computed from the rows the operator watched, so the tile and the paper cannot disagree.",
+     "icon": "stands"
+    },
+    {
+     "lead": "Proven in anger",
+     "text": "A 24-hour network cut of the historian door: the collectors kept the line running, and back-filled unattended when the door came back.",
+     "icon": "proven"
     }
    ]
   },
@@ -205,16 +236,6 @@
   },
   {
    "type": "blockA",
-   "screens": [
-    {
-     "pair": [
-      "knowledge/assets/screens/shot-taglens-card.png",
-      "knowledge/assets/screens/shot-taglens-thread.png"
-     ],
-     "chrome": "Tag Lens · one signal · the card and the thread",
-     "caption": "one signal: its identity card and live value, then every page, trend, alarm and report block that uses it"
-    }
-   ],
    "items": [
     {
      "lead": "Security lives in the database and reaches the report.",
@@ -232,7 +253,13 @@
      "lead": "One clock, one key, one archive:",
      "text": "the same shift on every module, one signal one identity, every sheet filed side by side."
     }
-   ]
+   ],
+   "screen": {
+    "asset": "knowledge/assets/wb/WB-25.svg",
+    "chrome": "one key · six stations, one thread",
+    "caption": "the controller's register, the synoptic pixel, the trend, the batch record, the work order and the signed sheet — one gold thread through all six, one key travelling the whole way; nothing mapped a second time — drawn, every count exact",
+    "alt": "A drawing: six lit stations on a diagonal - a PLC rack, a synoptic screen with one tile gold, a trend screen with one point ringed gold, a stack of bound sheets with one gold band, a job card with one gold line, and a signed sheet with a gold seal - joined by one gold thread with a key token travelling along it"
+   }
   },
   {
    "type": "head",

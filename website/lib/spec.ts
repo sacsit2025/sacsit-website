@@ -20,12 +20,29 @@ export interface ScreenSpec {
   alt?: string;
   /** "native" caps the tile at the image's own width (a phone screen is never blown up); "full" takes the whole panel */
   size?: "native" | "full";
+  /**
+   * The evidence figures of a band leave the two-column sheet and take the band's whole width
+   * (Karim, 2026-09-19). A capture is 1600 px wide and the sheet's frame column is 580: at 0.36x
+   * nothing in it can be read, which is the whole of his complaint. The list beside them, freed of
+   * the frames, runs as the two-column list the kit already has (`.sheet.nofig`).
+   */
+  wide?: boolean;
+  /** A zoomed detail of the SAME capture, under it in the same frame: the region as fractions of the image. */
+  zoom?: { x: number; y: number; w: number; h: number; caption?: string };
+  /** Phone captures shown side by side under the screen, at their own width, with air between them. */
+  phones?: { path: string; alt: string }[];
+  /** A source capture whose own edges are cut: the page fades them, rather than anyone editing the file. */
+  fade?: "right" | "bottom" | "right-bottom";
+  /** The visible height of a very tall capture, in CSS pixels, before the foot fades out. */
+  cap?: number;
 }
 
 /** One numbered item of a block's list: a bold lead and the sentence after it. */
 export interface ItemSpec {
   lead?: string;
   text?: string;
+  /** the name of the flat two-tone glyph drawn beside the lead (the section-04 icons, 2026-09-19) */
+  icon?: string;
 }
 
 export interface LegendEntry {
