@@ -612,8 +612,9 @@ dialog.gate[open]::backdrop {
    never one under the other - the wide band keeps its 392px phones */
 .cap.blk .sheet .phones {
   flex-wrap: nowrap;
-  gap: 24px;
-  padding: 24px 22px 20px;
+  gap: 40px;
+  padding: 30px 30px 26px;
+  border-top: 0; /* Karim, entry 124: room between the capture and the phones, not a hairline */
 }
 .cap.blk .sheet .phones > span {
   flex: 1 1 0;
