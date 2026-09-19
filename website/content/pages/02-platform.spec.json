@@ -132,9 +132,10 @@
   {
    "type": "blockA",
    "screen": {
-    "asset": "knowledge/assets/brochure/scada/shot-edge-emergency.png",
-    "caption": "the edge's own emergency access, armed once by the administrator and refused while the server is healthy",
-    "chrome": "the edge · emergency access"
+    "asset": "knowledge/assets/wb/WB-23.svg",
+    "caption": "green, the normal route — server, collector, HMI — cut at the dark servers; orange, the emergency route — the collector serving the gated emergency HMI on the plant LAN. Drawn, every count exact",
+    "chrome": "the edge · the emergency HMI",
+    "alt": "A drawing with two coloured routes: green from two dark servers through the collector to the operator's station, cut at the servers; orange from the collector to a gated emergency HMI tablet on the plant LAN; four machines on a conveyor behind"
    },
    "items": [
     {
