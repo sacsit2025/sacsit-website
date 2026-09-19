@@ -731,6 +731,18 @@
   "bytes": 163216,
   "id": "shot-trend-lanes"
  },
+ "/assets/plates/01-sop-scada-open-platform.jpg": {
+  "w": 1600,
+  "h": 1066,
+  "bytes": 171569,
+  "id": "P-01"
+ },
+ "/assets/plates/SI-01.jpg": {
+  "w": 2400,
+  "h": 1500,
+  "bytes": 489349,
+  "id": "SI-01"
+ },
  "/assets/screens/crops/m-hmi-job-crop.png": {
   "w": 392,
   "h": 708,
@@ -754,12 +766,6 @@
   "h": 528,
   "bytes": 137855,
   "id": "S-crop-m-hmi-report"
- },
- "/assets/screens/crops/m-hmi-trend-crop.png": {
-  "w": 392,
-  "h": 708,
-  "bytes": 130567,
-  "id": "S-crop-m-hmi-trend"
  },
  "/assets/screens/crops/m-perf-chip-crop.png": {
   "w": 390,
@@ -862,6 +868,18 @@
   "h": 844,
   "bytes": 56186,
   "id": "S-m-config-fleet"
+ },
+ "/assets/screens/shot-m-hmi-overview.png": {
+  "w": 392,
+  "h": 850,
+  "bytes": 171594,
+  "id": "S-m-hmi-overview"
+ },
+ "/assets/screens/shot-m-hmi-trend.png": {
+  "w": 392,
+  "h": 850,
+  "bytes": 169363,
+  "id": "S-m-hmi-trend"
  },
  "/assets/screens/shot-mnt-phone-wo.png": {
   "w": 780,
@@ -1120,5 +1138,11 @@
   "h": 1000,
   "bytes": 35700,
   "id": "WB-25"
+ },
+ "/assets/wb/WB-26.svg": {
+  "w": 1600,
+  "h": 230,
+  "bytes": 5809,
+  "id": "WB-26"
  }
 }

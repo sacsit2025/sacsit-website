@@ -167,12 +167,20 @@
   },
   {
    "type": "blockA",
-   "screen": {
-    "asset": "knowledge/assets/wb/WB-24.svg",
-    "chrome": "the history · one tower, two rollup tiers, one trend",
-    "caption": "readings land raw at the crown and pack as they age; the minute and hour tiers keep themselves up to date from the tower's flank; the trend answers from the tier the window deserves — drawn, every count exact",
-    "alt": "A drawing: a tall tower of slices, bright and loose at the top and packed and dark toward the base, on a plinth under a ring of light; a collector at the left feeding readings into its crown; two smaller stacks of plates at the right fed from its flank; a trend screen in front fed from the stacks"
-   },
+   "screens": [
+    {
+     "asset": "knowledge/assets/wb/WB-24.svg",
+     "chrome": "the history · one tower, two rollup tiers, one trend",
+     "caption": "readings land raw at the crown and pack as they age; the minute and hour tiers keep themselves up to date from the tower's flank; the trend answers from the tier the window deserves — drawn, every count exact",
+     "alt": "A drawing: a tall tower of slices, bright and loose at the top and packed and dark toward the base, on a plinth under a ring of light; a collector at the left feeding readings into its crown; two smaller stacks of plates at the right fed from its flank; a trend screen in front fed from the stacks"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-trend-cursors.png",
+     "chrome": "the trend studio · two cursors",
+     "caption": "the trend studio on that history: two cursors and the numbers across the span, answered from the tier the window deserves",
+     "alt": "the trend studio with two cursors and the deltas between them"
+    }
+   ],
    "items": [
     {
      "lead": "The engine, named",
@@ -260,6 +268,13 @@
     "caption": "the controller's register, the synoptic pixel, the trend, the batch record, the work order and the signed sheet — one gold thread through all six, one key travelling the whole way; nothing mapped a second time — drawn, every count exact",
     "alt": "A drawing: six lit stations on a diagonal - a PLC rack, a synoptic screen with one tile gold, a trend screen with one point ringed gold, a stack of bound sheets with one gold band, a job card with one gold line, and a signed sheet with a gold seal - joined by one gold thread with a key token travelling along it"
    }
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/wb/WB-26.svg",
+   "ground": "light",
+   "alt": "the one key, six stations: the controller's register, the synoptic pixel, the trend, the batch, the work order and the signed sheet, joined by arrows, one amber thread over all six and the same key on every card",
+   "caption": "the six stations of the one key: the register · the pixel · the trend · the batch · the work order · the signed sheet — the same key on every card, nothing mapped a second time"
   },
   {
    "type": "head",

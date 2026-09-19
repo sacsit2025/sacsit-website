@@ -388,7 +388,12 @@ export const capabilities: CapabilitiesBand = {
         asset: "knowledge/assets/screens/shot-editor-preview.png",
         chrome: "the page designer · Beverage Line 7 · Preview",
         alt: "the page designer in Preview: the operator's own screen on the plant's real values",
-        caption: "The page designer in Preview: the operator's own screen on the plant's real values, while the work is still being done",
+        caption: "The page designer in Preview: the operator's own screen on the plant's real values, while the work is still being done — and the same pages in the hand, on a phone",
+        // Karim, 2026-09-19 (entry 122): two phone captures under the designer, aligned to it - the same pages in the hand
+        phones: [
+          { path: "knowledge/assets/screens/shot-m-hmi-overview.png", alt: "the line overview on a phone: the KPI tiles and the mini synoptic" },
+          { path: "knowledge/assets/screens/shot-m-hmi-trend.png", alt: "a trend on a phone" },
+        ],
       },
       items: [
         {
@@ -439,34 +444,12 @@ export const capabilities: CapabilitiesBand = {
       screens: [
         {
           asset: "knowledge/assets/screens/shot-timelens.png",
-          wide: true,
           chrome: "TimeLens · Beverage Line 7 · replay",
           alt: "TimeLens: the synoptic replayed, the gold bar",
-          // the player is 1184 px of a 1600 px capture: in the old 580 px column it painted 71 px tall
-          zoom: {
-            x: 0.14,
-            y: 0.76,
-            w: 0.76,
-            h: 0.24,
-            caption: "the player, at full size — the moment you are standing in, the alarms that were live at it, the speeds, and the way back to now",
-          },
-          phones: [
-            {
-              path: "knowledge/assets/screens/crops/m-hmi-overview-crop.png",
-              alt: "the same line overview, on a phone",
-            },
-            {
-              path: "knowledge/assets/screens/crops/m-hmi-trend-crop.png",
-              alt: "a trend of five pens, on a phone",
-            },
-          ],
-          caption: "TimeLens · the same synoptic replayed from the history — the gold bar, the alarms at that moment, commands off; and the same pages in the hand, live",
+          caption: "TimeLens · the same synoptic replayed from the history — the gold bar, the alarms at that moment, commands off",
         },
         {
           asset: "knowledge/assets/screens/shot-taglens-full.png",
-          wide: true,
-          fade: "right-bottom",
-          cap: 1150,
           chrome: "Tag Lens · BLD-AIT-2201 · the card and the thread",
           alt: "Tag Lens: one signal, everywhere it is used",
           caption: "Tag Lens · one signal: its identity card, and the thread of every page, trend, alarm, report block and formula that uses it — and what if, before the change",

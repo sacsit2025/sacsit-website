@@ -593,7 +593,7 @@ dialog.gate[open]::backdrop {
 }
 
 /* the two phones under the landscape: their own 392 px, real air between them, stacked on a phone */
-.cap.blk .wides .phones {
+.cap.blk .frame .phones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -603,12 +603,23 @@ dialog.gate[open]::backdrop {
   background: var(--deep);
   border-top: 1px solid #2a3b4e;
 }
-.cap.blk .wides .phones > span {
+.cap.blk .frame .phones > span {
   display: block;
   flex: 0 1 392px;
   max-width: 392px;
 }
-.cap.blk .wides .phones img {
+/* 2026-09-19 (Karim, entry 122): in the two-column sheet the frame is ~580px, so the two phones share the width side by side,
+   never one under the other - the wide band keeps its 392px phones */
+.cap.blk .sheet .phones {
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 24px 22px 20px;
+}
+.cap.blk .sheet .phones > span {
+  flex: 1 1 0;
+  max-width: 250px;
+}
+.cap.blk .frame .phones img {
   width: 100%;
   height: auto;
   display: block;
@@ -641,7 +652,7 @@ dialog.gate[open]::backdrop {
     gap: 1.6rem;
     margin-top: 1.6rem;
   }
-  .cap.blk .wides .phones {
+  .cap.blk .frame .phones {
     gap: 28px;
     padding: 24px 14px 20px;
   }

@@ -7,7 +7,7 @@
   "kicker": "Capability 01 · SCADA",
   "h1": "The plant keeps its pages when the server stops.",
   "dek": "One database for the whole plant. The pages, the alarms, the trends and the record are the same rows — and the line's own edge keeps serving them when the centre cannot.",
-  "plate": "knowledge/assets/wb/WB-01f.jpg"
+  "plate": "knowledge/assets/plates/01-sop-scada-open-platform.jpg"
  },
  "sections": [
   {
