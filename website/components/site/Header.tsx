@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { CAPABILITIES, PARTNERS, WHY, HEADER, type MenuColumn } from "@/content/menu";
 import { href } from "@/content/routes";
 import MenuCloser from "./MenuCloser";
+import ScrollTop from "./ScrollTop";
 
 /**
  * The header, from the menu's ONE definition (content/menu.ts, ported from the mocks - D77, D97).
@@ -23,7 +24,7 @@ export default async function Header() {
   return (
     <header>
       <div className="wrap">
-        <Link className="lock" href={HEADER.home} aria-label={`${t("logoAlt")} - ${t("home")}`} title={t("home")}>
+        <Link className="lock" href={HEADER.home} scroll={false} aria-label={`${t("logoAlt")} - ${t("home")}`} title={t("home")}>
           {/* the brand lock-up is an SVG pair: the symbol, then the wordmark (BRAND-ASSETS.md) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="sym" src="/assets/brand/symbol/symbol-light.svg" alt="" />
@@ -41,13 +42,15 @@ export default async function Header() {
         <nav>
           {/* a phone menu needs a Home entry of its own; on a wide screen the lock-up is it
               (the desktop menu itself is locked by D77) - CSS shows this one under 820px only */}
-          <Link className="navhome" href={HEADER.home}>
+          <Link className="navhome" href={HEADER.home} scroll={false}>
             {t("home")}
           </Link>
-          <Link href={HEADER.platform.href}>{HEADER.platform.label}</Link>
+          <Link href={HEADER.platform.href} scroll={false}>
+            {HEADER.platform.label}
+          </Link>
 
           <div className="dd">
-            <Link href={HEADER.why.href}>
+            <Link href={HEADER.why.href} scroll={false}>
               {HEADER.why.label} <i className="caret" />
             </Link>
             <input type="checkbox" id="m-why" className="mtog" aria-label={`${HEADER.why.label} - the list`} />
@@ -55,7 +58,7 @@ export default async function Header() {
               {HEADER.why.label} <i className="caret" />
             </label>
             <div className="panel why">
-              <Link className="mpage" href={HEADER.why.href}>
+              <Link className="mpage" href={HEADER.why.href} scroll={false}>
                 {HEADER.why.label} · the whole page →
               </Link>
               <p className="pk">The proof · eight things to hold us to</p>
@@ -119,6 +122,7 @@ export default async function Header() {
           </a>
         </nav>
         <MenuCloser />
+        <ScrollTop />
       </div>
     </header>
   );
@@ -128,7 +132,7 @@ function Column({ column }: { column: MenuColumn }) {
   const page = href(column.anchor);
   return (
     <div className="col">
-      <Link className="capname" href={page}>
+      <Link className="capname" href={page} scroll={false}>
         {column.name}
       </Link>
       <p className="promise">{column.promise}</p>
@@ -139,7 +143,7 @@ function Column({ column }: { column: MenuColumn }) {
           </li>
         ))}
       </ul>
-      <Link className="all" href={page}>
+      <Link className="all" href={page} scroll={false}>
         {column.all} →
       </Link>
     </div>
