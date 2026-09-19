@@ -14,11 +14,14 @@ export function Prose({ section: s }: { section: ProseSection }) {
       {s.title ? <p className="allh">{rich(s.title, "t")}</p> : null}
       <div className="pcols" style={{ "--pcols": String(cols.length) } as CSSProperties}>
         {cols.map((col, i) => (
-          <ul key={i}>
-            {col.map((p, j) => (
-              <li key={j}>{rich(p, `p${i}-${j}`)}</li>
-            ))}
-          </ul>
+          <div key={i}>
+            {s.heads?.[i] ? <h3 className="ph">{rich(s.heads[i], `h${i}`)}</h3> : null}
+            <ul>
+              {col.map((p, j) => (
+                <li key={j}>{rich(p, `p${i}-${j}`)}</li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </section>

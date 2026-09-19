@@ -94,6 +94,8 @@ export interface ProseSection extends Common {
   title?: string;
   /** one array per column; each entry is a paragraph (usually opening with a <b>lead</b>) */
   cols?: string[][];
+  /** one title per column, above it (2026-09-19, the journey chapter: In the cloud / In your plant) */
+  heads?: string[];
   items?: string[];
 }
 

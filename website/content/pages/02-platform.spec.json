@@ -397,14 +397,18 @@
   },
   {
    "type": "prose",
+   "heads": [
+    "In the cloud",
+    "In your plant"
+   ],
    "cols": [
     [
-     "<b>In the cloud: a complete VPS, yours alone.</b> Not a shared resource: one server for your plant, nothing else on it.",
+     "<b>A complete VPS, yours alone.</b> Not a shared resource: one server for your plant, nothing else on it.",
      "<b>Within 24 hours.</b> Our team confirms on payment and sends your URL and the admin access.",
      "<b>Nothing to install on your side.</b> Your SOP Edge Devices link to it from the plant; the editor and the pages run in a browser."
     ],
     [
-     "<b>In your plant: your own hardware, your own network.</b> Air-gapped if your rules say so; the same product, the same database.",
+     "<b>Your own hardware, your own network.</b> Air-gapped if your rules say so; the same product, the same database.",
      "<b>One command installs everything</b> and asks nothing on the way; the access details it creates are yours to keep.",
      "<b>A duty and standby pair</b> when a line cannot afford a stop; your partner or your own IT runs it."
     ]

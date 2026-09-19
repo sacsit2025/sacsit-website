@@ -355,6 +355,9 @@ body > header .mtog,body > header .mlab,body > header .mpage{display:none}
 .prose ul{margin:0;padding:0;list-style:none;columns:auto;column-gap:normal}
 .prose li{font-size:.95rem;line-height:1.5;padding:.35rem 0 .35rem 1rem;border-left:2px solid var(--rule);margin:0 0 .4rem}
 .prose li b{color:var(--ink);font-weight:600}
+/* a title over a prose column (2026-09-19, the journey chapter) */
+.prose .ph{font-family:var(--display);font-weight:600;font-size:1.15rem;color:var(--ink);margin:0 0 .7rem;padding:0 0 .45rem 1rem;border-bottom:1px solid var(--rule)}
+.on-navy .prose .ph{color:#fff;border-bottom-color:#2A3B4E}
 .on-navy .prose li{color:var(--sky);border-left-color:#2A3B4E}
 .on-navy .prose li b{color:#fff}
 .prose li:last-child{margin-bottom:0}
