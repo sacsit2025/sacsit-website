@@ -405,12 +405,14 @@
     [
      "<b>A complete VPS, yours alone.</b> Not a shared resource: one server for your plant, nothing else on it.",
      "<b>Within 24 hours.</b> Our team confirms on payment and sends your URL and the admin access.",
-     "<b>Nothing to install on your side.</b> Your SOP Edge Devices link to it from the plant; the editor and the pages run in a browser."
+     "<b>Nothing to install on your side.</b> Your SOP Edge Devices link to it from the plant; the editor and the pages run in a browser.",
+     "<b>Hosted in Germany, in the EU.</b> A German provider's data centre in Nuremberg, certified ISO 27001 and ISO 27701 and audited every year. A GDPR data processing agreement on request."
     ],
     [
      "<b>Your own hardware, your own network.</b> Air-gapped if your rules say so; the same product, the same database.",
      "<b>One command installs everything</b> and asks nothing on the way; the access details it creates are yours to keep.",
-     "<b>A duty and standby pair</b> when a line cannot afford a stop; your partner or your own IT runs it."
+     "<b>A duty and standby pair</b> when a line cannot afford a stop; your partner or your own IT runs it.",
+     "<b>Your data never leaves your premises.</b> The server and the SOP Edge Devices sit on your network; nothing goes out unless you decide. Backed up like any database."
     ]
    ]
   },
