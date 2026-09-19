@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 430" width="1600" height="430" role="img" aria-label="The server journey, two roads from one portal: the client's portal at the left; the cloud road above - our team confirms on payment, the URL and the admin access within 24 hours, nothing to install; the plant road below - our team replies with the install link, the client prepares one box, one command installs, the licence is activated; both roads meet at the right: link the SOP Edge Devices, draw the line in the editor, the pages run">
+<!-- pilot - 2026-09-19 - drawn by scripts/draw-journey-strip.py (D75, D117); the dress of SC-D2 -->
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8 Z" fill="#46C3EE"/></marker></defs>
+<style>.rt{font-family:Saira,Inter,Arial,sans-serif;font-size:19px;font-weight:600;letter-spacing:.8px;fill:#FFFFFF}.rl{font-family:Saira,Inter,Arial,sans-serif;font-size:15px;font-weight:400;letter-spacing:.4px;fill:#9DB0C4}.rc{font-family:"JetBrains Mono",Consolas,monospace;font-size:14px;letter-spacing:.8px;fill:#EE9F46}.ln{font-family:"JetBrains Mono",Consolas,monospace;font-size:13px;letter-spacing:1.6px;fill:#46C3EE}.say{font-family:Saira,Inter,Arial,sans-serif;font-size:18px;font-weight:600;fill:#1E7FA6}</style>
+<rect x="20" y="135" width="180" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="110.0" y="167" text-anchor="middle">Your portal</text>
+<text class="rl" x="110.0" y="193" text-anchor="middle">request the licence:</text>
+<text class="rl" x="110.0" y="213" text-anchor="middle">cloud, or your plant</text>
+<rect x="1345" y="135" width="235" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="1462.5" y="167" text-anchor="middle">Live</text>
+<text class="rl" x="1462.5" y="193" text-anchor="middle">link your SOP Edge Devices,</text>
+<text class="rl" x="1462.5" y="213" text-anchor="middle">draw the line in the editor</text>
+<text class="ln" x="250" y="26">IN THE CLOUD · A VPS OF YOUR OWN, NOT SHARED</text>
+<text class="ln" x="250" y="244">IN YOUR PLANT · A BOX OF YOUR OWN, AIR-GAPPED IF YOUR RULES SAY SO</text>
+<rect x="250" y="40" width="323" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="411.5" y="72" text-anchor="middle">Our team confirms</text>
+<text class="rl" x="411.5" y="98" text-anchor="middle">on payment</text>
+<rect x="613" y="40" width="323" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="774.5" y="72" text-anchor="middle">Your access arrives</text>
+<text class="rl" x="774.5" y="98" text-anchor="middle">the URL and the admin account,</text>
+<text class="rl" x="774.5" y="118" text-anchor="middle">sent by our team</text>
+<rect x="694.5" y="134" width="160.0" height="22" rx="5" fill="rgba(238,159,70,.14)" stroke="#EE9F46" stroke-width="1.4"/>
+<text class="rc" x="774.5" y="150" text-anchor="middle">WITHIN 24 HOURS</text>
+<rect x="976" y="40" width="323" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="1137.5" y="72" text-anchor="middle">Nothing to install</text>
+<text class="rl" x="1137.5" y="98" text-anchor="middle">a complete VPS, yours alone;</text>
+<text class="rl" x="1137.5" y="118" text-anchor="middle">your collectors link from the plant</text>
+<rect x="250" y="258" width="232" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="366.0" y="290" text-anchor="middle">Our team replies</text>
+<text class="rl" x="366.0" y="316" text-anchor="middle">the install link</text>
+<text class="rl" x="366.0" y="336" text-anchor="middle">and the instructions</text>
+<rect x="522" y="258" width="232" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="638.0" y="290" text-anchor="middle">You prepare one box</text>
+<text class="rl" x="638.0" y="316" text-anchor="middle">a Windows machine,</text>
+<text class="rl" x="638.0" y="336" text-anchor="middle">a fixed address</text>
+<rect x="795" y="258" width="232" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="911.0" y="290" text-anchor="middle">One command installs</text>
+<text class="rl" x="911.0" y="316" text-anchor="middle">everything, unattended,</text>
+<text class="rl" x="911.0" y="336" text-anchor="middle">then you walk away</text>
+<rect x="849.4" y="352" width="123.2" height="22" rx="5" fill="rgba(238,159,70,.14)" stroke="#EE9F46" stroke-width="1.4"/>
+<text class="rc" x="911.0" y="368" text-anchor="middle">ONE COMMAND</text>
+<rect x="1067" y="258" width="232" height="124" rx="8" fill="#14202F"/>
+<text class="rt" x="1183.0" y="290" text-anchor="middle">Activate the licence</text>
+<text class="rl" x="1183.0" y="316" text-anchor="middle">against your installation,</text>
+<text class="rl" x="1183.0" y="336" text-anchor="middle">once</text>
+<path d="M200,197 L225,197 L225,102 L244,102" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M200,197 L225,197 L225,320 L244,320" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M578,102 L607,102" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M941,102 L970,102" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M487,320 L516,320" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M760,320 L789,320" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M1032,320 L1061,320" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M1305,102 L1322,102 L1322,197 L1339,197" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<path d="M1305,320 L1322,320 L1322,197 L1339,197" fill="none" stroke="#46C3EE" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#ar)"/>
+<line x1="20" y1="400" x2="1580" y2="400" stroke="#EE9F46" stroke-width="2.6"/>
+<text class="say" x="800" y="422" text-anchor="middle">Either way, the next step is the same: link your SOP Edge Devices, draw the first line in the editor, and its pages run.</text>
+</svg>

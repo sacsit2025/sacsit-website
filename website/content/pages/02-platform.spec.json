@@ -384,43 +384,29 @@
   },
   {
    "type": "head",
-   "id": "platform-install",
-   "title": "Deployed from scripts, in a single session."
+   "id": "platform-journey",
+   "title": "From the request to the running line.",
+   "promise": "Two roads, one portal: a complete VPS of your own within 24 hours, or a box in your plant installed by one command. Then the same next step: link your SOP Edge Devices and draw the first line."
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/wb/WB-28.svg",
+   "ground": "light",
+   "alt": "the server journey, two roads from one portal: the client's portal at the left; the cloud road above - our team confirms on payment, the URL and the admin access within 24 hours, nothing to install; the plant road below - our team replies with the install link, the client prepares one box, one command installs, the licence is activated; both roads meet at the right: link the SOP Edge Devices, draw the line in the editor, the pages run",
+   "caption": "two roads from one portal: in the cloud, a complete VPS of your own within 24 hours; in your plant, a box of your own installed by one command - and the same last step on both: link your SOP Edge Devices, draw the first line in the editor, its pages run"
   },
   {
    "type": "prose",
    "cols": [
     [
-     "<b>From scripts, in a single session.</b> Database, historian, applications and the standby pair install from scripts on plain hardware, and ask nothing on the way. Air-gapped if the plant requires it.",
-     "<b>On the substrate you choose.</b> On plain hardware in your own plant, air gapped if your rules say so, or on a cloud backbone when a group runs several sites.",
-     "<b>Same product, same migrations, two substrates.</b>",
-     "<b>What it takes to run it.</b> A server, or a duty and standby pair, on plain hardware; the edge on any PC beside the PLC. The code and the data sit on the client's own servers."
+     "<b>In the cloud: a complete VPS, yours alone.</b> Not a shared resource: one server for your plant, nothing else on it.",
+     "<b>Within 24 hours.</b> Our team confirms on payment and sends your URL and the admin access.",
+     "<b>Nothing to install on your side.</b> Your SOP Edge Devices link to it from the plant; the editor and the pages run in a browser."
     ],
     [
-     "<b>Your partner installs</b> — a server, or a duty and standby pair, from scripts, in a single session.",
-     "<b>Draws or imports the line</b> — in a browser, from a portable file, with the machine builder's package if there is one.",
-     "<b>Deploys and supports it.</b>",
-     "<b>Modules switch on per line</b> — reports, execution, performance, maintenance — when you want them.",
-     "<em>It starts on one line: its pages, its alarms, its trends and its record, with your own engineers at the same screen. The second line then starts as a copy of the first.</em>"
-    ]
-   ]
-  },
-  {
-   "type": "head",
-   "id": "platform-stack",
-   "title": "Nothing in the stack is sunsetting.",
-   "promise": "One database, Postgres; one historian beside it, TimescaleDB; the plant and its history on the same box — dozens of lines, every reading, on two servers. Nothing in the stack is sunsetting."
-  },
-  {
-   "type": "prose",
-   "cols": [
-    [
-     "<b>One database</b> and <b>one historian beside it</b>, the plant and its history on the same box.",
-     "<b>One program at the edge</b> — a single executable that polls, evaluates, buffers and serves, on any PC beside the PLC."
-    ],
-    [
-     "<b>One renderer in the browser</b> — purely web, nothing installed.",
-     "<b>A whole line travels as one file</b> to the next line or the next plant, and lands with every binding intact: names travel and identities do not."
+     "<b>In your plant: your own hardware, your own network.</b> Air-gapped if your rules say so; the same product, the same database.",
+     "<b>One command installs everything</b> and asks nothing on the way; the access details it creates are yours to keep.",
+     "<b>A duty and standby pair</b> when a line cannot afford a stop; your partner or your own IT runs it."
     ]
    ]
   },
