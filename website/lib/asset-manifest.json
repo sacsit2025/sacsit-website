@@ -425,12 +425,6 @@
   "bytes": 9975,
   "id": "shot-dial-row"
  },
- "/assets/brochure/eps/shot-editor-tiles.png": {
-  "w": 1750,
-  "h": 670,
-  "bytes": 95157,
-  "id": "shot-editor-tiles"
- },
  "/assets/brochure/eps/shot-hour-board.png": {
   "w": 1256,
   "h": 468,
@@ -950,7 +944,7 @@
  "/assets/wb/WB-01.jpg": {
   "w": 2560,
   "h": 1360,
-  "bytes": 536224,
+  "bytes": 566999,
   "id": "WB-01"
  },
  "/assets/wb/WB-01b.jpg": {
@@ -1150,5 +1144,11 @@
   "h": 760,
   "bytes": 71112,
   "id": "WB-29"
+ },
+ "/assets/wb/WB-30.jpg": {
+  "w": 2400,
+  "h": 1350,
+  "bytes": 449012,
+  "id": "WB-30"
  }
 }

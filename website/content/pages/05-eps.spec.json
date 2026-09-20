@@ -151,13 +151,32 @@
    "plate": null
   },
   {
+   "type": "diagram",
+   "asset": "knowledge/assets/brochure/eps/EP-D1.svg",
+   "intro": "one calculation on the plant's own rows, and four faces that read it",
+   "legend": [
+    {
+     "title": "The run signal and the counter",
+     "line": "the whole input, on the left"
+    },
+    {
+     "title": "One calculation",
+     "line": "worked out once, on the server"
+    },
+    {
+     "title": "Four faces",
+     "line": "the tile, the synoptic, the report, the export"
+    },
+    {
+     "title": "They never disagree",
+     "line": "joined to the centre and to nothing else"
+    }
+   ],
+   "ground": "light"
+  },
+  {
    "type": "blockA",
    "title": "One calculation, on the server, for every screen.",
-   "screen": {
-    "asset": "knowledge/assets/screens/shot-synoptic.png",
-    "chrome": "the HMI · Beverage Line 7 · the line overview",
-    "caption": "the operator's own line page: the run signal the performance number is read from"
-   },
    "items": [
     {
      "lead": "One calculation, on the server",
@@ -190,38 +209,11 @@
    ]
   },
   {
-   "type": "diagram",
-   "asset": "knowledge/assets/brochure/eps/EP-D1.svg",
-   "intro": "one calculation on the plant's own rows, and four faces that read it",
-   "legend": [
-    {
-     "title": "The run signal and the counter",
-     "line": "the whole input, on the left"
-    },
-    {
-     "title": "One calculation",
-     "line": "worked out once, on the server"
-    },
-    {
-     "title": "Four faces",
-     "line": "the tile, the synoptic, the report, the export"
-    },
-    {
-     "title": "They never disagree",
-     "line": "joined to the centre and to nothing else"
-    }
-   ],
-   "ground": "light"
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
-   "screens": [
-    {
-     "asset": "knowledge/assets/brochure/eps/shot-editor-tiles.png",
-     "caption": "the engineer's page in the editor: the same numbers, dropped on a synoptic"
-    }
-   ]
+   "type": "figure",
+   "asset": "knowledge/assets/wb/WB-30.jpg",
+   "ground": "navy",
+   "alt": "A 3D layout view of a complete bottling line seen from above: the depalletizer, the rinser, the filler under its guarding, the labeller, the conveyor, the packer and the cases on a pallet; the cabinets and a wall screen behind",
+   "caption": "the line whole, as one calculation sees it: from the pallets of empty bottles to the cases on their way out, one run signal and one counter per machine, one number for every screen"
   },
   {
    "type": "prose",
