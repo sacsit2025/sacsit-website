@@ -285,17 +285,6 @@
    ]
   },
   {
-   "type": "navy-screens",
-   "label": "Seen in the product",
-   "screens": [
-    {
-     "asset": "knowledge/assets/brochure/eps/shot-stop-doors.png",
-     "caption": "the same three doors from the list, when the answer comes later",
-     "size": "native"
-    }
-   ]
-  },
-  {
    "type": "prose",
    "title": "Asked once, at the restart, in two taps.",
    "cols": [
@@ -321,9 +310,10 @@
    "type": "blockA",
    "title": "A backlog no period can hide.",
    "screen": {
-    "asset": "knowledge/assets/brochure/eps/shot-backlog.png",
-    "chrome": "EPS · Beverage Line 7 · the backlog",
-    "caption": "the backlog, all time: the stops still without a name, dearest first"
+    "asset": "knowledge/assets/brochure/eps/shot-stretch-strip.png",
+    "chrome": "EPS · Beverage Line 7 · a stretch of small stops",
+    "caption": "one drag across a bad afternoon, one reason, and the count before the write",
+    "alt": "one drag across a bad afternoon, one reason, and the count before the write"
    },
    "items": [
     {
@@ -361,13 +351,9 @@
    "label": "Seen in the product",
    "screens": [
     {
-     "asset": "knowledge/assets/brochure/eps/shot-stretch-strip.png",
-     "caption": "one drag across a bad afternoon, one reason, and the count before the write"
-    },
-    {
-     "asset": "knowledge/assets/brochure/eps/shot-data-quality.png",
-     "caption": "the card that finds the answers the engine did not expect",
-     "size": "native"
+     "asset": "knowledge/assets/brochure/eps/shot-backlog.png",
+     "caption": "the backlog, all time: the stops still without a name, dearest first",
+     "alt": "the backlog, all time: the stops still without a name, dearest first"
     }
    ]
   },
@@ -397,9 +383,10 @@
    "type": "blockA",
    "title": "Two honest OEEs, over the window you choose.",
    "screen": {
-    "asset": "knowledge/assets/brochure/eps/shot-two-oees.png",
-    "chrome": "EPS · Beverage Line 7 · the two OEEs",
-    "caption": "two fair questions, two numbers, both true on the same day"
+    "asset": "knowledge/assets/screens/home/EPS-daily-performance.png",
+    "chrome": "EPS · Beverage Line 7 · daily performance",
+    "caption": "one day of the line on one page: the two OEEs side by side, where the time went, and the period table by shift",
+    "alt": "the daily performance page: the two OEE cards with their A, P and Q bars, the chips of the day, the bands of where the time went, and the period table by shift"
    },
    "items": [
     {
@@ -441,17 +428,6 @@
    ]
   },
   {
-   "type": "navy-screens",
-   "label": "Seen in the product",
-   "screens": [
-    {
-     "asset": "knowledge/assets/brochure/eps/shot-dial-row.png",
-     "caption": "the dial: the window every number on the page is measured over",
-     "size": "full"
-    }
-   ]
-  },
-  {
    "type": "prose",
    "title": "Two honest OEEs, over the window you choose.",
    "cols": [
@@ -476,11 +452,6 @@
   {
    "type": "blockA",
    "title": "Quality counts the first pass, every time.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/eps/shot-rejects.png",
-    "chrome": "EPS · Beverage Line 7 · the reject count",
-    "caption": "where the reject count came from, and whether it has been restated since"
-   },
    "items": [
     {
      "lead": "The reject count, first pass",
@@ -510,15 +481,18 @@
      "lead": "A verdict is added, never edited",
      "text": "An older signed count is superseded on the record and stays readable beside the one that replaced it, with who signed each and when."
     }
-   ]
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
+   ],
    "screens": [
     {
+     "asset": "knowledge/assets/brochure/eps/shot-rejects.png",
+     "chrome": "EPS · Beverage Line 7 · the reject count",
+     "caption": "where the reject count came from, and whether it has been restated since"
+    },
+    {
      "asset": "knowledge/assets/brochure/ems/shot-record-qc.png",
-     "caption": "where the verdict is signed: the batch record's two signatures, and the count quality signs against the machine's own"
+     "chrome": "EMS · Beverage Line 7 · the two signatures",
+     "caption": "where the verdict is signed: the batch record's two signatures, and the count quality signs against the machine's own",
+     "alt": "where the verdict is signed: the batch record's two signatures, and the count quality signs against the machine's own"
     }
    ]
   },
@@ -657,9 +631,10 @@
    "type": "blockA",
    "title": "The handover, printed and signed in one press.",
    "screen": {
-    "asset": "knowledge/assets/brochure/eps/shot-report-page.png",
-    "chrome": "Reports · Beverage Line 7 · the shift review",
-    "caption": "a review as SOP prints it: the document number, the fingerprint, and the line that says it is uncontrolled without a signature"
+    "asset": "knowledge/assets/screens/shot-report-print.png",
+    "chrome": "Reports · Beverage Line 7 · the shift review, on paper",
+    "caption": "the same record as it comes off the paper",
+    "alt": "the same record as it comes off the paper"
    },
    "items": [
     {
@@ -697,36 +672,21 @@
    ]
   },
   {
-   "type": "navy-screens",
-   "label": "Seen in the product",
-   "screens": [
-    {
-     "asset": "knowledge/assets/brochure/eps/shot-pdf-door.png",
-     "caption": "one button on the dial, and the window you are reading becomes paper",
-     "size": "full"
-    },
-    {
-     "asset": "knowledge/assets/screens/shot-report-print.png",
-     "caption": "the same record as it comes off the paper"
-    }
-   ]
-  },
-  {
    "type": "blockB",
    "title": "The whole module fits in a hand",
    "screens": [
     {
-     "pair": [
-      "knowledge/assets/screens/crops/m-perf-chip-crop.png",
-      "knowledge/assets/screens/crops/m-hmi-report-crop.png"
-     ],
-     "alt": "the module's door and the shift report, on a phone",
-     "caption": "the module's one door, always in the top bar · the shift report, read off the phone at the line",
-     "size": "native"
+     "asset": "knowledge/assets/screens/crops/m-hmi-report-crop.png",
+     "size": "native",
+     "chrome": "the phone · the shift report",
+     "caption": "the shift report, read off the phone at the line",
+     "alt": "the shift report on a phone"
     },
     {
      "asset": "knowledge/assets/brochure/eps/shot-narrow-sheet.png",
-     "caption": "a narrow screen keeps every number: the chips carry the period, the sheet carries the hours"
+     "chrome": "the narrow sheet",
+     "caption": "a narrow screen keeps every number: the chips carry the period, the sheet carries the hours",
+     "alt": "a narrow screen keeps every number: the chips carry the period, the sheet carries the hours"
     }
    ],
    "items": [

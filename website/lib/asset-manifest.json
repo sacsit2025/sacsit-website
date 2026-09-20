@@ -413,18 +413,6 @@
   "bytes": 94861,
   "id": "shot-backlog"
  },
- "/assets/brochure/eps/shot-data-quality.png": {
-  "w": 342,
-  "h": 106,
-  "bytes": 8252,
-  "id": "shot-data-quality"
- },
- "/assets/brochure/eps/shot-dial-row.png": {
-  "w": 1354,
-  "h": 144,
-  "bytes": 9975,
-  "id": "shot-dial-row"
- },
  "/assets/brochure/eps/shot-hour-board.png": {
   "w": 1256,
   "h": 468,
@@ -437,35 +425,17 @@
   "bytes": 42760,
   "id": "shot-narrow-sheet"
  },
- "/assets/brochure/eps/shot-pdf-door.png": {
-  "w": 1368,
-  "h": 67,
-  "bytes": 4811,
-  "id": "shot-pdf-door"
- },
  "/assets/brochure/eps/shot-rejects.png": {
   "w": 940,
   "h": 178,
   "bytes": 27232,
   "id": "shot-rejects"
  },
- "/assets/brochure/eps/shot-report-page.png": {
-  "w": 1028,
-  "h": 325,
-  "bytes": 30175,
-  "id": "shot-report-page"
- },
  "/assets/brochure/eps/shot-restart-card.png": {
   "w": 568,
   "h": 350,
   "bytes": 33919,
   "id": "shot-restart-card"
- },
- "/assets/brochure/eps/shot-stop-doors.png": {
-  "w": 586,
-  "h": 350,
-  "bytes": 33356,
-  "id": "shot-stop-doors"
  },
  "/assets/brochure/eps/shot-stretch-strip.png": {
   "w": 1030,
@@ -761,12 +731,6 @@
   "bytes": 137855,
   "id": "S-crop-m-hmi-report"
  },
- "/assets/screens/crops/m-perf-chip-crop.png": {
-  "w": 390,
-  "h": 701,
-  "bytes": 38902,
-  "id": "S-crop-m-perf-chip"
- },
  "/assets/screens/crops/report-viewer-crop.png": {
   "w": 1074,
   "h": 250,
@@ -808,6 +772,12 @@
   "h": 588,
   "bytes": 103815,
   "id": "H-ems-plan"
+ },
+ "/assets/screens/home/EPS-daily-performance.png": {
+  "w": 815,
+  "h": 660,
+  "bytes": 76432,
+  "id": "H-eps-daily"
  },
  "/assets/screens/home/EPS-period-sheet-where-the-time-went.png": {
   "w": 930,
