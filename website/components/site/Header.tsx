@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { CAPABILITIES, PARTNERS, WHY, HEADER, type MenuColumn } from "@/content/menu";
+import { CAPABILITIES, PARTNERS, HEADER, type MenuColumn } from "@/content/menu";
 import { href } from "@/content/routes";
 import MenuCloser from "./MenuCloser";
 import ScrollTop from "./ScrollTop";
 import CurrentPage from "./CurrentPage";
 
 /**
- * The header, from the menu's ONE definition (content/menu.ts, ported from the mocks - D77, D97).
+ * The header, from the menu's ONE definition (content/menu.ts, ported from the mocks - D77, D97; D122 took the Why SOP
+ * entry off: Home, Platform, Capabilities, Partners, Write to us).
  *
  * No JavaScript for the menus themselves: the three dropdowns open on hover AND on focus-within
  * (design.css), and the phone menu is a checkbox and a label, exactly as the mocks do it. That is why
@@ -49,32 +50,6 @@ export default async function Header() {
           <Link href={HEADER.platform.href} scroll={false}>
             {HEADER.platform.label}
           </Link>
-
-          <div className="dd">
-            <Link href={HEADER.why.href} scroll={false}>
-              {HEADER.why.label} <i className="caret" />
-            </Link>
-            <input type="checkbox" id="m-why" className="mtog" aria-label={`${HEADER.why.label} - the list`} />
-            <label htmlFor="m-why" className="mlab">
-              {HEADER.why.label} <i className="caret" />
-            </label>
-            <div className="panel why">
-              <Link className="mpage" href={HEADER.why.href} scroll={false}>
-                The platform, whole →
-              </Link>
-              <p className="pk">The proof · eight things to hold us to</p>
-              <ul className="whyl">
-                {WHY.map((w) => (
-                  <li key={w.key}>
-                    <Link href={w.href}>
-                      <b>{w.title}</b>
-                      <span>{w.line}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
 
           <div className="dd">
             <Link href={HEADER.capabilities.href}>
