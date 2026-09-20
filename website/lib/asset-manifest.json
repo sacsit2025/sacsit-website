@@ -923,12 +923,6 @@
   "bytes": 365147,
   "id": "WB-01b"
  },
- "/assets/wb/WB-01c.jpg": {
-  "w": 2560,
-  "h": 1360,
-  "bytes": 516109,
-  "id": "WB-01c"
- },
  "/assets/wb/WB-01d.jpg": {
   "w": 2560,
   "h": 1360,
@@ -1120,5 +1114,11 @@
   "h": 1350,
   "bytes": 449012,
   "id": "WB-30"
+ },
+ "/assets/wb/WB-31.mp4": {
+  "w": null,
+  "h": null,
+  "bytes": 1687993,
+  "id": "WB-31"
  }
 }

@@ -7,7 +7,48 @@
   "kicker": "Capability 03 · Equipment Performance System",
   "h1": "Lost hours stop being an opinion. Every one has a name.",
   "dek": "One database for the whole plant. The line's own run signal and its own counters are worked out once, on the server — and every lost hour walks back to a minute, a machine and a person's word about what happened.",
-  "plate": "knowledge/assets/wb/WB-01c.jpg"
+  "plate": "knowledge/assets/wb/WB-30.jpg",
+  "alt": "the whole bottling line as a 3D layout view, running",
+  "film": {
+   "src": "knowledge/assets/wb/WB-31.mp4",
+   "callouts": [
+    {
+     "at": 3,
+     "x": 0.44,
+     "y": 0.47,
+     "label": "Best hour",
+     "value": "19,474 bottles"
+    },
+    {
+     "at": 5,
+     "x": 0.6,
+     "y": 0.4,
+     "label": "Availability",
+     "value": "82.3 %"
+    },
+    {
+     "at": 7,
+     "x": 0.86,
+     "y": 0.36,
+     "label": "Stops today",
+     "value": "1 h 00 m · 2 stops"
+    },
+    {
+     "at": 9,
+     "x": 0.2,
+     "y": 0.36,
+     "label": "The two OEEs",
+     "value": "asset 68.2 % · schedule 54.1 %"
+    },
+    {
+     "at": 12,
+     "x": 0.72,
+     "y": 0.52,
+     "label": "Quality, first pass",
+     "value": "99.7 % · 402 rejects"
+    }
+   ]
+  }
  },
  "sections": [
   {
@@ -207,13 +248,6 @@
      "text": "The run signal is the one the SCADA already shows, and TimeLens replays that same page from the historian at any moment you name."
     }
    ]
-  },
-  {
-   "type": "figure",
-   "asset": "knowledge/assets/wb/WB-30.jpg",
-   "ground": "navy",
-   "alt": "A 3D layout view of a complete bottling line seen from above: the depalletizer, the rinser, the filler under its guarding, the labeller, the conveyor, the packer and the cases on a pallet; the cabinets and a wall screen behind",
-   "caption": "the line whole, as one calculation sees it: from the pallets of empty bottles to the cases on their way out, one run signal and one counter per machine, one number for every screen"
   },
   {
    "type": "prose",

@@ -194,7 +194,11 @@ export const OPENS_ON: Partial<Record<InnerType, BandName>> = {
   figure: "auto",
 };
 
+import type { Film } from "@/components/sections/HeroFilm";
+
 export interface HeroSpec {
+  /** the hero as a film over the plate, with callouts timed to it (2026-09-20, the EPS hero) */
+  film?: Film;
   kicker?: string;
   h1: string;
   dek?: string;

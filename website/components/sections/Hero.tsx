@@ -1,6 +1,10 @@
 import { rich } from "@/lib/rich";
 import type { HeroSpec } from "@/lib/spec";
 import { Pic } from "./Asset";
+import HeroFilm from "./HeroFilm";
+
+/** a knowledge path as the site serves it: knowledge/assets/<family>/<file> -> /assets/<family>/<file> (scripts/sync-assets.mjs) */
+const served = (p: string) => "/" + p.replace(/^knowledge\//, "");
 
 /**
  * The inner-page hero - the kit's `hero()`: one plate under Home's scrim, the kicker, the H1, the dek.
@@ -18,6 +22,7 @@ export function Hero({ hero: h, group }: { hero: HeroSpec; group?: string }) {
       {h.plate ? (
         <div className="frames" aria-hidden="true">
           <Pic path={h.plate} slot="hero" alt="" className="f f1" priority />
+          {h.film ? <HeroFilm src={served(h.film.src)} poster={served(h.plate)} callouts={h.film.callouts} /> : null}
         </div>
       ) : null}
       <div className="wrap">
