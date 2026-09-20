@@ -153,11 +153,6 @@
   {
    "type": "blockA",
    "title": "The plant is described once.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/ems/shot-plant.png",
-    "chrome": "EMS · Beverage Line 7 · Plant",
-    "caption": "the plant tree, and the facts that fall out of it: the vessel, the machine the good count comes off, the counters"
-   },
    "items": [
     {
      "lead": "Plant tree, level and stage",
@@ -195,15 +190,18 @@
      "lead": "Not measured, never zero",
      "text": "A machine with no counter reads <em>not measured</em> on the record; what cannot be known stays blank."
     }
-   ]
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
+   ],
    "screens": [
     {
+     "asset": "knowledge/assets/brochure/ems/shot-plant.png",
+     "chrome": "EMS · Beverage Line 7 · Plant",
+     "caption": "the plant tree, and the facts that fall out of it: the vessel, the machine the good count comes off, the counters"
+    },
+    {
      "asset": "knowledge/assets/brochure/ems/shot-material.png",
-     "caption": "a material carries what it is, what one of it is, what is on hand against its minimum, and the density that lets weight and volume cross"
+     "chrome": "EMS · Beverage Line 7 · the material card",
+     "caption": "a material carries what it is, what one of it is, what is on hand against its minimum, and the density that lets weight and volume cross",
+     "alt": "a material carries what it is, what one of it is, what is on hand against its minimum, and the density that lets weight and volume cross"
     }
    ]
   },
@@ -232,11 +230,6 @@
   {
    "type": "blockA",
    "title": "The formula is signed before the plant may run it.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/ems/shot-recipe-approve.png",
-    "chrome": "EMS · Beverage Line 7 · Recipes",
-    "caption": "the quality door: draft, in review, approved, and the note kept with whichever was pressed"
-   },
    "items": [
     {
      "lead": "The recipe itself",
@@ -270,15 +263,18 @@
      "lead": "A setpoint bound in the recipe",
      "text": "Sent to the machine when the batch starts, on the same audited path an operator's own setpoint takes."
     }
-   ]
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
+   ],
    "screens": [
     {
+     "asset": "knowledge/assets/brochure/ems/shot-recipe-approve.png",
+     "chrome": "EMS · Beverage Line 7 · Recipes",
+     "caption": "the quality door: draft, in review, approved, and the note kept with whichever was pressed"
+    },
+    {
      "asset": "knowledge/assets/brochure/ems/shot-recipe-sheet.png",
-     "caption": "the recipe sheet: what each machine takes in and what comes out, grouped the way the product travels, and how big one batch is"
+     "chrome": "EMS · Beverage Line 7 · the recipe sheet",
+     "caption": "the recipe sheet: what each machine takes in and what comes out, grouped the way the product travels, and how big one batch is",
+     "alt": "the recipe sheet: what each machine takes in and what comes out, grouped the way the product travels, and how big one batch is"
     }
    ]
   },

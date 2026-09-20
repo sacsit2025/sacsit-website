@@ -667,15 +667,15 @@
    ]
   },
   {
+   "type": "figure",
+   "asset": "knowledge/assets/brochure/cmms/CM-D1.svg",
+   "ground": "navy",
+   "alt": "What maintenance gives the rest of the plant, and what it takes from it — solid gives, dashed takes.",
+   "caption": "What maintenance gives the rest of the plant, and what it takes from it — solid gives, dashed takes."
+  },
+  {
    "type": "blockB",
    "title": "And what no other platform does like us",
-   "screens": [
-    {
-     "asset": "knowledge/assets/brochure/cmms/CM-D1.svg",
-     "chrome": "maintenance, and the four it lives with",
-     "caption": "What maintenance gives the rest of the plant, and what it takes from it — solid gives, dashed takes."
-    }
-   ],
    "items": [
     {
      "lead": "It opens on a plant that is already there",

@@ -7,48 +7,7 @@
   "kicker": "Capability 03 · Equipment Performance System",
   "h1": "Lost hours stop being an opinion. Every one has a name.",
   "dek": "One database for the whole plant. The line's own run signal and its own counters are worked out once, on the server — and every lost hour walks back to a minute, a machine and a person's word about what happened.",
-  "plate": "knowledge/assets/wb/WB-30.jpg",
-  "alt": "the whole bottling line as a 3D layout view, running",
-  "film": {
-   "src": "knowledge/assets/wb/WB-31.mp4",
-   "callouts": [
-    {
-     "at": 0.6,
-     "x": 0.44,
-     "y": 0.47,
-     "label": "Best hour",
-     "value": "19,474 bottles"
-    },
-    {
-     "at": 1.6,
-     "x": 0.6,
-     "y": 0.4,
-     "label": "Availability",
-     "value": "82.3 %"
-    },
-    {
-     "at": 2.6,
-     "x": 0.86,
-     "y": 0.36,
-     "label": "Stops today",
-     "value": "1 h 00 m · 2 stops"
-    },
-    {
-     "at": 3.6,
-     "x": 0.2,
-     "y": 0.36,
-     "label": "The two OEEs",
-     "value": "asset 68.2 % · schedule 54.1 %"
-    },
-    {
-     "at": 4.6,
-     "x": 0.72,
-     "y": 0.52,
-     "label": "Quality, first pass",
-     "value": "99.7 % · 402 rejects"
-    }
-   ]
-  }
+  "plate": "knowledge/assets/wb/WB-01c.jpg"
  },
  "sections": [
   {
@@ -343,12 +302,6 @@
   {
    "type": "blockA",
    "title": "A backlog no period can hide.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/eps/shot-stretch-strip.png",
-    "chrome": "EPS · Beverage Line 7 · a stretch of small stops",
-    "caption": "one drag across a bad afternoon, one reason, and the count before the write",
-    "alt": "one drag across a bad afternoon, one reason, and the count before the write"
-   },
    "items": [
     {
      "lead": "The backlog, all time",
@@ -378,14 +331,17 @@
      "lead": "An unnamed stop from last Tuesday",
      "text": "Still there, still carrying its cost: no period can hide it."
     }
-   ]
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
+   ],
    "screens": [
     {
+     "asset": "knowledge/assets/brochure/eps/shot-stretch-strip.png",
+     "chrome": "EPS · Beverage Line 7 · a stretch of small stops",
+     "caption": "one drag across a bad afternoon, one reason, and the count before the write",
+     "alt": "one drag across a bad afternoon, one reason, and the count before the write"
+    },
+    {
      "asset": "knowledge/assets/brochure/eps/shot-backlog.png",
+     "chrome": "EPS · Beverage Line 7 · the backlog",
      "caption": "the backlog, all time: the stops still without a name, dearest first",
      "alt": "the backlog, all time: the stops still without a name, dearest first"
     }
