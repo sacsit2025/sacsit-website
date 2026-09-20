@@ -13,35 +13,35 @@
    "src": "knowledge/assets/wb/WB-31.mp4",
    "callouts": [
     {
-     "at": 3,
+     "at": 0.6,
      "x": 0.44,
      "y": 0.47,
      "label": "Best hour",
      "value": "19,474 bottles"
     },
     {
-     "at": 5,
+     "at": 1.6,
      "x": 0.6,
      "y": 0.4,
      "label": "Availability",
      "value": "82.3 %"
     },
     {
-     "at": 7,
+     "at": 2.6,
      "x": 0.86,
      "y": 0.36,
      "label": "Stops today",
      "value": "1 h 00 m · 2 stops"
     },
     {
-     "at": 9,
+     "at": 3.6,
      "x": 0.2,
      "y": 0.36,
      "label": "The two OEEs",
      "value": "asset 68.2 % · schedule 54.1 %"
     },
     {
-     "at": 12,
+     "at": 4.6,
      "x": 0.72,
      "y": 0.52,
      "label": "Quality, first pass",
