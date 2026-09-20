@@ -1060,61 +1060,6 @@
    ]
   },
   {
-   "type": "blockB",
-   "same": true,
-   "id": "scada-unique",
-   "title": "And what no other platform does like us",
-   "screens": [
-    {
-     "asset": "knowledge/assets/screens/shot-timelens.png",
-     "chrome": "TimeLens · Beverage Line 7 · replay",
-     "caption": "TimeLens · the same synoptic replayed from the history — the gold bar, the alarms at that moment, commands off"
-    },
-    {
-     "pair": [
-      "knowledge/assets/screens/shot-taglens-card.png",
-      "knowledge/assets/screens/shot-taglens-thread.png"
-     ],
-     "chrome": "Tag Lens · BLD-AIT-2201 · the card and the thread",
-     "caption": "Tag Lens · one signal: its identity card, and the thread of every page, trend, alarm, report block and formula that uses it — and what if, before the change"
-    }
-   ],
-   "items": [
-    {
-     "lead": "One synoptic, every screen",
-     "text": "One synoptic drawn once and served on every screen, live — the wall panel, the desk and the phone serve the same page; nothing installed, no separate app."
-    },
-    {
-     "lead": "The editor previews the line, not sample numbers",
-     "text": "The page designer's second mode is the operator's own screen, on the plant's real values; the signal list, the binder and the trend read the running line while the work is still being done."
-    },
-    {
-     "lead": "Tag Lens",
-     "text": "One signal followed through every page, trend, alarm, report block and formula; press <em>what if</em> and every one of them shows its own fate before the tag is touched. We know of no other platform that follows one tag through every module of the plant."
-    },
-    {
-     "lead": "TimeLens",
-     "text": "Any page replays from the history, back and forward, alarm to alarm, or straight to a moment; the replayed screen wears gold and its commands are off."
-    },
-    {
-     "lead": "An alarm is an event with a record",
-     "text": "Prioritised, acknowledged by name, shelved with a reason and a return time; delete the rule and every alarm it raised stays in the journal."
-    },
-    {
-     "lead": "Every machine carries its own door",
-     "text": "Its values, a small trend, its own alarms, its causes, its commands and its documents; put the datasheet in once and it opens at the machine."
-    },
-    {
-     "lead": "The engineer draws the chart; the operator finishes it",
-     "text": "Two cursors, the numbers across the span, add a curve and keep it."
-    },
-    {
-     "lead": "Engineered in a browser",
-     "text": "A line travels to the next plant as one file."
-    }
-   ]
-  },
-  {
    "type": "contact",
    "plate": "knowledge/assets/wb/WB-10.jpg",
    "id": "write"

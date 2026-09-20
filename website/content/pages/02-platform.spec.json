@@ -406,11 +406,50 @@
    "promise": "Two roads, one portal: a complete VPS of your own within 24 hours, or a box in your plant installed by one command. Then the same next step: link your SOP Edge Devices and draw the first line."
   },
   {
-   "type": "figure",
-   "asset": "knowledge/assets/wb/WB-28.svg",
-   "ground": "light",
-   "alt": "the server journey, two roads from one portal: the client's portal at the left; the cloud road above - our team confirms, the URL and the admin access within 24 hours, nothing to install; the plant road below - our team replies with the install link, the client prepares one box, one command installs, the licence is activated; both roads meet at the right: link the SOP Edge Devices, draw the line in the editor, the pages run",
-   "caption": "two roads from one portal: in the cloud, a complete VPS of your own within 24 hours; in your plant, a box of your own installed by one command - and the same last step on both: link your SOP Edge Devices, draw the first line in the editor, its pages run"
+   "type": "diagram",
+   "id": "platform-journey-map",
+   "kicker": "Two roads, one portal",
+   "intro": "The journey drawn: the cloud road above, the plant road below, both from your portal, both ending at the running line.",
+   "asset": "knowledge/assets/wb/WB-29.svg",
+   "ground": "navy",
+   "alt": "A drawing: the client's portal at the left; the cloud road in cyan up to a server ready under a cloud of light, past our team's confirmation; the plant road in green down past our team's reply, one box installed by one command and the licence activated on a signed sheet; both roads meeting at the running line - a controller, the edge device, a wall screen and an operator station alive on one pad; seven numbered milestones",
+   "legend": [
+    {
+     "swatch": "#BEE6F5",
+     "title": "Your portal",
+     "line": "request the licence: in the cloud, or in your plant"
+    },
+    {
+     "swatch": "#46C3EE",
+     "title": "Our team confirms",
+     "line": "and sends your URL and the admin access"
+    },
+    {
+     "swatch": "#46C3EE",
+     "title": "Your server, ready",
+     "line": "within 24 hours — a complete VPS, yours alone; nothing to install"
+    },
+    {
+     "swatch": "#4CE08A",
+     "title": "Our team replies",
+     "line": "with the install link and the instructions"
+    },
+    {
+     "swatch": "#4CE08A",
+     "title": "One box, one command",
+     "line": "a Windows machine with a fixed address; everything installs, unattended"
+    },
+    {
+     "swatch": "#4CE08A",
+     "title": "Activate the licence",
+     "line": "against your installation, once"
+    },
+    {
+     "swatch": "#F1C56B",
+     "title": "The running line",
+     "line": "link your SOP Edge Devices, draw the line in the editor — its pages run"
+    }
+   ]
   },
   {
    "type": "prose",

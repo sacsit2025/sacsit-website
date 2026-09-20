@@ -491,11 +491,6 @@
   {
    "type": "blockA",
    "title": "Every number says who measured it.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/ems/shot-record.png",
-    "chrome": "EMS · Beverage Line 7 · the record",
-    "caption": "the record: every line says how it is known, and the balance that tells you when a meter is lying"
-   },
    "items": [
     {
      "lead": "Every number says how it is known",
@@ -525,15 +520,18 @@
      "lead": "When judgement happens",
      "text": "Quantity is judged only when a batch is finished, and time while it runs."
     }
-   ]
-  },
-  {
-   "type": "navy-screens",
-   "label": "Seen in the product",
+   ],
    "screens": [
     {
+     "asset": "knowledge/assets/brochure/ems/shot-record.png",
+     "chrome": "EMS · Beverage Line 7 · the record",
+     "caption": "the record: every line says how it is known, and the balance that tells you when a meter is lying"
+    },
+    {
      "asset": "knowledge/assets/brochure/ems/shot-record-qc.png",
-     "caption": "the two signatures that close a batch: the verdict a supervisor signs, and the count quality signs against the machine's own"
+     "chrome": "EMS · Beverage Line 7 · the two signatures",
+     "caption": "the two signatures that close a batch: the verdict a supervisor signs, and the count quality signs against the machine's own",
+     "alt": "the two signatures that close a batch: the verdict a supervisor signs, and the count quality signs against the machine's own"
     }
    ]
   },
@@ -562,11 +560,6 @@
   {
    "type": "blockA",
    "title": "The board an operator can read from the aisle.",
-   "screen": {
-    "asset": "knowledge/assets/brochure/ems/shot-jobs-board.png",
-    "chrome": "EMS · Beverage Line 7 · Jobs",
-    "caption": "the running job with the machine and the number the next boundary is waiting on"
-   },
    "items": [
     {
      "lead": "The jobs board",
@@ -600,46 +593,49 @@
      "lead": "The same screen on a phone",
      "text": "The board, the chips and the record, with nothing installed and no second application to buy."
     }
+   ],
+   "screens": [
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-jobs-board.png",
+     "chrome": "EMS · Beverage Line 7 · Jobs",
+     "caption": "the running job with the machine and the number the next boundary is waiting on"
+    },
+    {
+     "asset": "knowledge/assets/brochure/ems/shot-quality-door.png",
+     "chrome": "EMS · Beverage Line 7 · the Quality door",
+     "caption": "the Quality door: everything still unsigned, signed from the same screen while the line runs",
+     "alt": "the Quality door: everything still unsigned, signed from the same screen while the line runs"
+    }
    ]
+  },
+  {
+   "type": "figure",
+   "asset": "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
+   "ground": "light",
+   "alt": "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual",
+   "caption": "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual"
   },
   {
    "type": "navy-screens",
-   "label": "Seen in the product",
+   "label": "The same application, sized for a hand",
    "screens": [
     {
-     "asset": "knowledge/assets/brochure/ems/shot-quality-door.png",
-     "caption": "the Quality door: everything still unsigned, signed from the same screen while the line runs"
+     "asset": "knowledge/assets/screens/crops/m-hmi-jobs-crop.png",
+     "size": "native",
+     "caption": "the jobs board",
+     "alt": "the jobs board, on a phone"
     },
     {
-     "asset": "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
-     "caption": "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual"
-    }
-   ]
-  },
-  {
-   "type": "blockB",
-   "title": "The same application, sized for a hand",
-   "screens": [
-    {
-     "pair": [
-      "knowledge/assets/screens/crops/m-hmi-jobs-crop.png",
-      "knowledge/assets/screens/crops/m-hmi-overview-crop.png",
-      "knowledge/assets/screens/crops/m-hmi-report-crop.png"
-     ],
-     "alt": "the jobs board, the line the job is running on, and a report, on a phone",
-     "caption": "the same application, sized for a hand: the jobs board, the line the job is running on, and a report — nothing installed, nothing licensed per screen",
-     "size": "native"
-    }
-   ],
-   "items": [
-    {
-     "text": "jobs"
+     "asset": "knowledge/assets/screens/crops/m-hmi-overview-crop.png",
+     "size": "native",
+     "caption": "the line the job is running on",
+     "alt": "the line the job is running on, on a phone"
     },
     {
-     "text": "the line the job is running on"
-    },
-    {
-     "text": "a report"
+     "asset": "knowledge/assets/screens/crops/m-hmi-report-crop.png",
+     "size": "native",
+     "caption": "a report",
+     "alt": "a report, on a phone"
     }
    ]
   },
@@ -652,7 +648,8 @@
     ],
     [
      "<b>The forecast goes quiet on a boundary the plant declares by signal,</b> because then the counter decides nothing, and a panel that cannot be honest says nothing at all.",
-     "<b>The board, the chips and the record,</b> with nothing installed and no second application to buy."
+     "<b>The board, the chips and the record,</b> with nothing installed and no second application to buy.",
+     "<b>The same application, sized for a hand.</b> The jobs board, the line the job is running on and a report — nothing installed, nothing licensed per screen."
     ]
    ]
   },
@@ -667,11 +664,6 @@
   {
    "type": "blockA",
    "title": "The certificate prints from the engine that prints the shift handover.",
-   "screen": {
-    "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
-    "chrome": "Reports · Beverage Line 7 · the batch certificate",
-    "caption": "the reader: the document number, the hash, print, export and sign"
-   },
    "items": [
     {
      "lead": "A batch is a report window",
@@ -709,21 +701,27 @@
      "lead": "A blank certificate is refused at design",
      "text": "A report that would print a blank certificate is refused while it is being designed."
     }
+   ],
+   "screens": [
+    {
+     "asset": "knowledge/assets/screens/crops/report-viewer-crop.png",
+     "chrome": "Reports · Beverage Line 7 · the batch certificate",
+     "caption": "the reader: the document number, the hash, print, export and sign"
+    },
+    {
+     "asset": "knowledge/assets/screens/shot-report-designer.png",
+     "chrome": "Reports · Beverage Line 7 · the designer",
+     "caption": "the designer, where the batch certificate is drawn once against real signals",
+     "alt": "the designer, where the batch certificate is drawn once against real signals"
+    }
    ]
   },
   {
-   "type": "navy-screens",
-   "label": "Seen in the product",
-   "screens": [
-    {
-     "asset": "knowledge/assets/screens/shot-report-designer.png",
-     "caption": "the designer, where the batch certificate is drawn once against real signals"
-    },
-    {
-     "asset": "knowledge/assets/screens/shot-report-print.png",
-     "caption": "the same record as it comes off the paper"
-    }
-   ]
+   "type": "figure",
+   "asset": "knowledge/assets/screens/shot-report-print.png",
+   "ground": "light",
+   "alt": "the same record as it comes off the paper",
+   "caption": "the same record as it comes off the paper"
   },
   {
    "type": "prose",

@@ -986,7 +986,7 @@
  "/assets/wb/WB-02b.jpg": {
   "w": 1800,
   "h": 1350,
-  "bytes": 372434,
+  "bytes": 348214,
   "id": "WB-02b"
  },
  "/assets/wb/WB-03.jpg": {
@@ -1145,10 +1145,10 @@
   "bytes": 114154,
   "id": "WB-27"
  },
- "/assets/wb/WB-28.svg": {
+ "/assets/wb/WB-29.svg": {
   "w": 1600,
-  "h": 600,
-  "bytes": 6343,
-  "id": "WB-28"
+  "h": 760,
+  "bytes": 71112,
+  "id": "WB-29"
  }
 }
