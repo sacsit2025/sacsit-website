@@ -334,7 +334,7 @@
     [
      "<b>Unique accounts.</b> A signature names a person, not a device; no signing door on a shared station.",
      "<b>Role-based authority checks.</b> Who may open a page or send a command is decided in the database, from a whole site down to one screen.",
-     "<b>Append-only audit journals.</b> Every command, acknowledgement, shelving and grant across the fleet, each with its moment; nothing deleted."
+     "<b>Append-only audit journals.</b> Every command, acknowledgement and shelving across the fleet, each with its moment; nothing deleted."
     ],
     [
      "<b>Electronic signatures with re-authentication.</b> The signer's own password at the moment of signing; name, capacity, moment and time zone on the sheet; never withdrawn.",
