@@ -11,7 +11,8 @@
  * SVG), D85 (no About and no Privacy anywhere), D86 + D89 ("Get the file" is a form-gated download
  * in React: each shelf row carries the document's id and title for <DocumentButton>), D91 (the hero
  * keeps its four stills and gains the living-still canvas), D96 (band 8 no longer carries the
- * exclusivity or the end-client clause).
+ * exclusivity or the end-client clause), D140 (the hero's photo carries the headline only; the band
+ * under it carries the whole plant and SOP Copilot - Karim's words of 2026-10-13, layout A).
  *
  * Inline markup is the `rich()` subset only (<b> <em> <i> <code> <br>, `backticks` for mono) -
  * see lib/rich.tsx. A non-breaking space is written \u00a0 so it cannot be lost in an edit.
@@ -34,10 +35,13 @@ export interface Go {
 export interface HeroBand {
   kicker: string;
   h1: string;
-  dek: string;
   sig: string;
   /** the four still scenes, cross-faded by design.css in this order */
   scenes: Plate[];
+  /** D140 - the band under the photo, left: the whole plant in one system */
+  plant: { head: string; sub: string; text: string };
+  /** D140 - the band under the photo, right: SOP Copilot, one tag (D131), its three helpers (D130 names) */
+  copilot: { head: string; tag: string; items: { name: string; text: string }[] };
 }
 
 export interface PlatformBand {
@@ -181,15 +185,37 @@ export interface ContactBand {
 /** The page's own <title> and meta description - the mock's title, and the hero's dek. */
 export const meta = {
   title: "SOP · SCADA Open Platform",
-  description: "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting — one platform born on one database, not five products joined by connectors.",
+  description: "The operating system of the plant: SCADA, production, performance, maintenance and reports on one database, with SOP Copilot coming in November.",
 };
 
-/** 1 - the hero: four scenes, the headline, the dek, the signature. */
+/** 1 - the hero: four scenes, the headline, the signature; then the band under the photo (D140). */
 export const hero: HeroBand = {
   kicker: "SOP · SCADA Open Platform",
-  h1: "The whole plant, integrated by birth.",
-  dek: "SCADA, Execution Manufacturing System, Equipment Performance System, maintenance and Enterprise Reporting — one platform born on one database, not five products joined by connectors.",
+  h1: "The operating system of the plant.",
   sig: "A platform by SACS-IT",
+  plant: {
+    head: "The whole plant, integrated by birth.",
+    sub: "One system instead of five.",
+    text: "SCADA, production, performance, maintenance and reports, on one database.",
+  },
+  copilot: {
+    head: "SOP Copilot",
+    tag: "Coming in November",
+    items: [
+      {
+        name: "Assistant",
+        text: "Every how-to, answered on the spot, instead of days of training.",
+      },
+      {
+        name: "Operations Copilot",
+        text: "The best answer across all operations — production, performance, maintenance, alarms — illustrated with your plant's own numbers.",
+      },
+      {
+        name: "Engineering Copilot",
+        text: "Moves tags, alarms, screens, production and maintenance from your old systems, or builds them new. Weeks of work saved, for plants and integrators.",
+      },
+    ],
+  },
   scenes: [
     {
       path: "knowledge/assets/wb/WB-01.jpg",

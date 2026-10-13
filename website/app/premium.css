@@ -318,3 +318,42 @@
   .cap.blk::before{ display:none; }
   .band::before{ background-size:1400px 1900px; }
 }
+
+/* ══ 12 THE HOME HERO AND ITS BAND (Karim, 2026-10-13, D140 - layout A) ══════════════════════════
+ * He judged five layouts drawn on the live page and chose A: "for sure A". The photo carries only the
+ * kicker, the headline and the signature, so no word has to fight a bright plate; the message sits in
+ * a navy band directly under it - the whole plant on the left, SOP Copilot and its three helpers side
+ * by side on the right, all visible at once. HOME ONLY: every inner page is `.hero.inner` and keeps
+ * blocks 10 and 11 untouched. On a phone the photo and its headline card stay as block 10 draws
+ * them, and the band stacks under the card.
+ */
+@media (min-width:821px){
+  .hero:not(.inner){ height:560px; }
+  .hero:not(.inner) .wrap{ padding-bottom:58px; }
+}
+.heroband{ position:relative; z-index:1; background:var(--navy); border-top:2px solid var(--cyan);
+  padding:34px 0 40px; }
+.heroband .hb{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,2.1fr); gap:44px; }
+.heroband h2{ font-family:var(--display); font-weight:500; font-size:1.45rem; line-height:1.2;
+  letter-spacing:-.005em; color:#fff; margin:0 0 .55rem;
+  display:flex; flex-wrap:wrap; align-items:center; gap:.4rem .75rem; }
+.heroband h3{ font-family:var(--display); font-weight:500; font-size:1.06rem; line-height:1.25;
+  color:#fff; margin:0 0 .15rem; }
+.heroband p{ font-family:var(--body); font-size:.98rem; line-height:1.5; color:var(--sky); margin:0; }
+.heroband .tag{ font-family:var(--mono); font-size:.6rem; font-weight:400; line-height:1.2;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--cyan);
+  border:1px solid rgba(70,195,238,.5); padding:.26rem .5rem .22rem; }
+.heroband .hb-copilot{ border-left:1px solid rgba(190,230,245,.18); padding-left:44px; }
+.heroband .hb-items{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; }
+.heroband .hb-item{ border-top:1px solid rgba(70,195,238,.5); padding-top:.65rem; }
+@media (max-width:820px){
+  /* the dek no longer follows the headline on Home, so the signature stays on the card's navy */
+  .hero:not(.inner) .sig{ background:none; color:var(--sky); margin:12px 0 0; padding:0 0 16px; }
+  .hero + .heroband{ margin-top:0; }   /* block 10's "clear of the card" margin is for the next band */
+  .heroband{ padding:24px 0 28px; }
+  .heroband .hb{ grid-template-columns:1fr; gap:20px; }
+  .heroband .hb-copilot{ border-left:0; padding-left:0;
+    border-top:1px solid rgba(190,230,245,.18); padding-top:18px; }
+  .heroband .hb-items{ grid-template-columns:1fr; gap:14px; }
+  .heroband .hb-item{ border-top:0; padding-top:0; }
+}
