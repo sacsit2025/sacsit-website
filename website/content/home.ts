@@ -551,9 +551,14 @@ export const capabilities: CapabilitiesBand = {
       ],
       label: "Seen in the product",
       // D142 (2026-10-13): the two captures take the Maintenance boards' size - one to a row, full width
+      // D144 (2026-10-13): a row of three phones above them, and the batch record at the desk after them
       screens: [],
       gallery: {
-        phones: [],
+        phones: [
+          { asset: "knowledge/assets/screens/home/EMS-phone-1-the-week.png", caption: "The week · jobs finished, cases made against ordered, the ones that came up short" },
+          { asset: "knowledge/assets/screens/home/EMS-phone-2-quality.png", caption: "Quality · every batch waits for a signed verdict" },
+          { asset: "knowledge/assets/screens/home/EMS-phone-3-batch-record.png", caption: "The batch record · made to the frozen recipe, every number sourced" },
+        ],
         desks: [
           {
             asset: "knowledge/assets/screens/home/EMS-plan-month-day-panel.png",
@@ -562,6 +567,10 @@ export const capabilities: CapabilitiesBand = {
           {
             asset: "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
             caption: "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual",
+          },
+          {
+            asset: "knowledge/assets/screens/home/EMS-desk-3-batch-record.png",
+            caption: "The batch record at the desk · plan, rate, yield and verdict on one page",
           },
         ],
       },

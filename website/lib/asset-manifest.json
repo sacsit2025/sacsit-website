@@ -809,11 +809,35 @@
   "bytes": 15422,
   "id": "H-cmms-board-crop"
  },
+ "/assets/screens/home/EMS-desk-3-batch-record.png": {
+  "w": 2880,
+  "h": 1440,
+  "bytes": 194038,
+  "id": "H-ems-desk-3"
+ },
  "/assets/screens/home/EMS-job-panel-batches-per-machine.png": {
   "w": 944,
   "h": 582,
   "bytes": 70199,
   "id": "H-ems-job"
+ },
+ "/assets/screens/home/EMS-phone-1-the-week.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 266460,
+  "id": "H-ems-phone-1"
+ },
+ "/assets/screens/home/EMS-phone-2-quality.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 239394,
+  "id": "H-ems-phone-2"
+ },
+ "/assets/screens/home/EMS-phone-3-batch-record.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 211897,
+  "id": "H-ems-phone-3"
  },
  "/assets/screens/home/EMS-plan-month-day-panel.png": {
   "w": 975,
