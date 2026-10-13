@@ -857,6 +857,54 @@
   "bytes": 94971,
   "id": "H-eps-sheet"
  },
+ "/assets/screens/home/REP-1-shift-handover.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 281307,
+  "id": "H-rep-1"
+ },
+ "/assets/screens/home/REP-2-batch-certificate.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 313934,
+  "id": "H-rep-2"
+ },
+ "/assets/screens/home/REP-3-excursion-trend.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 211875,
+  "id": "H-rep-3"
+ },
+ "/assets/screens/home/REP-4-daily-performance.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 219986,
+  "id": "H-rep-4"
+ },
+ "/assets/screens/home/REP-5-monthly-two-oees.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 154942,
+  "id": "H-rep-5"
+ },
+ "/assets/screens/home/REP-6-audit-sheet.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 285587,
+  "id": "H-rep-6"
+ },
+ "/assets/screens/home/REP-7-weekly-process-heatmap.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 167740,
+  "id": "H-rep-7"
+ },
+ "/assets/screens/home/REP-8-daily-production-arabic.png": {
+  "w": 1600,
+  "h": 1000,
+  "bytes": 230067,
+  "id": "H-rep-8"
+ },
  "/assets/screens/home/REP-daily-production-sheet.png": {
   "w": 662,
   "h": 761,

@@ -390,6 +390,10 @@
 .screens.gallery .desks figure{ margin:2.4rem auto 0; max-width:1000px; }
 /* a gallery of desk boards only (EMS, D142): the first board sits under the label, not under phones */
 .screens.gallery .scrlab + .desks figure:first-child{ margin-top:0; }
+/* D147 (Reporting): the desk boards two to a row, four rows - eight filed runs read side by side */
+.screens.gallery .desks.pairs{ display:grid; grid-template-columns:1fr 1fr; gap:30px 28px;
+  max-width:1000px; margin:0 auto; }
+.screens.gallery .desks.pairs figure{ margin:0; max-width:none; }
 .screens.gallery .desks img{ border-radius:8px; }
 .screens.gallery figcaption{ font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--sky); line-height:1.5; margin-top:.75rem; text-align:center; }
@@ -398,4 +402,6 @@
   .screens.gallery .phones{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 14px; }
   .screens.gallery .phones img{ border-radius:12px; }
   .screens.gallery .desks figure{ margin-top:1.6rem; }
+  .screens.gallery .desks.pairs{ grid-template-columns:1fr; gap:20px; }
+  .screens.gallery .desks.pairs figure{ margin-top:0; }
 }

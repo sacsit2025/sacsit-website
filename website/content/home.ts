@@ -91,8 +91,9 @@ export interface CapabilityBlock {
   screens: { asset: string; alt: string; caption: string }[];
   /** D141 - the block's words as journeys (a title over each list), in place of `items` */
   journeys?: { title: string; items: string[] }[];
-  /** D141 - the navy panel as a gallery: phones three to a row, desk boards one to a row */
-  gallery?: { phones: GalleryShot[]; desks: GalleryShot[] };
+  /** D141 - the navy panel as a gallery: phones three to a row, desk boards one to a row
+   *  (D147: `pairs` puts the desk boards two to a row) */
+  gallery?: { phones: GalleryShot[]; desks: GalleryShot[]; pairs?: boolean };
 }
 
 /** One capture in a block's gallery (D141): where it lives, and the caption printed under it. */
@@ -680,18 +681,22 @@ export const capabilities: CapabilitiesBand = {
         "One clock, one key, one archive: the same shift on every module, one signal one identity, every sheet filed side by side and none removable; what a person may not see on the line, they may not read on the paper.",
       ],
       label: "Seen in the product",
-      screens: [
-        {
-          asset: "knowledge/assets/screens/home/REP-daily-production-sheet.png",
-          alt: "a daily production sheet",
-          caption: "A daily production sheet · headline tiles against the previous period, then the period tables by shift",
-        },
-        {
-          asset: "knowledge/assets/screens/home/REP-editor-batch-certificate-crop.png",
-          alt: "the report editor",
-          caption: "The report editor · the blocks, the live preview, the name in three languages, the timing, who gets it",
-        },
-      ],
+      // D147 (2026-10-13): eight filed runs, two to a row, replace the two captures the panel carried
+      screens: [],
+      gallery: {
+        phones: [],
+        pairs: true,
+        desks: [
+          { asset: "knowledge/assets/screens/home/REP-1-shift-handover.png", caption: "The shift handover · what the shift made and lost against the shift before, and what is now yours" },
+          { asset: "knowledge/assets/screens/home/REP-2-batch-certificate.png", caption: "The batch certificate · one batch, its recipe and plan, held for review, sealed with its own fingerprint" },
+          { asset: "knowledge/assets/screens/home/REP-3-excursion-trend.png", caption: "The excursion behind the hold · net content sliding under its own limit, the alarm marked where it fired" },
+          { asset: "knowledge/assets/screens/home/REP-4-daily-performance.png", caption: "Where the day's time went · stops ranked by time lost, each machine's day on one line, the alarms that stood longest" },
+          { asset: "knowledge/assets/screens/home/REP-5-monthly-two-oees.png", caption: "The monthly review · two OEEs side by side: the machine against its design, the line against its promise" },
+          { asset: "knowledge/assets/screens/home/REP-6-audit-sheet.png", caption: "The audit sheet for the critical machines · scheduled maintenance, planned against done, month by month" },
+          { asset: "knowledge/assets/screens/home/REP-7-weekly-process-heatmap.png", caption: "The weekly process report · when in the week the rejects ran high, and where the bottles were lost" },
+          { asset: "knowledge/assets/screens/home/REP-8-daily-production-arabic.png", caption: "The daily production sheet in Arabic · right to left, every label in the reader's language, the same fingerprint" },
+        ],
+      },
     },
   ],
   under: {

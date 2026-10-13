@@ -138,10 +138,10 @@ export function Capabilities() {
                     ))}
                   </div>
                 ) : null}
-                <div className="desks">
+                <div className={block.gallery.pairs ? "desks pairs" : "desks"}>
                   {block.gallery.desks.map((shot) => (
                     <figure className="dk" key={shot.asset}>
-                      <Pic path={shot.asset} slot="figure" alt={shot.caption} />
+                      <Pic path={shot.asset} slot={block.gallery?.pairs ? "screen" : "figure"} alt={shot.caption} />
                       <figcaption>{rich(shot.caption, "cap")}</figcaption>
                     </figure>
                   ))}
