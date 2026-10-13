@@ -89,6 +89,16 @@ export interface CapabilityBlock {
   items: string[];
   label: string;
   screens: { asset: string; alt: string; caption: string }[];
+  /** D141 - the block's words as journeys (a title over each list), in place of `items` */
+  journeys?: { title: string; items: string[] }[];
+  /** D141 - the navy panel as a gallery: phones three to a row, desk boards one to a row */
+  gallery?: { phones: GalleryShot[]; desks: GalleryShot[] };
+}
+
+/** One capture in a block's gallery (D141): where it lives, and the caption printed under it. */
+export interface GalleryShot {
+  asset: string;
+  caption: string;
 }
 
 /** SCADA opens the five: a head with a plate, then block A and block B in block A's dress (D72). */
@@ -588,35 +598,54 @@ export const capabilities: CapabilitiesBand = {
       n: "04",
       of: "05",
       name: "Maintenance",
-      promise: "A maintenance system that needs no data entry.",
+      promise: "The manager's whole plant on one board. The technician's whole job on one phone.",
       plate: {
         path: "knowledge/assets/wb/WB-08.jpg",
         alt: "a technician with the checklist on a phone at an opened machine",
       },
       page: href("cmms"),
-      items: [
-        "It opens on a plant that is already there: the machines, their kinds, their run history and their alarms — maintenance is arithmetic over what the SCADA already writes.",
-        "<b>One word plants the whole maintenance package</b>: the machine's type carries its parts, its plans, its checklists, the spares each job needs and the words a fitter picks from when something breaks.",
-        "<b>A meter nobody types cannot drift</b>: running hours and starts are folded from the line's own run record; correct an offset once and every total since corrects itself.",
-        "Five ways a plan comes due — on a date, days since the last, on a counter, when a tag says so, after too many breakdowns — and a follow-up born from a signed repair, only when something was found.",
-        "The stop becomes the job in one tap, from the restart receipt or the alarm itself, so the job and the alarm can never point at different events; every job is born a draft, a supervisor releases.",
-        "The phone is the technician's whole tool: take it, a reading judged red at the box, a spare off the shelf, a photograph, sign — every press writes at once.",
-        "The shelf answers before the technician walks to it: stock is the sum of its movements, shortages pinned on top naming the jobs they hold.",
-        "A record nobody signed is a note: the maintenance record, the week ahead, the review with mean time between failures and mean time to repair, the bad actors, the audit sheet — a dash and how many, never a confident zero.",
+      // D141 (2026-10-13): the block speaks as two journeys; `items` stays empty for this block
+      items: [],
+      journeys: [
+        {
+          title: "The maintenance manager · at the desk",
+          items: [
+            "<b>One board, the whole truth.</b> What is overdue, what is done but not signed, what waits to be verified, what the line asked for — in one look.",
+            "<b>The line asks, you decide.</b> An operator's call lands on the board with its machine and its moment; one press makes it a job, or declines it.",
+            "<b>Plans that count for themselves.</b> Running hours and starts come from the line's own run record, so a plan falls due on what the machine really did.",
+            "<b>Nothing closes on one signature.</b> The technician signs the work; a supervisor or quality verifies it, and a job left waiting is flagged until someone does.",
+            "<b>The record writes itself.</b> Time, stopped minutes, parts, readings and the follow-up — sealed, signed, ready for the auditor.",
+          ],
+        },
+        {
+          title: "The technician · at the machine",
+          items: [
+            "<b>My work, in the right order.</b> Machine down first, then overdue, then today — and on a weak signal every press waits its turn and goes when the signal is back.",
+            "<b>Why now, and what can hurt you.</b> The alarm that started it, who called, the hazard from the plan, and who else is on the job.",
+            "<b>Every person's own lock.</b> Each one confirms their lock on their own phone, then the start test; the steps open only after both.",
+            "<b>A wrong reading cannot hide.</b> A measurement outside its limits is judged red at the box and fails its step until a follow-up is raised.",
+            "<b>Close-out, filled in for you.</b> Each person's time from their own clock, the stopped minutes from the machine's run signal, the parts already counted.",
+            "<b>One finger to sign.</b> The name, the moment and a fingerprint of everything above; a correction sits beside it, never over it.",
+          ],
+        },
       ],
       label: "Seen in the product",
-      screens: [
-        {
-          asset: "knowledge/assets/screens/home/CMMS-machines-board.png",
-          alt: "the machines, running hours against the next service",
-          caption: "The machines · every machine's open jobs, its running hours against the next service, mean time between failures and mean time to repair",
-        },
-        {
-          asset: "knowledge/assets/screens/home/CMMS-the-board-job-panel-crop.png",
-          alt: "the maintenance board, one job opened",
-          caption: "The board · what is overdue, due today, short of a part; one job opened — why now, its checklist, its part on the shelf, one press to release",
-        },
-      ],
+      // D141: Karim's technician phones and desk boards replace the two captures the panel carried
+      screens: [],
+      gallery: {
+        phones: [
+          { asset: "knowledge/assets/screens/home/CMMS-tech-1-my-work.png", caption: "My work · machine down first, then overdue, then today" },
+          { asset: "knowledge/assets/screens/home/CMMS-tech-2-the-job.png", caption: "The job · why now, the hazard, who is on it" },
+          { asset: "knowledge/assets/screens/home/CMMS-tech-3-lock-out.png", caption: "Lock-out · every person's own lock, then the start test" },
+          { asset: "knowledge/assets/screens/home/CMMS-tech-4-the-steps.png", caption: "The steps · a reading judged red at the box" },
+          { asset: "knowledge/assets/screens/home/CMMS-tech-5-close-out.png", caption: "Close-out · time, stop and parts filled in for you" },
+          { asset: "knowledge/assets/screens/home/CMMS-tech-6-sign.png", caption: "Sign · a record nobody signed is a note" },
+        ],
+        desks: [
+          { asset: "knowledge/assets/screens/home/CMMS-desk-1-the-board.png", caption: "The board · what is overdue, what the line asked for, what waits to be signed" },
+          { asset: "knowledge/assets/screens/home/CMMS-desk-2-jobs-to-verify.png", caption: "Jobs to verify · nothing closes on one signature" },
+        ],
+      },
     },
     {
       id: "cap-rep",

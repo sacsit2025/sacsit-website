@@ -749,11 +749,59 @@
   "bytes": 40306,
   "id": "S-crop-sheet-review"
  },
+ "/assets/screens/home/CMMS-desk-1-the-board.png": {
+  "w": 2880,
+  "h": 2060,
+  "bytes": 366954,
+  "id": "H-cmms-desk-1"
+ },
+ "/assets/screens/home/CMMS-desk-2-jobs-to-verify.png": {
+  "w": 2880,
+  "h": 1320,
+  "bytes": 293971,
+  "id": "H-cmms-desk-2"
+ },
  "/assets/screens/home/CMMS-machines-board.png": {
   "w": 994,
   "h": 537,
   "bytes": 87945,
   "id": "H-cmms-machines"
+ },
+ "/assets/screens/home/CMMS-tech-1-my-work.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 280258,
+  "id": "H-cmms-tech-1"
+ },
+ "/assets/screens/home/CMMS-tech-2-the-job.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 279623,
+  "id": "H-cmms-tech-2"
+ },
+ "/assets/screens/home/CMMS-tech-3-lock-out.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 299033,
+  "id": "H-cmms-tech-3"
+ },
+ "/assets/screens/home/CMMS-tech-4-the-steps.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 273446,
+  "id": "H-cmms-tech-4"
+ },
+ "/assets/screens/home/CMMS-tech-5-close-out.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 258800,
+  "id": "H-cmms-tech-5"
+ },
+ "/assets/screens/home/CMMS-tech-6-sign.png": {
+  "w": 1170,
+  "h": 2532,
+  "bytes": 268457,
+  "id": "H-cmms-tech-6"
  },
  "/assets/screens/home/CMMS-the-board-job-panel-crop.png": {
   "w": 284,

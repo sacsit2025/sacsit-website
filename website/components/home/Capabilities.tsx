@@ -101,15 +101,55 @@ export function Capabilities() {
               <Pic path={block.plate.path} slot="head" alt={block.plate.alt} />
             </div>
             <div className="txt">
-              <ul>
-                {block.items.map((item, i) => (
-                  <li key={i}>{rich(item, `${block.id}-${i}`)}</li>
-                ))}
-              </ul>
+              {block.journeys ? (
+                <div className="journeys">
+                  {block.journeys.map((journey, j) => (
+                    <div className="jr" key={journey.title}>
+                      <h4>{rich(journey.title, `${block.id}-j${j}`)}</h4>
+                      <ul>
+                        {journey.items.map((item, i) => (
+                          <li key={i}>{rich(item, `${block.id}-j${j}-${i}`)}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <ul>
+                  {block.items.map((item, i) => (
+                    <li key={i}>{rich(item, `${block.id}-${i}`)}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-            <NavyScreens
-              section={{ type: "navy-screens", label: block.label, screens: block.screens }}
-            />
+            {block.gallery ? (
+              /* D141: the navy panel as a gallery - phones three to a row, desk boards one to a row.
+                 Its figures are `ph` / `dk`, never `shot`, so the parity gate's tile count follows
+                 the ALLOW row that records the ruling. Styles: premium.css §13. */
+              <div className="screens gallery">
+                <p className="scrlab">{rich(block.label, "lab")}</p>
+                <div className="phones">
+                  {block.gallery.phones.map((shot) => (
+                    <figure className="ph" key={shot.asset}>
+                      <Pic path={shot.asset} slot="card" alt={shot.caption} />
+                      <figcaption>{rich(shot.caption, "cap")}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+                <div className="desks">
+                  {block.gallery.desks.map((shot) => (
+                    <figure className="dk" key={shot.asset}>
+                      <Pic path={shot.asset} slot="figure" alt={shot.caption} />
+                      <figcaption>{rich(shot.caption, "cap")}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <NavyScreens
+                section={{ type: "navy-screens", label: block.label, screens: block.screens }}
+              />
+            )}
           </article>
         ))}
 
