@@ -128,14 +128,16 @@ export function Capabilities() {
                  the ALLOW row that records the ruling. Styles: premium.css §13. */
               <div className="screens gallery">
                 <p className="scrlab">{rich(block.label, "lab")}</p>
-                <div className="phones">
-                  {block.gallery.phones.map((shot) => (
-                    <figure className="ph" key={shot.asset}>
-                      <Pic path={shot.asset} slot="card" alt={shot.caption} />
-                      <figcaption>{rich(shot.caption, "cap")}</figcaption>
-                    </figure>
-                  ))}
-                </div>
+                {block.gallery.phones.length > 0 ? (
+                  <div className="phones">
+                    {block.gallery.phones.map((shot) => (
+                      <figure className="ph" key={shot.asset}>
+                        <Pic path={shot.asset} slot="card" alt={shot.caption} />
+                        <figcaption>{rich(shot.caption, "cap")}</figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="desks">
                   {block.gallery.desks.map((shot) => (
                     <figure className="dk" key={shot.asset}>

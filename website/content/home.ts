@@ -550,18 +550,21 @@ export const capabilities: CapabilitiesBand = {
         "No second store, no batch server, no line of code at the edge: the certificate prints from the engine that prints the shift handover.",
       ],
       label: "Seen in the product",
-      screens: [
-        {
-          asset: "knowledge/assets/screens/home/EMS-plan-month-day-panel.png",
-          alt: "the plan, one month, one day opened",
-          caption: "The plan · a month of orders on one line, one day opened: two orders, two batches, the real windows against the planned ones",
-        },
-        {
-          asset: "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
-          alt: "one job, its batches, per machine",
-          caption: "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual",
-        },
-      ],
+      // D142 (2026-10-13): the two captures take the Maintenance boards' size - one to a row, full width
+      screens: [],
+      gallery: {
+        phones: [],
+        desks: [
+          {
+            asset: "knowledge/assets/screens/home/EMS-plan-month-day-panel.png",
+            caption: "The plan · a month of orders on one line, one day opened: two orders, two batches, the real windows against the planned ones",
+          },
+          {
+            asset: "knowledge/assets/screens/home/EMS-job-panel-batches-per-machine.png",
+            caption: "One job · cases ordered and made, the recipe it ran with, the line's five machines, the two batches planned against actual",
+          },
+        ],
+      },
     },
     {
       id: "cap-eps",

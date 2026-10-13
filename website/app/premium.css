@@ -388,6 +388,8 @@
   box-shadow:0 2px 4px rgba(0,0,0,.3), 0 18px 40px rgba(0,0,0,.42); }
 .screens.gallery .phones img{ border-radius:18px; }
 .screens.gallery .desks figure{ margin:2.4rem auto 0; max-width:1000px; }
+/* a gallery of desk boards only (EMS, D142): the first board sits under the label, not under phones */
+.screens.gallery .scrlab + .desks figure:first-child{ margin-top:0; }
 .screens.gallery .desks img{ border-radius:8px; }
 .screens.gallery figcaption{ font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--sky); line-height:1.5; margin-top:.75rem; text-align:center; }
